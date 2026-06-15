@@ -1,8 +1,9 @@
 {
   "version": "1.0",
   "created_at": "2024-01-15T10:30:00",
-  "last_updated": "2024-01-15T10:30:00",
+  "last_updated": "2026-06-15T23:59:33.399659",
   "suppliers": [
-    "Fresho_Supplies"
+    "Fresho_Supplies",
+    "Bodiam"
   ]
 }
