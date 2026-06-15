@@ -1,0 +1,251 @@
+{
+  "supplier_name": "Fresho Supplies",
+  "description": "Fresh produce supplier serving Sydney region",
+  "created_at": "2024-01-15T10:30:00",
+  "last_updated": "2024-01-15T10:30:00",
+  "rules": [
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "Cherry heritage tomatoes punnet",
+      "ordered_unit": "1 box",
+      "fresho_product": "Send 1 yellow cherry toma and 1 cherry red toma",
+      "fresho_qty": "12",
+      "other_comments": "Note - 1 box",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "Auberge Du Lac",
+      "ordered_product": "asparagus",
+      "ordered_unit": "1 box",
+      "fresho_product": "give 12 bunches and note the 1 box",
+      "fresho_qty": "1",
+      "other_comments": "Premium grade preferred",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "dew peppers",
+      "ordered_unit": "",
+      "fresho_product": "MISC",
+      "fresho_qty": "",
+      "other_comments": "Check availability first",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "truffle paste",
+      "ordered_unit": "small jar",
+      "fresho_product": "TRUFFLEPASTE",
+      "fresho_qty": "",
+      "other_comments": "Premium grade",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "English Cherries",
+      "ordered_unit": "",
+      "fresho_product": "MISC",
+      "fresho_qty": "",
+      "other_comments": "Seasonal - check availability",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "artisan cheese crackers",
+      "ordered_unit": "1 box",
+      "fresho_product": "Biscuit wafer cheese millers",
+      "fresho_qty": "12",
+      "other_comments": "note - 1box",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "hand cut chips",
+      "ordered_unit": "bags",
+      "fresho_product": "hand cut chips",
+      "fresho_qty": "5kg bag",
+      "other_comments": "When ordering Watercress - Always send Baby Watercress unless they specify further",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "blood oranges",
+      "ordered_unit": "box",
+      "fresho_product": "blood oranges",
+      "fresho_qty": "40 each",
+      "other_comments": "note 1 box ALWAYS",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "mushrooms",
+      "ordered_unit": "punnets",
+      "fresho_product": "mushrooms",
+      "fresho_qty": "Trays",
+      "other_comments": "except Mixed wild mushrooms",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "Mushroom breakfast",
+      "ordered_unit": "",
+      "fresho_product": "Flat mushroom",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "icloth",
+      "ordered_unit": "",
+      "fresho_product": "icloth",
+      "fresho_qty": "",
+      "other_comments": "not supplied -leave it",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "Breakfast tomatoes",
+      "ordered_unit": "",
+      "fresho_product": "Tomatoes - Salad",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "Donkey carrots",
+      "ordered_unit": "",
+      "fresho_product": "Carrots",
+      "fresho_qty": "",
+      "other_comments": "add note : Large",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "1 bag of Blue Koffman",
+      "ordered_unit": "1 bag",
+      "fresho_product": "Potatoes - Maris Piper Washed 'Koffman's'",
+      "fresho_qty": "1 Box",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "Frozen English Muffins",
+      "ordered_unit": "",
+      "fresho_product": "Muffins - English Breakfast",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "1 box of fries",
+      "ordered_unit": "",
+      "fresho_product": "7mm fries koffman",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "1 box of chips",
+      "ordered_unit": "",
+      "fresho_product": "14mm chips koffman",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "4 packs Kale",
+      "ordered_unit": "",
+      "fresho_product": "Curly Kale",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "lettuce",
+      "ordered_unit": "",
+      "fresho_product": "Send iceberg",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "cured chorizo",
+      "ordered_unit": "",
+      "fresho_product": "Horseshoes smoked picante",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "red and yellow endive",
+      "ordered_unit": "",
+      "fresho_product": "white chicory and red chicory",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "yellow and red endive",
+      "ordered_unit": "",
+      "fresho_product": "1 red and 1 white chicory",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "red milk",
+      "ordered_unit": "",
+      "fresho_product": "skim milk",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "Ogen melon",
+      "ordered_unit": "",
+      "fresho_product": "galia",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "charentais melon",
+      "ordered_unit": "",
+      "fresho_product": "cantaloupe",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "Butterhead Lettuce",
+      "ordered_unit": "",
+      "fresho_product": "Round Lettuce",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2024-01-15T10:30:00"
+    },
+    {
+      "customer": "All Saints Hotel The View",
+      "ordered_product": "fat chips",
+      "ordered_unit": "",
+      "fresho_product": "Frozen Chips - Les Moyennes Frites Skin Off 14mm 'Koffmann's' Purple and Orange Box",
+      "fresho_qty": "",
+      "other_comments": "previously entered as MISC but is now available in the",
+      "created_at": "2024-01-15T10:30:00"
+    }
+  ]
+}
