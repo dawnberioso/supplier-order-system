@@ -66,23 +66,16 @@ with st.sidebar:
             st.rerun()
     
     st.markdown("---")
-    st.subheader("GitHub Sync")
-    
-    if st.button("📤 Push to GitHub"):
-        with st.spinner("Syncing to GitHub..."):
-            success = st.session_state.data_handler.push_to_github()
-            if success:
-                st.success("✅ Successfully pushed to GitHub!")
-            else:
-                st.error("❌ Failed to push to GitHub")
-    
-    if st.button("📥 Pull from GitHub"):
-        with st.spinner("Pulling from GitHub..."):
-            success = st.session_state.data_handler.pull_from_github()
-            if success:
-                st.success("✅ Successfully pulled from GitHub!")
-            else:
-                st.warning("⚠️ No changes to pull")
+    st.subheader("Save Status")
+
+    if st.session_state.data_handler.is_connected():
+        st.success("✅ Connected to GitHub — changes save automatically.")
+    else:
+        st.warning(
+            "⚠️ Not connected to GitHub. The app can show data but "
+            "changes won't save. Add GITHUB_TOKEN and GITHUB_REPO in "
+            "Settings → Secrets to enable saving."
+        )
 
 # Main content area
 if not selected_supplier:
