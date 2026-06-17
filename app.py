@@ -443,7 +443,8 @@ with st.sidebar:
 
 # Main content area
 if not selected_supplier:
-    _greeting_name = visitor_name if visitor_name != "there" else "there"
+    # Greet by first name only (e.g. "Dawn Berioso" -> "Dawn")
+    _greeting_name = visitor_name.split("@")[0].split()[0] if visitor_name != "there" else "there"
     st.markdown(
         f"""
         <div style='text-align: center; padding: 3rem 1rem;'>
