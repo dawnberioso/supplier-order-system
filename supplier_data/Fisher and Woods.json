@@ -2,12 +2,18 @@
   "supplier_name": "Fisher & Woods",
   "description": "Imported from internal customer-product-rule sheet",
   "created_at": "2024-01-15T10:30:00",
-  "last_updated": "2026-06-17T09:40:21.537806",
+  "last_updated": "2026-06-17T10:43:36.087193",
   "rules": [],
   "favorites": [
     {
       "ordered_product": "flat mushroom",
       "fresho_product": "Mushrooms - Field / Flat",
+      "notes": "",
+      "customer": "Baythorne Hall T/As Tarka's Cafe Halstead"
+    },
+    {
+      "ordered_product": "",
+      "fresho_product": "orange",
       "notes": "",
       "customer": "Baythorne Hall T/As Tarka's Cafe Halstead"
     }
