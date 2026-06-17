@@ -366,13 +366,12 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("<h3>⚡ Quick Actions</h3>", unsafe_allow_html=True)
 
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button("✨ Add New Supplier", use_container_width=True):
-            st.session_state.show_new_supplier = True
-    with col2:
-        if st.button("🔄 Refresh", use_container_width=True):
-            st.rerun()
+    # Full-width buttons so every action is a uniform rectangle (no wrapping)
+    if st.button("✨ Add New Supplier", use_container_width=True):
+        st.session_state.show_new_supplier = True
+
+    if st.button("🔄 Refresh", use_container_width=True):
+        st.rerun()
 
     # Button that switches between the styled Overview and the Edit screen
     if st.session_state.get("edit_rules_mode", False):
