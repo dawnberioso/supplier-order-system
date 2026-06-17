@@ -105,18 +105,24 @@ st.markdown("""
         transform: translateY(-1px) scale(0.98) !important;
     }
 
-    /* Secondary button styling */
+    /* Keep the gradient on every button kind (Streamlit defaults to "secondary") */
     .stButton > button[kind="secondary"] {
-        background: transparent !important;
-        border: 2px solid var(--deep-navy) !important;
-        color: var(--deep-navy) !important;
+        background: linear-gradient(135deg, var(--deep-navy), var(--light-blue)) !important;
+        border: none !important;
+        color: #ffffff !important;
     }
 
     .stButton > button[kind="secondary"]:hover {
-        background: linear-gradient(135deg, rgba(3, 11, 58, 0.1), rgba(58, 166, 249, 0.1)) !important;
-        border-color: var(--light-blue) !important;
-        transform: translateY(-3px) !important;
-        box-shadow: 0 8px 20px rgba(3, 11, 58, 0.15) !important;
+        background: linear-gradient(135deg, var(--light-blue), var(--deep-navy)) !important;
+        transform: translateY(-3px) scale(1.02) !important;
+        box-shadow: 0 8px 20px rgba(58, 166, 249, 0.4) !important;
+    }
+
+    /* Force the button label and icon white on the gradient */
+    .stButton > button p,
+    .stButton > button span,
+    .stButton > button div {
+        color: #ffffff !important;
     }
 
     /* Form submit button with gradient */
