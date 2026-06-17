@@ -351,6 +351,41 @@ with col_center:
 
 st.markdown("---")
 
+# ---- Google sign-in (activates automatically once [auth] secrets are set) ----
+# Written defensively: if authentication isn't configured yet, the app stays
+# open and simply greets the visitor generically — it will not error.
+auth_configured = True
+try:
+    _is_logged_in = st.user.is_logged_in
+except Exception:
+    auth_configured = False
+    _is_logged_in = False
+
+if auth_configured and _is_logged_in:
+    visitor_name = (getattr(st.user, "name", None)
+                    or getattr(st.user, "email", None)
+                    or "there")
+else:
+    visitor_name = "there"
+
+# If sign-in IS configured but the visitor hasn't logged in, show a login page.
+if auth_configured and not _is_logged_in:
+    st.markdown(
+        """
+        <div style='text-align: center; padding: 2.5rem 1rem 1rem;'>
+            <h2>👋 Welcome!</h2>
+            <p style='font-size: 1.15rem; color: #444;'>
+                Please sign in with Google to continue.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    c1, c2, c3 = st.columns([1, 1, 1])
+    with c2:
+        st.button("🔐 Sign in with Google", use_container_width=True, on_click=st.login)
+    st.stop()
+
 # Sidebar
 with st.sidebar:
     st.markdown("<h2>🗂️ Navigation</h2>", unsafe_allow_html=True)
@@ -400,12 +435,19 @@ with st.sidebar:
             "Settings → Secrets to enable saving."
         )
 
+    # Show who's signed in (only when Google sign-in is configured)
+    if auth_configured and _is_logged_in:
+        st.markdown("---")
+        st.caption(f"👤 Signed in as **{visitor_name}**")
+        st.button("🚪 Log out", use_container_width=True, on_click=st.logout)
+
 # Main content area
 if not selected_supplier:
+    _greeting_name = visitor_name if visitor_name != "there" else "there"
     st.markdown(
-        """
+        f"""
         <div style='text-align: center; padding: 3rem 1rem;'>
-            <h2>👋 Hi, Dawn!</h2>
+            <h2>👋 Hi, {_greeting_name}!</h2>
             <p style='font-size: 1.25rem; color: #444; margin-top: 0.5rem;'>
                 Which supplier are you looking for?
             </p>
