@@ -2,7 +2,7 @@
   "supplier_name": "Farmford Food",
   "description": "",
   "created_at": "2026-06-16T00:09:44.416572",
-  "last_updated": "2026-06-17T15:21:12.576965",
+  "last_updated": "2026-06-17T15:21:23.089557",
   "rules": [
     {
       "customer": "Charles Bryant Private Chef",
@@ -25,92 +25,92 @@
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "fresh English peas ",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Peas - Fresh",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "sea purselane",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Micro Purslane",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": " lady’s fingers",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Sponge Fingers (Savoiardo)",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "Allium Flowers",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Garlic Flower",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "sliced 2 mm potatoes ",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Potatoes (Sliced 2mm)",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "white asparagus",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "white asparagus",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "asparagus",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Asparagus - English",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "cherries (purple ones)",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Cherries",
-      "fresho_qty": null,
+      "fresho_qty": NaN,
       "other_comments": "note: purple one",
-      "created_at": null
+      "created_at": NaN
     },
     {
       "customer": "Charles Bryant Private Chef",
       "ordered_product": "L cream",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Double Cream",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "",
-      "ordered_product": null,
-      "ordered_unit": null,
-      "fresho_product": null,
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "ordered_product": NaN,
+      "ordered_unit": NaN,
+      "fresho_product": NaN,
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     }
   ]
 }
