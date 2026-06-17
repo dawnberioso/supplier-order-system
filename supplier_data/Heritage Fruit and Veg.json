@@ -2,6 +2,4167 @@
   "supplier_name": "Heritage Fruit and Veg",
   "description": "",
   "created_at": "2026-06-17T22:22:25.660070",
-  "last_updated": "2026-06-17T22:22:25.660084",
-  "rules": []
+  "last_updated": "2026-06-17T23:04:20.025508",
+  "rules": [
+    {
+      "Customer Name in Fresho": "MARKETMAN ORDERS",
+      "Ordered Product": "Corn on cob / Corn - On The Cob",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Corn Husk / Corn - with Husk",
+      "Fresho Qty": "all marketman orders",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Tomato Red  / \tRed Tomatoes",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Sicilian Vine",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Tomato calabash",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Black Crimee",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Tomato Pineapple ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Pineapple ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Pepper red pointy",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Peppers - Romano ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Baby Gem 2 EA",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Lettuce - Little Gem",
+      "Fresho Qty": "1 pkt has 2 heads",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Brown Tomato",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Black Crimee",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "carrots roast cut",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Carrots - Diced",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Olive oil (PMGOO)",
+      "Ordered Unit": "4x5ltr 20 L",
+      "Fresho Product": "KOSMOS EX VIRGIN OLIVE OIL",
+      "Fresho Qty": "1.0 Case (4 x 5ltr)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Tomatoes - Cherry Mixed Colours Produce ",
+      "Ordered Unit": "1 EA",
+      "Fresho Product": "Tomatoes - Cherry Vine Heritage",
+      "Fresho Qty": "1 Box ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Sweetcorn 10 EA",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Corn - On The Cob",
+      "Fresho Qty": "10.0 Packet (2)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Philadelphia 1.65 kg, 3 pc",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pachamama Philadelphia 1.65kg",
+      "Fresho Qty": "3.0 Each (1.65kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Zephyr Notting Hill",
+      "Ordered Product": "Cherry Mixed Colours Produce 5 Kg",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Cherry Vine Heritage",
+      "Fresho Qty": "2.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bottarga London",
+      "Ordered Product": "Red long pepper",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Peppers - Romano ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bottarga London",
+      "Ordered Product": "Romaine Lettuce ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cos lettuce",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bottarga London",
+      "Ordered Product": "Brown onion",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Onions - Spanish (Large)",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bottarga London",
+      "Ordered Product": "Potato’s normal with skin",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - Cyprus",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bottarga London",
+      "Ordered Product": "Potatoes ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bottarga London",
+      "Ordered Product": "Kosmos Olive Oil ",
+      "Ordered Unit": "(4 * 1 EA) QTY2 TOTALQTY 8 EA",
+      "Fresho Product": "KOSMOS EX VIRGIN OLIVE OIL",
+      "Fresho Qty": "2.0 Case (4 x 5ltr)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bottarga London",
+      "Ordered Product": "philadelphia ",
+      "Ordered Unit": "6 ea",
+      "Fresho Product": "Pachamama Philadelphia 1.65kg",
+      "Fresho Qty": "6.0 Each (1.65kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama Central // Nina ",
+      "Ordered Product": "Russet Potato or  any other classic potato",
+      "Ordered Unit": NaN,
+      "Fresho Product": " Red potatoes",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": " ",
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama Central // Nina ",
+      "Ordered Product": "Potato Desire /  Potatoes Desiree",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potato Red",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama Central // Nina ",
+      "Ordered Product": "Tomatoes - Torino San Marzano ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Torino San Marzano",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama Central // Nina ",
+      "Ordered Product": "Olive oil (PMGOO)  ",
+      "Ordered Unit": "40L",
+      "Fresho Product": "KOSMOS EX VIRGIN OLIVE OIL",
+      "Fresho Qty": "2.0 Case (4 x 5ltr)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama Central // Nina ",
+      "Ordered Product": "Tomatoes - Plum On Vine 1 EA",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Plum Cherry On Vine",
+      "Fresho Qty": "but add note 1 Ea , also check the price ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama Central // Nina ",
+      "Ordered Product": "Butter lettuce",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cos lettuce",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama East ( Lagana)",
+      "Ordered Product": "13.2KG PHILADELPHIA (1.65KG)",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Philadelphia Original",
+      "Fresho Qty": "2.0 Box (4x1.65kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama East ( Lagana)",
+      "Ordered Product": "Philadelphia ",
+      "Ordered Unit": "4x 1.65 kg",
+      "Fresho Product": "Pachamama Philadelphia 1.65kg",
+      "Fresho Qty": "4.0 Each (1.65kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama East ( Lagana)",
+      "Ordered Product": "bread white slice",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Bread Loaf - White Medium",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama East ( Lagana)",
+      "Ordered Product": "Agria potatoes medium size",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes 'Koffman's' Washed",
+      "Fresho Qty": "add note : Agria potatoes medium size",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Pachamama East ( Lagana)",
+      "Ordered Product": "cherry tomatoes",
+      "Ordered Unit": "1.5kg ",
+      "Fresho Product": "Tomatoes - Cherry On Vine",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "Washed mix leaf / Baby leaf",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Lettuce - Baby Leaf Washed ",
+      "Fresho Qty": "only for this cx ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "Baby watercress",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro watercress",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "Lovers potato // blubbered potatoes",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - Dirty 'Koffman's' ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "banana",
+      "Ordered Unit": "3 bunches",
+      "Fresho Product": "Banana",
+      "Fresho Qty": "3kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "Mixed pumpkin squash",
+      "Ordered Unit": "1box",
+      "Fresho Product": "Squash - Mixed",
+      "Fresho Qty": "10kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "cherry tom",
+      "Ordered Unit": "1 tub ",
+      "Fresho Product": "Tomatoes - Cherry",
+      "Fresho Qty": "1.0 Punnet (250g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "Washed Rocket // Rocket",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Rocket - Washed",
+      "Fresho Qty": "ROCKWK",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "Broccoli",
+      "Ordered Unit": "1",
+      "Fresho Product": "Broccoli",
+      "Fresho Qty": "1.0 Box (6kg)",
+      "Other Comments": "history is boxes",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Plucky Pheasant",
+      "Ordered Product": "FLAT CUP MUSHROOM",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Vine & Dine",
+      "Ordered Product": "HERITAGE CARROTS",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Carrots - Mixed Large",
+      "Fresho Qty": "10 kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Vine & Dine",
+      "Ordered Product": "red cooked beet",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Beetroot - Cooked Fresh",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Vine & Dine",
+      "Ordered Product": "micro mustard cress",
+      "Ordered Unit": "1",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1.0 Punnet",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Vine & Dine",
+      "Ordered Product": "baby sweetcorn",
+      "Ordered Unit": "1 pack",
+      "Fresho Product": "Frozen - Sweetcorn",
+      "Fresho Qty": "1.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "IOTP Limited   (Inn on the Pond)",
+      "Ordered Product": "Cabbage - Savoy Shredded ",
+      "Ordered Unit": "3",
+      "Fresho Product": NaN,
+      "Fresho Qty": "3 kg",
+      "Other Comments": "Inn on the Pond",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "IOTP Limited   (Inn on the Pond)",
+      "Ordered Product": "Cabbage - White Shredded ",
+      "Ordered Unit": "1",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1kg",
+      "Other Comments": "Inn on the Pond",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "IOTP Limited   (Inn on the Pond)",
+      "Ordered Product": "Samphire",
+      "Ordered Unit": "1 BOX",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1KG",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "IOTP Limited   (Inn on the Pond)",
+      "Ordered Product": "tenderils",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Cress - Pea Shoots Tendril",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "IOTP Limited   (Inn on the Pond)",
+      "Ordered Product": "parsnip ",
+      "Ordered Unit": "1",
+      "Fresho Product": "Pasnip ",
+      "Fresho Qty": "1 box",
+      "Other Comments": "only ask 1 parsnip but actually want box ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "IOTP Limited   (Inn on the Pond)",
+      "Ordered Product": "potato ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes 'Koffman's' Washed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "IOTP Limited   (Inn on the Pond)",
+      "Ordered Product": "baby leaf ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Baby  Mixed Leaves ",
+      "Fresho Qty": "always add note:  if n/a dont send substitue",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "George & Dragon Ightham",
+      "Ordered Product": "Wild white cabbage",
+      "Ordered Unit": NaN,
+      "Fresho Product": "White cabbage",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "George & Dragon Ightham",
+      "Ordered Product": "Lollo",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Lettuce - Lollo Rosso",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "George & Dragon Ightham",
+      "Ordered Product": "peeled potato ",
+      "Ordered Unit": "1 bag ",
+      "Fresho Product": "Potatoes - Peeled ",
+      "Fresho Qty": "5kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "George & Dragon Ightham",
+      "Ordered Product": "peeled potato ",
+      "Ordered Unit": "5 bags ",
+      "Fresho Product": "Potatoes - Peeled ",
+      "Fresho Qty": "25 kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "George & Dragon Ightham",
+      "Ordered Product": "mushroom ",
+      "Ordered Unit": "1 box ",
+      "Fresho Product": "Mushrooms - Button",
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "George & Dragon Ightham",
+      "Ordered Product": "parsley ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Parsley - Curly ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "Oyster mushrooms",
+      "Ordered Unit": "1 bunch",
+      "Fresho Product": NaN,
+      "Fresho Qty": "0.5",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "Red beetroot",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Raw Beetroot",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "Egg Quail",
+      "Ordered Unit": "3 trays = 3 Each (18)",
+      "Fresho Product": NaN,
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "Samphire",
+      "Ordered Unit": "1 box",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "prism potatoes , round ones",
+      "Ordered Unit": "3kg ",
+      "Fresho Product": "Potatoes - Parisienne Prepared ",
+      "Fresho Qty": "3.0 kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "Peruvian potatoes",
+      "Ordered Unit": "2kg ",
+      "Fresho Product": "Potatoes - Parisienne Prepared ",
+      "Fresho Qty": "2.0kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "summer squash",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Squash - Mixed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Blue Anchor Crowborough",
+      "Ordered Product": "CHARD LEAF",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Chard - Red",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "Spanish onion",
+      "Ordered Unit": NaN,
+      "Fresho Product": "White onion",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "Salad tomatoes",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "Chard - Red",
+      "Ordered Unit": "1 pkt // 1 bag",
+      "Fresho Product": NaN,
+      "Fresho Qty": "0.5 kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "koffman potato",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes 'Koffman's' Washed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "grated mozzarella",
+      "Ordered Unit": "4 bags ",
+      "Fresho Product": "Cheese - Mozzarella Grated",
+      "Fresho Qty": "4.0 Each (2kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "large disposable powder free gloves",
+      "Ordered Unit": "2 boxes",
+      "Fresho Product": "Gloves - Disposable",
+      "Fresho Qty": "2.0 Each (100)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "blue paper roll ",
+      "Ordered Unit": "1 case by 6 rows ",
+      "Fresho Product": "Blue Roll",
+      "Fresho Qty": "1.0 Each (6)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": " panko breadcrumbs",
+      "Ordered Unit": "4 bags ",
+      "Fresho Product": "Bread Crumbs - Panko",
+      "Fresho Qty": "4 kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "hispi ",
+      "Ordered Unit": "1 box ",
+      "Fresho Product": "Cabbage - Green Hispi",
+      "Fresho Qty": "15 Each      ",
+      "Other Comments": "note 1 box ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Star Inn Lingfield",
+      "Ordered Product": "mixed spice",
+      "Ordered Unit": "1",
+      "Fresho Product": "Spice - Allspice, Ground",
+      "Fresho Qty": "1.0 Each (250g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "Tenderstem brocc",
+      "Ordered Unit": "1 packet",
+      "Fresho Product": "Broccoli - Tenderstem",
+      "Fresho Qty": "200g",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "Beetroot vac pack ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Beetroot - (Pre-Pack)",
+      "Fresho Qty": "1 box = 18",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "4 Pumkins",
+      "Ordered Unit": NaN,
+      "Fresho Product": "PUMPH for Halloween pumkin",
+      "Fresho Qty": NaN,
+      "Other Comments": "Outside of October would be a French Pumkin",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "mixed cherry tom ",
+      "Ordered Unit": "1 box   / tray ",
+      "Fresho Product": "Tomatoes - Cherry Mixed Colours Produce",
+      "Fresho Qty": "10 punnet ",
+      "Other Comments": "note: 1 box ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "Lily put capers",
+      "Ordered Unit": "2 TUBS ",
+      "Fresho Product": "Capers - Lilliput",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": " Olive oil",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Olive Oil - Extra Virgin",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "gluten free sliced loaves of bread",
+      "Ordered Unit": "4",
+      "Fresho Product": "Bread Loaf - Gluten free",
+      "Fresho Qty": "4.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "GREEEK YOGHURT",
+      "Ordered Unit": "10KG",
+      "Fresho Product": "Yoghurt - Greek",
+      "Fresho Qty": "2.0 Each (5L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "pumpkin oil",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pumpkin seed Oil",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "hash browns",
+      "Ordered Unit": "case ",
+      "Fresho Product": "Hash Browns 'McCain'",
+      "Fresho Qty": "1.0 Box (8 x 1kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "walnuts ",
+      "Ordered Unit": "2 kg ",
+      "Fresho Product": "Walnut - Halves",
+      "Fresho Qty": "2.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "chateau potatoes",
+      "Ordered Unit": "8 bags ",
+      "Fresho Product": "Potatoes - Chateau Prepared",
+      "Fresho Qty": "40.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": " mixed cherry tom",
+      "Ordered Unit": "2 TRAYS ",
+      "Fresho Product": "Tomatoes - Cherry Vine Heritage",
+      "Fresho Qty": "2.0 Box",
+      "Other Comments": "BUT STILL AD NOTE: 2 TRAYS mixed cherry tom",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Easthampstead Park Wokingham",
+      "Ordered Product": "peeled and cut for roasting pot",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - Roast Cut Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Horns // The Horns Hospitality Ltd",
+      "Ordered Product": "tub baby/ liliput caper",
+      "Ordered Unit": "1 KG ",
+      "Fresho Product": "Capers - Lilliput",
+      "Fresho Qty": "1.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Horns // The Horns Hospitality Ltd",
+      "Ordered Product": "Shallots onions x2kg",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Shallots - Banana",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Horns // The Horns Hospitality Ltd",
+      "Ordered Product": "GF flour x1 ( pack of 6 )",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Flour - Plain Gluten Free",
+      "Fresho Qty": "6.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Horns // The Horns Hospitality Ltd",
+      "Ordered Product": "otatoes peel ready cut",
+      "Ordered Unit": "25 kg",
+      "Fresho Product": "Potatoes - Roast Cut Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Aubergines",
+      "Ordered Unit": "1",
+      "Fresho Product": "Aubergines",
+      "Fresho Qty": "1 box ",
+      "Other Comments": "only mentioned 1 but history is boxes",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Coconut Milk",
+      "Ordered Unit": "6 TINS",
+      "Fresho Product": "Coconut Milk",
+      "Fresho Qty": "6.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "mixed heritage cherry tom",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes - Cherry Mixed Colours Produce",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "egg ",
+      "Ordered Unit": "180 ea",
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": "6 trays ",
+      "Other Comments": "1 BOX IS 6 TRAYS ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "orzo pasta ",
+      "Ordered Unit": "2 bags ",
+      "Fresho Product": "Orzo",
+      "Fresho Qty": "2.0 Bag (500g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Flat mushroom",
+      "Ordered Unit": "2 punnet ",
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": "2.0 Box",
+      "Other Comments": "mentioned punnet but actually meant box",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "preserved lemon ",
+      "Ordered Unit": "2 jars ",
+      "Fresho Product": "Lemons - Preserved",
+      "Fresho Qty": "2.0 Each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "flat mushroom ",
+      "Ordered Unit": "4",
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": "4.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Burrata",
+      "Ordered Unit": "8 balls",
+      "Fresho Product": "Burrata",
+      "Fresho Qty": "8.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "PHYSALIS ",
+      "Ordered Unit": "1 tray ",
+      "Fresho Product": "Physalis",
+      "Fresho Qty": "6.0 Punnet",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "elderflower cordial ",
+      "Ordered Unit": "2 BOTTLES ",
+      "Fresho Product": "Elderflower Cordial",
+      "Fresho Qty": "2.0 Bottle",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Heirloom tomatoes",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes Heritage",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Mulled Wine",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Wine - Mulled",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Egg White",
+      "Ordered Unit": "1 carton",
+      "Fresho Product": "Pasteurised - Egg White",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "eggh",
+      "Ordered Unit": "15 DOZEN",
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": "6 trays",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "egg",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "flat mushroom ",
+      "Ordered Unit": "3",
+      "Fresho Product": "Mushrooms - Field / Flat ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Orange flesh",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Melon - Cantaloupe",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "LOBSTER STOCK",
+      "Ordered Unit": "1 TUB",
+      "Fresho Product": "Lobster Glace",
+      "Fresho Qty": "1.0 Each (600g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "CRUNCHY PEANUT BUTTER",
+      "Ordered Unit": "3 BOTTLES ",
+      "Fresho Product": "Peanut Butter",
+      "Fresho Qty": "3.0 Each (300g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Cheddar - Sliced",
+      "Ordered Unit": "1 TRAY ",
+      "Fresho Product": "Cheddar - Sliced",
+      "Fresho Qty": "1 KG ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "loaves of brioche ease",
+      "Ordered Unit": "6",
+      "Fresho Product": "Brioche Loaf",
+      "Fresho Qty": "6.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "Frozen - Mixed Berries",
+      "Ordered Unit": "1 bag",
+      "Fresho Product": "Frozen - Mixed Berries",
+      "Fresho Qty": "1kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "milk",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": " Highfield Park Management (Hampshire) Ltd",
+      "Ordered Product": "strawberries",
+      "Ordered Unit": NaN,
+      "Fresho Product": "strawberries (400g)",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "Baby potato / new potato",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potato Mids",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "kiwi",
+      "Ordered Unit": "1 case // Box",
+      "Fresho Product": "Kiwifruit ",
+      "Fresho Qty": "33 each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "butter lettuces",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Lettuce - Round ",
+      "Fresho Qty": NaN,
+      "Other Comments": "not sure double check ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "VERY LARGE PUMPKIN",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pumpkin - Halloween",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "Halloween pumpkins",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pumpkin - Halloween",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "broad beans",
+      "Ordered Unit": "1 BAG ",
+      "Fresho Product": "Frozen Beans - Broad",
+      "Fresho Qty": "1.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "BABY MICRO  MIXED LEAF ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Cress - Parsley",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "medium oranges for juicing",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Oranges - Juicing",
+      "Fresho Qty": "note: medium ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "Potatoes - Grated",
+      "Ordered Unit": "A BAG",
+      "Fresho Product": "Potatoes - Grated",
+      "Fresho Qty": "1.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingdom Woodland Kitchen Ltd",
+      "Ordered Product": "cherry tom",
+      "Ordered Unit": "1 KG ",
+      "Fresho Product": "Tomatoes - Cherry",
+      "Fresho Qty": "4.0 Punnet (250g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "Peeled garlic",
+      "Ordered Unit": "2 bags",
+      "Fresho Product": NaN,
+      "Fresho Qty": "2kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "Baby potato// new potato ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potato-mids",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "Bok choy weight sapproximately 300-400g each head",
+      "Ordered Unit": NaN,
+      "Fresho Product": "0.3",
+      "Fresho Qty": "note: how many heads",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "Potatoes",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes 'Koffman's' Washed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "WASHED MARIS PIPER",
+      "Ordered Unit": "5kg ",
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": "5.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "Land cress",
+      "Ordered Unit": "8 sleeves",
+      "Fresho Product": NaN,
+      "Fresho Qty": "8 bunch",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "black cabbage ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cavolo Nero - Black Cabbage",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": " llyn royal pot",
+      "Ordered Unit": "1 sack ",
+      "Fresho Product": "Potatoes 'Koffman's' Washed",
+      "Fresho Qty": "Bag (20kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "salad potatoes,not the cater pack",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - Mids",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "sugar snaps ",
+      "Ordered Unit": "3 boxes ",
+      "Fresho Product": "Peas - Sugar Snap",
+      "Fresho Qty": "1kg note: 8 bags ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "Limes",
+      "Ordered Unit": "half a box",
+      "Fresho Product": "Limes",
+      "Fresho Qty": "30 Each ADD NOTE",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "PUMPKIN",
+      "Ordered Unit": "2 LARGE",
+      "Fresho Product": "Pumpkin - Halloween",
+      "Fresho Qty": "2.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "cryvac chestnuts",
+      "Ordered Unit": "2 packs ",
+      "Fresho Product": "Chestnut (Vacuum Pack)",
+      "Fresho Qty": "2.0 Each (500g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "1 x chestnut mushrooms",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Chestnut",
+      "Fresho Qty": "1 KG ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's Seafood Kitchen & Bar Mount Ephraim",
+      "Ordered Product": "Belgium endive",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Chicory - White",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": " maris piper cleaned  ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": "f ordered kg book Potato White but if box or bag book Maris Pipe",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "Kabocha Squash",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Kabocha - new code SQUKB",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "Lovers potato",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - Dirty 'Koffman's' ",
+      "Fresho Qty": "but if mentioned washed use Potato White then note: washed",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "Wild Mushroom",
+      "Ordered Unit": "1 punnet",
+      "Fresho Product": "Wild Mushroom",
+      "Fresho Qty": "500 G",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "kale ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Kale - Curly ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "Washed Rocket // Rocket",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Rocket - Washed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "Chillies",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Chillies - Red",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "chillies ",
+      "Ordered Unit": "6",
+      "Fresho Product": "Chillies - Red",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "CHINESE WHITE CABBAGE",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Chinese Leaf",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Dabbling Duck",
+      "Ordered Product": "BRIGHTBRIDGE E-AVOCADOS",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Avocados",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingston Hospital Retail",
+      "Ordered Product": "Peppers Mixed Sliced",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Peppers - Mixed Sliced",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kingston Hospital Retail",
+      "Ordered Product": "Tomato Round Large",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Whole milk",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Milk - Full Fat",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Broccoli PSB ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Broccoli - Purple",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": " heritage cherry tomatoes",
+      "Ordered Unit": "200g",
+      "Fresho Product": "Tomatoes - Cherry Mixed Colours Produce",
+      "Fresho Qty": "2.0 Punnet",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Hen of the wood  / Hen on the woods  HOTW",
+      "Ordered Unit": " 4 packets",
+      "Fresho Product": "Mushrooms - Maitake",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Cornflowers",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Corn Flower",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Larat potatoes",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - La Ratte ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Cress ; for egg mayo",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mustard Cress",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Salty Fingers",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Salty Fingers",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Crone artichokes ",
+      "Ordered Unit": "500g",
+      "Fresho Product": "Crosnes",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Kale",
+      "Ordered Unit": "2 bags",
+      "Fresho Product": "Kale - Curly",
+      "Fresho Qty": NaN,
+      "Other Comments": "always note : how many bags",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "wild garlic ",
+      "Ordered Unit": "2 bags",
+      "Fresho Product": "Garlic - Wild",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "barista coconut soy milk",
+      "Ordered Unit": "1",
+      "Fresho Product": "Milk Coconut - For Professionals 'Alpro'",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "dirty muddy koffmans",
+      "Ordered Unit": "1 sack",
+      "Fresho Product": "Potatoes - Dirty 'Koffman's'",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "kale",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Kale - Curly",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Tomatoes ",
+      "Ordered Unit": "10r,10y,10g tom",
+      "Fresho Product": "Tomatoes Heritage",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "Targette flower",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Tagetes Flower",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "wasabi leaf ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Wasabi - Leaves",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's Restaurant",
+      "Ordered Product": "misc - 5kg charlotte potato's",
+      "Ordered Unit": NaN,
+      "Fresho Product": "they booked Potatoes - La Ratte",
+      "Fresho Qty": "invoiced 03.10.2026",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "St Kilda Cafe Tunbridge Wells",
+      "Ordered Product": "Bok choy / pak choi ",
+      "Ordered Unit": "1 head / 1 EA",
+      "Fresho Product": "Bok Choy",
+      "Fresho Qty": "0.3 g",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "St Kilda Cafe Tunbridge Wells",
+      "Ordered Product": "parsely",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Parsley - Curly ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "St Kilda Cafe Tunbridge Wells",
+      "Ordered Product": "pink reddish ",
+      "Ordered Unit": "2 bunches ",
+      "Fresho Product": "Radish ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "St Kilda Cafe Tunbridge Wells",
+      "Ordered Product": "red skin pot ",
+      "Ordered Unit": "1 kg ",
+      "Fresho Product": "Potatoes - Red",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "St Kilda Cafe Tunbridge Wells",
+      "Ordered Product": "double cream ",
+      "Ordered Unit": "2 bottles ",
+      "Fresho Product": "Cream - Double",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "St Kilda Cafe Tunbridge Wells",
+      "Ordered Product": "berries",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Blueberries",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Fighting Cocks Horton Kirby",
+      "Ordered Product": "Capsicum green",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pepper - Green ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cocomelt London",
+      "Ordered Product": "Egg",
+      "Ordered Unit": "15 dozens",
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": "6 trays",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cocomelt London",
+      "Ordered Product": "Egg",
+      "Ordered Unit": "30 dozen",
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": "12 trays",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cocomelt London",
+      "Ordered Product": "Turkey",
+      "Ordered Unit": "3 packs",
+      "Fresho Product": "Turkey - Sliced",
+      "Fresho Qty": NaN,
+      "Other Comments": "note: halal if given",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cocomelt London",
+      "Ordered Product": "Tomato",
+      "Ordered Unit": "1 pack ",
+      "Fresho Product": "Tomatoes - Cherry ",
+      "Fresho Qty": "1 punn",
+      "Other Comments": "only for this customer!!!",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cocomelt London",
+      "Ordered Product": "Strawberries",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "Strawberries (400g) / 500g Punnet",
+      "Fresho Qty": "20 punnet",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cocomelt London",
+      "Ordered Product": "oat milk barista ",
+      "Ordered Unit": "8 boxes ",
+      "Fresho Product": "Oat Milk - Professional note: barista ",
+      "Fresho Qty": "48.0 Each\t",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cocomelt London",
+      "Ordered Product": "6 dozen eggs",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": "3.0 Tray (30)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Gorse Hill ",
+      "Ordered Product": "Tendersteem Broc",
+      "Ordered Unit": "1",
+      "Fresho Product": "Broccoli - Tenderstem",
+      "Fresho Qty": "1 box ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Gorse Hill ",
+      "Ordered Product": "kale",
+      "Ordered Unit": NaN,
+      "Fresho Product": "kale - Curly",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Gorse Hill ",
+      "Ordered Product": "virgin olive oil ",
+      "Ordered Unit": "2L",
+      "Fresho Product": "Oil - Extra Virgin Olive",
+      "Fresho Qty": "1.0 Each (5L)",
+      "Other Comments": "add note 2L ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Gorse Hill ",
+      "Ordered Product": "Iron blank pumpkin",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pumpkin - French",
+      "Fresho Qty": "add note",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Gorse Hill ",
+      "Ordered Product": "PUMPKIN ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pumpkin - French",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Louis Cabral",
+      "Ordered Product": "oyster mushrooms",
+      "Ordered Unit": "30g",
+      "Fresho Product": "Mushrooms - Oyster",
+      "Fresho Qty": "0.03kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Louis Cabral",
+      "Ordered Product": "morel mushrooms ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushroom - Morel",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Half Cut Market",
+      "Ordered Product": "Whole milk",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Milk - Full Fat",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Half Cut Market",
+      "Ordered Product": "Washed large potatoes",
+      "Ordered Unit": "2kg ",
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": "2kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Half Cut Market",
+      "Ordered Product": "Sorrel ",
+      "Ordered Unit": "1",
+      "Fresho Product": "Sorrel",
+      "Fresho Qty": "1.0 Bunch ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Half Cut Market",
+      "Ordered Product": "whole eggs ",
+      "Ordered Unit": "x30",
+      "Fresho Product": "Eggs - Bristish Lion Stamped",
+      "Fresho Qty": "1 tray ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "Baby carrots",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Carrots - Chantenay",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "white washed selection potatoes ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": NaN,
+      "Other Comments": "note:  washed",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "parsley ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Parsley - Curly ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "gibbies?",
+      "Ordered Unit": "2",
+      "Fresho Product": "Kiwifruit ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "flower ",
+      "Ordered Unit": "1 pun",
+      "Fresho Product": "Micro Edible Flowers",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "1 large potato ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "cheap branded potato",
+      "Ordered Unit": " 1 sack",
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": "1.0 Sack (25kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "sprouts",
+      "Ordered Unit": "1 net ",
+      "Fresho Product": "Brussel Sprouts",
+      "Fresho Qty": "1.0 Net (9kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "VAC PACK GARLIC",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Garlic - Peeled",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "Cabbage - Red ",
+      "Ordered Unit": "1 SACK",
+      "Fresho Product": "Cabbage - Red",
+      "Fresho Qty": "25.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Old Dunnings Mill",
+      "Ordered Product": "sprouts",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "Brussel Sprouts",
+      "Fresho Qty": "1.0 Net (9kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": "Persimmons ",
+      "Ordered Unit": "6",
+      "Fresho Product": "Sharon Fruit",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": NaN,
+      "Ordered Unit": "1 bag ",
+      "Fresho Product": "Potato Starch ",
+      "Fresho Qty": "1.0 Bag (25kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": "Radish, watermelon",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Radish - Watermelon ",
+      "Fresho Qty": "RADW",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": "green bobby beans",
+      "Ordered Unit": "6kg ",
+      "Fresho Product": "Beans - Bobby ",
+      "Fresho Qty": NaN,
+      "Other Comments": "2.0 Box (3kg)",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": "thai red scud chillies",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Chillies - Red",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": "Dried butterbean",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Beans - Butter Dried ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": "iberico Tomatoes",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes  Black Crimee",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Holy Carrot",
+      "Ordered Product": "Oxalis Leaf Iron Cross",
+      "Ordered Unit": "2",
+      "Fresho Product": "Micro Butterfly Sorrel",
+      "Fresho Qty": "2.0 Punnet",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "Asparagus",
+      "Ordered Unit": "2 bunch",
+      "Fresho Product": "Asparagus",
+      "Fresho Qty": "1kg note: 2 bunch",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "watercress",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro watercress",
+      "Fresho Qty": NaN,
+      "Other Comments": "only for this customer",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "kale",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Kale - Curly",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "watercress ",
+      "Ordered Unit": "always ",
+      "Fresho Product": "Micro watercress",
+      "Fresho Qty": "history is MICRO WATERCRESS",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "medium eggs (180)",
+      "Ordered Unit": "1 case",
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": "6 tray",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "dry breadcrumbs",
+      "Ordered Unit": "1kg ",
+      "Fresho Product": "Bread Crumbs - Panko",
+      "Fresho Qty": "1.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "2x  vegan cream cheese",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Vegan Creamy 'Violife'",
+      "Fresho Qty": "2.0 Each (200g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": " Spanish mushrooms ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Button",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "dairy free flora",
+      "Ordered Unit": "1 tub",
+      "Fresho Product": "Spread - Butter Dairy Free",
+      "Fresho Qty": "1.0 Each (500g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "washing up liquid",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Washing Up Liquid - Fairy 'P&G Professional'",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "green almonds",
+      "Ordered Unit": NaN,
+      "Fresho Product": "MISC ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tudor Barn Eltham",
+      "Ordered Product": "sweetener sachets",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Canderel Sweeteners ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Burger and Beyond Borough Yards",
+      "Ordered Product": "Herb Large Sage Bunched",
+      "Ordered Unit": "(1 x 100g)",
+      "Fresho Product": "SAGE",
+      "Fresho Qty": "1 bunch",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Burger and Beyond Borough Yards",
+      "Ordered Product": "New Potatoes- Garden of Elveden",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes - Mids Norfolk UK ",
+      "Fresho Qty": NaN,
+      "Other Comments": "if any Burger cx order",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Burger and Beyond Borough Yards",
+      "Ordered Product": "Round Lettuce",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Lettuce - Round ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Burger and Beyond Borough Yards",
+      "Ordered Product": "Red Curly Kale ",
+      "Ordered Unit": "2 bags ",
+      "Fresho Product": "Kale - Red",
+      "Fresho Qty": "1kg ",
+      "Other Comments": "add note: 2 bags ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "White Horse Sundridge",
+      "Ordered Product": "Frozen garden peas",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "Frozen peas",
+      "Fresho Qty": "10kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "White Horse Sundridge",
+      "Ordered Product": "sliced red cabbage ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cabbage - Red Shredded Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "White Horse Sundridge",
+      "Ordered Product": "white bread ",
+      "Ordered Unit": "1",
+      "Fresho Product": "Bread Loaf - White Medium ",
+      "Fresho Qty": "1.0 each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "White Horse Sundridge",
+      "Ordered Product": "Hoummus",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Hummus",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's The Old Fishmarket",
+      "Ordered Product": "Onions - Roscoff",
+      "Ordered Unit": "1 string",
+      "Fresho Product": "Onions - Roscoff",
+      "Fresho Qty": "1 kg",
+      "Other Comments": "but always note how many string",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's The Old Fishmarket",
+      "Ordered Product": "Nero / Cavolo Nero",
+      "Ordered Unit": "1 small bunch",
+      "Fresho Product": "Cavolo Nero - Black Cabbage",
+      "Fresho Qty": NaN,
+      "Other Comments": "note: 1 small bunch",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's The Old Fishmarket",
+      "Ordered Product": "candy-striped beetroots",
+      "Ordered Unit": "1 punnet",
+      "Fresho Product": "Beetroot - Baby Candy",
+      "Fresho Qty": "1.0 Bunch ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's The Old Fishmarket",
+      "Ordered Product": "bunny carrots",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Carrots - Baby",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's The Old Fishmarket",
+      "Ordered Product": "HORSE RHUBARB",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Rhubarb",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Sankey's The Old Fishmarket",
+      "Ordered Product": "1 X 500 G DRY YEAST",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Yeast - dried fermipan 500g",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Stanhill Hotel Limited",
+      "Ordered Product": "pan chocolate",
+      "Ordered Unit": "1  BOX",
+      "Fresho Product": "Pain Au Chocolat",
+      "Fresho Qty": "1.0 Box (70 x 75g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Stanhill Hotel Limited",
+      "Ordered Product": "Breakfast Muffins",
+      "Ordered Unit": "1 CASE",
+      "Fresho Product": "Breakfast Muffins",
+      "Fresho Qty": "8.0 Each (6)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Stanhill Hotel Limited",
+      "Ordered Product": "processed garlic",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Garlic - Peeled",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Stanhill Hotel Limited",
+      "Ordered Product": "nice dates",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Dates - Pitted",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The White Hart Wadhurst",
+      "Ordered Product": "brown mushrooms ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushroom - Chesnut ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Lamberhurst Golf Club",
+      "Ordered Product": "Pink beetroot",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Beetroot - Candy",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Lamberhurst Golf Club",
+      "Ordered Product": "cress",
+      "Ordered Unit": "6",
+      "Fresho Product": "salad - cress",
+      "Fresho Qty": "6.0 Punnet",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Lamberhurst Golf Club",
+      "Ordered Product": NaN,
+      "Ordered Unit": NaN,
+      "Fresho Product": "Puff Pastry Rolls",
+      "Fresho Qty": " Each (4.25Kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Lamberhurst Golf Club",
+      "Ordered Product": "BUTTERNUT MUSHROOM",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Button",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Papermakers Arms Plaxtol Ltd",
+      "Ordered Product": "kale",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Kale - Curly",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bulls Head Inn Cranleigh",
+      "Ordered Product": "corn",
+      "Ordered Unit": "8pkt",
+      "Fresho Product": "Corn - On The Cob",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Rainbow House Takeaway",
+      "Ordered Product": "large cup mushroom",
+      "Ordered Unit": "1 box ",
+      "Fresho Product": "Mushrooms - Close Cup",
+      "Fresho Qty": "1.0 Box (2.5kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "GEORGE & DRAGON",
+      "Ordered Product": "vacuum packed sweetcorn",
+      "Ordered Unit": "3 packs ",
+      "Fresho Product": "Corn on the cob ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "GEORGE & DRAGON",
+      "Ordered Product": "mild cheddar",
+      "Ordered Unit": "5kg",
+      "Fresho Product": "Cheddar",
+      "Fresho Qty": "5kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "GEORGE & DRAGON",
+      "Ordered Product": "STEAK MUSHROOM NORMALLY ORDER",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Portobello",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "GEORGE & DRAGON",
+      "Ordered Product": "FROZEN BABY ONIONS",
+      "Ordered Unit": "1  bag",
+      "Fresho Product": "Frozen Onions - Button",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "green milk ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Semi skimmed Milk ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "artichokes in oil",
+      "Ordered Unit": "1 tub ",
+      "Fresho Product": "Artichokes - In Sunflower Oil",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "green top milk",
+      "Ordered Unit": "6",
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": "6 EACH (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "golden syrup",
+      "Ordered Unit": "1 ltr",
+      "Fresho Product": "Golden Syrup",
+      "Fresho Qty": "2 Tin (454g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "caster sugar ",
+      "Ordered Unit": "2 bags",
+      "Fresho Product": "Sugar - Caster",
+      "Fresho Qty": "4 kg ",
+      "Other Comments": "note 2 bags ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "Samphire",
+      "Ordered Unit": "1 BOX",
+      "Fresho Product": "Samphire",
+      "Fresho Qty": "1 kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "quince jelly",
+      "Ordered Unit": "1",
+      "Fresho Product": "Quince Jelly",
+      "Fresho Qty": "1.0 Jar",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "plain flour ",
+      "Ordered Unit": "2kg",
+      "Fresho Product": "Flour - Plain",
+      "Fresho Qty": "2.0 Each (1.5kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "cress",
+      "Ordered Unit": "2",
+      "Fresho Product": "mustard cress or Salad - Cress ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "capers",
+      "Ordered Unit": "1 tub ",
+      "Fresho Product": "Capers",
+      "Fresho Qty": "1.0 Each (1.5kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "apples",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Apples - Mixed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "cabbage",
+      "Ordered Unit": "6ea",
+      "Fresho Product": "Cabbage - White",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": NaN,
+      "Ordered Unit": NaN,
+      "Fresho Product": "Watercress",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "Swiss/rainbow chard",
+      "Ordered Unit": "2kg ",
+      "Fresho Product": "Chard - Swiss",
+      "Fresho Qty": "2 Each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "rye bread",
+      "Ordered Unit": "2",
+      "Fresho Product": "Rye bread pumpernickel 500g",
+      "Fresho Qty": "2.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": " 1 tub fajita mix",
+      "Ordered Unit": NaN,
+      "Fresho Product": "MISC ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": " meet suet",
+      "Ordered Unit": "2 packs",
+      "Fresho Product": "Beef - Suet",
+      "Fresho Qty": "2.0 Each (3kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "6 bottles cream",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cream - Double",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "fresh red slaw mix",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Coleslaw - Mix Red Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "masala paste",
+      "Ordered Unit": "1 tub ",
+      "Fresho Product": "Tikka Masala Paste",
+      "Fresho Qty": "1.0 Bottle (1.15Kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "green lentils",
+      "Ordered Unit": "1 bag",
+      "Fresho Product": "Lentils - Green Dried",
+      "Fresho Qty": "1.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "5 bags frozen cauliflower florets",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Frozen Cauliflower",
+      "Fresho Qty": "5.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "Buttermilk ",
+      "Ordered Unit": "1 bucket ",
+      "Fresho Product": "Buttermilk ",
+      "Fresho Qty": "1.0 Each (5L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "FISH SAUCE",
+      "Ordered Unit": "1",
+      "Fresho Product": "Fish Sauce",
+      "Fresho Qty": "1.0 Bottle",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "Green peppercorn",
+      "Ordered Unit": "4 tubs",
+      "Fresho Product": "Peppercorns - Green in Brine",
+      "Fresho Qty": "4.0 Each (800ml)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "gluten free panko",
+      "Ordered Unit": " 1 bag",
+      "Fresho Product": "Bread Crumbs - Gluten Free",
+      "Fresho Qty": "1.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "Long grain rice",
+      "Ordered Unit": "1 kg ",
+      "Fresho Product": "Rice - Long Grain",
+      "Fresho Qty": "1.0 Bag (5kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "Vanilla paste ",
+      "Ordered Unit": "1 tub",
+      "Fresho Product": "Vanilla Paste",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "plain flour",
+      "Ordered Unit": "4 BAGS??",
+      "Fresho Product": "Flour - Plain",
+      "Fresho Qty": "4.0 Each (1.5kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "dickey carrots",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Carrots",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "1 stem ginger",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Stem Ginger",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Thatched Tavern",
+      "Ordered Product": "cannelloni beans ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cannellini Beans",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Duck ",
+      "Ordered Product": "baby carrot ",
+      "Ordered Unit": "1 kg ",
+      "Fresho Product": "Carrots - Baby",
+      "Fresho Qty": "5.0 Bunch add note: 1kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Duck ",
+      "Ordered Product": "Broccoli - Tenderstem\r\n",
+      "Ordered Unit": "1 BAG",
+      "Fresho Product": "Broccoli - Tenderstem",
+      "Fresho Qty": "1kg but add note 1 bag ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Duck ",
+      "Ordered Product": "SQUASH ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Squash - Mixed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Duck ",
+      "Ordered Product": "MIXED PUMPKIN",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Squash - Mixed",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Duck ",
+      "Ordered Product": "CHESNUT",
+      "Ordered Unit": "1 PACK",
+      "Fresho Product": "Chestnut (Vacuum Pack)",
+      "Fresho Qty": "1.0 Each (500g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "The Duck ",
+      "Ordered Product": "FRESH cranberries",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cranberries",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "watercress",
+      "Ordered Unit": "3 bags ",
+      "Fresho Product": "Watercress",
+      "Fresho Qty": "3 each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": NaN,
+      "Ordered Unit": "5 punnet ",
+      "Fresho Product": "Eggs - Quail",
+      "Fresho Qty": "5.0 Each (18)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "chard ",
+      "Ordered Unit": "500g",
+      "Fresho Product": "Chard - Red",
+      "Fresho Qty": "0.5kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Eggs - Quail",
+      "Ordered Unit": "3 TRAYS",
+      "Fresho Product": "3.0 Each (18)",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "PEELED CARROT",
+      "Ordered Unit": "20KG",
+      "Fresho Product": "Carrots - Peeled Halved",
+      "Fresho Qty": "20.0 Kg",
+      "Other Comments": "not surwe",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Turkins peppers",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Peppers - Turkish",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Brussel Tops",
+      "Ordered Unit": "1 net",
+      "Fresho Product": "Brussel Tops",
+      "Fresho Qty": "5.0 Kg",
+      "Other Comments": "add note: 1 net ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Mushrooms - Field / Flat",
+      "Ordered Unit": "20 x",
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": "2.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Samphire x 1",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Samphire",
+      "Fresho Qty": "1.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Green finger chillies",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Chillies - Green",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": " Cooked sweetcorn",
+      "Ordered Unit": "1 BOX",
+      "Fresho Product": "Corn - On The Cob (Cooked)",
+      "Fresho Qty": "1.0 Box (12 x 2)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Lions mane mushrooms",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Lions Mane",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "Ratte POT ",
+      "Ordered Unit": "1 BOX",
+      "Fresho Product": "Potatoes - La Ratte",
+      "Fresho Qty": "5.0 Kg",
+      "Other Comments": "ADD NOTE 1 BOX ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "William Bray",
+      "Ordered Product": "collared greens",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cabbage - Spring Green",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "October Gallery",
+      "Ordered Product": "mix fruit cocktail",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Fruit Salad Mix",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "button mushroom ",
+      "Ordered Unit": "1",
+      "Fresho Product": "Mushrooms - Button ",
+      "Fresho Qty": "1 box ",
+      "Other Comments": "only mentioned 1 but history is boxes ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "flat cup mush",
+      "Ordered Unit": "1 tray ",
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "2kg diced Thames fruit",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pimm's Mix",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "micro baby chard , red ruby",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Red Chard",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "Pimm’s Fruit ",
+      "Ordered Unit": "1 tub",
+      "Fresho Product": "is 2kg ",
+      "Fresho Qty": "always note: 1 tub ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "Halloumi",
+      "Ordered Unit": "2",
+      "Fresho Product": "Cheese - Halloumi",
+      "Fresho Qty": "2 EACH",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "baby capers",
+      "Ordered Unit": "1 jar ",
+      "Fresho Product": "Capers",
+      "Fresho Qty": "1 EACH (1.5kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "micro red ruby chard",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Red Chard",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "Halloumi cheese ",
+      "Ordered Unit": "2 small block ",
+      "Fresho Product": "Cheese - Halloumi",
+      "Fresho Qty": "2 Each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "Pecorino cheese",
+      "Ordered Unit": " 1 small block",
+      "Fresho Product": "Pecorino - Romano",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": NaN,
+      "Ordered Unit": NaN,
+      "Fresho Product": "Meringue Nests",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "ruby chard ",
+      "Ordered Unit": "1 small tub",
+      "Fresho Product": "Micro Red Chard",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "koffman fries",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Frozen Chips - Blue 10mm 'Koffmann's'",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "yoghurt",
+      "Ordered Unit": "1 tub ",
+      "Fresho Product": "Yoghurt - Greek",
+      "Fresho Qty": "1kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "1 LARGE BAG POTATOES / koffman pot",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Potatoes 'Koffman's' Washed",
+      "Fresho Qty": "1.0 Bag (20kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "micro mixed leaf",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Salad Mix",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "sack of pot",
+      "Ordered Unit": "1 large",
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": "1.0 Sack (25kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "frozen peas",
+      "Ordered Unit": "1 box ",
+      "Fresho Product": "Frozen Peas",
+      "Fresho Qty": "10.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "BABY MICRO MIXED LEA",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Salad Mix",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "sack potatoes",
+      "Ordered Unit": "apc",
+      "Fresho Product": "Potatoes - White",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": NaN,
+      "Ordered Unit": NaN,
+      "Fresho Product": "Tomatoes (Tinned) Mutti - San Marzano Peeled Tomatoes",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Leander Club (3429)",
+      "Ordered Product": "BLACKCURRANTS",
+      "Ordered Unit": "5 PUN ",
+      "Fresho Product": "Frozen Blackcurrants",
+      "Fresho Qty": "1.0 Bag (1kg)",
+      "Other Comments": "UNSURE ADD NOTE ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hastings Direct",
+      "Ordered Product": "Mushroom Mixed Cultivate",
+      "Ordered Unit": "5 x 500g",
+      "Fresho Product": "Mushrooms - Wild",
+      "Fresho Qty": "2.5 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hastings Direct",
+      "Ordered Product": "OATLY DRINK BARISTA EDITION",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Oat Milk - Professional",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hastings Direct",
+      "Ordered Product": "PEPPER SWEET LONG (ROMERO)",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Peppers - Romano",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hastings Direct",
+      "Ordered Product": "egg",
+      "Ordered Unit": "3 x 5 Dozen",
+      "Fresho Product": "Eggs - Free Range Medium",
+      "Fresho Qty": "6.0 Tray (30)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hastings Direct",
+      "Ordered Product": "Butter Foil Portions",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Butter - Portions",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hastings Direct",
+      "Ordered Product": "OATLY DRINK BARISTA EDITION",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Oat Milk - Professional",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Vanquis Bank",
+      "Ordered Product": "Mushroom Ungraded (Class Ii)",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hartfield House",
+      "Ordered Product": "Spinach Loose Leaf",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Spinach - Baby Pousse",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Newstead Wood School E Foods",
+      "Ordered Product": "Herbs Basil Red Micro",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Basil",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "Prepared Vegetable Stir Fry Mix",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Stir Fry Mix Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "Prepared Vegetable Mixed Diced",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Vegetable Mix - Diced",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": " Mushroom Catering",
+      "Ordered Unit": "1x2.72Kg",
+      "Fresho Product": "Mushrooms - Button",
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "Pumpkin Medium",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Pumpkin - Halloween",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "BREAD PREMIUM GRANARY MEDIUM",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Bread - Granary Thick",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "MUSHROOM UNGRADED",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "Turnip Baton Prepared",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Turnips - Baton",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Tiger Tavern",
+      "Ordered Product": "2L fresh lime",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Juice - Lime 'Squeezing House'",
+      "Fresho Qty": "2.0 Bottle (1L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Smyth Lodge Care Home E Foods",
+      "Ordered Product": "Potatoes - Jacket Size 50",
+      "Ordered Unit": "50x1ea UO 2",
+      "Fresho Product": NaN,
+      "Fresho Qty": "2.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Smyth Lodge Care Home E Foods",
+      "Ordered Product": "Mushrooms - Button",
+      "Ordered Unit": "4x 2.72Kg",
+      "Fresho Product": NaN,
+      "Fresho Qty": "4.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Smyth Lodge Care Home E Foods",
+      "Ordered Product": "Cabbage Savoy Green",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cabbage - Savoy",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Smyth Lodge Care Home E Foods",
+      "Ordered Product": "Cabbage Green",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cabbage - Savoy",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Smyth Lodge Care Home E Foods",
+      "Ordered Product": "Prepared Butternut Squash",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Squash - Butternut Whole Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "WINCHESTER HOUSE",
+      "Ordered Product": "Mushrooms - Chestnut",
+      "Ordered Unit": "1x 2.27Kg",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "WINCHESTER HOUSE",
+      "Ordered Product": "Mushrooms - Field / Flat",
+      "Ordered Unit": "1x 1.82Kg",
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Potatoes - Jacket Size 60",
+      "Ordered Unit": "1x 1ea UO 100",
+      "Fresho Product": NaN,
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "iceberg ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Lettuce - Iceberg",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Melon Limelon ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Miscellaneous",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Milk Semi Skimmed Lactose Free",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Milk - Lactose Free",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Mayonnaise ",
+      "Ordered Unit": "1 TUB ",
+      "Fresho Product": "Mayonnaise - Kennys Premium",
+      "Fresho Qty": "1.0 Each (5L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Genius Bread White Loaf Sliced Gluten Free",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Bread Loaf - Gluten free",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Genius Bread White Loaf Sliced Gluten Free",
+      "Ordered Unit": "4 x 535g",
+      "Fresho Product": "Bread Loaf - Gluten free",
+      "Fresho Qty": "4.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "WEALD HEIGHTS",
+      "Ordered Product": "Potatoes - Jacket Size 50",
+      "Ordered Unit": "50 x1ea UO 2",
+      "Fresho Product": NaN,
+      "Fresho Qty": "2.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Elizabeth Court - 08047113 E Foods",
+      "Ordered Product": "Potatoes - Jacket Size 60",
+      "Ordered Unit": "60x1ea",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Elizabeth Court - 08047113 E Foods",
+      "Ordered Product": "Potato Mids Linroyale (Black)",
+      "Ordered Unit": NaN,
+      "Fresho Product": NaN,
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Elizabeth Court - 08047113 E Foods",
+      "Ordered Product": "Prepared Carrot & Swede Diced",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Carrot & Swede - Mixed Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Elizabeth Court - 08047113 E Foods",
+      "Ordered Product": "Carrot & Swede Diced Prepared",
+      "Ordered Unit": " 2.5KG ",
+      "Fresho Product": "Carrot & Swede - Mixed Prepared",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hall Grange (5170) E Foods",
+      "Ordered Product": "Potatoes - Jacket Size 60",
+      "Ordered Unit": " 1x1ea UO 50",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hall Grange (5170) E Foods",
+      "Ordered Product": "Mayonnaise",
+      "Ordered Unit": "5 L",
+      "Fresho Product": "Hellmann's Mayonnaise",
+      "Fresho Qty": "1.0 Each (5L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "jacket 60",
+      "Ordered Unit": "1x1ea UO 50",
+      "Fresho Product": NaN,
+      "Fresho Qty": "1.0 Box",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": NaN,
+      "Ordered Product": "Genius Bread Multiseed Sliced Gluten Free 2 x535g",
+      "Ordered Unit": NaN,
+      "Fresho Product": "MISC ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Burwood Grange Care Home E Foods",
+      "Ordered Product": "egg ",
+      "Ordered Unit": "1x60ea UO 2",
+      "Fresho Product": "Eggs - Bristish Lion Stamped",
+      "Fresho Qty": "4 trays ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kent College Pembury ",
+      "Ordered Product": "Bean Shoots /Beanshoots",
+      "Ordered Unit": NaN,
+      "Fresho Product": " Bean sprouts",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": NaN,
+      "Ordered Product": "Herbs Pea Shoots",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Micro Cress - Pea Shoots Tendril",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Ayton House",
+      "Ordered Product": "Papaya",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Papaya Thai",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "WEALD HEIGHTS",
+      "Ordered Product": "Prepared Swede Diced",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Prepared Swede Diced",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cavell Park",
+      "Ordered Product": "Cheese Brie French",
+      "Ordered Unit": "1kg ",
+      "Fresho Product": "Cheese - Brie",
+      "Fresho Qty": "1.0 kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cavell Park",
+      "Ordered Product": "Cherry ",
+      "Ordered Unit": "6x500g",
+      "Fresho Product": "Cherries",
+      "Fresho Qty": "3.0 Kg",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Kent College Pembury",
+      "Ordered Product": "Cheese Soft Full Fat",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cream Cheese - Soft",
+      "Fresho Qty": "1.0 Each (2kg)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Hall Grange (5170) E Foods",
+      "Ordered Product": "Bread Finger Rolls 1x6ea Uo3",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Miscellaneous",
+      "Fresho Qty": "18.0 Each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Liberham Lodge - E F Group",
+      "Ordered Product": "Herb Basil Green Micro ",
+      "Ordered Unit": "1x25g",
+      "Fresho Product": "Micro  Basil",
+      "Fresho Qty": "18.0 Each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Liberham Lodge - E F Group",
+      "Ordered Product": "Prepared Soup Mix Minestrone ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Minestrone Mix - Prepared UK ",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Liberham Lodge - E F Group",
+      "Ordered Product": "Lettuce Endive Fancy ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Lettuce - Frisee",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Liberham Lodge - E F Group",
+      "Ordered Product": "Bread Premium Granary Medium",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Bread - Granary Thick",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Liberham Lodge - E F Group",
+      "Ordered Product": "Prepared Soup Mix Minestrone ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Minestrone Mix - Prepared UK",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Genius Gluten Free Sliced White Loaves \n",
+      "Ordered Unit": "1x535g",
+      "Fresho Product": "Misc",
+      "Fresho Qty": "18.0 Each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Oakleigh - 08040113 E Foods",
+      "Ordered Product": "Genius Bread Multiseed Sliced Gluten Free",
+      "Ordered Unit": "1x535g",
+      "Fresho Product": "Misc",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "Mushroom Ungraded",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Mushrooms - Field / Flat",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "Prepared Vegtable Mixed Diced ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Vegetable Mix - Diced",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Cranmer Court (1012) E Foods",
+      "Ordered Product": "Grapefruit Ruby Red",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Grape fruit pink",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Falkland Grange",
+      "Ordered Product": "Lettuce Chard Red",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Chard - Red",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": "whole milk ",
+      "Ordered Unit": "10 pints ",
+      "Fresho Product": "Milk - Full Fat",
+      "Fresho Qty": "2 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": "semi skimmed milk ",
+      "Ordered Unit": "12 pints ",
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": "3 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": "Milk - Semi Skimmed",
+      "Ordered Unit": "8 pints",
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": "2.0 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": "Milk - Full Fat",
+      "Ordered Unit": "16 pints",
+      "Fresho Product": "Milk - Full Fat",
+      "Fresho Qty": "5.0 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": "Milk - Semi Skimmed",
+      "Ordered Unit": "16 pints",
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": "5.0 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": "Whole Milk",
+      "Ordered Unit": "16 pints",
+      "Fresho Product": "Milk - Skimmed",
+      "Fresho Qty": "5.0 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": NaN,
+      "Ordered Unit": "20 pints",
+      "Fresho Product": "Milk - Full Fat",
+      "Fresho Qty": "7.0 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": NaN,
+      "Ordered Unit": "20 pints",
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": "7.0 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": NaN,
+      "Ordered Unit": "16 pints",
+      "Fresho Product": "Milk - Skimmed",
+      "Fresho Qty": "5.0 Each (2L)",
+      "Other Comments": "always note: how many pints",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Bethany Lodge",
+      "Ordered Product": NaN,
+      "Ordered Unit": "24 pints ",
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": "8 Each ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Charters Restaurant",
+      "Ordered Product": "Cream Whipping",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cream - whipping 2kg",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Charters Restaurant",
+      "Ordered Product": "Cheese Stilton Wedge",
+      "Ordered Unit": "220g",
+      "Fresho Product": "Cheese - Stilton",
+      "Fresho Qty": "0.220 kg ",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Charters Restaurant",
+      "Ordered Product": "Milk - Semi Skimmed",
+      "Ordered Unit": "6 x568ml",
+      "Fresho Product": "Milk - Semi Skimmed",
+      "Fresho Qty": "2.0 Each (2L)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Renegade Urban Winery",
+      "Ordered Product": "mixed olive ",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Olives - Greek Pitted Mixed 'Dell'ami'",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Coty UK - Ashford",
+      "Ordered Product": "Melon Galia Double",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Melon - Galia",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Coty UK - Ashford",
+      "Ordered Product": "Butter Foil Portions 100 x 6.2g",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Butter - Portions",
+      "Fresho Qty": "1.0 Box (100 x 7g)",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Coty UK - Ashford",
+      "Ordered Product": "Courgette Standard",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Courgette",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "ORCHARD CENTRE",
+      "Ordered Product": " savoy cabbage",
+      "Ordered Unit": "4 box",
+      "Fresho Product": "Cabbage - Savoy",
+      "Fresho Qty": "32.0 Each",
+      "Other Comments": "add note : 4 box ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "ORCHARD CENTRE",
+      "Ordered Product": "4 rolls 45cm clingflim",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Cling Film - Large 450mm x 300m",
+      "Fresho Qty": "4.0 Each",
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "ORCHARD CENTRE",
+      "Ordered Product": "frozen chips",
+      "Ordered Unit": "60 kg ",
+      "Fresho Product": "Chips",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Burger and Beyond Shoreditch",
+      "Ordered Product": "Red Curly Kale",
+      "Ordered Unit": "1 bag ",
+      "Fresho Product": "Kale - Red",
+      "Fresho Qty": "1 kg ",
+      "Other Comments": "add note: 1 bag ",
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    },
+    {
+      "Customer Name in Fresho": "Thackeray's",
+      "Ordered Product": "chicoria",
+      "Ordered Unit": NaN,
+      "Fresho Product": "Dandelion Leaves",
+      "Fresho Qty": NaN,
+      "Other Comments": NaN,
+      "Unnamed: 6": NaN,
+      "created_at": "2026-06-17 23:04:19"
+    }
+  ]
 }
