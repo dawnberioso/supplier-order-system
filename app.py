@@ -503,7 +503,7 @@ else:
                         st.error(f"❌ Save failed: {str(e)}")
 
             with col2:
-                if st.button("🗑️ Delete", use_container_width=True):
+                if st.button("🗑️ Delete", use_container_width=True, key="delete_rules_btn"):
                     if st.session_state.data_handler.delete_supplier_rules(selected_supplier):
                         st.success("✅ Rules deleted!")
                         st.rerun()
@@ -779,7 +779,7 @@ else:
 
             st.markdown("---")
 
-            if st.button("🗑️ Delete", type="secondary", use_container_width=True):
+            if st.button("🗑️ Delete", type="secondary", use_container_width=True, key="delete_supplier_btn"):
                 if st.session_state.data_handler.delete_supplier(selected_supplier):
                     st.success("✅ Deleted!")
                     st.rerun()
