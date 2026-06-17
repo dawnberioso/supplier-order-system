@@ -377,6 +377,8 @@ else:
             with col2:
                 search_product = st.text_input("📦 Product:", value="", placeholder="Search product...")
             with col3:
+                # Spacer to align the button with the labelled inputs beside it
+                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
                 if st.button("🗑️ Clear", use_container_width=True):
                     search_customer = ""
                     search_product = ""
