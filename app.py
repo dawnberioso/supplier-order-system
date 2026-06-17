@@ -205,7 +205,7 @@ st.markdown("""
 
     /* Styled read-only rules table */
     .styled-rules-wrap {
-        max-height: 440px;
+        max-height: 72vh;
         overflow: auto;
         border-radius: 10px;
         border: 1px solid rgba(3, 11, 58, 0.12);
@@ -507,20 +507,16 @@ else:
                         else:
                             st.error("❌ Delete failed")
             else:
-                # ----- View mode: full-screen, searchable, expandable overview -----
+                # ----- View mode: styled overview, scrollable through all products -----
                 st.markdown("<h4>👁️ Rules Overview</h4>", unsafe_allow_html=True)
-                st.caption("Hover the table and use the 🔍 search and ⛶ fullscreen icons at its top-right. "
-                           "Turn on ✏️ Edit Rules mode in the sidebar to make changes.")
+                st.caption("Scroll inside the table to browse every product. "
+                           "Use the search boxes above to narrow it, or turn on "
+                           "✏️ Edit Rules mode in the sidebar to make changes.")
                 _overview = filtered_df.rename(columns=_col_labels).fillna("")
-                _styled = _overview.style.set_properties(
-                    subset=["Customer"], **{"color": "#030B3A", "font-weight": "bold"}
-                )
-                st.dataframe(
-                    _styled,
-                    use_container_width=True,
-                    hide_index=True,
-                    height=620,
-                )
+                _table_html = _overview.to_html(index=False, escape=True,
+                                                classes="styled-rules-table", border=0)
+                st.markdown(f"<div class='styled-rules-wrap'>{_table_html}</div>",
+                            unsafe_allow_html=True)
 
             # Display statistics
             st.markdown("---")
