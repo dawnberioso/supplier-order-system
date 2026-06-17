@@ -362,6 +362,8 @@ with st.sidebar:
         selected_supplier = st.selectbox(
             "🏭 Select Supplier:",
             suppliers,
+            index=None,
+            placeholder="Choose a supplier...",
             key="supplier_select"
         )
         st.session_state.current_supplier = selected_supplier
@@ -400,7 +402,20 @@ with st.sidebar:
 
 # Main content area
 if not selected_supplier:
-    st.info("👈 Select a supplier from the sidebar to get started.")
+    st.markdown(
+        """
+        <div style='text-align: center; padding: 3rem 1rem;'>
+            <h2>👋 Hi, Dawn!</h2>
+            <p style='font-size: 1.25rem; color: #444; margin-top: 0.5rem;'>
+                Which supplier are you looking for?
+            </p>
+            <p style='font-size: 1rem; color: #888; margin-top: 1.5rem;'>
+                👈 Pick one from the <b>🏭 Select Supplier</b> dropdown in the sidebar to get started.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 else:
     # Create tabs
     tab1, tab_fav, tab2, tab3, tab4, tab5 = st.tabs([
