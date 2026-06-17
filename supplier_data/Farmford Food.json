@@ -2,7 +2,7 @@
   "supplier_name": "Farmford Food",
   "description": "",
   "created_at": "2026-06-16T00:09:44.416572",
-  "last_updated": "2026-06-17T15:24:27.290028",
+  "last_updated": "2026-06-17T15:25:24.289023",
   "rules": [
     {
       "customer": "Charles Bryant Private Chef",
@@ -115,35 +115,98 @@
     {
       "customer": "Imad's Syrian Kitchen",
       "ordered_product": "Prep Onion Diced",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Onions - Chopped",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Imad's Syrian Kitchen",
       "ordered_product": "Prep Potato Koffman's Peeled",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Peeled and cut Koffmann Potato",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Imad's Syrian Kitchen",
       "ordered_product": "Romero Pepper",
-      "ordered_unit": null,
+      "ordered_unit": NaN,
       "fresho_product": "Pepper - Red Pointy",
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
     },
     {
       "customer": "Imad's Syrian Kitchen",
       "ordered_product": "Tinned Artichokes",
       "ordered_unit": "TIN  2.650kg ",
       "fresho_product": "Artichoke Hearts Whole In Brine",
+      "fresho_qty": NaN,
+      "other_comments": NaN,
+      "created_at": NaN
+    },
+    {
+      "customer": "Imad's Syrian Kitchen",
+      "ordered_product": "double cream",
+      "ordered_unit": null,
+      "fresho_product": "normal double cream",
+      "fresho_qty": null,
+      "other_comments": "not cotteswold ",
+      "created_at": null
+    },
+    {
+      "customer": null,
+      "ordered_product": null,
+      "ordered_unit": null,
+      "fresho_product": null,
+      "fresho_qty": null,
+      "other_comments": null,
+      "created_at": null
+    },
+    {
+      "customer": null,
+      "ordered_product": null,
+      "ordered_unit": null,
+      "fresho_product": null,
+      "fresho_qty": null,
+      "other_comments": null,
+      "created_at": null
+    },
+    {
+      "customer": null,
+      "ordered_product": null,
+      "ordered_unit": null,
+      "fresho_product": null,
+      "fresho_qty": null,
+      "other_comments": null,
+      "created_at": null
+    },
+    {
+      "customer": null,
+      "ordered_product": null,
+      "ordered_unit": null,
+      "fresho_product": null,
+      "fresho_qty": null,
+      "other_comments": null,
+      "created_at": null
+    },
+    {
+      "customer": null,
+      "ordered_product": null,
+      "ordered_unit": null,
+      "fresho_product": null,
+      "fresho_qty": null,
+      "other_comments": null,
+      "created_at": null
+    },
+    {
+      "customer": null,
+      "ordered_product": null,
+      "ordered_unit": null,
+      "fresho_product": null,
       "fresho_qty": null,
       "other_comments": null,
       "created_at": null
