@@ -374,6 +374,12 @@ with st.sidebar:
         if st.button("🔄 Refresh", use_container_width=True):
             st.rerun()
 
+    st.toggle(
+        "✏️ Edit Rules mode",
+        key="edit_rules_mode",
+        help="On: edit the rules table. Off: browse the full-screen Rules Overview."
+    )
+
     st.markdown("---")
     st.markdown("<h3>💾 Save Status</h3>", unsafe_allow_html=True)
 
@@ -451,64 +457,70 @@ else:
                 "created_at": "Created At",
             }
 
-            # Styled read-only view: bold capitalized headers, navy-bold customer names
-            st.markdown("<h4>👁️ Rules Overview</h4>", unsafe_allow_html=True)
-            _preview = filtered_df.rename(columns=_col_labels).fillna("")
-            _capped = _preview.head(200)
-            _table_html = _capped.to_html(index=False, escape=True,
-                                          classes="styled-rules-table", border=0)
-            st.markdown(f"<div class='styled-rules-wrap'>{_table_html}</div>",
-                        unsafe_allow_html=True)
-            if len(_preview) > 200:
-                st.caption(f"Showing first 200 of {len(_preview)} rows in the styled view — the full list is editable below.")
+            if st.session_state.get("edit_rules_mode", False):
+                # ----- Edit mode (toggled on from sidebar Quick Actions) -----
+                st.markdown("<h4>✏️ Edit Rules</h4>", unsafe_allow_html=True)
+                edited_df = st.data_editor(
+                    filtered_df,
+                    use_container_width=True,
+                    num_rows="dynamic",
+                    height=600,
+                    key="rules_editor",
+                    column_config={
+                        col: st.column_config.TextColumn(label)
+                        for col, label in _col_labels.items()
+                    }
+                )
 
-            # Editable data grid
-            st.markdown("<h4>✏️ Edit Rules</h4>", unsafe_allow_html=True)
-            edited_df = st.data_editor(
-                filtered_df,
-                use_container_width=True,
-                num_rows="dynamic",
-                key="rules_editor",
-                column_config={
-                    col: st.column_config.TextColumn(label)
-                    for col, label in _col_labels.items()
-                }
-            )
+                # Save changes
+                col1, col2, col3 = st.columns([1, 1, 2])
+                with col1:
+                    _filter_active = bool(search_customer or search_product)
+                    if st.button("💾 Save", use_container_width=True):
+                        try:
+                            if _filter_active and len(edited_df) < len(df):
+                                # Safety: a filter is active, so edited_df is only the
+                                # visible subset. Merge edits back into the full set
+                                # instead of overwriting and dropping hidden rows.
+                                full = df.copy()
+                                # Rows shown keep their edits; hidden rows are preserved.
+                                hidden = full.loc[~full.index.isin(filtered_df.index)]
+                                merged = pd.concat([hidden, edited_df], ignore_index=True)
+                                updated_rules = merged.to_dict('records')
+                                st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
+                            else:
+                                updated_rules = edited_df.to_dict('records')
+                            st.session_state.data_handler.update_supplier_rules(
+                                selected_supplier,
+                                updated_rules
+                            )
+                            st.success("✅ Rules saved successfully!")
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"❌ Save failed: {str(e)}")
 
-            # Save changes
-            col1, col2, col3 = st.columns([1, 1, 2])
-            with col1:
-                _filter_active = bool(search_customer or search_product)
-                if st.button("💾 Save", use_container_width=True):
-                    try:
-                        if _filter_active and len(edited_df) < len(df):
-                            # Safety: a filter is active, so edited_df is only the
-                            # visible subset. Merge edits back into the full set
-                            # instead of overwriting and dropping hidden rows.
-                            full = df.copy()
-                            # Rows shown keep their edits; hidden rows are preserved.
-                            hidden = full.loc[~full.index.isin(filtered_df.index)]
-                            merged = pd.concat([hidden, edited_df], ignore_index=True)
-                            updated_rules = merged.to_dict('records')
-                            st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
+                with col2:
+                    if st.button("🗑️ Delete", use_container_width=True, key="delete_rules_btn"):
+                        if st.session_state.data_handler.delete_supplier_rules(selected_supplier):
+                            st.success("✅ Rules deleted!")
+                            st.rerun()
                         else:
-                            updated_rules = edited_df.to_dict('records')
-                        st.session_state.data_handler.update_supplier_rules(
-                            selected_supplier,
-                            updated_rules
-                        )
-                        st.success("✅ Rules saved successfully!")
-                        st.rerun()
-                    except Exception as e:
-                        st.error(f"❌ Save failed: {str(e)}")
-
-            with col2:
-                if st.button("🗑️ Delete", use_container_width=True, key="delete_rules_btn"):
-                    if st.session_state.data_handler.delete_supplier_rules(selected_supplier):
-                        st.success("✅ Rules deleted!")
-                        st.rerun()
-                    else:
-                        st.error("❌ Delete failed")
+                            st.error("❌ Delete failed")
+            else:
+                # ----- View mode: full-screen, searchable, expandable overview -----
+                st.markdown("<h4>👁️ Rules Overview</h4>", unsafe_allow_html=True)
+                st.caption("Hover the table and use the 🔍 search and ⛶ fullscreen icons at its top-right. "
+                           "Turn on ✏️ Edit Rules mode in the sidebar to make changes.")
+                _overview = filtered_df.rename(columns=_col_labels).fillna("")
+                _styled = _overview.style.set_properties(
+                    subset=["Customer"], **{"color": "#030B3A", "font-weight": "bold"}
+                )
+                st.dataframe(
+                    _styled,
+                    use_container_width=True,
+                    hide_index=True,
+                    height=620,
+                )
 
             # Display statistics
             st.markdown("---")
