@@ -2,6 +2,16 @@
   "supplier_name": "Farmford Food",
   "description": "",
   "created_at": "2026-06-16T00:09:44.416572",
-  "last_updated": "2026-06-16T00:09:44.416584",
-  "rules": []
+  "last_updated": "2026-06-17T15:19:26.640626",
+  "rules": [
+    {
+      "customer": "Charles Bryant Private Chef",
+      "ordered_product": "prepped peeled jerulsalrm artichoke ",
+      "ordered_unit": "",
+      "fresho_product": "Artichokes - Jerusalem (Peeled) ",
+      "fresho_qty": "",
+      "other_comments": "",
+      "created_at": "2026-06-17 15:19:26"
+    }
+  ]
 }
