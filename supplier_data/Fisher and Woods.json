@@ -2,7 +2,7 @@
   "supplier_name": "Fisher & Woods",
   "description": "Imported from internal customer-product-rule sheet",
   "created_at": "2024-01-15T10:30:00",
-  "last_updated": "2026-06-17T14:55:59.207093",
+  "last_updated": "2026-06-17T14:58:22.751664",
   "rules": [
     {
       "NO SUPPLY: IGNORE": NaN,
