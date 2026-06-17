@@ -43,15 +43,20 @@ st.markdown("""
     .stTabs [data-baseweb="tab-list"] {
         background: linear-gradient(90deg, rgba(3, 11, 58, 0.05), rgba(58, 166, 249, 0.05));
         border-radius: 12px;
-        padding: 0.5rem;
+        padding: 0.6rem;
         margin-bottom: 1.5rem;
+        gap: 0.75rem;
+        display: flex;
     }
 
     .stTabs [data-baseweb="tab-list"] button {
-        font-size: 1.1em;
-        font-weight: 500;
+        font-size: 1.15em;
+        font-weight: 600;
         border-radius: 8px;
         transition: all 0.3s ease;
+        flex: 1 1 0;
+        padding: 0.85rem 1.25rem;
+        justify-content: center;
     }
 
     .stTabs [data-baseweb="tab-list"] button[aria-selected="true"] {
@@ -344,11 +349,11 @@ if not selected_supplier:
 else:
     # Create tabs
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "📋 Rules",
-        "➕ Add",
+        "📋 View & Edit Rules",
+        "➕ Add New Rule",
         "📈 Analytics",
-        "💾 Trade",
-        "ℹ️ Details"
+        "💾 Import / Export",
+        "ℹ️ Supplier Info"
     ])
 
     # Tab 1: View & Edit Rules
