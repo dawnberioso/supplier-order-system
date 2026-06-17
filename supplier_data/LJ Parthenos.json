@@ -2,7 +2,7 @@
   "supplier_name": "LJ Parthenos",
   "description": "Fruit & Veg",
   "created_at": "2026-06-17T08:08:28.475078",
-  "last_updated": "2026-06-17T08:09:08.279464",
+  "last_updated": "2026-06-17T12:26:28.433769",
   "rules": [
     {
       "Unnamed: 0": NaN,
@@ -2915,6 +2915,34 @@
       "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
+    },
+    {
+      "Unnamed: 0": "Asado",
+      "Order term": "herb ",
+      "Product in Fresho": "herb- baby",
+      "Fresho Qty": null,
+      "Supplier Remark": null,
+      "My Remarks": null,
+      "Unnamed: 6": null,
+      "Unnamed: 7": null,
+      "Unnamed: 8": null,
+      "Unnamed: 9": null,
+      "Unnamed: 10": null,
+      "created_at": null
+    },
+    {
+      "Unnamed: 0": null,
+      "Order term": null,
+      "Product in Fresho": null,
+      "Fresho Qty": null,
+      "Supplier Remark": null,
+      "My Remarks": null,
+      "Unnamed: 6": null,
+      "Unnamed: 7": null,
+      "Unnamed: 8": null,
+      "Unnamed: 9": null,
+      "Unnamed: 10": null,
+      "created_at": null
     }
   ]
 }
