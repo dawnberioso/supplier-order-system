@@ -205,7 +205,7 @@ st.markdown("""
 
     /* Styled read-only rules table */
     .styled-rules-wrap {
-        max-height: 72vh;
+        max-height: 82vh;
         overflow: auto;
         border-radius: 10px;
         border: 1px solid rgba(3, 11, 58, 0.12);
@@ -509,31 +509,28 @@ else:
             else:
                 # ----- View mode: styled overview, scrollable through all products -----
                 st.markdown("<h4>👁️ Rules Overview</h4>", unsafe_allow_html=True)
-                st.caption("Scroll inside the table to browse every product. "
-                           "Use the search boxes above to narrow it, or turn on "
-                           "✏️ Edit Rules mode in the sidebar to make changes.")
+                st.caption("🔍 To find a specific product, type it in the '📦 Product:' box above — "
+                           "the table filters as you type. Scroll inside the table to browse the rest.")
                 _overview = filtered_df.rename(columns=_col_labels).fillna("")
                 _table_html = _overview.to_html(index=False, escape=True,
                                                 classes="styled-rules-table", border=0)
                 st.markdown(f"<div class='styled-rules-wrap'>{_table_html}</div>",
                             unsafe_allow_html=True)
 
-            # Display statistics
-            st.markdown("---")
-            st.markdown("<h3>📊 Quick Stats</h3>", unsafe_allow_html=True)
-            col1, col2, col3, col4 = st.columns(4)
-
-            with col1:
-                st.metric("📋 Total", len(df))
-            with col2:
-                st.metric("👥 Customers", df['customer'].nunique())
-            with col3:
-                st.metric("📦 Products", df['ordered_product'].nunique())
-            with col4:
-                # Pull last_updated from the supplier file (not the rules rows)
-                _info = st.session_state.data_handler.get_supplier_info(selected_supplier)
-                _last = _info.get('last_updated', 'N/A')
-                st.metric("⏱️ Updated", str(_last)[:10] if _last != 'N/A' else "N/A")
+            # Compact, collapsed-by-default stats so the Overview gets the space
+            with st.expander("📊 Quick Stats", expanded=False):
+                col1, col2, col3, col4 = st.columns(4)
+                with col1:
+                    st.metric("📋 Total", len(df))
+                with col2:
+                    st.metric("👥 Customers", df['customer'].nunique())
+                with col3:
+                    st.metric("📦 Products", df['ordered_product'].nunique())
+                with col4:
+                    # Pull last_updated from the supplier file (not the rules rows)
+                    _info = st.session_state.data_handler.get_supplier_info(selected_supplier)
+                    _last = _info.get('last_updated', 'N/A')
+                    st.metric("⏱️ Updated", str(_last)[:10] if _last != 'N/A' else "N/A")
 
     # Favorites tab: most-ordered products, organized per customer
     with tab_fav:
