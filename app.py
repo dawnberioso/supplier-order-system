@@ -527,51 +527,82 @@ else:
                 _last = _info.get('last_updated', 'N/A')
                 st.metric("⏱️ Updated", str(_last)[:10] if _last != 'N/A' else "N/A")
 
-    # Favorites tab: most-ordered products for this supplier
+    # Favorites tab: most-ordered products, organized per customer
     with tab_fav:
         st.markdown(f"<h3>⭐ Favorites - {selected_supplier}</h3>", unsafe_allow_html=True)
-        st.caption("Add the products most often ordered from this supplier. Saved automatically per supplier.")
+        st.caption("Pick a customer, then list the products they order most. Each customer keeps their own favorites.")
 
-        favorites = st.session_state.data_handler.get_supplier_favorites(selected_supplier)
-        fav_cols = ["customer", "ordered_product", "fresho_product", "notes"]
-        fav_labels = {
-            "customer": "Customer",
-            "ordered_product": "Ordered Product",
-            "fresho_product": "Fresho Product",
-            "notes": "Notes",
-        }
+        all_favorites = st.session_state.data_handler.get_supplier_favorites(selected_supplier)
+        all_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
 
-        if favorites:
-            fav_df = pd.DataFrame(favorites)
-            for c in fav_cols:
-                if c not in fav_df.columns:
-                    fav_df[c] = ""
-            fav_df = fav_df[fav_cols]
+        # Build the customer list from existing rules and any saved favorites
+        customers = set()
+        for _r in all_rules:
+            _c = str(_r.get("customer", "")).strip()
+            if _c:
+                customers.add(_c)
+        for _f in all_favorites:
+            _c = str(_f.get("customer", "")).strip()
+            if _c:
+                customers.add(_c)
+        customer_list = sorted(customers)
+
+        if not customer_list:
+            st.info("👤 No customers yet. Add rules with customer names first, then come back to set their favorites.")
         else:
-            fav_df = pd.DataFrame(columns=fav_cols)
+            fav_customer = st.selectbox("👤 Select Customer:", customer_list, key="fav_customer_select")
 
-        st.markdown("<h4>✏️ Edit Favorites</h4>", unsafe_allow_html=True)
-        edited_fav = st.data_editor(
-            fav_df,
-            use_container_width=True,
-            num_rows="dynamic",
-            key="favorites_editor",
-            column_config={
-                col: st.column_config.TextColumn(label)
-                for col, label in fav_labels.items()
+            # Favorites belonging to the chosen customer
+            cust_favs = [f for f in all_favorites
+                         if str(f.get("customer", "")).strip() == fav_customer]
+            fav_cols = ["ordered_product", "fresho_product", "notes"]
+            fav_labels = {
+                "ordered_product": "Ordered Product",
+                "fresho_product": "Fresho Product",
+                "notes": "Notes",
             }
-        )
 
-        if st.button("💾 Save Favorites", use_container_width=False):
-            try:
-                st.session_state.data_handler.update_supplier_favorites(
-                    selected_supplier,
-                    edited_fav.fillna("").to_dict('records')
-                )
-                st.success("✅ Favorites saved successfully!")
-                st.rerun()
-            except Exception as e:
-                st.error(f"❌ Save failed: {str(e)}")
+            if cust_favs:
+                fav_df = pd.DataFrame(cust_favs)
+                for c in fav_cols:
+                    if c not in fav_df.columns:
+                        fav_df[c] = ""
+                fav_df = fav_df[fav_cols]
+            else:
+                fav_df = pd.DataFrame(columns=fav_cols)
+
+            st.markdown(f"<h4>✏️ Favorite Products for {fav_customer}</h4>", unsafe_allow_html=True)
+            edited_fav = st.data_editor(
+                fav_df,
+                use_container_width=True,
+                num_rows="dynamic",
+                key="favorites_editor",
+                column_config={
+                    col: st.column_config.TextColumn(label)
+                    for col, label in fav_labels.items()
+                }
+            )
+
+            if st.button("💾 Save Favorites", use_container_width=False):
+                try:
+                    # Preserve every other customer's favorites; replace only this customer's
+                    others = [f for f in all_favorites
+                              if str(f.get("customer", "")).strip() != fav_customer]
+                    new_for_customer = []
+                    for rec in edited_fav.fillna("").to_dict('records'):
+                        # Skip rows that are completely empty
+                        if not any(str(v).strip() for v in rec.values()):
+                            continue
+                        rec["customer"] = fav_customer
+                        new_for_customer.append(rec)
+                    merged = others + new_for_customer
+                    st.session_state.data_handler.update_supplier_favorites(
+                        selected_supplier, merged
+                    )
+                    st.success(f"✅ Favorites saved for {fav_customer}!")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"❌ Save failed: {str(e)}")
 
     # Tab 2: Add New Rule
     with tab2:
