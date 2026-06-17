@@ -217,6 +217,25 @@ class DataHandler:
     def delete_supplier_rules(self, supplier_name):
         return self.update_supplier_rules(supplier_name, [])
 
+    # ---------- favorites ----------
+
+    def get_supplier_favorites(self, supplier_name):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return []
+        return data.get("favorites", [])
+
+    def update_supplier_favorites(self, supplier_name, favorites):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            # Refuse to write if we couldn't read the existing file, so we
+            # never risk overwriting the supplier's rules with a blank file.
+            return False
+        data["favorites"] = favorites
+        data["last_updated"] = self._now()
+        return self._put_file(f"{supplier_name}.json", data,
+                              f"Update favorites for {supplier_name}")
+
     # ---------- config.json ----------
 
     def _add_to_config(self, supplier_name):

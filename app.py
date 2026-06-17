@@ -203,6 +203,49 @@ st.markdown("""
         mix-blend-mode: lighten;
     }
 
+    /* Styled read-only rules table */
+    .styled-rules-wrap {
+        max-height: 440px;
+        overflow: auto;
+        border-radius: 10px;
+        border: 1px solid rgba(3, 11, 58, 0.12);
+        margin-bottom: 0.5rem;
+    }
+
+    .styled-rules-table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 0.9rem;
+        font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+    }
+
+    .styled-rules-table th {
+        background: linear-gradient(135deg, var(--deep-navy), var(--light-blue));
+        color: white !important;
+        font-weight: 800;
+        text-align: left;
+        padding: 10px 14px;
+        position: sticky;
+        top: 0;
+        white-space: nowrap;
+    }
+
+    .styled-rules-table td {
+        padding: 8px 14px;
+        border-bottom: 1px solid rgba(3, 11, 58, 0.06);
+        color: #333;
+    }
+
+    .styled-rules-table tr:nth-child(even) td {
+        background: rgba(58, 166, 249, 0.04);
+    }
+
+    /* Customer column (first) in navy bold */
+    .styled-rules-table td:first-child {
+        color: var(--deep-navy);
+        font-weight: 700;
+    }
+
     /* Message styling */
     .stSuccess {
         background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(26, 186, 220, 0.1));
@@ -348,8 +391,9 @@ if not selected_supplier:
     st.info("👈 Select a supplier from the sidebar to get started.")
 else:
     # Create tabs
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    tab1, tab_fav, tab2, tab3, tab4, tab5 = st.tabs([
         "📋 View & Edit Rules",
+        "⭐ Favorites",
         "➕ Add New Rule",
         "📈 Analytics",
         "💾 Import / Export",
@@ -396,13 +440,39 @@ else:
 
             st.markdown(f"<p style='color: #666;'><b>📊 Showing {len(filtered_df)} of {len(df)} rules</b></p>", unsafe_allow_html=True)
 
+            # Proper, bold, capitalized column labels reused below
+            _col_labels = {
+                "customer": "Customer",
+                "ordered_product": "Ordered Product",
+                "ordered_unit": "Ordered Unit",
+                "fresho_product": "Fresho Product",
+                "fresho_qty": "Fresho Qty",
+                "other_comments": "Other Comments",
+                "created_at": "Created At",
+            }
+
+            # Styled read-only view: bold capitalized headers, navy-bold customer names
+            st.markdown("<h4>👁️ Rules Overview</h4>", unsafe_allow_html=True)
+            _preview = filtered_df.rename(columns=_col_labels).fillna("")
+            _capped = _preview.head(200)
+            _table_html = _capped.to_html(index=False, escape=True,
+                                          classes="styled-rules-table", border=0)
+            st.markdown(f"<div class='styled-rules-wrap'>{_table_html}</div>",
+                        unsafe_allow_html=True)
+            if len(_preview) > 200:
+                st.caption(f"Showing first 200 of {len(_preview)} rows in the styled view — the full list is editable below.")
+
             # Editable data grid
             st.markdown("<h4>✏️ Edit Rules</h4>", unsafe_allow_html=True)
             edited_df = st.data_editor(
                 filtered_df,
                 use_container_width=True,
                 num_rows="dynamic",
-                key="rules_editor"
+                key="rules_editor",
+                column_config={
+                    col: st.column_config.TextColumn(label)
+                    for col, label in _col_labels.items()
+                }
             )
 
             # Save changes
@@ -456,6 +526,52 @@ else:
                 _info = st.session_state.data_handler.get_supplier_info(selected_supplier)
                 _last = _info.get('last_updated', 'N/A')
                 st.metric("⏱️ Updated", str(_last)[:10] if _last != 'N/A' else "N/A")
+
+    # Favorites tab: most-ordered products for this supplier
+    with tab_fav:
+        st.markdown(f"<h3>⭐ Favorites - {selected_supplier}</h3>", unsafe_allow_html=True)
+        st.caption("Add the products most often ordered from this supplier. Saved automatically per supplier.")
+
+        favorites = st.session_state.data_handler.get_supplier_favorites(selected_supplier)
+        fav_cols = ["customer", "ordered_product", "fresho_product", "notes"]
+        fav_labels = {
+            "customer": "Customer",
+            "ordered_product": "Ordered Product",
+            "fresho_product": "Fresho Product",
+            "notes": "Notes",
+        }
+
+        if favorites:
+            fav_df = pd.DataFrame(favorites)
+            for c in fav_cols:
+                if c not in fav_df.columns:
+                    fav_df[c] = ""
+            fav_df = fav_df[fav_cols]
+        else:
+            fav_df = pd.DataFrame(columns=fav_cols)
+
+        st.markdown("<h4>✏️ Edit Favorites</h4>", unsafe_allow_html=True)
+        edited_fav = st.data_editor(
+            fav_df,
+            use_container_width=True,
+            num_rows="dynamic",
+            key="favorites_editor",
+            column_config={
+                col: st.column_config.TextColumn(label)
+                for col, label in fav_labels.items()
+            }
+        )
+
+        if st.button("💾 Save Favorites", use_container_width=False):
+            try:
+                st.session_state.data_handler.update_supplier_favorites(
+                    selected_supplier,
+                    edited_fav.fillna("").to_dict('records')
+                )
+                st.success("✅ Favorites saved successfully!")
+                st.rerun()
+            except Exception as e:
+                st.error(f"❌ Save failed: {str(e)}")
 
     # Tab 2: Add New Rule
     with tab2:
