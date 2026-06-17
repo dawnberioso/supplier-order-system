@@ -373,15 +373,12 @@ with st.sidebar:
     if st.button("🔄 Refresh", use_container_width=True):
         st.rerun()
 
-    # Button that switches between the styled Overview and the Edit screen
-    if st.session_state.get("edit_rules_mode", False):
-        if st.button("👁️ View Overview", use_container_width=True):
-            st.session_state.edit_rules_mode = False
-            st.rerun()
-    else:
-        if st.button("✏️ Edit Rules", use_container_width=True):
-            st.session_state.edit_rules_mode = True
-            st.rerun()
+    # Toggle to switch between the styled Overview and the edit screen
+    st.toggle(
+        "✏️ Edit Rules",
+        key="edit_rules_mode",
+        help="On: edit the rules table. Off: browse the styled Overview."
+    )
 
     st.markdown("---")
     st.markdown("<h3>💾 Save Status</h3>", unsafe_allow_html=True)
