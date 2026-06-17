@@ -2,214 +2,2338 @@
   "supplier_name": "Farmford Food",
   "description": "",
   "created_at": "2026-06-16T00:09:44.416572",
-  "last_updated": "2026-06-17T15:25:24.289023",
+  "last_updated": "2026-06-17T15:48:50.654792",
   "rules": [
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "prepped peeled jerulsalrm artichoke ",
-      "ordered_unit": "",
-      "fresho_product": "Artichokes - Jerusalem (Peeled) ",
-      "fresho_qty": "",
-      "other_comments": "",
-      "created_at": "2026-06-17 15:19:26"
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "GRAVETYE MANOR",
+      "Products": "Aubergine",
+      "Equivalent Measurement": "1 Box = 5kg",
+      "Product": "purple radish",
+      "Fresho Product": "Radish - Blue Meat",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "Agretti",
-      "ordered_unit": "",
-      "fresho_product": "monks beard",
-      "fresho_qty": "",
-      "other_comments": "",
-      "created_at": "2026-06-17 15:19:35"
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "MOON CHELSEA",
+      "Products": "Lavender",
+      "Equivalent Measurement": "1 Bunch = 60g",
+      "Product": "golden beetroot",
+      "Fresho Product": "peeled candy beetroot",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "fresh English peas ",
-      "ordered_unit": NaN,
-      "fresho_product": "Peas - Fresh",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "COLONEL SAAB",
+      "Products": "Spinach, lettuce mix and rocket",
+      "Equivalent Measurement": "1 Bag = 500g",
+      "Product": "Persian Cucumber",
+      "Fresho Product": "Baby Cucumber",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "sea purselane",
-      "ordered_unit": NaN,
-      "fresho_product": "Micro Purslane",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "SAAB TRAFALGAR",
+      "Products": "Broccoli - Tenderstem",
+      "Equivalent Measurement": "Broccoli - Tenderstem",
+      "Product": "Guava",
+      "Fresho Product": "1 Box = 2kg",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": " lady’s fingers",
-      "ordered_unit": NaN,
-      "fresho_product": "Sponge Fingers (Savoiardo)",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "GRACE SKY",
+      "Products": "New Potatoes - Mids",
+      "Equivalent Measurement": "1 Box = 10kg",
+      "Product": "Asparagus",
+      "Fresho Product": "Asparagus - English",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "Allium Flowers",
-      "ordered_unit": NaN,
-      "fresho_product": "Garlic Flower",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "CHILDA BASE",
+      "Products": "Chillies - Green/ Red",
+      "Equivalent Measurement": "1 Box = 3kg",
+      "Product": "Black cherries",
+      "Fresho Product": "Cherries",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "sliced 2 mm potatoes ",
-      "ordered_unit": NaN,
-      "fresho_product": "Potatoes (Sliced 2mm)",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "CHARLES B",
+      "Products": "Tomatoes - Cherry on Vine",
+      "Equivalent Measurement": "1 Bpx = 3kg",
+      "Product": "Fresh peas/pea pods",
+      "Fresho Product": "Fresh Peas",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "white asparagus",
-      "ordered_unit": NaN,
-      "fresho_product": "white asparagus",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "ATHOMEPIZZA",
+      "Products": "Tomatoes - Plum on Vine",
+      "Equivalent Measurement": "1 Box = 5kg",
+      "Product": "Coconut yoghurt",
+      "Fresho Product": "Each = 500g",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "asparagus",
-      "ordered_unit": NaN,
-      "fresho_product": "Asparagus - English",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Radish - Breakfast",
+      "Equivalent Measurement": "1 Bunch = 500g",
+      "Product": "Thai Mango",
+      "Fresho Product": "Mango - Raw",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "cherries (purple ones)",
-      "ordered_unit": NaN,
-      "fresho_product": "Cherries",
-      "fresho_qty": NaN,
-      "other_comments": "note: purple one",
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Miscellaneous",
+      "Products": "Lettuce - Little Gem",
+      "Equivalent Measurement": "1 Packet = 100g",
+      "Product": "orange segments",
+      "Fresho Product": "Each = 250g",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Charles Bryant Private Chef",
-      "ordered_product": "L cream",
-      "ordered_unit": NaN,
-      "fresho_product": "Double Cream",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Orange Peppers",
+      "Products": "Grapes - Red/Green",
+      "Equivalent Measurement": "Punnet/Bunch = 1kg",
+      "Product": "mint tips",
+      "Fresho Product": "Miscellaneous",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "",
-      "ordered_product": NaN,
-      "ordered_unit": NaN,
-      "fresho_product": NaN,
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Baby Parsnips",
+      "Products": "Apples - Granny Smith",
+      "Equivalent Measurement": "1 Box = 18kg",
+      "Product": "Oregano",
+      "Fresho Product": "1 Bunch = 100g",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Imad's Syrian Kitchen",
-      "ordered_product": "Prep Onion Diced",
-      "ordered_unit": NaN,
-      "fresho_product": "Onions - Chopped",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Blood Plums",
+      "Products": "Baby Corn",
+      "Equivalent Measurement": "80g/punnet",
+      "Product": "Figs",
+      "Fresho Product": "1kg = 25 each",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Imad's Syrian Kitchen",
-      "ordered_product": "Prep Potato Koffman's Peeled",
-      "ordered_unit": NaN,
-      "fresho_product": "Peeled and cut Koffmann Potato",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Frozen Pomegranate Seeds",
+      "Products": "Peppers - Red",
+      "Equivalent Measurement": "1 Box = 5kg",
+      "Product": "Vinegar - White Wine",
+      "Fresho Product": "1 each = 5L",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Imad's Syrian Kitchen",
-      "ordered_product": "Romero Pepper",
-      "ordered_unit": NaN,
-      "fresho_product": "Pepper - Red Pointy",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Purple Kale",
+      "Products": "Micro Pea Shoots - Tendril Bunch (100g)",
+      "Equivalent Measurement": "1 Box = 1 Punnet",
+      "Product": "Sweetcorn - Twin Pack",
+      "Fresho Product": "1 Box = 12",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Imad's Syrian Kitchen",
-      "ordered_product": "Tinned Artichokes",
-      "ordered_unit": "TIN  2.650kg ",
-      "fresho_product": "Artichoke Hearts Whole In Brine",
-      "fresho_qty": NaN,
-      "other_comments": NaN,
-      "created_at": NaN
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "William Pears",
+      "Products": "Basil",
+      "Equivalent Measurement": "1 Kg = 10 Punnet/Bunch",
+      "Product": "Spinach",
+      "Fresho Product": "1 Box = 4kg",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": "Imad's Syrian Kitchen",
-      "ordered_product": "double cream",
-      "ordered_unit": null,
-      "fresho_product": "normal double cream",
-      "fresho_qty": null,
-      "other_comments": "not cotteswold ",
-      "created_at": null
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Vanilla Extract",
+      "Products": "Coriander",
+      "Equivalent Measurement": "1 Box = 20 Bunch",
+      "Product": "Bramley",
+      "Fresho Product": "1 Box = 12kg",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": null,
-      "ordered_product": null,
-      "ordered_unit": null,
-      "fresho_product": null,
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Smoked Salt",
+      "Products": "Tomato - Plum",
+      "Equivalent Measurement": "1 Box = 3kg",
+      "Product": "Plums",
+      "Fresho Product": "1 Box = 5kg",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": null,
-      "ordered_product": null,
-      "ordered_unit": null,
-      "fresho_product": null,
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Onion Powder",
+      "Products": "Mushrooms - Chestnut",
+      "Equivalent Measurement": "1 Box = 2.5kg",
+      "Product": "Mangoes",
+      "Fresho Product": "1 Box = 9 each",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": null,
-      "ordered_product": null,
-      "ordered_unit": null,
-      "fresho_product": null,
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Ice Cream",
+      "Products": "Leeks (box/bag)",
+      "Equivalent Measurement": "1 Net/Box = 4.5kg",
+      "Product": "Cauliflower",
+      "Fresho Product": "1 Box = 6 each",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": null,
-      "ordered_product": null,
-      "ordered_unit": null,
-      "fresho_product": null,
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Strawberries",
+      "Equivalent Measurement": "1 Box = 8 Punnet || Small Box = 1 Punnet",
+      "Product": "Peaches",
+      "Fresho Product": "1 Box = 20 each",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": null,
-      "ordered_product": null,
-      "ordered_unit": null,
-      "fresho_product": null,
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Spring Onion",
+      "Equivalent Measurement": "1 Box = 12 Bunch",
+      "Product": "Brussel Leaves",
+      "Fresho Product": "Brussels Top",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     },
     {
-      "customer": null,
-      "ordered_product": null,
-      "ordered_unit": null,
-      "fresho_product": null,
-      "fresho_qty": null,
-      "other_comments": null,
-      "created_at": null
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Raspberries",
+      "Equivalent Measurement": "1 Box = 12 Punnet",
+      "Product": "Italian lemon",
+      "Fresho Product": "Lemons - Amalfi",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Blueberries",
+      "Equivalent Measurement": "1 Box = 12 Punnet",
+      "Product": "Melograno",
+      "Fresho Product": "Pomegranates",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Broccoli",
+      "Equivalent Measurement": "1 box = 6kg",
+      "Product": "Fava beans",
+      "Fresho Product": "broad beans",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Carrot",
+      "Equivalent Measurement": "1 Box = 10kg",
+      "Product": "Rhubarb / Forced Rhubarb",
+      "Fresho Product": "1 Box = 6kg",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Shallots - Banana",
+      "Equivalent Measurement": "1 Sack = 4kg",
+      "Product": "large leaf shiso purple",
+      "Fresho Product": "Shiso leaves - red",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Peppers - Mixed",
+      "Equivalent Measurement": "1 Box = 5kg",
+      "Product": "violet artichoke",
+      "Fresho Product": "baby artichoke",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Courgette",
+      "Equivalent Measurement": "1 Box = 5kg",
+      "Product": "English Onion",
+      "Fresho Product": "Onions - Spanish Small",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Celeriac",
+      "Equivalent Measurement": "1 Bag = 10kg",
+      "Product": "artichoke hearts",
+      "Fresho Product": "Artichokes - In Oil",
+      "Notes": "Tinned Artichoke Hearts In Brine 400g",
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Beetroot",
+      "Equivalent Measurement": "Assume that a piece of beetroot is 200g",
+      "Product": "Cheese Parmesan shredded",
+      "Fresho Product": "Parmesan - Grated",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Pomegranate Seeds",
+      "Equivalent Measurement": "250g",
+      "Product": "Shallots - Round",
+      "Fresho Product": "1 sack = 4kg",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Sweet Potatoes",
+      "Equivalent Measurement": "1 Box = 6kg",
+      "Product": "agretti",
+      "Fresho Product": "monks beard",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Mint",
+      "Equivalent Measurement": "1 Box = 20 Bunch",
+      "Product": "Merinda Tomato",
+      "Fresho Product": "Tomatoes - Asurcado Antociani 'Murice'",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": "Mushrooms - Button",
+      "Equivalent Measurement": "Box = 2.5kg",
+      "Product": "fennel",
+      "Fresho Product": "1 Tray = 5kg",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Corn - Baby",
+      "Fresho Product": "80g per punneet",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Beetroot - Cooked (Vacuum Pack)",
+      "Fresho Product": "250g = 1 Pack",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "chanterais melon",
+      "Fresho Product": "Melon - Cantaloupe",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "orange marigold",
+      "Fresho Product": "Marigold - Leaves",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Isle of White Tomatoes",
+      "Fresho Product": "Heirloom Tomatoes",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Heritage Tomato",
+      "Fresho Product": "Heirloom Tomatoes",
+      "Notes": "for Tasha, it is Tomatoes - Cherry Vine Mix Heritage",
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Chips 9mm",
+      "Fresho Product": "Fries - Skin On 9x9",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Tomato Cherry",
+      "Fresho Product": "Tomatoes - Cherry On Vine ",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "White Onion",
+      "Fresho Product": "Spanish Onion",
+      "Notes": "Only MOON CHELSEA will have White Onion",
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Grated Potatoes   ",
+      "Fresho Product": "Grated Maris",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Prepped Celeriac",
+      "Fresho Product": "Peeled - Celeriac",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Red Meat radish",
+      "Fresho Product": "Radish - Watermelon",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Daikon",
+      "Fresho Product": "Mooli - White",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Prep Onion Diced",
+      "Fresho Product": "Onions - Chopped",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": "Datterini tomatoes",
+      "Fresho Product": "Tomatoes - Plum Baby",
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "BM Borough Ltd",
+      "Products": "Tomato Ruby Rose / Plum Vine",
+      "Equivalent Measurement": "Plum Vine",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "BM Borough Ltd",
+      "Products": "chips",
+      "Equivalent Measurement": "Frozen Chips - Koffmann's Les Pomme Frites Skin On 10x10mm Dark Blue Box",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "BM Borough Ltd",
+      "Products": "Eggs",
+      "Equivalent Measurement": "Eggs St. Ewes X 180",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Brother Marcus (Spitalfields)",
+      "Products": "Potato - Staff Food",
+      "Equivalent Measurement": "Potatoes - Maris Piper",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Brother Marcus (Spitalfields)",
+      "Products": "Chips",
+      "Equivalent Measurement": "Frozen Chips - Koffmann's Les Pomme Frites Skin On 10x10mm Dark Blue Box",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Brother Marcus (Spitalfields)",
+      "Products": "Grapes (White)",
+      "Equivalent Measurement": "Grapes - Green",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Brother Marcus (Spitalfields)",
+      "Products": "Yellow cherry tomatoes",
+      "Equivalent Measurement": "Tomatoes - Cherry Yellow",
+      "Product": "1kg - 4 Punnets",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Brother Marcus (Spitalfields)",
+      "Products": "Prepped Watermelon",
+      "Equivalent Measurement": "Watermelon Diced",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Brother Marcus (Spitalfields)",
+      "Products": "Frozen Avocado Halves",
+      "Equivalent Measurement": "Frozen Avocado - Diced",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Detarine Tomatoes",
+      "Equivalent Measurement": "Tomatoes - Plum Baby",
+      "Product": "1 Box = 3kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Baby Potato , New Potato",
+      "Equivalent Measurement": "New Potatoes - Mids",
+      "Product": "1 Box = 10kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Gherkins / Gherkins Pickled Whole",
+      "Equivalent Measurement": "Dill Pickle",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Zucchini Green",
+      "Equivalent Measurement": "Courgette",
+      "Product": "Tray = 5 kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Butternut Whole",
+      "Equivalent Measurement": "Butternut Squash - Wedges",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Corn Cobs, Yellow, Sweet",
+      "Equivalent Measurement": "Sweetcorn - Twin pack",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Grapefruit Red",
+      "Equivalent Measurement": "Grapefruit - Pink",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Tomaotoes Plum",
+      "Equivalent Measurement": "Tomatoes - Plum on Vine",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "2kg Each Mushroom",
+      "Equivalent Measurement": "PORTOBELLO, KING OYSTER, BUTTON, SHIMEJI WHITE AND SHIITAKE",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Goose Berry",
+      "Equivalent Measurement": "Physalis",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Pointy Red Beetroot",
+      "Equivalent Measurement": "Crapuldine Beetroot",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "Cress Salad Pea",
+      "Equivalent Measurement": "Micro Pea Shoots - Tendril",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "heritage tomato",
+      "Equivalent Measurement": "Tomatoes - Cherry Vine Mix Heritage",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Tashas Cafe",
+      "Products": "parsley falt",
+      "Equivalent Measurement": "parsley italian",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Victoria)",
+      "Products": "Red Onions Prepped",
+      "Equivalent Measurement": "Onions - Red Sliced",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Victoria)",
+      "Products": "Salsa Tomatoes - Plum Prepped",
+      "Equivalent Measurement": "Diced Plum Tomato",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Victoria)",
+      "Products": "Sweet Red Pepper",
+      "Equivalent Measurement": "Pepper - Red Pointy",
+      "Product": "1 Box = 4kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Notting Hill)",
+      "Products": "Vegetable oil",
+      "Equivalent Measurement": "Oil - Frying",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Notting Hill)",
+      "Products": "Edible Flowers Large Coloured",
+      "Equivalent Measurement": "Edible Flowers Viola",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Notting Hill)",
+      "Products": "Soya Yoghurt",
+      "Equivalent Measurement": "Yoghurt - Soya",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Notting Hill)",
+      "Products": "Lemons - Leafy",
+      "Equivalent Measurement": "Lemons - Amalfi",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Notting Hill)",
+      "Products": "Frozen Peas",
+      "Equivalent Measurement": "Frozen Peas - Birds Eye",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Milk  ",
+      "Equivalent Measurement": "Cotteswold Whole Milk",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Yogurt",
+      "Equivalent Measurement": "Yoghurt - Greek Style BV Dairy",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Pink Baby Ravayan",
+      "Equivalent Measurement": "Raviya Pink",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Flower Edible",
+      "Equivalent Measurement": "Flowers Edible Viola",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Dutch onion",
+      "Equivalent Measurement": "Onions - Spanish Small/Medium",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Single Cream Cottswood",
+      "Equivalent Measurement": "Cotteswold Single Cream",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "White Onion Diced 2mm",
+      "Equivalent Measurement": "Onions - Chopped",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Cotteswold Double Cream",
+      "Equivalent Measurement": "Cotteswold Double Cream",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Mix Lettuce",
+      "Equivalent Measurement": "Lettuce - Baby Mix Salad",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Radish Baby Red / Baby radish\tRadish ",
+      "Equivalent Measurement": "Radish",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Beans fine cut",
+      "Equivalent Measurement": "Beans - Fine Pre pack",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Pea Shoots",
+      "Equivalent Measurement": "Micro Pea Shoots - Tendril Bunch (100g)",
+      "Product": "1 Box = 1 Punnet",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Bread White Thick Sliced",
+      "Equivalent Measurement": "Bread - White Thick",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "White Dutch Onion",
+      "Equivalent Measurement": "Onions - Spanish",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Poached Beetroot (1 Pack)",
+      "Equivalent Measurement": "Beetroot - Cooked (Vacuum Pack)",
+      "Product": "250g per pack (if customer ordered per KG)",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Potato Desiree",
+      "Equivalent Measurement": "Potatoes - Red",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Peeled Baby Potatoes",
+      "Equivalent Measurement": "Potatoes - New Peeled",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Yukon Rainbow Carrot",
+      "Equivalent Measurement": "Carrots - Heritage",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Banana Onion",
+      "Equivalent Measurement": "Shallots - Banana",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Holland Chilli",
+      "Equivalent Measurement": "Pepper - Red Pointy",
+      "Product": "1 Box = 4kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "chips",
+      "Equivalent Measurement": "Frozen Chips - Koffmann's Les Pomme Frites Skin On 10x10mm Dark Blue Box",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Tomatoes Salad",
+      "Equivalent Measurement": "Tomatoes on Vine",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "fresh corn kernels",
+      "Equivalent Measurement": "frozen sweetcorn",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "yukon candy beetroot",
+      "Equivalent Measurement": "Beetroot - Baby Candy",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "peas frozen",
+      "Equivalent Measurement": "Frozen Peas - Birds Eye",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "cheddar grated",
+      "Equivalent Measurement": "Grated - Cheddar - Mature ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "frozen shallot",
+      "Equivalent Measurement": "frozen sambar onion",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Coconut grated frozen",
+      "Equivalent Measurement": "Frozen Coconut - Shredded 'Shana'",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Youkon baby beetroot",
+      "Equivalent Measurement": "Beetroot - Baby",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Celeriac  prep",
+      "Equivalent Measurement": "(Celeriac - Peeled)",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Grated Maris Piper ",
+      "Equivalent Measurement": " (Beetroot - Peeled)",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Red Beetroot ",
+      "Equivalent Measurement": " (Beetroot - Peeled)",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Pomegranate",
+      "Equivalent Measurement": "(Pomegranate - Seeds)",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "Sweet corn kernel frozen / corn",
+      "Equivalent Measurement": "frozen sweetcorn",
+      "Product": "not the corn on the cob halves",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab (CS Holborn)",
+      "Products": "peas frozen",
+      "Equivalent Measurement": "Frozen Peas - Birds Eye",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Milk",
+      "Equivalent Measurement": "Cotteswold Whole Milk",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Curd",
+      "Equivalent Measurement": "Yoghurt - Greek Style BV Dairy",
+      "Product": "if ordered 3pcs, it means 3tubs",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Googes Berries",
+      "Equivalent Measurement": "Physalis",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Double Cream",
+      "Equivalent Measurement": "Cotteswold Double Cream",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Cream Cheese Philadelphia (1Kg)",
+      "Equivalent Measurement": "Cheddar - Grated",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Cream Cheese Philadelphia (1.65)",
+      "Equivalent Measurement": "Philadelphia Original",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Cucumber ASian",
+      "Equivalent Measurement": "Cucumber",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Single cream cotteswold",
+      "Equivalent Measurement": "Cotteswold Single Cream",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Peeled Baby Potatoes",
+      "Equivalent Measurement": "Potatoes - New Peeled",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Fresh Beans",
+      "Equivalent Measurement": "Beans - Fine Pre Pack",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Fresh Red Cherry",
+      "Equivalent Measurement": "Cherries",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Potato Local",
+      "Equivalent Measurement": "Potatoes - Maris Piper",
+      "Product": "Note: Local",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Chill Dutch",
+      "Equivalent Measurement": "pointy red pepper",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Desiree Potato",
+      "Equivalent Measurement": "Potatoes - Red",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Fresh Coconut",
+      "Equivalent Measurement": "Coconuts - Brown",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Potato Big",
+      "Equivalent Measurement": "Potatoes - Red",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Orange Segment",
+      "Equivalent Measurement": "Orange Segment",
+      "Product": "Each = 250g",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "frozen peas",
+      "Equivalent Measurement": "Frozen Peas - Birds Eye",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Red onion chopped 2mm",
+      "Equivalent Measurement": "Onions - Red Sliced 2mm",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Sliced onion 2mm",
+      "Equivalent Measurement": "Onions - Spanish Sliced",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Greek yogurt brown lid",
+      "Equivalent Measurement": "Yoghurt - Greek Style BV Dairy ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Colonel Saab Trafalgar Square",
+      "Products": "Onion sliced 2mm",
+      "Equivalent Measurement": "Onions - Spanish Sliced",
+      "Product": "note 2mm",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "1 invoice only, unless specified BAR or separate order",
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Ratte potatoes",
+      "Equivalent Measurement": "Potatoes - La Ratte",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Oyster Mushroom",
+      "Equivalent Measurement": "Mushroom - Oyster Grey",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Tomatoes - Cherry",
+      "Equivalent Measurement": "Tomatoes - Cherry on Vine",
+      "Product": "Box = 3kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Heritage Tomatoes / Winter Tomatoes",
+      "Equivalent Measurement": "Tomatoes - Heirloom",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Frozen Pomegranate Seeds",
+      "Equivalent Measurement": "Miscellaneous - Frozen Pomegranate Seeds",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Pink Lettuce",
+      "Equivalent Measurement": "Radicchio - Pink",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Baby Sweetcorn",
+      "Equivalent Measurement": "Sweetcorn - Twin Pack",
+      "Product": "1 Box = 20",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "White Onions",
+      "Equivalent Measurement": "Onions - Spanish",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Heritage Radish",
+      "Equivalent Measurement": "Radish - Heirloom",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Pak Choi",
+      "Equivalent Measurement": "Pak Choi",
+      "Product": "Box = 8 packets",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Large Bag Mixed Salad",
+      "Equivalent Measurement": "Lettuce - Baby mix salad",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Red Peppers",
+      "Equivalent Measurement": "Peppers - Red",
+      "Product": "1 Box = 5kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Squash - Butternut",
+      "Equivalent Measurement": "Squash - Butternut",
+      "Product": "1 Box = 10kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Red Cabbage",
+      "Equivalent Measurement": "Cabbage - Red",
+      "Product": "5 Each = Approx. 10kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Satsuma",
+      "Equivalent Measurement": "Clementines",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "winter tomatoes (purple ones)",
+      "Equivalent Measurement": "Tomatoes - Asurcado Antociani 'Murice'",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "orange marigold flowers",
+      "Equivalent Measurement": "Edible Flowers - Tagetes",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "roma tomatoes ",
+      "Equivalent Measurement": "plum vine ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Grace and Skye Ltd",
+      "Products": "Whole milk",
+      "Equivalent Measurement": "Milk",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Bird House SBM Ltd (The Hawks Nest)",
+      "Products": "Mushroom",
+      "Equivalent Measurement": "Mushroom - Chestnut",
+      "Product": "1 Box = 2.5kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Bird House SBM Ltd (The Hawks Nest)",
+      "Products": "Tomato Cherry",
+      "Equivalent Measurement": "Tomatoes - Cherry On Vine",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Bird House SBM Ltd (The Hawks Nest)",
+      "Products": "Oranges - Blood",
+      "Equivalent Measurement": "Oranges - Blood",
+      "Product": "1 Box = 10kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Bird House SBM Ltd (The Hawks Nest)",
+      "Products": "chillies",
+      "Equivalent Measurement": "Chillies - Red",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Bird House SBM Ltd (The Hawks Nest)",
+      "Products": "tomatoes for caprese",
+      "Equivalent Measurement": "heritage tomatoes",
+      "Product": "Tomatoes - Heirloom",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Department Store Brixton Ltd",
+      "Products": "Whole Milk",
+      "Equivalent Measurement": "Milk",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "10 packs corn on cob fresh",
+      "Equivalent Measurement": "Sweetcorn - Twin Pack ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "granny smith 15 each",
+      "Equivalent Measurement": "1.9 KG",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Red Apples",
+      "Equivalent Measurement": "Apples - Braeburn",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Pink garlic flowers",
+      "Equivalent Measurement": "Garlic Flower",
+      "Product": "note: pink",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Peas",
+      "Equivalent Measurement": "Peas - Fresh",
+      "Product": "1 box = 3kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Beans - Broad",
+      "Equivalent Measurement": "1 Box = 5kg",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "shredded kale",
+      "Equivalent Measurement": "Kale",
+      "Product": "shredded",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "tomato plum",
+      "Equivalent Measurement": "Tomatoes - Plum On Vine",
+      "Product": "1 Box = 5kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Koffman blue potato",
+      "Equivalent Measurement": "Potatoes - Washed White 'Koffmann's'",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Red Apple",
+      "Equivalent Measurement": "Apples - Braeburn",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "UHT Cream",
+      "Equivalent Measurement": "Miscellaneous",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Rapeseed Oil",
+      "Equivalent Measurement": "Frying Oil",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Birds Eye peas",
+      "Equivalent Measurement": "Frozen Peas",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "pea pods",
+      "Equivalent Measurement": "Fresh Peas",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Turnips Baby",
+      "Equivalent Measurement": "Turnips Baby",
+      "Product": "1kg = 10 Punnets",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "grelot",
+      "Equivalent Measurement": "Onions - Grelotte Red",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Fennel Crown",
+      "Equivalent Measurement": "Fennel",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Psb",
+      "Equivalent Measurement": "purple sprouting broccoli",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "oxalis",
+      "Equivalent Measurement": "Sorrel - Wood",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "globe artichokes",
+      "Equivalent Measurement": "baby bunched artichokes",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Gravetye Manor",
+      "Products": "Turnips",
+      "Equivalent Measurement": "1 Box = 5kg",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "prepped peeled jerulsalrm artichoke ",
+      "Equivalent Measurement": "Artichokes - Jerusalem (Peeled) ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "Agretti",
+      "Equivalent Measurement": "monks beard",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "fresh English peas ",
+      "Equivalent Measurement": "Peas - Fresh",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "wild mushroom mix ",
+      "Equivalent Measurement": "Mushrooms - Exotic Mixed",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "sea purselane",
+      "Equivalent Measurement": "Micro Purslane",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": " lady’s fingers",
+      "Equivalent Measurement": "Sponge Fingers (Savoiardo)",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "Allium Flowers",
+      "Equivalent Measurement": "Garlic Flower",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "sliced 2 mm potatoes ",
+      "Equivalent Measurement": "Potatoes (Sliced 2mm)",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "white asparagus",
+      "Equivalent Measurement": "white asparagus",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "asparagus",
+      "Equivalent Measurement": "Asparagus - English",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "cherries (purple ones)",
+      "Equivalent Measurement": "Cherries",
+      "Product": "note: purple one",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "L cream",
+      "Equivalent Measurement": "Double Cream",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Charles Bryant Private Chef",
+      "Products": "milk",
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "Prep Onion Diced",
+      "Equivalent Measurement": "Onions - Chopped",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "Prep Potato Koffman's Peeled",
+      "Equivalent Measurement": "Peeled and cut Koffmann Potato",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "Romero Pepper",
+      "Equivalent Measurement": "Pepper - Red Pointy",
+      "Product": "1 Box = 4kg",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "PARSLEY (FLAT)",
+      "Equivalent Measurement": "Parsley - Flat Leaf Italian ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "PREP POMEGRANATE SEED",
+      "Equivalent Measurement": "Pomegranate - Seeds ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "Tinned Artichokes",
+      "Equivalent Measurement": "Artichoke Hearts Whole In Brine",
+      "Product": "TIN  2.650kg ",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "double cream",
+      "Equivalent Measurement": "normal double cream",
+      "Product": "not cotteswold ",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Imad's Syrian Kitchen",
+      "Products": "Turkish Peppers",
+      "Equivalent Measurement": "Chillies - Turkish",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Araam LTD",
+      "Products": "Tinned Artichokes",
+      "Equivalent Measurement": "Artichoke Hearts Whole In Brine",
+      "Product": "TIN  2.650kg ",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Araam LTD",
+      "Products": "double cream",
+      "Equivalent Measurement": "normal double cream",
+      "Product": "not cotteswold ",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Fulham)",
+      "Products": "basil 2kg",
+      "Equivalent Measurement": "Basil Box 2",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Acai Girls (Fulham)",
+      "Products": "Red Onions - Prepped",
+      "Equivalent Measurement": "Onions - Red Sliced 2mm ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Cambray Potatoes",
+      "Equivalent Measurement": "Potatoes New Washed",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "whole Milk",
+      "Equivalent Measurement": "Milk",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Broccolini",
+      "Equivalent Measurement": "Broccoli - Tenderstem",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Flowers",
+      "Equivalent Measurement": "Flowers Edible Viola",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Irish Butter",
+      "Equivalent Measurement": "Butter - Unsalted",
+      "Product": "1 Pack = 250g",
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Red endive",
+      "Equivalent Measurement": "Chicory - Red",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Yellow endive",
+      "Equivalent Measurement": "Chicory - White",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Fava beans 1 kg frozen",
+      "Equivalent Measurement": "broad beans",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "radish",
+      "Equivalent Measurement": "Radish Bunch",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "white onion",
+      "Equivalent Measurement": "White Onion",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Moon Chelsea Limited",
+      "Products": "Runny honey",
+      "Equivalent Measurement": "Honey - Squeezy ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The George Inn",
+      "Products": "Skinny Fries",
+      "Equivalent Measurement": "Koffmann petite 7mm",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The George Inn",
+      "Products": "xxl koffman chips",
+      "Equivalent Measurement": "Frozen Chips - Les Grandes Frites XXL 'Koffmann's' ",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "The Bush Tavern",
+      "Products": "skinny fries",
+      "Equivalent Measurement": "Koffmann petite 7mm",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": NaN,
+      "Products": NaN,
+      "Equivalent Measurement": NaN,
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
+    },
+    {
+      "CUSTOMERS NEED TO ENTER BFORE REPORT": "Briq (Bethnal Green)",
+      "Products": "chips",
+      "Equivalent Measurement": "Frozen Chips - Koffmann's Les Pomme Frites Skin On 10x10mm Dark Blue Box",
+      "Product": NaN,
+      "Fresho Product": NaN,
+      "Notes": NaN,
+      "created_at": "2026-06-17 15:48:50"
     }
   ]
 }
