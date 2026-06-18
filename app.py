@@ -1074,6 +1074,42 @@ else:
             "unit": "Unit (box/kg/g)",
             "notes": "Notes",
         }
+        all_fav_cols = ["customer"] + fav_cols
+        all_fav_labels = {"customer": "Customer", **fav_labels}
+
+        # Supplier-wide sheet: shows every favorite (all customers) so imported
+        # rows are always visible here, even if a customer name doesn't line up.
+        st.markdown("<h4>📋 All Favorites (whole supplier)</h4>", unsafe_allow_html=True)
+        st.caption("Every favorite for this supplier. Anything you import appears here. "
+                   "Edit freely — the Customer column groups them per customer below.")
+
+        def _all_fav_frame(records, cols):
+            d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
+            if 'ordered_product' in d.columns and 'product_name' not in d.columns:
+                d['product_name'] = d['ordered_product']
+            for c in cols:
+                if c not in d.columns:
+                    d[c] = ""
+            return d[cols].fillna("")
+
+        all_fav_df = _all_fav_frame(all_favorites, all_fav_cols)
+        st.markdown(f"<p style='color:#8b95a7; margin:0 0 6px;'><b>📊 {len(all_fav_df)} rows</b></p>",
+                    unsafe_allow_html=True)
+        edited_all_fav = st.data_editor(
+            all_fav_df, use_container_width=True, num_rows="dynamic", height=400,
+            key="all_fav_editor",
+            column_config={c: st.column_config.TextColumn(all_fav_labels[c]) for c in all_fav_cols})
+        if st.button("💾 Save all favorites", key="all_fav_save"):
+            rows = [r for r in edited_all_fav.fillna("").to_dict("records")
+                    if any(str(v).strip() for v in r.values())]
+            if st.session_state.data_handler.update_supplier_favorites(selected_supplier, rows):
+                st.success("✅ All favorites saved!")
+                st.rerun()
+            else:
+                st.error("❌ Save failed")
+
+        st.markdown("---")
+        st.markdown("<h4>👤 Per-customer view</h4>", unsafe_allow_html=True)
 
         if not customer_list:
             st.info("👤 No saved customers yet — type a name below to start.")
