@@ -236,6 +236,23 @@ class DataHandler:
         return self._put_file(f"{supplier_name}.json", data,
                               f"Update favorites for {supplier_name}")
 
+    # ---------- product rules (product-level defaults, no customer) ----------
+
+    def get_product_rules(self, supplier_name):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return []
+        return data.get("product_rules", [])
+
+    def update_product_rules(self, supplier_name, rules):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return False
+        data["product_rules"] = rules
+        data["last_updated"] = self._now()
+        return self._put_file(f"{supplier_name}.json", data,
+                              f"Update product rules for {supplier_name}")
+
     # ---------- supplier details (Time Shift, POC, etc.) ----------
 
     DETAIL_KEYS = ["time_shift_aut", "time_shift_ukt", "information", "poc", "team_ph"]

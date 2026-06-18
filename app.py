@@ -564,108 +564,168 @@ if not selected_supplier:
     )
 else:
     # Create tabs
-    tab1, tab_fav, tab2, tab4, tab5 = st.tabs([
-        "📋 View & Edit Rules",
+    tab1, tab_fav, tab4, tab5 = st.tabs([
+        "📋 Supplier Rules",
         "⭐ Favorites",
-        "➕ Add New Rule",
         "💾 Import / Export",
         "ℹ️ Supplier Information"
     ])
 
-    # Tab 1: View & Edit Rules
+    # Tab 1: Supplier Rules (Customer Rules / Product Rules)
     with tab1:
-        st.markdown(f"<h3>📋 Order Rules for {selected_supplier}</h3>", unsafe_allow_html=True)
+        _dh = st.session_state.data_handler
+        st.markdown(f"<h3>📋 Supplier Rules - {selected_supplier}</h3>", unsafe_allow_html=True)
 
-        # Get supplier data
-        supplier_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
+        rules_view = st.radio(
+            "Choose a rules set:",
+            ["👤 Customer Rules", "📦 Product Rules"],
+            horizontal=True, key="rules_view_choice", label_visibility="collapsed")
 
-        if not supplier_rules or len(supplier_rules) == 0:
-            st.info("📦 No rules yet. Create your first rule using the ➕ Add tab!")
-        else:
-            # Convert to DataFrame for easier viewing
-            df = pd.DataFrame(supplier_rules)
+        cust_labels = {
+            "customer": "Customer", "ordered_product": "Ordered Product",
+            "ordered_unit": "Ordered Unit", "fresho_product": "Fresho Product",
+            "fresho_qty": "Fresho Qty", "other_comments": "Other Comments",
+            "created_at": "Created At",
+        }
+        cust_cols = list(cust_labels.keys())
+        prod_labels = {
+            "ordered_product": "Ordered Product", "fresho_product": "Fresho Product",
+            "fresho_qty": "Fresho Qty", "ordered_unit": "Ordered Unit", "notes": "Notes",
+        }
+        prod_cols = list(prod_labels.keys())
 
-            # Search/Filter section
-            st.markdown("<h4>🔍 Search & Filter</h4>", unsafe_allow_html=True)
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                search_customer = st.text_input("👤 Customer:", value="", placeholder="Search customer...")
-            with col2:
-                search_product = st.text_input("📦 Product:", value="", placeholder="Search product...")
-            with col3:
-                # Spacer to align the button with the labelled inputs beside it
+        def _frame(records, cols):
+            d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
+            for c in cols:
+                if c not in d.columns:
+                    d[c] = ""
+            return d[cols]
+
+        if rules_view == "👤 Customer Rules":
+            st.markdown("<h4>👤 Customer Rules</h4>", unsafe_allow_html=True)
+            st.caption("Edit any cell directly, then click Save. Add or delete rows with the grid controls.")
+            supplier_rules = _dh.get_supplier_rules(selected_supplier)
+            df = _frame(supplier_rules, cust_cols)
+
+            c1, c2, c3 = st.columns(3)
+            with c1:
+                search_customer = st.text_input("👤 Customer:", value="", placeholder="Search customer...", key="cr_sc")
+            with c2:
+                search_product = st.text_input("📦 Product:", value="", placeholder="Search product...", key="cr_sp")
+            with c3:
                 st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                if st.button("🗑️ Clear", use_container_width=True):
+                if st.button("🗑️ Clear", use_container_width=True, key="cr_clear"):
                     search_customer = ""
                     search_product = ""
 
-            # Apply filters (guard against suppliers whose rules lack a column)
             filtered_df = df.copy()
-            if search_customer and 'customer' in filtered_df.columns:
-                filtered_df = filtered_df[
-                    filtered_df['customer'].str.contains(search_customer, case=False, na=False)
-                ]
-            if search_product and 'ordered_product' in filtered_df.columns:
-                filtered_df = filtered_df[
-                    filtered_df['ordered_product'].str.contains(search_product, case=False, na=False)
-                ]
+            if search_customer:
+                filtered_df = filtered_df[filtered_df['customer'].str.contains(search_customer, case=False, na=False)]
+            if search_product:
+                filtered_df = filtered_df[filtered_df['ordered_product'].str.contains(search_product, case=False, na=False)]
+            st.markdown(f"<p style='color:#8b95a7;'><b>📊 Showing {len(filtered_df)} of {len(df)} rules</b></p>", unsafe_allow_html=True)
 
-            st.markdown(f"<p style='color: #8b95a7;'><b>📊 Showing {len(filtered_df)} of {len(df)} rules</b></p>", unsafe_allow_html=True)
-
-            # Proper, bold, capitalized column labels reused below
-            _col_labels = {
-                "customer": "Customer",
-                "ordered_product": "Ordered Product",
-                "ordered_unit": "Ordered Unit",
-                "fresho_product": "Fresho Product",
-                "fresho_qty": "Fresho Qty",
-                "other_comments": "Other Comments",
-                "created_at": "Created At",
-            }
-
-            # Always-editable grid (Rules Overview removed)
-            st.markdown("<h4>✏️ Edit Rules</h4>", unsafe_allow_html=True)
-            st.caption("Edit any cell directly. Use the 🔍 search boxes above to find rows. "
-                       "Changes save when you click Save.")
             edited_df = st.data_editor(
-                filtered_df,
-                use_container_width=True,
-                num_rows="dynamic",
-                height=600,
-                key="rules_editor",
-                column_config={
-                    col: st.column_config.TextColumn(label)
-                    for col, label in _col_labels.items()
-                }
-            )
+                filtered_df, use_container_width=True, num_rows="dynamic", height=560,
+                key="cr_editor",
+                column_config={c: st.column_config.TextColumn(l) for c, l in cust_labels.items()})
 
-            col1, col2, col3 = st.columns([1, 1, 2])
-            with col1:
+            b1, b2, b3 = st.columns([1, 1, 2])
+            with b1:
                 _filter_active = bool(search_customer or search_product)
-                if st.button("💾 Save", use_container_width=True):
+                if st.button("💾 Save", use_container_width=True, key="cr_save"):
                     try:
                         if _filter_active and len(edited_df) < len(df):
-                            # Filter active: merge visible edits with hidden rows.
                             full = df.copy()
                             hidden = full.loc[~full.index.isin(filtered_df.index)]
                             merged = pd.concat([hidden, edited_df], ignore_index=True)
-                            updated_rules = merged.to_dict('records')
+                            updated = merged.to_dict('records')
                             st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
                         else:
-                            updated_rules = edited_df.to_dict('records')
-                        st.session_state.data_handler.update_supplier_rules(
-                            selected_supplier, updated_rules)
-                        st.success("✅ Rules saved successfully!")
+                            updated = edited_df.to_dict('records')
+                        _dh.update_supplier_rules(selected_supplier, updated)
+                        st.success("✅ Customer rules saved!")
                         st.rerun()
                     except Exception as e:
-                        st.error(f"❌ Save failed: {str(e)}")
-            with col2:
-                if st.button("🗑️ Delete", use_container_width=True, key="delete_rules_btn"):
-                    if st.session_state.data_handler.delete_supplier_rules(selected_supplier):
+                        st.error(f"❌ Save failed: {e}")
+            with b2:
+                if st.button("🗑️ Delete All", use_container_width=True, key="delete_rules_btn"):
+                    if _dh.delete_supplier_rules(selected_supplier):
                         st.success("✅ Rules deleted!")
                         st.rerun()
                     else:
                         st.error("❌ Delete failed")
+
+            with st.expander("📥 Import Customer Rules (CSV)"):
+                st.caption("CSV columns: customer, ordered_product, ordered_unit, fresho_product, fresho_qty, other_comments")
+                up = st.file_uploader("Choose a CSV file", type=["csv"], key="cr_csv")
+                if up is not None:
+                    try:
+                        dfi = pd.read_csv(up).fillna("")
+                        low = {c.lower().strip(): c for c in dfi.columns}
+                        rows = [{k: str(r.get(low.get(k, ""), "")) for k in cust_cols} for _, r in dfi.iterrows()]
+                        st.dataframe(dfi, use_container_width=True)
+                        ir1, ir2 = st.columns(2)
+                        if ir1.button("✅ Replace all", key="cr_imp_rep", use_container_width=True):
+                            _dh.update_supplier_rules(selected_supplier, rows)
+                            st.success("✅ Imported!")
+                            st.rerun()
+                        if ir2.button("➕ Append", key="cr_imp_app", use_container_width=True):
+                            _dh.update_supplier_rules(selected_supplier, (supplier_rules or []) + rows)
+                            st.success("✅ Appended!")
+                            st.rerun()
+                    except Exception as e:
+                        st.error(f"❌ Error reading CSV: {e}")
+
+        else:
+            st.markdown("<h4>📦 Product Rules</h4>", unsafe_allow_html=True)
+            st.caption("Product-level defaults (no customer): the Fresho product/quantity to use for each ordered product.")
+            product_rules = _dh.get_product_rules(selected_supplier)
+            pdf = _frame(product_rules, prod_cols)
+
+            edited_p = st.data_editor(
+                pdf, use_container_width=True, num_rows="dynamic", height=560,
+                key="pr_editor",
+                column_config={c: st.column_config.TextColumn(l) for c, l in prod_labels.items()})
+
+            p1, p2, p3 = st.columns([1, 1, 2])
+            with p1:
+                if st.button("💾 Save", use_container_width=True, key="pr_save"):
+                    rows = [r for r in edited_p.fillna("").to_dict('records')
+                            if any(str(v).strip() for v in r.values())]
+                    if _dh.update_product_rules(selected_supplier, rows):
+                        st.success("✅ Product rules saved!")
+                        st.rerun()
+                    else:
+                        st.error("❌ Save failed")
+            with p2:
+                if st.button("🗑️ Delete All", use_container_width=True, key="pr_delete"):
+                    if _dh.update_product_rules(selected_supplier, []):
+                        st.success("✅ Deleted!")
+                        st.rerun()
+                    else:
+                        st.error("❌ Delete failed")
+
+            with st.expander("📥 Import Product Rules (CSV)"):
+                st.caption("CSV columns: ordered_product, fresho_product, fresho_qty, ordered_unit, notes")
+                up = st.file_uploader("Choose a CSV file", type=["csv"], key="pr_csv")
+                if up is not None:
+                    try:
+                        dfi = pd.read_csv(up).fillna("")
+                        low = {c.lower().strip(): c for c in dfi.columns}
+                        rows = [{k: str(r.get(low.get(k, ""), "")) for k in prod_cols} for _, r in dfi.iterrows()]
+                        st.dataframe(dfi, use_container_width=True)
+                        pir1, pir2 = st.columns(2)
+                        if pir1.button("✅ Replace all", key="pr_imp_rep", use_container_width=True):
+                            _dh.update_product_rules(selected_supplier, rows)
+                            st.success("✅ Imported!")
+                            st.rerun()
+                        if pir2.button("➕ Append", key="pr_imp_app", use_container_width=True):
+                            _dh.update_product_rules(selected_supplier, (product_rules or []) + rows)
+                            st.success("✅ Appended!")
+                            st.rerun()
+                    except Exception as e:
+                        st.error(f"❌ Error reading CSV: {e}")
 
     # Favorites tab: most-ordered products, organized per customer
     with tab_fav:
@@ -743,49 +803,6 @@ else:
                     st.rerun()
                 except Exception as e:
                     st.error(f"❌ Save failed: {str(e)}")
-
-    # Tab 2: Add New Rule
-    with tab2:
-        st.markdown(f"<h3>➕ Create New Rule - {selected_supplier}</h3>", unsafe_allow_html=True)
-
-        with st.form("new_rule_form"):
-            col1, col2 = st.columns(2)
-
-            with col1:
-                customer = st.text_input("👤 Customer Name *")
-                ordered_product = st.text_input("📦 Ordered Product *")
-                ordered_unit = st.text_input("📏 Unit (e.g., box, bag, jar)")
-
-            with col2:
-                fresho_product = st.text_input("🔄 Fresho Substitute *")
-                fresho_qty = st.text_input("⚖️ Quantity")
-                other_comments = st.text_area("📝 Notes", height=100)
-
-            col1, col2 = st.columns(2)
-            with col1:
-                submitted = st.form_submit_button("➕ Create", use_container_width=True)
-            with col2:
-                st.form_submit_button("🔄 Reset", use_container_width=True)
-
-            if submitted:
-                if not customer or not ordered_product or not fresho_product:
-                    st.error("❌ Please fill in all required fields (marked with *)")
-                else:
-                    new_rule = {
-                        'customer': customer,
-                        'ordered_product': ordered_product,
-                        'ordered_unit': ordered_unit or '',
-                        'fresho_product': fresho_product,
-                        'fresho_qty': fresho_qty or '',
-                        'other_comments': other_comments or '',
-                        'created_at': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                    }
-
-                    if st.session_state.data_handler.add_rule(selected_supplier, new_rule):
-                        st.success("✅ Rule added successfully!")
-                        st.rerun()
-                    else:
-                        st.error("❌ Error adding rule")
 
     # Tab 4: Import/Export
     with tab4:
