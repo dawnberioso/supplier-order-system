@@ -10,7 +10,8 @@
       "thu": "1:00am-10:00am",
       "fri": "1:00am-10:00am",
       "sat": "1:00am-10:00am",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Ellen",
@@ -21,7 +22,8 @@
       "thu": "3am-12pm",
       "fri": "3am-12pm",
       "sat": "1:00am-10:00am",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Trixy",
@@ -32,7 +34,8 @@
       "thu": "5am-2pm",
       "fri": "5am-2pm",
       "sat": "3am-12pm",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Eden",
@@ -43,7 +46,8 @@
       "thu": "4am-1pm",
       "fri": "4am-1pm",
       "sat": "OFF | Trixy ALL",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Renilyn",
@@ -54,7 +58,8 @@
       "thu": "4am-1pm",
       "fri": "4am-1pm",
       "sat": "1am-10am",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Anelie",
@@ -65,7 +70,8 @@
       "thu": "6:30am -3:30pm",
       "fri": "6:30am -3:30pm",
       "sat": "6:30am -3:30pm",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Jade",
@@ -76,7 +82,8 @@
       "thu": "3pm-12am",
       "fri": "OFF | Nisa",
       "sat": "OFF",
-      "sun": "2pm-11pm"
+      "sun": "2pm-11pm",
+      "suppliers": ""
     },
     {
       "member": "Vanessa",
@@ -87,7 +94,8 @@
       "thu": "OFF",
       "fri": "2pm-11pm",
       "sat": "2pm-11pm",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Hazel",
@@ -98,7 +106,8 @@
       "thu": "4pm-1am",
       "fri": "4pm-1am",
       "sat": "OFF",
-      "sun": "4pm-1am"
+      "sun": "4pm-1am",
+      "suppliers": ""
     },
     {
       "member": "Marie",
@@ -109,7 +118,8 @@
       "thu": "5pm-2am",
       "fri": "OFF",
       "sat": "OFF",
-      "sun": "5pm-2am"
+      "sun": "5pm-2am",
+      "suppliers": ""
     },
     {
       "member": "Rosemarie",
@@ -120,7 +130,8 @@
       "thu": "10:30pm- 7:30am",
       "fri": "9pm-6am",
       "sat": "OFF",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Nisa",
@@ -131,7 +142,8 @@
       "thu": "2pm-11pm",
       "fri": "2pm-11pm",
       "sat": "OFF",
-      "sun": "OFF"
+      "sun": "OFF",
+      "suppliers": ""
     },
     {
       "member": "Ailene",
@@ -142,7 +154,8 @@
       "thu": "5pm-2am",
       "fri": "5pm-2am",
       "sat": "OFF",
-      "sun": "5pm-2am"
+      "sun": "5pm-2am",
+      "suppliers": ""
     }
   ],
   "overview_meta": {

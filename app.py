@@ -500,9 +500,10 @@ if st.session_state.get('show_shift_coverage'):
         return pd.DataFrame(columns=cols)
 
     # Coverage Overview is a separate weekly roster (Member, Role, Mon-Sun).
-    ov_base_cols = ["member", "role", "mon", "tue", "wed", "thu", "fri", "sat", "sun"]
-    ov_base_labels = {"member": "Member", "role": "Role", "mon": "Mon", "tue": "Tues",
-                      "wed": "Wed", "thu": "Thu", "fri": "Fri", "sat": "Sat", "sun": "Sun"}
+    ov_base_cols = ["member", "role", "mon", "tue", "wed", "thu", "fri", "sat", "sun", "suppliers"]
+    ov_base_labels = {"member": "Member", "role": "Role", "mon": "Monday", "tue": "Tuesday",
+                      "wed": "Wednesday", "thu": "Thursday", "fri": "Friday", "sat": "Saturday",
+                      "sun": "Sunday", "suppliers": "Suppliers"}
     overview_rows = _dh.get_coverage_overview()
     ov_meta = _dh.get_coverage_meta()
 
