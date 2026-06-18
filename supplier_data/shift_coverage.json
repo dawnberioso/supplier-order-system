@@ -1,21 +1,29 @@
 {
   "rows": [
     {
-      "employee": "Ailene",
-      "supplier": "Lj Pathernos",
-      "days": "",
-      "shift": "",
-      "time": "",
-      "notes": ""
-    },
-    {
       "employee": "Jade",
       "supplier": "",
       "days": "",
       "shift": "",
       "time": "",
       "notes": ""
+    },
+    {
+      "employee": "Ailene",
+      "supplier": "Lj Pathernos",
+      "days": "Sunday - Saturday",
+      "shift": "",
+      "time": "",
+      "notes": ""
+    },
+    {
+      "employee": "Ailene",
+      "supplier": "Tassie Fine Foods",
+      "days": "Sunday - Friday",
+      "shift": "",
+      "time": "",
+      "notes": ""
     }
   ],
-  "last_updated": "2026-06-18T02:19:12.240478"
+  "last_updated": "2026-06-18T04:33:17.264989"
 }
