@@ -1,11 +1,12 @@
 {
   "version": "1.0",
   "created_at": "2024-01-15T10:30:00",
-  "last_updated": "2026-06-18T06:56:47.961195",
+  "last_updated": "2026-06-18T06:56:49.096982",
   "suppliers": [
     "Bodiam Meat",
     "Farmford Food",
     "Dales Chef's  Choice",
-    "Heritage (Fruits and Vegetables)"
+    "Heritage (Fruits and Vegetables)",
+    "LJ Parthenos (Fruits & Vegetables)"
   ]
 }
