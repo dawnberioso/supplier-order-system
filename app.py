@@ -24,11 +24,13 @@ if 'current_supplier' not in st.session_state:
 st.markdown("""
     <style>
     :root {
-        --deep-navy: #030B3A;
-        --light-blue: #3AA6F9;
-        --accent-teal: #1ABADC;
-        --success-green: #10B981;
+        --deep-navy: #00E676;     /* neon green (gradient start) */
+        --light-blue: #00C9FF;    /* neon cyan (gradient end) */
+        --accent-teal: #00C2EA;
+        --success-green: #00E676;
         --warning-amber: #F59E0B;
+        --btn-text: #06324a;      /* dark text for the bright gradient */
+        --head-text: #0a4d5c;     /* readable heading colour */
     }
 
     * {
@@ -61,7 +63,7 @@ st.markdown("""
 
     .stTabs [data-baseweb="tab-list"] button[aria-selected="true"] {
         background: linear-gradient(135deg, var(--deep-navy), var(--light-blue)) !important;
-        color: white !important;
+        color: #06324a !important;
         box-shadow: 0 4px 15px rgba(58, 166, 249, 0.25);
     }
 
@@ -70,7 +72,7 @@ st.markdown("""
         border-radius: 8px !important;
         border: none !important;
         background: linear-gradient(135deg, var(--deep-navy), var(--light-blue)) !important;
-        color: white !important;
+        color: #06324a !important;
         font-weight: 800 !important;
         font-family: 'Segoe UI', 'Trebuchet MS', sans-serif !important;
         transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
@@ -109,7 +111,7 @@ st.markdown("""
     .stButton > button[kind="secondary"] {
         background: linear-gradient(135deg, var(--deep-navy), var(--light-blue)) !important;
         border: none !important;
-        color: #ffffff !important;
+        color: #06324a !important;
     }
 
     .stButton > button[kind="secondary"]:hover {
@@ -122,14 +124,14 @@ st.markdown("""
     .stButton > button p,
     .stButton > button span,
     .stButton > button div {
-        color: #ffffff !important;
+        color: #06324a !important;
     }
 
     /* Form submit button with gradient */
     .stFormSubmitButton > button {
         border-radius: 8px !important;
         background: linear-gradient(135deg, var(--light-blue), var(--accent-teal)) !important;
-        color: white !important;
+        color: #06324a !important;
         font-weight: 800 !important;
         transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
         padding: 0.7rem 1.5rem !important;
@@ -146,7 +148,7 @@ st.markdown("""
     .stDownloadButton > button {
         border-radius: 8px !important;
         background: linear-gradient(135deg, var(--success-green), var(--light-blue)) !important;
-        color: white !important;
+        color: #06324a !important;
         font-weight: 700 !important;
         transition: all 0.3s ease !important;
         border: none !important;
@@ -158,12 +160,19 @@ st.markdown("""
         box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4) !important;
     }
 
-    /* Header styling with gradient text */
-    h1, h2, h3, h4, h5, h6 {
+    /* Main title keeps the neon gradient text */
+    h1 {
         background: linear-gradient(135deg, var(--deep-navy), var(--light-blue));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+    }
+
+    /* Section headings stay a readable dark teal */
+    h2, h3, h4, h5, h6 {
+        color: var(--head-text) !important;
         font-weight: 700;
         letter-spacing: 0.5px;
     }
@@ -227,7 +236,7 @@ st.markdown("""
 
     .styled-rules-table th {
         background: linear-gradient(135deg, var(--deep-navy), var(--light-blue));
-        color: white !important;
+        color: #06324a !important;
         font-weight: 800;
         text-align: left;
         padding: 10px 14px;
@@ -246,9 +255,9 @@ st.markdown("""
         background: rgba(58, 166, 249, 0.04);
     }
 
-    /* Customer column (first) in navy bold */
+    /* Customer column (first) in dark bold */
     .styled-rules-table td:first-child {
-        color: var(--deep-navy);
+        color: #0a2e3a;
         font-weight: 700;
     }
 
@@ -333,21 +342,10 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Logo indented above heading
-logo_file = None
-if os.path.exists("image_499fc5.png"):
-    logo_file = "image_499fc5.png"
-elif os.path.exists("Logo.png"):
-    logo_file = "Logo.png"
-
-col1, col2, col3 = st.columns([1.2, 1, 1])
-with col2:
-    if logo_file:
-        st.image(logo_file, use_container_width=False, width=350)
-
+# App title (logo removed)
 col_left, col_center, col_right = st.columns([1, 2, 1])
 with col_center:
-    st.markdown("<h1 style='text-align: center; margin-top: -10px;'>🚀 Supplier Order Entry System</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🚀 Supplier Order Entry System</h1>", unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -878,7 +876,7 @@ if st.session_state.get('show_new_supplier', False):
 st.markdown("---")
 st.markdown("""
     <div style='text-align: center; color: #666; font-size: 0.85em; padding: 1.5rem;'>
-    <p style='font-weight: 700; background: linear-gradient(135deg, #030B3A, #3AA6F9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>🚀 Supplier Order Entry System v2.0</p>
+    <p style='font-weight: 700; background: linear-gradient(135deg, #00E676, #00C9FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>🚀 Supplier Order Entry System v2.0</p>
     <p>Built with Streamlit ⚡ Powered by GitHub</p>
     </div>
     """, unsafe_allow_html=True)
