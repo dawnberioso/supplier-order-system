@@ -469,10 +469,6 @@ with st.sidebar:
         st.session_state.show_shift_coverage = True
         st.rerun()
 
-    if st.button("⭐ Favorites", use_container_width=True):
-        st.session_state.show_favorites_hint = True
-        st.rerun()
-
     # Show who's signed in (only when Google sign-in is configured)
     if auth_configured and _is_logged_in:
         st.markdown("---")
@@ -503,20 +499,55 @@ if st.session_state.get('show_shift_coverage'):
             return d[cols]
         return pd.DataFrame(columns=cols)
 
-    employees = sorted({str(r.get("employee", "")).strip() for r in sc_rows
+    # Coverage Overview is a separate weekly roster (Member, Role, Mon-Sun).
+    ov_cols = ["member", "role", "mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+    ov_labels = {"member": "Member", "role": "Role", "mon": "Mon", "tue": "Tues",
+                 "wed": "Wed", "thu": "Thu", "fri": "Fri", "sat": "Sat", "sun": "Sun"}
+    overview_rows = _dh.get_coverage_overview()
+
+    # Member list comes from the overview roster, plus anyone with a saved schedule.
+    members = sorted({str(r.get("member", "")).strip() for r in overview_rows
+                      if str(r.get("member", "")).strip()}
+                     | {str(r.get("employee", "")).strip() for r in sc_rows
                         if str(r.get("employee", "")).strip()})
-    if employees:
+
+    # Employee-name buttons: transparent normally, colour pops only on hover.
+    st.markdown("""
+        <style>
+        [class*="st-key-sc_emp_"] button {
+            background: transparent !important;
+            color: #CC0066 !important;
+            border: 1px solid rgba(255, 0, 153, 0.35) !important;
+            box-shadow: none !important;
+            font-weight: 700 !important;
+        }
+        [class*="st-key-sc_emp_"] button p,
+        [class*="st-key-sc_emp_"] button span,
+        [class*="st-key-sc_emp_"] button div { color: #CC0066 !important; }
+        [class*="st-key-sc_emp_"] button:hover {
+            background: linear-gradient(135deg, #FF0099, #FF77CC) !important;
+            transform: translateY(-2px) scale(1.03) !important;
+            box-shadow: 0 6px 16px rgba(255, 0, 153, 0.35) !important;
+        }
+        [class*="st-key-sc_emp_"] button:hover p,
+        [class*="st-key-sc_emp_"] button:hover span,
+        [class*="st-key-sc_emp_"] button:hover div { color: #ffffff !important; }
+        </style>
+    """, unsafe_allow_html=True)
+
+    if members:
         st.markdown("<h4>👤 Employee's Schedule</h4>", unsafe_allow_html=True)
-        ncol = min(len(employees), 5)
+        st.caption("Click a name to open and edit that person's own per-supplier schedule.")
+        ncol = min(len(members), 5)
         ecols = st.columns(ncol)
-        for i, emp in enumerate(employees):
+        for i, emp in enumerate(members):
             if ecols[i % ncol].button(emp, key=f"sc_emp_{i}", use_container_width=True):
                 st.session_state.sc_employee = emp
                 st.rerun()
 
     sel_emp = st.session_state.get('sc_employee')
 
-    if sel_emp and sel_emp in employees:
+    if sel_emp and sel_emp in members:
         st.markdown(f"<h4>✏️ {sel_emp}'s schedule (per supplier)</h4>", unsafe_allow_html=True)
         emp_cols = ["supplier", "days", "shift", "time", "notes"]
         emp_df = _sc_df([r for r in sc_rows if str(r.get("employee", "")).strip() == sel_emp], emp_cols)
@@ -536,26 +567,28 @@ if st.session_state.get('show_shift_coverage'):
                 st.rerun()
             else:
                 st.error("❌ Save failed")
-        if c2.button("⬅️ Back to full table", key="sc_emp_back", use_container_width=True):
+        if c2.button("⬅️ Back to overview", key="sc_emp_back", use_container_width=True):
             st.session_state.sc_employee = None
             st.rerun()
     else:
-        if sc_rows:
-            st.markdown("<h4>👁️ Coverage Overview</h4>", unsafe_allow_html=True)
-            ov = _sc_df(sc_rows, sc_cols).rename(columns=sc_labels).fillna("")
+        st.markdown("<h4>👁️ Coverage Overview</h4>", unsafe_allow_html=True)
+        st.caption("Weekly roster — Member, Role and Monday–Sunday. (Per-supplier schedules "
+                   "live inside each name above, not here.)")
+        if overview_rows:
+            ov = _sc_df(overview_rows, ov_cols).rename(columns=ov_labels).fillna("")
             html = ov.to_html(index=False, escape=True,
                               classes="styled-rules-table sc-table", border=0)
             st.markdown(f"<div class='styled-rules-wrap'>{html}</div>", unsafe_allow_html=True)
 
         with st.expander("✏️ Edit All Coverage"):
-            all_df = _sc_df(sc_rows, sc_cols)
-            edited_all = st.data_editor(
-                all_df, num_rows="dynamic", use_container_width=True, key="sc_all_editor",
-                column_config={c: st.column_config.TextColumn(sc_labels[c]) for c in sc_cols})
-            if st.button("💾 Save Coverage", key="sc_save_all"):
-                newrows = [r for r in edited_all.fillna("").to_dict("records")
+            ov_df = _sc_df(overview_rows, ov_cols)
+            edited_ov = st.data_editor(
+                ov_df, num_rows="dynamic", use_container_width=True, key="sc_ov_editor",
+                column_config={c: st.column_config.TextColumn(ov_labels[c]) for c in ov_cols})
+            if st.button("💾 Save Coverage", key="sc_save_ov"):
+                newrows = [r for r in edited_ov.fillna("").to_dict("records")
                            if any(str(v).strip() for v in r.values())]
-                if _dh.update_shift_coverage(newrows):
+                if _dh.update_coverage_overview(newrows):
                     st.success("✅ Coverage saved!")
                     st.rerun()
                 else:
@@ -949,17 +982,13 @@ else:
                 customers.add(_c)
         customer_list = sorted(customers)
 
-        if st.session_state.get("show_favorites_hint"):
-            st.info("👆 You're in the Favorites tab — pick a customer below.")
-            st.session_state.show_favorites_hint = False
-
         if not customer_list:
             st.info("👤 No saved customers yet — type a name below to start.")
-            fav_customer = st.text_input("Customer name:", key="fav_manual_name", placeholder="e.g. The Blue Anchor")
+            fav_customer = st.text_input("Customer name:", key="fav_manual_name")
         else:
             fc1, fc2 = st.columns([3, 1])
             fav_customer = fc1.selectbox("👤 Select Customer:", customer_list, key="fav_customer_select")
-            if fc2.text_input("Or type new:", key="fav_new_name", placeholder="new customer"):
+            if fc2.text_input("Or type new:", key="fav_new_name"):
                 fav_customer = st.session_state.fav_new_name
 
             cust_favs = [f for f in all_favorites

@@ -339,6 +339,22 @@ class DataHandler:
         data["last_updated"] = self._now()
         return self._put_file("shift_coverage.json", data, "Update shift coverage")
 
+    # Coverage Overview is a separate weekly roster (Member, Role, Mon-Sun),
+    # kept apart from the per-supplier schedules stored in "rows".
+    def get_coverage_overview(self):
+        data, _ = self._get_file("shift_coverage.json")
+        if data is None:
+            return []
+        return data.get("overview", [])
+
+    def update_coverage_overview(self, rows):
+        data, _ = self._get_file("shift_coverage.json")
+        if data is None:
+            data = {"rows": []}
+        data["overview"] = rows
+        data["last_updated"] = self._now()
+        return self._put_file("shift_coverage.json", data, "Update coverage overview")
+
     # ---------- config.json ----------
 
     def _add_to_config(self, supplier_name):
