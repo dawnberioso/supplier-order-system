@@ -2,7 +2,7 @@
   "supplier_name": "LJ Parthenos",
   "description": "Fruit & Veg",
   "created_at": "2026-06-17T08:08:28.475078",
-  "last_updated": "2026-06-18T06:37:43.890386",
+  "last_updated": "2026-06-18T06:37:45.517318",
   "rules": [
     {
       "Unnamed: 0": NaN,
@@ -12,8 +12,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": "Note: 1mb = 6 bunch",
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": "lemon/holy basil herb",
       "created_at": "2026-06-17 08:09:08"
     },
@@ -25,8 +23,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -38,8 +34,6 @@
       "Supplier Remark": "its special order for one time order",
       "My Remarks": "use misc",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -51,8 +45,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -64,8 +56,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -77,8 +67,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -90,8 +78,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -103,8 +89,6 @@
       "Supplier Remark": "Special order.",
       "My Remarks": "can use misc",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -116,8 +100,6 @@
       "Supplier Remark": "its euro mix puts    ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -129,8 +111,6 @@
       "Supplier Remark": "its euro mix puts    ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -142,8 +122,6 @@
       "Supplier Remark": "check qty",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -155,8 +133,6 @@
       "Supplier Remark": "Micro comes in Pots",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -168,8 +144,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -181,8 +155,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -194,8 +166,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -207,8 +177,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "1 Market bunch = 6 Bunch",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -220,8 +188,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -233,8 +199,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -246,8 +210,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -259,8 +221,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -272,8 +232,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -285,8 +243,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -298,8 +254,6 @@
       "Supplier Remark": "we pickup the large size from the box. ",
       "My Remarks": "note: Large",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -311,8 +265,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -324,8 +276,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -337,8 +287,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -350,8 +298,6 @@
       "Supplier Remark": "yes its baby cucumbers – put",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -363,8 +309,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -376,8 +320,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -389,8 +331,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -402,8 +342,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -415,8 +353,6 @@
       "Supplier Remark": "We can either rename to punt or use misc if price is different.",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -428,8 +364,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -441,8 +375,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -454,8 +386,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -467,8 +397,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -480,8 +408,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -493,8 +419,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -506,8 +430,6 @@
       "Supplier Remark": "Small ones",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -519,8 +441,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -532,8 +452,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -545,8 +463,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -558,8 +474,6 @@
       "Supplier Remark": "normally we take off tops leaf from baby carrots. It is special item. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -571,8 +485,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -584,8 +496,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -597,8 +507,6 @@
       "Supplier Remark": "we just pick the big size and give them",
       "My Remarks": "Note: XL",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -610,8 +518,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -623,8 +529,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -636,8 +540,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "usually I use just the aspargus because it's by box, I'll just note GREEN JUMBO",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -649,8 +551,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -662,8 +562,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -675,8 +573,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -688,8 +584,6 @@
       "Supplier Remark": "these are leaves of snow peas, called snow pea leaf box. that comes in box. 1box is 1.5kg ea. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -701,8 +595,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -714,8 +606,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -727,8 +617,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -740,8 +628,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -753,8 +639,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -766,8 +650,6 @@
       "Supplier Remark": "1pkt is eqaul to 2 each. so 4pkt are 8 Each. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -779,8 +661,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -792,8 +672,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -805,8 +683,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -818,8 +694,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -831,8 +705,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -844,8 +716,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "check history tho, might change",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -857,8 +727,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -870,8 +738,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -883,8 +749,6 @@
       "Supplier Remark": " 1 Try is eqaul to 5kg",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -896,8 +760,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -909,8 +771,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -922,8 +782,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -935,8 +793,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -948,8 +804,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -961,8 +815,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -974,8 +826,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -987,8 +837,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1000,8 +848,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1013,8 +859,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1026,8 +870,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1039,8 +881,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1052,8 +892,6 @@
       "Supplier Remark": "this comes in a box of 1kg. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1065,8 +903,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1078,8 +914,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1091,8 +925,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1104,8 +936,6 @@
       "Supplier Remark": "1 Piec is around 2-3 kg. please count 2kg ea peice. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1117,8 +947,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1130,8 +958,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1143,8 +969,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1156,8 +980,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1169,8 +991,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "1 packet = 2 each | if ordered tray use Box just note tray",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1182,8 +1002,6 @@
       "Supplier Remark": " when some one ask tomato but no other name mention we count as Round tomato. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1195,8 +1013,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1208,8 +1024,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1221,8 +1035,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1234,8 +1046,6 @@
       "Supplier Remark": "This is euro mix (Seasonal Mix) We make punt out of 500g box.",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1247,8 +1057,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1260,8 +1068,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1273,8 +1079,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1286,8 +1090,6 @@
       "Supplier Remark": "bag is 450g, doesnt matter what customer writes. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1299,8 +1101,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1312,8 +1112,6 @@
       "Supplier Remark": "This is eruo mix (Seasonal), Comes in 500g a box. we normally make 1 punt of 100g for him. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1325,8 +1123,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1338,8 +1134,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1351,8 +1145,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1364,8 +1156,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1377,8 +1167,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1390,8 +1178,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1403,8 +1189,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1416,8 +1200,6 @@
       "Supplier Remark": " comes in punt",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1429,8 +1211,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1442,8 +1222,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1455,8 +1233,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1468,8 +1244,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1481,8 +1255,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1494,8 +1266,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1507,8 +1277,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1520,8 +1288,6 @@
       "Supplier Remark": "2pc red capsicum is around 400-500g. 1pc is around 250g. just use aproximately. ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1533,8 +1299,6 @@
       "Supplier Remark": "note: premium",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1546,8 +1310,6 @@
       "Supplier Remark": "note:round",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1559,8 +1321,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1572,8 +1332,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "NOTE: ROYAL BLUE",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1585,8 +1343,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1598,8 +1354,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1611,8 +1365,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "1MB = 6 Bunch",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1624,8 +1376,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1637,8 +1387,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1650,8 +1398,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1663,8 +1409,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1676,8 +1420,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1689,8 +1431,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1702,8 +1442,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1715,8 +1453,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1728,8 +1464,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1741,8 +1475,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1754,8 +1486,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1767,8 +1497,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1780,8 +1508,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1793,8 +1519,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1806,8 +1530,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1819,8 +1541,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1832,8 +1552,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1845,8 +1563,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1858,8 +1574,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1871,8 +1585,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1884,8 +1596,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1897,8 +1607,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1910,8 +1618,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1923,8 +1629,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1936,8 +1640,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1949,8 +1651,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1962,8 +1662,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1975,8 +1673,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -1988,8 +1684,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2001,8 +1695,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2014,8 +1706,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2027,8 +1717,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2040,8 +1728,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2053,8 +1739,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2066,8 +1750,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2079,8 +1761,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2092,8 +1772,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2105,8 +1783,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2118,8 +1794,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2131,8 +1805,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2144,8 +1816,6 @@
       "Supplier Remark": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ",
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2157,8 +1827,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2170,8 +1838,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2183,8 +1849,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2196,8 +1860,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2209,8 +1871,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2222,8 +1882,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "Generic Terms",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2235,8 +1893,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2248,8 +1904,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2261,8 +1915,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2274,8 +1926,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2287,8 +1937,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2300,8 +1948,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2313,8 +1959,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2326,8 +1970,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2339,8 +1981,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2352,8 +1992,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2365,8 +2003,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2378,8 +2014,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2391,8 +2025,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2404,8 +2036,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2417,8 +2047,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2430,8 +2058,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2443,8 +2069,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2456,8 +2080,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2469,8 +2091,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2482,8 +2102,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2495,8 +2113,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2508,8 +2124,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2521,8 +2135,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2534,8 +2146,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2547,8 +2157,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "just add product note",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2560,8 +2168,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2573,8 +2179,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "use misc",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2586,8 +2190,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "use misc",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2599,8 +2201,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2612,8 +2212,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2625,8 +2223,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2638,8 +2234,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2651,8 +2245,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2664,8 +2256,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2677,8 +2267,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2690,8 +2278,6 @@
       "Supplier Remark": NaN,
       "My Remarks": NaN,
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2703,8 +2289,6 @@
       "Supplier Remark": NaN,
       "My Remarks": "note: juicing",
       "Unnamed: 7": NaN,
-      "Unnamed: 8": NaN,
-      "Unnamed: 9": NaN,
       "Unnamed: 10": NaN,
       "created_at": "2026-06-17 08:09:08"
     },
@@ -2716,8 +2300,6 @@
       "Supplier Remark": null,
       "My Remarks": null,
       "Unnamed: 7": null,
-      "Unnamed: 8": null,
-      "Unnamed: 9": null,
       "Unnamed: 10": null,
       "created_at": null
     },
@@ -2729,8 +2311,6 @@
       "Supplier Remark": null,
       "My Remarks": null,
       "Unnamed: 7": null,
-      "Unnamed: 8": null,
-      "Unnamed: 9": null,
       "Unnamed: 10": null,
       "created_at": null
     }
