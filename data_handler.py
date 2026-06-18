@@ -236,6 +236,24 @@ class DataHandler:
         return self._put_file(f"{supplier_name}.json", data,
                               f"Update favorites for {supplier_name}")
 
+    # ---------- rules meta (custom column titles & extra columns) ----------
+
+    def get_rules_meta(self, supplier_name):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        meta = (data or {}).get("rules_meta", {})
+        return {"labels": dict(meta.get("labels", {})),
+                "extra_columns": list(meta.get("extra_columns", []))}
+
+    def update_rules_meta(self, supplier_name, meta):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return False
+        data["rules_meta"] = {"labels": dict(meta.get("labels", {})),
+                              "extra_columns": list(meta.get("extra_columns", []))}
+        data["last_updated"] = self._now()
+        return self._put_file(f"{supplier_name}.json", data,
+                              f"Update rules columns for {supplier_name}")
+
     # ---------- product rules (product-level defaults, no customer) ----------
 
     def get_product_rules(self, supplier_name):

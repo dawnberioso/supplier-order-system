@@ -585,9 +585,13 @@ else:
             "customer": "Customer", "ordered_product": "Ordered Product",
             "ordered_unit": "Ordered Unit", "fresho_product": "Fresho Product",
             "fresho_qty": "Fresho Qty", "other_comments": "Other Comments",
-            "created_at": "Created At",
+            "created_by": "Created By",
         }
         cust_cols = list(cust_labels.keys())
+        # Who is making the edit (for the "Created By" stamp), date as dd/mm/yy
+        _stamp_name = (visitor_name.split("@")[0].split()[0]
+                       if visitor_name and visitor_name != "there" else "User")
+        _stamp = f"{_stamp_name} {datetime.now().strftime('%d/%m/%y')}"
         prod_labels = {
             "ordered_product": "Ordered Product", "fresho_product": "Fresho Product",
             "fresho_qty": "Fresho Qty", "ordered_unit": "Ordered Unit", "notes": "Notes",
@@ -603,9 +607,30 @@ else:
 
         if rules_view == "👤 Customer Rules":
             st.markdown("<h4>👤 Customer Rules</h4>", unsafe_allow_html=True)
-            st.caption("Edit any cell directly, then click Save. Add or delete rows with the grid controls.")
+            st.caption("Edit any cell directly, then click Save. "
+                       "Add a row at the bottom of the grid; delete rows by ticking them "
+                       "(left checkbox) and pressing Delete or the 🗑 toolbar icon. "
+                       "'Created By' is filled in with your name automatically.")
             supplier_rules = _dh.get_supplier_rules(selected_supplier)
-            df = _frame(supplier_rules, cust_cols)
+
+            # Custom column titles + any extra columns the user added
+            meta = _dh.get_rules_meta(selected_supplier)
+            all_cols = cust_cols + [c for c in meta["extra_columns"] if c not in cust_cols]
+            labels = dict(cust_labels)
+            for c in meta["extra_columns"]:
+                labels.setdefault(c, c)
+            labels.update(meta["labels"])
+
+            def _cust_frame(records, cols):
+                d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
+                if 'created_at' in d.columns and 'created_by' not in d.columns:
+                    d['created_by'] = d['created_at']
+                for c in cols:
+                    if c not in d.columns:
+                        d[c] = ""
+                return d[cols]
+
+            df = _cust_frame(supplier_rules, all_cols)
 
             c1, c2, c3 = st.columns(3)
             with c1:
@@ -628,7 +653,7 @@ else:
             edited_df = st.data_editor(
                 filtered_df, use_container_width=True, num_rows="dynamic", height=560,
                 key="cr_editor",
-                column_config={c: st.column_config.TextColumn(l) for c, l in cust_labels.items()})
+                column_config={c: st.column_config.TextColumn(labels.get(c, c)) for c in all_cols})
 
             b1, b2, b3 = st.columns([1, 1, 2])
             with b1:
@@ -643,6 +668,10 @@ else:
                             st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
                         else:
                             updated = edited_df.to_dict('records')
+                        # Stamp the editor's name + date on any blank "Created By"
+                        for rec in updated:
+                            if not str(rec.get('created_by', '')).strip():
+                                rec['created_by'] = _stamp
                         _dh.update_supplier_rules(selected_supplier, updated)
                         st.success("✅ Customer rules saved!")
                         st.rerun()
@@ -655,6 +684,55 @@ else:
                         st.rerun()
                     else:
                         st.error("❌ Delete failed")
+
+            with st.expander("🛠️ Manage columns (rename titles, add or delete columns)"):
+                rc1, rc2, rc3 = st.columns([2, 2, 1])
+                with rc1:
+                    col_sel = st.selectbox("Column", all_cols,
+                                           format_func=lambda c: labels.get(c, c), key="cr_col_sel")
+                with rc2:
+                    new_title = st.text_input("New title", value=labels.get(col_sel, col_sel), key="cr_col_title")
+                with rc3:
+                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                    if st.button("Rename", key="cr_col_rename", use_container_width=True):
+                        meta["labels"][col_sel] = new_title.strip() or col_sel
+                        _dh.update_rules_meta(selected_supplier, meta)
+                        st.success("✅ Title updated!")
+                        st.rerun()
+                st.markdown("---")
+                ac1, ac2 = st.columns([3, 1])
+                with ac1:
+                    new_col = st.text_input("New column name", key="cr_col_addtxt",
+                                            placeholder="e.g. Order Term")
+                with ac2:
+                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                    if st.button("➕ Add column", key="cr_col_add", use_container_width=True):
+                        name = new_col.strip()
+                        if name and name not in all_cols:
+                            meta["extra_columns"].append(name)
+                            _dh.update_rules_meta(selected_supplier, meta)
+                            st.success(f"✅ Added '{name}'!")
+                            st.rerun()
+                        else:
+                            st.warning("Enter a unique, non-empty column name.")
+                if meta["extra_columns"]:
+                    dc1, dc2 = st.columns([3, 1])
+                    with dc1:
+                        to_del = st.multiselect("Delete custom columns", meta["extra_columns"], key="cr_col_delsel")
+                    with dc2:
+                        st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                        if st.button("🗑️ Delete column", key="cr_col_del", use_container_width=True):
+                            meta["extra_columns"] = [c for c in meta["extra_columns"] if c not in to_del]
+                            for k in to_del:
+                                meta["labels"].pop(k, None)
+                            _dh.update_rules_meta(selected_supplier, meta)
+                            cleaned = [{k: v for k, v in rec.items() if k not in to_del}
+                                       for rec in (supplier_rules or [])]
+                            _dh.update_supplier_rules(selected_supplier, cleaned)
+                            st.success("✅ Column(s) deleted!")
+                            st.rerun()
+                st.caption("Core columns can be renamed but not deleted (so search keeps working). "
+                           "Columns you add yourself can be deleted.")
 
             with st.expander("📥 Import Customer Rules (CSV)"):
                 st.caption("CSV columns: customer, ordered_product, ordered_unit, fresho_product, fresho_qty, other_comments")
