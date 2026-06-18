@@ -1067,6 +1067,14 @@ else:
                 customers.add(_c)
         customer_list = sorted(customers)
 
+        fav_cols = ["product_name", "product_quantity", "unit", "notes"]
+        fav_labels = {
+            "product_name": "Product Name",
+            "product_quantity": "Product Quantity",
+            "unit": "Unit (box/kg/g)",
+            "notes": "Notes",
+        }
+
         if not customer_list:
             st.info("👤 No saved customers yet — type a name below to start.")
             fav_customer = st.text_input("Customer name:", key="fav_manual_name")
@@ -1078,13 +1086,6 @@ else:
 
             cust_favs = [f for f in all_favorites
                          if str(f.get("customer", "")).strip() == fav_customer]
-            fav_cols = ["product_name", "product_quantity", "unit", "notes"]
-            fav_labels = {
-                "product_name": "Product Name",
-                "product_quantity": "Product Quantity",
-                "unit": "Unit (box/kg/g)",
-                "notes": "Notes",
-            }
 
             def _fav_frame(records, cols):
                 d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
@@ -1121,40 +1122,41 @@ else:
                 except Exception as e:
                     st.error(f"❌ Save failed: {str(e)}")
 
-            with st.expander("📁 Import / Export Favorites (all customers)"):
-                # Export
-                if all_favorites:
-                    _fav_exp = pd.DataFrame(all_favorites)
-                    st.download_button(
-                        "⬇️ Export CSV", data=_fav_exp.to_csv(index=False),
-                        file_name=f"{selected_supplier}_favorites_{datetime.now().strftime('%Y%m%d')}.csv",
-                        mime="text/csv", use_container_width=True, key="fav_export")
-                else:
-                    st.caption("No favorites to export yet.")
-                st.markdown("---")
-                st.caption("CSV columns: customer, product_name, product_quantity, unit, notes  "
-                           "**Upload & replace** = your file becomes all favorites. "
-                           "**Add to existing** = rows added on top.")
-                fav_up = st.file_uploader("Choose a CSV file", type=["csv"], key="fav_csv")
-                if fav_up is not None:
-                    try:
-                        dfi = pd.read_csv(fav_up).fillna("")
-                        imp_cols = ["customer"] + fav_cols
-                        rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
-                                for r in dfi.to_dict('records')]
-                        st.dataframe(dfi, use_container_width=True)
-                        fi1, fi2 = st.columns(2)
-                        if fi1.button("⬆️ Upload & replace everything", key="fav_imp_rep", use_container_width=True):
-                            st.session_state.data_handler.update_supplier_favorites(selected_supplier, rows)
-                            st.success(f"✅ Imported {len(rows)} favorites!")
-                            st.rerun()
-                        if fi2.button("➕ Add to existing", key="fav_imp_app", use_container_width=True):
-                            st.session_state.data_handler.update_supplier_favorites(
-                                selected_supplier, (all_favorites or []) + rows)
-                            st.success(f"✅ Added {len(rows)} favorites!")
-                            st.rerun()
-                    except Exception as e:
-                        st.error(f"❌ Error reading CSV: {e}")
+        # Import / Export is always shown (like Customer & Product Rules),
+        # even when this supplier has no customers/favorites yet.
+        with st.expander("📁 Import / Export Favorites (all customers)"):
+            # Export
+            if all_favorites:
+                _fav_exp = pd.DataFrame(all_favorites)
+                st.download_button(
+                    "⬇️ Export CSV", data=_fav_exp.to_csv(index=False),
+                    file_name=f"{selected_supplier}_favorites_{datetime.now().strftime('%Y%m%d')}.csv",
+                    mime="text/csv", use_container_width=True, key="fav_export")
+            else:
+                st.caption("No favorites to export yet.")
+            st.markdown("---")
+            st.caption("CSV columns: customer, product_name, product_quantity, unit, notes  "
+                       "**Upload & replace** = your file becomes all favorites. "
+                       "**Add to existing** = rows added on top.")
+            fav_up = st.file_uploader("Choose a CSV file", type=["csv"], key="fav_csv")
+            if fav_up is not None:
+                try:
+                    dfi = pd.read_csv(fav_up).fillna("")
+                    rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
+                            for r in dfi.to_dict('records')]
+                    st.dataframe(dfi, use_container_width=True)
+                    fi1, fi2 = st.columns(2)
+                    if fi1.button("⬆️ Upload & replace everything", key="fav_imp_rep", use_container_width=True):
+                        st.session_state.data_handler.update_supplier_favorites(selected_supplier, rows)
+                        st.success(f"✅ Imported {len(rows)} favorites!")
+                        st.rerun()
+                    if fi2.button("➕ Add to existing", key="fav_imp_app", use_container_width=True):
+                        st.session_state.data_handler.update_supplier_favorites(
+                            selected_supplier, (all_favorites or []) + rows)
+                        st.success(f"✅ Added {len(rows)} favorites!")
+                        st.rerun()
+                except Exception as e:
+                    st.error(f"❌ Error reading CSV: {e}")
 
     # Tab 5: Supplier Information
     with tab5:
