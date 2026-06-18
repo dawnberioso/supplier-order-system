@@ -272,6 +272,22 @@ class DataHandler:
         return self._put_file(f"{supplier_name}.json", data,
                               f"Update required days for {supplier_name}")
 
+    # ---------- shift coverage (employees & schedules) ----------
+
+    def get_shift_coverage(self):
+        data, _ = self._get_file("shift_coverage.json")
+        if data is None:
+            return []
+        return data.get("rows", [])
+
+    def update_shift_coverage(self, rows):
+        data, _ = self._get_file("shift_coverage.json")
+        if data is None:
+            data = {"rows": []}
+        data["rows"] = rows
+        data["last_updated"] = self._now()
+        return self._put_file("shift_coverage.json", data, "Update shift coverage")
+
     # ---------- config.json ----------
 
     def _add_to_config(self, supplier_name):

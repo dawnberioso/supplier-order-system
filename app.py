@@ -261,6 +261,13 @@ st.markdown("""
         font-weight: 700;
     }
 
+    /* Shift-coverage table: bold the Employee (1st) and Supplier (2nd) columns */
+    .sc-table td:nth-child(1),
+    .sc-table td:nth-child(2) {
+        color: #0a2e3a;
+        font-weight: 700;
+    }
+
     /* Message styling */
     .stSuccess {
         background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(26, 186, 220, 0.1));
@@ -411,7 +418,8 @@ with st.sidebar:
     if st.button("✨ Add New Supplier", use_container_width=True):
         st.session_state.show_new_supplier = True
 
-    if st.button("🔄 Refresh", use_container_width=True):
+    if st.button("📅 Shift Coverage", use_container_width=True):
+        st.session_state.show_shift_coverage = True
         st.rerun()
 
     # Toggle to switch between the styled Overview and the edit screen
@@ -438,6 +446,113 @@ with st.sidebar:
         st.markdown("---")
         st.caption(f"👤 Signed in as **{visitor_name}**")
         st.button("🚪 Log out", use_container_width=True, on_click=st.logout)
+
+# ---- Shift Coverage page (replaces the dashboard when active) ----
+if st.session_state.get('show_shift_coverage'):
+    _dh = st.session_state.data_handler
+    st.markdown("<h1 style='text-align:center;'>📅 Shift Coverage</h1>", unsafe_allow_html=True)
+    if st.button("⬅️ Back to Dashboard", key="sc_back"):
+        st.session_state.show_shift_coverage = False
+        st.session_state.sc_employee = None
+        st.rerun()
+    st.markdown("---")
+
+    sc_cols = ["employee", "supplier", "days", "shift", "time", "notes"]
+    sc_labels = {"employee": "Employee", "supplier": "Supplier", "days": "Days",
+                 "shift": "Shift", "time": "Time", "notes": "Notes"}
+    sc_rows = _dh.get_shift_coverage()
+
+    def _sc_df(records, cols):
+        if records:
+            d = pd.DataFrame(records)
+            for c in cols:
+                if c not in d.columns:
+                    d[c] = ""
+            return d[cols]
+        return pd.DataFrame(columns=cols)
+
+    employees = sorted({str(r.get("employee", "")).strip() for r in sc_rows
+                        if str(r.get("employee", "")).strip()})
+    if employees:
+        st.markdown("<h4>👤 Edit one employee's schedule</h4>", unsafe_allow_html=True)
+        ncol = min(len(employees), 4)
+        ecols = st.columns(ncol)
+        for i, emp in enumerate(employees):
+            if ecols[i % ncol].button(f"👤 {emp}", key=f"sc_emp_{i}", use_container_width=True):
+                st.session_state.sc_employee = emp
+                st.rerun()
+
+    sel_emp = st.session_state.get('sc_employee')
+
+    if sel_emp and sel_emp in employees:
+        st.markdown(f"<h4>✏️ {sel_emp}'s schedule (per supplier)</h4>", unsafe_allow_html=True)
+        emp_cols = ["supplier", "days", "shift", "time", "notes"]
+        emp_df = _sc_df([r for r in sc_rows if str(r.get("employee", "")).strip() == sel_emp], emp_cols)
+        edited_emp = st.data_editor(
+            emp_df, num_rows="dynamic", use_container_width=True, key="sc_emp_editor",
+            column_config={c: st.column_config.TextColumn(sc_labels[c]) for c in emp_cols})
+        c1, c2 = st.columns(2)
+        if c1.button(f"💾 Save {sel_emp}'s schedule", key="sc_save_emp", use_container_width=True):
+            others = [r for r in sc_rows if str(r.get("employee", "")).strip() != sel_emp]
+            newrows = []
+            for rec in edited_emp.fillna("").to_dict("records"):
+                if not any(str(v).strip() for v in rec.values()):
+                    continue
+                newrows.append({"employee": sel_emp, **{k: rec.get(k, "") for k in emp_cols}})
+            if _dh.update_shift_coverage(others + newrows):
+                st.success("✅ Saved!")
+                st.rerun()
+            else:
+                st.error("❌ Save failed")
+        if c2.button("⬅️ Back to full table", key="sc_emp_back", use_container_width=True):
+            st.session_state.sc_employee = None
+            st.rerun()
+    else:
+        if sc_rows:
+            st.markdown("<h4>👁️ Coverage Overview</h4>", unsafe_allow_html=True)
+            ov = _sc_df(sc_rows, sc_cols).rename(columns=sc_labels).fillna("")
+            html = ov.to_html(index=False, escape=True,
+                              classes="styled-rules-table sc-table", border=0)
+            st.markdown(f"<div class='styled-rules-wrap'>{html}</div>", unsafe_allow_html=True)
+
+        st.markdown("<h4>✏️ Edit all coverage</h4>", unsafe_allow_html=True)
+        all_df = _sc_df(sc_rows, sc_cols)
+        edited_all = st.data_editor(
+            all_df, num_rows="dynamic", use_container_width=True, key="sc_all_editor",
+            column_config={c: st.column_config.TextColumn(sc_labels[c]) for c in sc_cols})
+        if st.button("💾 Save Coverage", key="sc_save_all"):
+            newrows = [r for r in edited_all.fillna("").to_dict("records")
+                       if any(str(v).strip() for v in r.values())]
+            if _dh.update_shift_coverage(newrows):
+                st.success("✅ Coverage saved!")
+                st.rerun()
+            else:
+                st.error("❌ Save failed")
+
+    st.markdown("---")
+    st.markdown("<h4>📥 Import Shift Coverage (CSV)</h4>", unsafe_allow_html=True)
+    st.caption("CSV columns: employee, supplier, days, shift, time, notes")
+    up_sc = st.file_uploader("Choose a CSV file", type=["csv"], key="sc_csv")
+    if up_sc is not None:
+        try:
+            dfi = pd.read_csv(up_sc).fillna("")
+            low = {c.lower().strip(): c for c in dfi.columns}
+            imported = [{k: str(r.get(low.get(k, ""), "")) for k in sc_cols}
+                        for _, r in dfi.iterrows()]
+            st.dataframe(dfi, use_container_width=True)
+            ic1, ic2 = st.columns(2)
+            if ic1.button("✅ Replace all with import", key="sc_imp_replace", use_container_width=True):
+                if _dh.update_shift_coverage(imported):
+                    st.success(f"✅ Imported {len(imported)} rows (replaced).")
+                    st.rerun()
+            if ic2.button("➕ Append to existing", key="sc_imp_append", use_container_width=True):
+                if _dh.update_shift_coverage(sc_rows + imported):
+                    st.success(f"✅ Appended {len(imported)} rows.")
+                    st.rerun()
+        except Exception as e:
+            st.error(f"❌ Error reading CSV: {e}")
+
+    st.stop()
 
 # Main content area
 if not selected_supplier:
