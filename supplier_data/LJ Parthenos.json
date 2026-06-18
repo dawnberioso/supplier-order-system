@@ -2,7 +2,7 @@
   "supplier_name": "LJ Parthenos",
   "description": "Fruit & Veg",
   "created_at": "2026-06-17T08:08:28.475078",
-  "last_updated": "2026-06-18T04:31:58.752309",
+  "last_updated": "2026-06-18T06:36:18.668780",
   "rules": [
     {
       "Unnamed: 0": NaN,
@@ -2957,5 +2957,9 @@
       "customer": " LJ Parthenos",
       "required_days": "Sunday - Saturday"
     }
-  ]
+  ],
+  "rules_meta": {
+    "labels": {},
+    "extra_columns": []
+  }
 }
