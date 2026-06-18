@@ -9,14 +9,6 @@
       "notes": ""
     },
     {
-      "employee": "Ailene",
-      "supplier": "Lj Pathernos",
-      "days": "Sunday - Saturday",
-      "shift": "",
-      "time": "",
-      "notes": ""
-    },
-    {
       "employee": "Vanessa",
       "supplier": "",
       "days": "",
@@ -127,7 +119,23 @@
       "shift": "",
       "time": "",
       "notes": ""
+    },
+    {
+      "employee": "Ailene",
+      "supplier": "Lj Pathernos",
+      "days": "Sunday - Saturday",
+      "shift": "",
+      "time": "",
+      "notes": ""
+    },
+    {
+      "employee": "Ailene",
+      "supplier": "xghsdhsdh",
+      "days": "",
+      "shift": "",
+      "time": "",
+      "notes": ""
     }
   ],
-  "last_updated": "2026-06-18T06:17:17.309009"
+  "last_updated": "2026-06-18T06:17:28.562856"
 }
