@@ -1123,53 +1123,6 @@ else:
             else:
                 st.error("❌ Save failed")
 
-        st.markdown("---")
-        st.markdown("<h4>👤 Per-customer view</h4>", unsafe_allow_html=True)
-
-        if not fav_cust_key:
-            st.info("ℹ️ No customer column detected in your favorites, so the per-customer view "
-                    "isn't available. Use the sheet above to view and edit all rows.")
-        else:
-            cust_values = sorted({str(f.get(fav_cust_key, "")).strip() for f in all_favorites
-                                  if str(f.get(fav_cust_key, "")).strip()}
-                                 | {str(r.get("customer", "")).strip() for r in all_rules
-                                    if str(r.get("customer", "")).strip()})
-            fc1, fc2 = st.columns([3, 1])
-            if cust_values:
-                fav_customer = fc1.selectbox(f"👤 Select {_fav_label(fav_cust_key)}:", cust_values,
-                                             key="fav_customer_select")
-            else:
-                fav_customer = fc1.text_input(f"{_fav_label(fav_cust_key)}:", key="fav_manual_name")
-            if fc2.text_input("Or type new:", key="fav_new_name"):
-                fav_customer = st.session_state.fav_new_name
-
-            cust_favs = [f for f in all_favorites
-                         if str(f.get(fav_cust_key, "")).strip() == str(fav_customer).strip()]
-            view_cols = [c for c in fav_all_cols if c != fav_cust_key]
-            fav_df = _fav_frame(cust_favs, view_cols)
-
-            st.markdown(f"<h4>✏️ Favorites for {fav_customer}</h4>", unsafe_allow_html=True)
-            edited_fav = st.data_editor(
-                fav_df, use_container_width=True, num_rows="dynamic", key="favorites_editor",
-                column_config={c: st.column_config.TextColumn(_fav_label(c)) for c in view_cols})
-
-            if st.button("💾 Save Favorites", use_container_width=False, key="fav_save"):
-                try:
-                    others = [f for f in all_favorites
-                              if str(f.get(fav_cust_key, "")).strip() != str(fav_customer).strip()]
-                    new_for_customer = []
-                    for rec in edited_fav.fillna("").to_dict('records'):
-                        if not any(str(v).strip() for v in rec.values()):
-                            continue
-                        rec[fav_cust_key] = fav_customer
-                        new_for_customer.append(rec)
-                    st.session_state.data_handler.update_supplier_favorites(
-                        selected_supplier, others + new_for_customer)
-                    st.success(f"✅ Favorites saved for {fav_customer}!")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"❌ Save failed: {str(e)}")
-
         # Import / Export is always shown (like Customer & Product Rules),
         # even when this supplier has no customers/favorites yet.
         with st.expander("📁 Import / Export Favorites (all customers)"):
