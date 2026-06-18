@@ -830,7 +830,7 @@ else:
                                 for r in dfi.to_dict('records')]
                         st.dataframe(dfi, use_container_width=True)
                         ir1, ir2 = st.columns(2)
-                        if ir1.button("⬆️ Upload & replace everything", key="cr_imp_rep", use_container_width=True):
+                        if ir1.button("⬆️ Upload", key="cr_imp_rep", use_container_width=True):
                             _dh.update_supplier_rules(selected_supplier, rows)
                             st.success(f"✅ Uploaded {len(rows)} rows!")
                             st.rerun()
@@ -980,7 +980,7 @@ else:
                                 for r in dfi.to_dict('records')]
                         st.dataframe(dfi, use_container_width=True)
                         pir1, pir2 = st.columns(2)
-                        if pir1.button("⬆️ Upload & replace everything", key="pr_imp_rep", use_container_width=True):
+                        if pir1.button("⬆️ Upload", key="pr_imp_rep", use_container_width=True):
                             _dh.update_product_rules(selected_supplier, rows)
                             st.success(f"✅ Uploaded {len(rows)} rows!")
                             st.rerun()
@@ -1142,11 +1142,33 @@ else:
             if fav_up is not None:
                 try:
                     dfi = pd.read_csv(fav_up).fillna("")
-                    rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
-                            for r in dfi.to_dict('records')]
+                    # Map the CSV's headers (any case / common variants) onto the
+                    # fixed fields the Favorites view reads, so imports actually show up.
+                    low = {str(c).lower().strip(): c for c in dfi.columns}
+
+                    def _pick(r, *aliases):
+                        for a in aliases:
+                            if a in low:
+                                v = r.get(low[a], "")
+                                return "" if str(v) == "nan" else str(v)
+                        return ""
+
+                    rows = []
+                    for _, r in dfi.iterrows():
+                        rows.append({
+                            "customer": _pick(r, "customer", "customer name", "client"),
+                            "product_name": _pick(r, "product_name", "product name", "product",
+                                                  "ordered_product", "ordered product"),
+                            "product_quantity": _pick(r, "product_quantity", "product quantity",
+                                                      "quantity", "qty"),
+                            "unit": _pick(r, "unit", "unit (box/kg/g)", "units"),
+                            "notes": _pick(r, "notes", "note", "remarks", "comments"),
+                        })
+                    # Drop fully-empty rows
+                    rows = [x for x in rows if any(str(v).strip() for v in x.values())]
                     st.dataframe(dfi, use_container_width=True)
                     fi1, fi2 = st.columns(2)
-                    if fi1.button("⬆️ Upload & replace everything", key="fav_imp_rep", use_container_width=True):
+                    if fi1.button("⬆️ Upload", key="fav_imp_rep", use_container_width=True):
                         st.session_state.data_handler.update_supplier_favorites(selected_supplier, rows)
                         st.success(f"✅ Imported {len(rows)} favorites!")
                         st.rerun()
