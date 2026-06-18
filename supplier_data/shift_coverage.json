@@ -1,0 +1,153 @@
+{
+  "rows": [],
+  "overview": [
+    {
+      "member": "Krista",
+      "role": "Shift Manager",
+      "mon": "1:00am-10:00am",
+      "tue": "1:00am-10:00am",
+      "wed": "OFF | Trixy Cover",
+      "thu": "1:00am-10:00am",
+      "fri": "1:00am-10:00am",
+      "sat": "1:00am-10:00am",
+      "sun": "OFF"
+    },
+    {
+      "member": "Ellen",
+      "role": "",
+      "mon": "3am-12pm",
+      "tue": "OFF | Trixy Cover",
+      "wed": "3am-12pm",
+      "thu": "3am-12pm",
+      "fri": "3am-12pm",
+      "sat": "1:00am-10:00am",
+      "sun": "OFF"
+    },
+    {
+      "member": "Trixy",
+      "role": "",
+      "mon": "OFF",
+      "tue": "3am-12pm",
+      "wed": "1:00am-10:00am",
+      "thu": "5am-2pm",
+      "fri": "5am-2pm",
+      "sat": "3am-12pm",
+      "sun": "OFF"
+    },
+    {
+      "member": "Eden",
+      "role": "",
+      "mon": "8am-5pm",
+      "tue": "4am-1pm",
+      "wed": "4am-1pm",
+      "thu": "4am-1pm",
+      "fri": "4am-1pm",
+      "sat": "OFF | Trixy ALL",
+      "sun": "OFF"
+    },
+    {
+      "member": "Renilyn",
+      "role": "",
+      "mon": "OFF",
+      "tue": "5am-1pm",
+      "wed": "5am-1pm",
+      "thu": "4am-1pm",
+      "fri": "4am-1pm",
+      "sat": "1am-10am",
+      "sun": "OFF"
+    },
+    {
+      "member": "Anelie",
+      "role": "",
+      "mon": "OFF | Eden GP, Nisa MCB",
+      "tue": "6:30am -3:30pm",
+      "wed": "6:30am -3:30pm",
+      "thu": "6:30am -3:30pm",
+      "fri": "6:30am -3:30pm",
+      "sat": "6:30am -3:30pm",
+      "sun": "OFF"
+    },
+    {
+      "member": "Jade",
+      "role": "",
+      "mon": "3pm-12am",
+      "tue": "3pm-12am",
+      "wed": "2pm-11pm",
+      "thu": "3pm-12am",
+      "fri": "OFF | Nisa",
+      "sat": "OFF",
+      "sun": "2pm-11pm"
+    },
+    {
+      "member": "Vanessa",
+      "role": "",
+      "mon": "2pm-11pm",
+      "tue": "2pm-11pm",
+      "wed": "2pm-11pm",
+      "thu": "OFF",
+      "fri": "2pm-11pm",
+      "sat": "2pm-11pm",
+      "sun": "OFF"
+    },
+    {
+      "member": "Hazel",
+      "role": "",
+      "mon": "4pm-1am",
+      "tue": "4pm-1am",
+      "wed": "OFF | Rosros, Marie",
+      "thu": "4pm-1am",
+      "fri": "4pm-1am",
+      "sat": "OFF",
+      "sun": "4pm-1am"
+    },
+    {
+      "member": "Marie",
+      "role": "Shift Manager",
+      "mon": "5pm-3am",
+      "tue": "5pm-2am",
+      "wed": "5pm-2am",
+      "thu": "5pm-2am",
+      "fri": "OFF",
+      "sat": "OFF",
+      "sun": "5pm-2am"
+    },
+    {
+      "member": "Rosemarie",
+      "role": "",
+      "mon": "10:30pm- 7:30am",
+      "tue": "10:30pm- 7:30am",
+      "wed": "10:30pm- 7:30am",
+      "thu": "10:30pm- 7:30am",
+      "fri": "9pm-6am",
+      "sat": "OFF",
+      "sun": "OFF"
+    },
+    {
+      "member": "Nisa",
+      "role": "",
+      "mon": "1am-9am",
+      "tue": "5pm-2am",
+      "wed": "8pm-5am",
+      "thu": "2pm-11pm",
+      "fri": "2pm-11pm",
+      "sat": "OFF",
+      "sun": "OFF"
+    },
+    {
+      "member": "Ailene",
+      "role": "Shift Manager",
+      "mon": "5pm-2am",
+      "tue": "OFF | Nisa",
+      "wed": "5pm-2am",
+      "thu": "5pm-2am",
+      "fri": "5pm-2am",
+      "sat": "OFF",
+      "sun": "5pm-2am"
+    }
+  ],
+  "overview_meta": {
+    "labels": {},
+    "extra_columns": []
+  },
+  "last_updated": "2026-06-18T18:11:51.066065"
+}

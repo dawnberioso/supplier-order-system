@@ -161,10 +161,13 @@ class DataHandler:
                              params={"ref": self.branch}, timeout=20)
             if r.status_code != 200:
                 return []
+            # Internal data files that are NOT suppliers (so they never show in
+            # the supplier dropdown and can't be deleted as one).
+            reserved = {"config.json", "shift_coverage.json"}
             files = []
             for item in r.json():
                 name = item.get("name", "")
-                if name.endswith(".json") and name != "config.json":
+                if name.endswith(".json") and name not in reserved:
                     files.append(name[:-5])  # strip .json
             return sorted(files)
         except Exception as e:
