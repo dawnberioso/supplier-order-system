@@ -774,10 +774,11 @@ else:
 
             df = _cust_frame(supplier_rules, all_cols)
 
-            _cr_sort = st.checkbox("🔤 Sort A→Z", key="cr_sort_az")
+            crs1, crs2 = st.columns([1, 3], vertical_alignment="center")
+            _cr_sort = crs1.checkbox("🔤 Sort A→Z", key="cr_sort_az")
             if _cr_sort and len(df) > 0:
                 df = df.sort_values(by=df.columns[0], ignore_index=True)
-            st.markdown(f"<p style='color:#8b95a7;'><b>📊 {len(df)} rows</b></p>", unsafe_allow_html=True)
+            crs2.markdown(f"<p style='color:#8b95a7; margin:0;'><b>📊 {len(df)} rows</b></p>", unsafe_allow_html=True)
 
             edited_df = st.data_editor(
                 df, use_container_width=True, num_rows="dynamic", height=800,
@@ -923,10 +924,11 @@ else:
 
             pdf = _frame(product_rules, p_all_cols)
 
-            _pr_sort = st.checkbox("🔤 Sort A→Z", key="pr_sort_az")
+            prs1, prs2 = st.columns([1, 3], vertical_alignment="center")
+            _pr_sort = prs1.checkbox("🔤 Sort A→Z", key="pr_sort_az")
             if _pr_sort and len(pdf) > 0:
                 pdf = pdf.sort_values(by=pdf.columns[0], ignore_index=True)
-            st.markdown(f"<p style='color:#8b95a7;'><b>📊 {len(pdf)} rows</b></p>", unsafe_allow_html=True)
+            prs2.markdown(f"<p style='color:#8b95a7; margin:0;'><b>📊 {len(pdf)} rows</b></p>", unsafe_allow_html=True)
 
             edited_p = st.data_editor(
                 pdf, use_container_width=True, num_rows="dynamic", height=800,
