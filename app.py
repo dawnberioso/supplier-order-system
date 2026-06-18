@@ -1067,23 +1067,35 @@ else:
                 customers.add(_c)
         customer_list = sorted(customers)
 
-        fav_cols = ["product_name", "product_quantity", "unit", "notes"]
-        fav_labels = {
-            "product_name": "Product Name",
-            "product_quantity": "Product Quantity",
-            "unit": "Unit (box/kg/g)",
-            "notes": "Notes",
+        # Favorites keep the CSV's own columns exactly (like Customer Rules),
+        # so imported data shows up unchanged.
+        fav_known_labels = {
+            "customer": "Customer", "customer_name": "Customer Name",
+            "customer_code": "Customer Code", "product_name": "Product Name",
+            "product_code": "Product Code", "product_quantity": "Product Quantity",
+            "unit": "Unit", "unit_code": "Unit Code", "notes": "Notes",
         }
-        all_fav_cols = ["customer"] + fav_cols
-        all_fav_labels = {"customer": "Customer", **fav_labels}
+        fav_default_cols = ["customer", "product_name", "product_quantity", "unit", "notes"]
 
-        # Supplier-wide sheet: shows every favorite (all customers) so imported
-        # rows are always visible here, even if a customer name doesn't line up.
-        st.markdown("<h4>📋 All Favorites (whole supplier)</h4>", unsafe_allow_html=True)
-        st.caption("Every favorite for this supplier. Anything you import appears here. "
-                   "Edit freely — the Customer column groups them per customer below.")
+        # Columns follow the data; fall back to defaults when empty.
+        if all_favorites:
+            fav_all_cols = []
+            for r in all_favorites:
+                for k in r.keys():
+                    if str(k) not in fav_all_cols:
+                        fav_all_cols.append(str(k))
+        else:
+            fav_all_cols = list(fav_default_cols)
 
-        def _all_fav_frame(records, cols):
+        def _fav_label(c):
+            return fav_known_labels.get(c, c)
+
+        # Detect the column that names the customer (for the per-customer view).
+        fav_cust_key = next((c for c in ["customer", "customer_name"] if c in fav_all_cols), None)
+        if fav_cust_key is None:
+            fav_cust_key = next((c for c in fav_all_cols if "customer" in c.lower()), None)
+
+        def _fav_frame(records, cols):
             d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
             if 'ordered_product' in d.columns and 'product_name' not in d.columns:
                 d['product_name'] = d['ordered_product']
@@ -1092,13 +1104,16 @@ else:
                     d[c] = ""
             return d[cols].fillna("")
 
-        all_fav_df = _all_fav_frame(all_favorites, all_fav_cols)
+        # Supplier-wide sheet: every favorite, exactly as imported.
+        st.markdown("<h4>📋 All Favorites (whole supplier)</h4>", unsafe_allow_html=True)
+        st.caption("Every favorite for this supplier, with your CSV's own columns. Anything you import appears here.")
+        all_fav_df = _fav_frame(all_favorites, fav_all_cols)
         st.markdown(f"<p style='color:#8b95a7; margin:0 0 6px;'><b>📊 {len(all_fav_df)} rows</b></p>",
                     unsafe_allow_html=True)
         edited_all_fav = st.data_editor(
             all_fav_df, use_container_width=True, num_rows="dynamic", height=400,
             key="all_fav_editor",
-            column_config={c: st.column_config.TextColumn(all_fav_labels[c]) for c in all_fav_cols})
+            column_config={c: st.column_config.TextColumn(_fav_label(c)) for c in fav_all_cols})
         if st.button("💾 Save all favorites", key="all_fav_save"):
             rows = [r for r in edited_all_fav.fillna("").to_dict("records")
                     if any(str(v).strip() for v in r.values())]
@@ -1111,46 +1126,43 @@ else:
         st.markdown("---")
         st.markdown("<h4>👤 Per-customer view</h4>", unsafe_allow_html=True)
 
-        if not customer_list:
-            st.info("👤 No saved customers yet — type a name below to start.")
-            fav_customer = st.text_input("Customer name:", key="fav_manual_name")
+        if not fav_cust_key:
+            st.info("ℹ️ No customer column detected in your favorites, so the per-customer view "
+                    "isn't available. Use the sheet above to view and edit all rows.")
         else:
+            cust_values = sorted({str(f.get(fav_cust_key, "")).strip() for f in all_favorites
+                                  if str(f.get(fav_cust_key, "")).strip()}
+                                 | {str(r.get("customer", "")).strip() for r in all_rules
+                                    if str(r.get("customer", "")).strip()})
             fc1, fc2 = st.columns([3, 1])
-            fav_customer = fc1.selectbox("👤 Select Customer:", customer_list, key="fav_customer_select")
+            if cust_values:
+                fav_customer = fc1.selectbox(f"👤 Select {_fav_label(fav_cust_key)}:", cust_values,
+                                             key="fav_customer_select")
+            else:
+                fav_customer = fc1.text_input(f"{_fav_label(fav_cust_key)}:", key="fav_manual_name")
             if fc2.text_input("Or type new:", key="fav_new_name"):
                 fav_customer = st.session_state.fav_new_name
 
             cust_favs = [f for f in all_favorites
-                         if str(f.get("customer", "")).strip() == fav_customer]
+                         if str(f.get(fav_cust_key, "")).strip() == str(fav_customer).strip()]
+            view_cols = [c for c in fav_all_cols if c != fav_cust_key]
+            fav_df = _fav_frame(cust_favs, view_cols)
 
-            def _fav_frame(records, cols):
-                d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
-                # migrate older favorites that used 'ordered_product'
-                if 'ordered_product' in d.columns and 'product_name' not in d.columns:
-                    d['product_name'] = d['ordered_product']
-                for c in cols:
-                    if c not in d.columns:
-                        d[c] = ""
-                return d[cols]
-
-            fav_df = _fav_frame(cust_favs, fav_cols)
-
-            st.markdown(f"<h4>✏️ Favorite Products for {fav_customer}</h4>", unsafe_allow_html=True)
+            st.markdown(f"<h4>✏️ Favorites for {fav_customer}</h4>", unsafe_allow_html=True)
             edited_fav = st.data_editor(
                 fav_df, use_container_width=True, num_rows="dynamic", key="favorites_editor",
-                column_config={c: st.column_config.TextColumn(l) for c, l in fav_labels.items()})
+                column_config={c: st.column_config.TextColumn(_fav_label(c)) for c in view_cols})
 
             if st.button("💾 Save Favorites", use_container_width=False, key="fav_save"):
                 try:
                     others = [f for f in all_favorites
-                              if str(f.get("customer", "")).strip() != fav_customer]
+                              if str(f.get(fav_cust_key, "")).strip() != str(fav_customer).strip()]
                     new_for_customer = []
                     for rec in edited_fav.fillna("").to_dict('records'):
                         if not any(str(v).strip() for v in rec.values()):
                             continue
-                        clean = {k: rec.get(k, "") for k in fav_cols}
-                        clean["customer"] = fav_customer
-                        new_for_customer.append(clean)
+                        rec[fav_cust_key] = fav_customer
+                        new_for_customer.append(rec)
                     st.session_state.data_handler.update_supplier_favorites(
                         selected_supplier, others + new_for_customer)
                     st.success(f"✅ Favorites saved for {fav_customer}!")
@@ -1171,36 +1183,16 @@ else:
             else:
                 st.caption("No favorites to export yet.")
             st.markdown("---")
-            st.caption("CSV columns: customer, product_name, product_quantity, unit, notes  "
-                       "**Upload & replace** = your file becomes all favorites. "
+            st.caption("Your CSV's own column names are kept exactly. "
+                       "**Upload** = your file becomes all favorites. "
                        "**Add to existing** = rows added on top.")
             fav_up = st.file_uploader("Choose a CSV file", type=["csv"], key="fav_csv")
             if fav_up is not None:
                 try:
                     dfi = pd.read_csv(fav_up).fillna("")
-                    # Map the CSV's headers (any case / common variants) onto the
-                    # fixed fields the Favorites view reads, so imports actually show up.
-                    low = {str(c).lower().strip(): c for c in dfi.columns}
-
-                    def _pick(r, *aliases):
-                        for a in aliases:
-                            if a in low:
-                                v = r.get(low[a], "")
-                                return "" if str(v) == "nan" else str(v)
-                        return ""
-
-                    rows = []
-                    for _, r in dfi.iterrows():
-                        rows.append({
-                            "customer": _pick(r, "customer", "customer name", "client"),
-                            "product_name": _pick(r, "product_name", "product name", "product",
-                                                  "ordered_product", "ordered product"),
-                            "product_quantity": _pick(r, "product_quantity", "product quantity",
-                                                      "quantity", "qty"),
-                            "unit": _pick(r, "unit", "unit (box/kg/g)", "units"),
-                            "notes": _pick(r, "notes", "note", "remarks", "comments"),
-                        })
-                    # Drop fully-empty rows
+                    # Keep the CSV's own columns exactly as they are.
+                    rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
+                            for r in dfi.to_dict('records')]
                     rows = [x for x in rows if any(str(v).strip() for v in x.values())]
                     st.dataframe(dfi, use_container_width=True)
                     fi1, fi2 = st.columns(2)
