@@ -2,17 +2,17 @@
   "rows": [
     {
       "employee": "Jade",
-      "supplier": "zxvzxv",
-      "days": "zxbzb",
-      "shift": "zb",
+      "supplier": "Tassie",
+      "days": "Sunday",
+      "shift": "8 Hours",
       "time": "",
       "notes": ""
     },
     {
       "employee": "Jade",
-      "supplier": "zxbzb",
-      "days": "zbzb",
-      "shift": "zdbzbn",
+      "supplier": "Oceanmade",
+      "days": "Monday - Thursday",
+      "shift": "",
       "time": "",
       "notes": ""
     }
@@ -179,5 +179,5 @@
     "labels": {},
     "extra_columns": []
   },
-  "last_updated": "2026-06-18T08:13:57.068480"
+  "last_updated": "2026-06-18T08:14:48.212001"
 }
