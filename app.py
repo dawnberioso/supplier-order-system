@@ -459,11 +459,10 @@ if not selected_supplier:
     )
 else:
     # Create tabs
-    tab1, tab_fav, tab2, tab3, tab4, tab5 = st.tabs([
+    tab1, tab_fav, tab2, tab4, tab5 = st.tabs([
         "📋 View & Edit Rules",
         "⭐ Favorites",
         "➕ Add New Rule",
-        "📈 Analytics",
         "💾 Import / Export",
         "ℹ️ Supplier Information"
     ])
@@ -495,13 +494,13 @@ else:
                     search_customer = ""
                     search_product = ""
 
-            # Apply filters
+            # Apply filters (guard against suppliers whose rules lack a column)
             filtered_df = df.copy()
-            if search_customer:
+            if search_customer and 'customer' in filtered_df.columns:
                 filtered_df = filtered_df[
                     filtered_df['customer'].str.contains(search_customer, case=False, na=False)
                 ]
-            if search_product:
+            if search_product and 'ordered_product' in filtered_df.columns:
                 filtered_df = filtered_df[
                     filtered_df['ordered_product'].str.contains(search_product, case=False, na=False)
                 ]
@@ -578,21 +577,6 @@ else:
                                                 classes="styled-rules-table", border=0)
                 st.markdown(f"<div class='styled-rules-wrap'>{_table_html}</div>",
                             unsafe_allow_html=True)
-
-            # Compact, collapsed-by-default stats so the Overview gets the space
-            with st.expander("📊 Quick Stats", expanded=False):
-                col1, col2, col3, col4 = st.columns(4)
-                with col1:
-                    st.metric("📋 Total", len(df))
-                with col2:
-                    st.metric("👥 Customers", df['customer'].nunique())
-                with col3:
-                    st.metric("📦 Products", df['ordered_product'].nunique())
-                with col4:
-                    # Pull last_updated from the supplier file (not the rules rows)
-                    _info = st.session_state.data_handler.get_supplier_info(selected_supplier)
-                    _last = _info.get('last_updated', 'N/A')
-                    st.metric("⏱️ Updated", str(_last)[:10] if _last != 'N/A' else "N/A")
 
     # Favorites tab: most-ordered products, organized per customer
     with tab_fav:
@@ -713,45 +697,6 @@ else:
                         st.rerun()
                     else:
                         st.error("❌ Error adding rule")
-
-    # Tab 3: Analytics
-    with tab3:
-        st.markdown(f"<h3>📈 Analytics - {selected_supplier}</h3>", unsafe_allow_html=True)
-
-        supplier_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
-
-        if supplier_rules:
-            df = pd.DataFrame(supplier_rules)
-
-            col1, col2 = st.columns(2)
-
-            with col1:
-                st.markdown("<h4>👥 Top Customers</h4>", unsafe_allow_html=True)
-                top_customers = df['customer'].value_counts().head(10)
-                st.bar_chart(top_customers)
-
-            with col2:
-                st.markdown("<h4>📦 Top Products</h4>", unsafe_allow_html=True)
-                top_products = df['ordered_product'].value_counts().head(10)
-                st.bar_chart(top_products)
-
-            st.markdown("---")
-
-            col1, col2 = st.columns(2)
-
-            with col1:
-                st.markdown("<h4>📏 Unit Types</h4>", unsafe_allow_html=True)
-                units = df['ordered_unit'].value_counts()
-                st.bar_chart(units)
-
-            with col2:
-                st.markdown("<h4>📊 Summary</h4>", unsafe_allow_html=True)
-                st.metric("📋 Total Rules", len(df))
-                st.metric("👥 Customers", df['customer'].nunique())
-                st.metric("📦 Products", df['ordered_product'].nunique())
-                st.metric("📝 With Notes", len(df[df['other_comments'].notna()]))
-        else:
-            st.info("📊 No data to analyze yet.")
 
     # Tab 4: Import/Export
     with tab4:
