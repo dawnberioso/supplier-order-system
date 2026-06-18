@@ -916,69 +916,78 @@ else:
                 except Exception as e:
                     st.error(f"❌ Save failed: {str(e)}")
 
-    # Tab 4: Import/Export
+    # Tab 4: Import/Export (per category)
     with tab4:
-        st.markdown(f"<h3>💾 Trade Data - {selected_supplier}</h3>", unsafe_allow_html=True)
+        _dh = st.session_state.data_handler
+        st.markdown(f"<h3>💾 Import / Export - {selected_supplier}</h3>", unsafe_allow_html=True)
+        st.caption("Pick a category, then import a CSV into it or export it to CSV.")
+
+        ie_category = st.radio(
+            "Category",
+            ["👤 Customer Rules", "📦 Product Rules", "⭐ Favorites"],
+            horizontal=True, key="ie_category", label_visibility="collapsed")
+
+        if ie_category == "👤 Customer Rules":
+            ie_cols = ["customer", "ordered_product", "ordered_unit", "fresho_product",
+                       "fresho_qty", "other_comments", "created_by"]
+            ie_data = _dh.get_supplier_rules(selected_supplier)
+            ie_setter = lambda rows: _dh.update_supplier_rules(selected_supplier, rows)
+            ie_fname = "customer_rules"
+        elif ie_category == "📦 Product Rules":
+            ie_cols = ["ordered_product", "fresho_product", "fresho_qty", "ordered_unit", "notes"]
+            ie_data = _dh.get_product_rules(selected_supplier)
+            ie_setter = lambda rows: _dh.update_product_rules(selected_supplier, rows)
+            ie_fname = "product_rules"
+        else:
+            ie_cols = ["customer", "ordered_product", "fresho_product", "notes"]
+            ie_data = _dh.get_supplier_favorites(selected_supplier)
+            ie_setter = lambda rows: _dh.update_supplier_favorites(selected_supplier, rows)
+            ie_fname = "favorites"
 
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown("<h4>📥 Import CSV</h4>", unsafe_allow_html=True)
-
-            uploaded_file = st.file_uploader(
-                "Choose a CSV file",
-                type=['csv'],
-                key="csv_upload"
-            )
-
-            if uploaded_file is not None:
+            st.markdown("<h4>📥 Import</h4>", unsafe_allow_html=True)
+            st.caption("CSV columns: " + ", ".join(ie_cols))
+            up = st.file_uploader("Choose a CSV file", type=["csv"], key="ie_csv")
+            if up is not None:
                 try:
-                    df_import = pd.read_csv(uploaded_file)
-
-                    st.markdown("<p style='color: #8b95a7;'><b>📋 Preview:</b></p>", unsafe_allow_html=True)
-                    st.dataframe(df_import, use_container_width=True)
-
-                    if st.button("✅ Import", use_container_width=True):
-                        # Convert to list of dicts
-                        rules = df_import.to_dict('records')
-
-                        # Add timestamps
-                        for rule in rules:
-                            rule['created_at'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-                        if st.session_state.data_handler.update_supplier_rules(
-                            selected_supplier,
-                            rules
-                        ):
-                            st.success(f"✅ Imported {len(rules)} rules!")
+                    dfi = pd.read_csv(up).fillna("")
+                    low = {c.lower().strip(): c for c in dfi.columns}
+                    rows = [{k: str(r.get(low.get(k, ""), "")) for k in ie_cols}
+                            for _, r in dfi.iterrows()]
+                    st.dataframe(dfi, use_container_width=True)
+                    i1, i2 = st.columns(2)
+                    if i1.button("✅ Replace all", key="ie_rep", use_container_width=True):
+                        if ie_setter(rows):
+                            st.success(f"✅ Imported {len(rows)} rows (replaced).")
                             st.rerun()
                         else:
                             st.error("❌ Import failed")
-
+                    if i2.button("➕ Append", key="ie_app", use_container_width=True):
+                        if ie_setter((ie_data or []) + rows):
+                            st.success(f"✅ Appended {len(rows)} rows.")
+                            st.rerun()
+                        else:
+                            st.error("❌ Import failed")
                 except Exception as e:
-                    st.error(f"❌ Error: {str(e)}")
+                    st.error(f"❌ Error reading CSV: {e}")
 
         with col2:
-            st.markdown("<h4>📤 Export CSV</h4>", unsafe_allow_html=True)
-
-            supplier_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
-
-            if supplier_rules:
-                df_export = pd.DataFrame(supplier_rules)
-
-                csv = df_export.to_csv(index=False)
-
+            st.markdown("<h4>📤 Export</h4>", unsafe_allow_html=True)
+            if ie_data:
+                exp = pd.DataFrame(ie_data)
+                for c in ie_cols:
+                    if c not in exp.columns:
+                        exp[c] = ""
+                csv = exp.to_csv(index=False)
                 st.download_button(
-                    label="⬇️ Download",
-                    data=csv,
-                    file_name=f"{selected_supplier}_{datetime.now().strftime('%Y%m%d')}.csv",
-                    mime="text/csv",
-                    use_container_width=True
-                )
-
-                st.success(f"✅ Ready! ({len(supplier_rules)} rules)")
+                    label="⬇️ Download CSV", data=csv,
+                    file_name=f"{selected_supplier}_{ie_fname}_{datetime.now().strftime('%Y%m%d')}.csv",
+                    mime="text/csv", use_container_width=True, key="ie_dl")
+                st.success(f"✅ Ready! ({len(ie_data)} rows)")
             else:
-                st.info("📦 Nothing to export yet.")
+                st.info("📦 Nothing to export in this category yet.")
 
     # Tab 5: Supplier Information
     with tab5:
