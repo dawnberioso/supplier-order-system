@@ -236,6 +236,42 @@ class DataHandler:
         return self._put_file(f"{supplier_name}.json", data,
                               f"Update favorites for {supplier_name}")
 
+    # ---------- supplier details (Time Shift, POC, etc.) ----------
+
+    DETAIL_KEYS = ["time_shift_aut", "time_shift_ukt", "information", "poc", "team_ph"]
+
+    def get_supplier_details(self, supplier_name):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        details = (data or {}).get("details", {})
+        # Always return every expected key so the form renders consistently.
+        return {k: details.get(k, "") for k in self.DETAIL_KEYS}
+
+    def update_supplier_details(self, supplier_name, details):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return False
+        data["details"] = {k: details.get(k, "") for k in self.DETAIL_KEYS}
+        data["last_updated"] = self._now()
+        return self._put_file(f"{supplier_name}.json", data,
+                              f"Update details for {supplier_name}")
+
+    # ---------- required days per customer ----------
+
+    def get_required_days(self, supplier_name):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return []
+        return data.get("required_days", [])
+
+    def update_required_days(self, supplier_name, rows):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return False
+        data["required_days"] = rows
+        data["last_updated"] = self._now()
+        return self._put_file(f"{supplier_name}.json", data,
+                              f"Update required days for {supplier_name}")
+
     # ---------- config.json ----------
 
     def _add_to_config(self, supplier_name):

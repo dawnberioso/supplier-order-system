@@ -465,7 +465,7 @@ else:
         "➕ Add New Rule",
         "📈 Analytics",
         "💾 Import / Export",
-        "ℹ️ Supplier Info"
+        "ℹ️ Supplier Information"
     ])
 
     # Tab 1: View & Edit Rules
@@ -817,37 +817,129 @@ else:
             else:
                 st.info("📦 Nothing to export yet.")
 
-    # Tab 5: Supplier Info
+    # Tab 5: Supplier Information
     with tab5:
-        st.markdown(f"<h3>ℹ️ Details - {selected_supplier}</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3>ℹ️ Supplier Information - {selected_supplier}</h3>", unsafe_allow_html=True)
 
-        supplier_info = st.session_state.data_handler.get_supplier_info(selected_supplier)
+        _dh = st.session_state.data_handler
+        supplier_info = _dh.get_supplier_info(selected_supplier)
+        details = _dh.get_supplier_details(selected_supplier)
 
         col1, col2 = st.columns(2)
 
         with col1:
             st.markdown("<h4>📋 Information</h4>", unsafe_allow_html=True)
             st.markdown(f"**🏭 Name:** {supplier_info.get('supplier_name', 'N/A')}")
-            st.markdown(f"**📅 Created:** {supplier_info.get('created_at', 'N/A')}")
-            st.markdown(f"**⏱️ Updated:** {supplier_info.get('last_updated', 'N/A')}")
-            st.markdown(f"**📋 Rules:** {len(st.session_state.data_handler.get_supplier_rules(selected_supplier))}")
+            st.markdown(f"**📋 Rules:** {len(_dh.get_supplier_rules(selected_supplier))}")
+            st.markdown(f"**🕐 Time Shift AUT:** {details.get('time_shift_aut') or '—'}")
+            st.markdown(f"**🕐 Time Shift UKT:** {details.get('time_shift_ukt') or '—'}")
+            st.markdown(f"**👤 POC:** {details.get('poc') or '—'}")
+            st.markdown(f"**👥 Team PH:** {details.get('team_ph') or '—'}")
+            st.markdown(f"**📝 Information:** {details.get('information') or '—'}")
+
+            st.markdown("<h4>📆 Required Days per Customer</h4>", unsafe_allow_html=True)
+            req = _dh.get_required_days(selected_supplier)
+            req_cols = ["customer", "required_days"]
+            if req:
+                req_df = pd.DataFrame(req)
+                for c in req_cols:
+                    if c not in req_df.columns:
+                        req_df[c] = ""
+                req_df = req_df[req_cols]
+            else:
+                req_df = pd.DataFrame(columns=req_cols)
+
+            edited_req = st.data_editor(
+                req_df, use_container_width=True, num_rows="dynamic",
+                key="reqdays_editor",
+                column_config={
+                    "customer": st.column_config.TextColumn("Customer"),
+                    "required_days": st.column_config.TextColumn("Required Days"),
+                })
+            if st.button("💾 Save Required Days", key="save_reqdays"):
+                rows = [r for r in edited_req.fillna("").to_dict("records")
+                        if any(str(v).strip() for v in r.values())]
+                if _dh.update_required_days(selected_supplier, rows):
+                    st.success("✅ Required days saved!")
+                    st.rerun()
+                else:
+                    st.error("❌ Save failed")
+
+            up_req = st.file_uploader(
+                "📥 Import Required Days (CSV columns: customer, required_days)",
+                type=["csv"], key="reqdays_csv")
+            if up_req is not None:
+                try:
+                    dfi = pd.read_csv(up_req).fillna("")
+                    low = {c.lower().strip(): c for c in dfi.columns}
+                    rows = [{
+                        "customer": str(r.get(low.get("customer", ""), "")),
+                        "required_days": str(r.get(low.get("required_days",
+                                          low.get("required days", "")), "")),
+                    } for _, r in dfi.iterrows()]
+                    st.dataframe(dfi, use_container_width=True)
+                    if st.button("✅ Import these required days", key="imp_reqdays"):
+                        if _dh.update_required_days(selected_supplier, rows):
+                            st.success(f"✅ Imported {len(rows)} rows!")
+                            st.rerun()
+                        else:
+                            st.error("❌ Import failed")
+                except Exception as e:
+                    st.error(f"❌ Error reading CSV: {e}")
 
         with col2:
             st.markdown("<h4>⚙️ Manage</h4>", unsafe_allow_html=True)
 
-            new_name = st.text_input("🏷️ New name:", value=selected_supplier)
+            with st.form("supplier_details_form"):
+                st.markdown("**✏️ Editable details**")
+                d_aut = st.text_input("🕐 Time Shift AUT", value=details.get("time_shift_aut", ""))
+                d_ukt = st.text_input("🕐 Time Shift UKT", value=details.get("time_shift_ukt", ""))
+                d_poc = st.text_input("👤 POC", value=details.get("poc", ""))
+                d_team = st.text_input("👥 Team PH", value=details.get("team_ph", ""))
+                d_info = st.text_area("📝 Information", value=details.get("information", ""), height=100)
+                if st.form_submit_button("💾 Save Details"):
+                    if _dh.update_supplier_details(selected_supplier, {
+                        "time_shift_aut": d_aut, "time_shift_ukt": d_ukt,
+                        "poc": d_poc, "team_ph": d_team, "information": d_info,
+                    }):
+                        st.success("✅ Details saved!")
+                        st.rerun()
+                    else:
+                        st.error("❌ Save failed")
 
-            if st.button("✏️ Update", use_container_width=True):
-                if st.session_state.data_handler.rename_supplier(selected_supplier, new_name):
+            up_det = st.file_uploader(
+                "📥 Import Details (CSV columns: time_shift_aut, time_shift_ukt, poc, team_ph, information)",
+                type=["csv"], key="details_csv")
+            if up_det is not None:
+                try:
+                    dfd = pd.read_csv(up_det).fillna("")
+                    if len(dfd) > 0:
+                        row = dfd.iloc[0]
+                        low = {c.lower().strip(): c for c in dfd.columns}
+                        newdet = {k: str(row.get(low.get(k, ""), "")) for k in
+                                  ["time_shift_aut", "time_shift_ukt", "poc", "team_ph", "information"]}
+                        st.dataframe(dfd, use_container_width=True)
+                        if st.button("✅ Import these details", key="imp_details"):
+                            if _dh.update_supplier_details(selected_supplier, newdet):
+                                st.success("✅ Details imported!")
+                                st.rerun()
+                            else:
+                                st.error("❌ Import failed")
+                except Exception as e:
+                    st.error(f"❌ Error reading CSV: {e}")
+
+            st.markdown("---")
+            new_name = st.text_input("🏷️ Rename supplier:", value=selected_supplier)
+            if st.button("✏️ Update Name", use_container_width=True):
+                if _dh.rename_supplier(selected_supplier, new_name):
                     st.success(f"✅ Updated to {new_name}")
                     st.rerun()
                 else:
                     st.error("❌ Update failed")
 
             st.markdown("---")
-
-            if st.button("🗑️ Delete", type="secondary", use_container_width=True, key="delete_supplier_btn"):
-                if st.session_state.data_handler.delete_supplier(selected_supplier):
+            if st.button("🗑️ Delete Supplier", type="secondary", use_container_width=True, key="delete_supplier_btn"):
+                if _dh.delete_supplier(selected_supplier):
                     st.success("✅ Deleted!")
                     st.rerun()
                 else:
