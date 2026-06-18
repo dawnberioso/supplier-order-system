@@ -500,10 +500,32 @@ if st.session_state.get('show_shift_coverage'):
         return pd.DataFrame(columns=cols)
 
     # Coverage Overview is a separate weekly roster (Member, Role, Mon-Sun).
-    ov_cols = ["member", "role", "mon", "tue", "wed", "thu", "fri", "sat", "sun"]
-    ov_labels = {"member": "Member", "role": "Role", "mon": "Mon", "tue": "Tues",
-                 "wed": "Wed", "thu": "Thu", "fri": "Fri", "sat": "Sat", "sun": "Sun"}
+    ov_base_cols = ["member", "role", "mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+    ov_base_labels = {"member": "Member", "role": "Role", "mon": "Mon", "tue": "Tues",
+                      "wed": "Wed", "thu": "Thu", "fri": "Fri", "sat": "Sat", "sun": "Sun"}
     overview_rows = _dh.get_coverage_overview()
+    ov_meta = _dh.get_coverage_meta()
+
+    # Columns follow the data, fall back to the standard week, plus any added columns.
+    if overview_rows:
+        ov_cols = []
+        for r in overview_rows:
+            for k in r.keys():
+                if str(k) not in ov_cols:
+                    ov_cols.append(str(k))
+        for c in ov_base_cols:
+            if c not in ov_cols:
+                ov_cols.append(c)
+    else:
+        ov_cols = list(ov_base_cols)
+    for c in ov_meta["extra_columns"]:
+        if c not in ov_cols:
+            ov_cols.append(c)
+
+    ov_labels = dict(ov_base_labels)
+    for c in ov_cols:
+        ov_labels.setdefault(c, c)
+    ov_labels.update(ov_meta["labels"])
 
     # Member list comes from the overview roster, plus anyone with a saved schedule.
     members = sorted({str(r.get("member", "")).strip() for r in overview_rows
@@ -580,11 +602,13 @@ if st.session_state.get('show_shift_coverage'):
                               classes="styled-rules-table sc-table", border=0)
             st.markdown(f"<div class='styled-rules-wrap'>{html}</div>", unsafe_allow_html=True)
 
-        with st.expander("✏️ Edit All Coverage"):
+        with st.expander("✏️ Edit All Coverage (add / delete rows)"):
+            st.caption("**Add a row:** type in the blank line at the bottom.  "
+                       "**Delete a row:** click its row number, then press Delete (or the 🗑 icon top-right).")
             ov_df = _sc_df(overview_rows, ov_cols)
             edited_ov = st.data_editor(
                 ov_df, num_rows="dynamic", use_container_width=True, key="sc_ov_editor",
-                column_config={c: st.column_config.TextColumn(ov_labels[c]) for c in ov_cols})
+                column_config={c: st.column_config.TextColumn(ov_labels.get(c, c)) for c in ov_cols})
             if st.button("💾 Save Coverage", key="sc_save_ov"):
                 newrows = [r for r in edited_ov.fillna("").to_dict("records")
                            if any(str(v).strip() for v in r.values())]
@@ -593,6 +617,60 @@ if st.session_state.get('show_shift_coverage'):
                     st.rerun()
                 else:
                     st.error("❌ Save failed")
+
+        with st.expander("🛠️ Manage columns (rename, add or delete columns)"):
+            oc1, oc2, oc3 = st.columns([2, 2, 1])
+            with oc1:
+                ov_col_sel = st.selectbox("Column", ov_cols,
+                                          format_func=lambda c: ov_labels.get(c, c), key="ov_col_sel")
+            with oc2:
+                ov_new_title = st.text_input("New title", value=ov_labels.get(ov_col_sel, ov_col_sel), key="ov_col_title")
+            with oc3:
+                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                if st.button("Rename", key="ov_col_rename", use_container_width=True):
+                    ov_meta["labels"][ov_col_sel] = ov_new_title.strip() or ov_col_sel
+                    _dh.update_coverage_meta(ov_meta)
+                    st.success("✅ Title updated!")
+                    st.rerun()
+            st.markdown("---")
+            oa1, oa2 = st.columns([3, 1])
+            with oa1:
+                ov_new_col = st.text_input("New column name", key="ov_col_addtxt",
+                                           placeholder="e.g. Public Holiday")
+            with oa2:
+                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                if st.button("➕ Add column", key="ov_col_add", use_container_width=True):
+                    name = ov_new_col.strip()
+                    if name and name not in ov_cols:
+                        ov_meta["extra_columns"].append(name)
+                        _dh.update_coverage_meta(ov_meta)
+                        st.success(f"✅ Added '{name}'!")
+                        st.rerun()
+                    else:
+                        st.warning("Enter a unique, non-empty column name.")
+            st.markdown("---")
+            od1, od2 = st.columns([3, 1])
+            with od1:
+                ov_to_del = st.multiselect("Delete column(s)", ov_cols,
+                                           format_func=lambda c: ov_labels.get(c, c), key="ov_col_delsel")
+            with od2:
+                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                if st.button("🗑️ Delete column", key="ov_col_del", use_container_width=True):
+                    if ov_to_del:
+                        def _do_del_ov_cols(_meta=dict(ov_meta), _td=list(ov_to_del),
+                                            _rows=list(overview_rows or [])):
+                            _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
+                            for k in _td:
+                                _meta["labels"].pop(k, None)
+                            _dh.update_coverage_meta(_meta)
+                            cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rows]
+                            return _dh.update_coverage_overview(cleaned)
+                        _ask_delete(
+                            "Permanently delete column(s) "
+                            f"{', '.join(ov_labels.get(c, c) for c in ov_to_del)} and their data? "
+                            "This cannot be undone.", _do_del_ov_cols)
+                    else:
+                        st.warning("Select a column to delete first.")
 
     st.stop()
 

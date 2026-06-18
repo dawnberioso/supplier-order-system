@@ -355,6 +355,21 @@ class DataHandler:
         data["last_updated"] = self._now()
         return self._put_file("shift_coverage.json", data, "Update coverage overview")
 
+    def get_coverage_meta(self):
+        data, _ = self._get_file("shift_coverage.json")
+        meta = (data or {}).get("overview_meta", {})
+        return {"labels": dict(meta.get("labels", {})),
+                "extra_columns": list(meta.get("extra_columns", []))}
+
+    def update_coverage_meta(self, meta):
+        data, _ = self._get_file("shift_coverage.json")
+        if data is None:
+            data = {"rows": []}
+        data["overview_meta"] = {"labels": dict(meta.get("labels", {})),
+                                 "extra_columns": list(meta.get("extra_columns", []))}
+        data["last_updated"] = self._now()
+        return self._put_file("shift_coverage.json", data, "Update coverage overview columns")
+
     # ---------- config.json ----------
 
     def _add_to_config(self, supplier_name):
