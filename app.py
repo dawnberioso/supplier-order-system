@@ -638,28 +638,39 @@ else:
 
         if rules_view == "👤 Customer Rules":
             st.markdown("<h4>👤 Customer Rules</h4>", unsafe_allow_html=True)
-            st.caption("Edit any cell directly, then click Save. "
-                       "Add a row at the bottom of the grid; delete rows by ticking them "
-                       "(left checkbox) and pressing Delete or the 🗑 toolbar icon. "
-                       "'Created By' is filled in with your name automatically.")
+            st.info("**Delete a row:** click the row's number on the far left to select it (a tick appears), "
+                    "then press your **Delete** key, or use the **🗑 trash icon** at the top-right of the table. "
+                    "Select several to delete them together.  •  **Add a row:** type in the blank line at the bottom.")
             supplier_rules = _dh.get_supplier_rules(selected_supplier)
-
-            # Custom column titles + any extra columns the user added
             meta = _dh.get_rules_meta(selected_supplier)
-            all_cols = cust_cols + [c for c in meta["extra_columns"] if c not in cust_cols]
-            labels = dict(cust_labels)
+
+            # Columns follow the data: whatever columns your rows have (so uploads show up),
+            # falling back to the standard set when empty, plus any columns you've added.
+            if supplier_rules:
+                all_cols = []
+                for r in supplier_rules:
+                    for k in r.keys():
+                        if str(k) not in all_cols:
+                            all_cols.append(str(k))
+            else:
+                all_cols = list(cust_cols)
             for c in meta["extra_columns"]:
+                if c not in all_cols:
+                    all_cols.append(c)
+
+            labels = dict(cust_labels)
+            for c in all_cols:
                 labels.setdefault(c, c)
             labels.update(meta["labels"])
 
             def _cust_frame(records, cols):
                 d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
-                if 'created_at' in d.columns and 'created_by' not in d.columns:
+                if 'created_at' in d.columns and 'created_by' not in d.columns and 'created_by' in cols:
                     d['created_by'] = d['created_at']
                 for c in cols:
                     if c not in d.columns:
                         d[c] = ""
-                return d[cols]
+                return d[cols].fillna("")
 
             df = _cust_frame(supplier_rules, all_cols)
 
@@ -677,11 +688,11 @@ else:
                 st.button("🗑️ Clear", use_container_width=True, key="cr_clear", on_click=_clear_cr_search)
 
             filtered_df = df.copy()
-            if search_customer:
-                filtered_df = filtered_df[filtered_df['customer'].str.contains(search_customer, case=False, na=False)]
-            if search_product:
-                filtered_df = filtered_df[filtered_df['ordered_product'].str.contains(search_product, case=False, na=False)]
-            st.markdown(f"<p style='color:#8b95a7;'><b>📊 Showing {len(filtered_df)} of {len(df)} rules</b></p>", unsafe_allow_html=True)
+            if search_customer and 'customer' in filtered_df.columns:
+                filtered_df = filtered_df[filtered_df['customer'].astype(str).str.contains(search_customer, case=False, na=False)]
+            if search_product and 'ordered_product' in filtered_df.columns:
+                filtered_df = filtered_df[filtered_df['ordered_product'].astype(str).str.contains(search_product, case=False, na=False)]
+            st.markdown(f"<p style='color:#8b95a7;'><b>📊 Showing {len(filtered_df)} of {len(df)} rows</b></p>", unsafe_allow_html=True)
 
             edited_df = st.data_editor(
                 filtered_df, use_container_width=True, num_rows="dynamic", height=560,
@@ -701,9 +712,8 @@ else:
                             st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
                         else:
                             updated = edited_df.to_dict('records')
-                        # Stamp the editor's name + date on any blank "Created By"
                         for rec in updated:
-                            if not str(rec.get('created_by', '')).strip():
+                            if 'created_by' in all_cols and not str(rec.get('created_by', '')).strip():
                                 rec['created_by'] = _stamp
                         _dh.update_supplier_rules(selected_supplier, updated)
                         st.success("✅ Customer rules saved!")
@@ -717,7 +727,30 @@ else:
                         "This cannot be undone.",
                         lambda: _dh.delete_supplier_rules(selected_supplier))
 
-            with st.expander("🛠️ Manage columns (rename titles, add or delete columns)"):
+            with st.expander("⬆️ Upload / import Customer Rules (CSV)"):
+                st.caption("Your CSV's own column names are kept exactly as they are. "
+                           "**Upload & replace** = your file becomes the data (clears what's here). "
+                           "**Add to existing** = your rows are added on top.")
+                up = st.file_uploader("Choose a CSV file", type=["csv"], key="cr_csv")
+                if up is not None:
+                    try:
+                        dfi = pd.read_csv(up).fillna("")
+                        rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
+                                for r in dfi.to_dict('records')]
+                        st.dataframe(dfi, use_container_width=True)
+                        ir1, ir2 = st.columns(2)
+                        if ir1.button("⬆️ Upload & replace everything", key="cr_imp_rep", use_container_width=True):
+                            _dh.update_supplier_rules(selected_supplier, rows)
+                            st.success(f"✅ Uploaded {len(rows)} rows!")
+                            st.rerun()
+                        if ir2.button("➕ Add to existing", key="cr_imp_app", use_container_width=True):
+                            _dh.update_supplier_rules(selected_supplier, (supplier_rules or []) + rows)
+                            st.success(f"✅ Added {len(rows)} rows!")
+                            st.rerun()
+                    except Exception as e:
+                        st.error(f"❌ Error reading CSV: {e}")
+
+            with st.expander("🛠️ Manage columns (rename, add or delete columns)"):
                 rc1, rc2, rc3 = st.columns([2, 2, 1])
                 with rc1:
                     col_sel = st.selectbox("Column", all_cols,
@@ -747,50 +780,31 @@ else:
                             st.rerun()
                         else:
                             st.warning("Enter a unique, non-empty column name.")
-                if meta["extra_columns"]:
-                    dc1, dc2 = st.columns([3, 1])
-                    with dc1:
-                        to_del = st.multiselect("Delete custom columns", meta["extra_columns"], key="cr_col_delsel")
-                    with dc2:
-                        st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                        if st.button("🗑️ Delete column", key="cr_col_del", use_container_width=True):
-                            if to_del:
-                                def _do_del_cols(_meta=dict(meta), _td=list(to_del),
-                                                 _rules=list(supplier_rules or [])):
-                                    _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
-                                    for k in _td:
-                                        _meta["labels"].pop(k, None)
-                                    _dh.update_rules_meta(selected_supplier, _meta)
-                                    cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rules]
-                                    return _dh.update_supplier_rules(selected_supplier, cleaned)
-                                _ask_delete(
-                                    f"Permanently delete column(s) {', '.join(to_del)} and their data? "
-                                    "This cannot be undone.", _do_del_cols)
-                            else:
-                                st.warning("Select a column to delete first.")
-                st.caption("Core columns can be renamed but not deleted (so search keeps working). "
-                           "Columns you add yourself can be deleted.")
-
-            with st.expander("📥 Import Customer Rules (CSV)"):
-                st.caption("CSV columns: customer, ordered_product, ordered_unit, fresho_product, fresho_qty, other_comments")
-                up = st.file_uploader("Choose a CSV file", type=["csv"], key="cr_csv")
-                if up is not None:
-                    try:
-                        dfi = pd.read_csv(up).fillna("")
-                        low = {c.lower().strip(): c for c in dfi.columns}
-                        rows = [{k: str(r.get(low.get(k, ""), "")) for k in cust_cols} for _, r in dfi.iterrows()]
-                        st.dataframe(dfi, use_container_width=True)
-                        ir1, ir2 = st.columns(2)
-                        if ir1.button("✅ Replace all", key="cr_imp_rep", use_container_width=True):
-                            _dh.update_supplier_rules(selected_supplier, rows)
-                            st.success("✅ Imported!")
-                            st.rerun()
-                        if ir2.button("➕ Append", key="cr_imp_app", use_container_width=True):
-                            _dh.update_supplier_rules(selected_supplier, (supplier_rules or []) + rows)
-                            st.success("✅ Appended!")
-                            st.rerun()
-                    except Exception as e:
-                        st.error(f"❌ Error reading CSV: {e}")
+                st.markdown("---")
+                dc1, dc2 = st.columns([3, 1])
+                with dc1:
+                    to_del = st.multiselect("Delete column(s)", all_cols,
+                                            format_func=lambda c: labels.get(c, c), key="cr_col_delsel")
+                with dc2:
+                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                    if st.button("🗑️ Delete column", key="cr_col_del", use_container_width=True):
+                        if to_del:
+                            def _do_del_cols(_meta=dict(meta), _td=list(to_del),
+                                             _rules=list(supplier_rules or [])):
+                                _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
+                                for k in _td:
+                                    _meta["labels"].pop(k, None)
+                                _dh.update_rules_meta(selected_supplier, _meta)
+                                cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rules]
+                                return _dh.update_supplier_rules(selected_supplier, cleaned)
+                            _ask_delete(
+                                "Permanently delete column(s) "
+                                f"{', '.join(labels.get(c, c) for c in to_del)} and their data? "
+                                "This cannot be undone.", _do_del_cols)
+                        else:
+                            st.warning("Select a column to delete first.")
+                st.caption("Rename, add, or delete any column. (Deleting 'customer' or 'ordered_product' "
+                           "just means the search boxes stop filtering on it.)")
 
         else:
             st.markdown("<h4>📦 Product Rules</h4>", unsafe_allow_html=True)
@@ -972,9 +986,9 @@ else:
             if up is not None:
                 try:
                     dfi = pd.read_csv(up).fillna("")
-                    low = {c.lower().strip(): c for c in dfi.columns}
-                    rows = [{k: str(r.get(low.get(k, ""), "")) for k in ie_cols}
-                            for _, r in dfi.iterrows()]
+                    # Keep the CSV's own columns exactly as they are
+                    rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
+                            for r in dfi.to_dict('records')]
                     st.dataframe(dfi, use_container_width=True)
                     i1, i2 = st.columns(2)
                     if i1.button("✅ Replace all", key="ie_rep", use_container_width=True):
