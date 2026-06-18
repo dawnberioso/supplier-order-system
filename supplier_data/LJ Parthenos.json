@@ -2,7 +2,7 @@
   "supplier_name": "LJ Parthenos",
   "description": "Fruit & Veg",
   "created_at": "2026-06-17T08:08:28.475078",
-  "last_updated": "2026-06-17T12:26:28.433769",
+  "last_updated": "2026-06-18T04:21:04.121519",
   "rules": [
     {
       "Unnamed: 0": NaN,
@@ -2944,5 +2944,12 @@
       "Unnamed: 10": null,
       "created_at": null
     }
-  ]
+  ],
+  "details": {
+    "time_shift_aut": "6:00 PM - 12:00 AM",
+    "time_shift_ukt": "",
+    "information": "Peak Hours is from 6:00 PM - 8:00 PM and 10:00 PM - 11:00 PM",
+    "poc": "Prajay",
+    "team_ph": "Ailene/Nisa/Vanessa/Jade"
+  }
 }
