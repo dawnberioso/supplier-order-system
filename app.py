@@ -353,6 +353,37 @@ with col_center:
 
 st.markdown("---")
 
+
+# ---- Reusable "are you sure?" delete confirmation pop-up ----
+@st.dialog("⚠️ Confirm permanent delete")
+def _confirm_delete_dialog():
+    st.warning(st.session_state.get(
+        "_del_message",
+        "Are you sure you want to permanently delete this? This cannot be undone."))
+    cc1, cc2 = st.columns(2)
+    if cc1.button("✅ Yes, delete", use_container_width=True, key="_del_yes"):
+        fn = st.session_state.get("_del_action")
+        st.session_state["_del_result"] = "ok" if (callable(fn) and fn()) else "fail"
+        st.session_state["_del_action"] = None
+        st.rerun()
+    if cc2.button("❌ Cancel", use_container_width=True, key="_del_no"):
+        st.session_state["_del_action"] = None
+        st.rerun()
+
+
+def _ask_delete(message, action):
+    st.session_state["_del_message"] = message
+    st.session_state["_del_action"] = action
+    _confirm_delete_dialog()
+
+
+# Show the outcome of a confirmed delete (after the dialog closes)
+_del_res = st.session_state.pop("_del_result", None)
+if _del_res == "ok":
+    st.toast("✅ Deleted.")
+elif _del_res == "fail":
+    st.toast("❌ Delete failed.")
+
 # ---- Google sign-in (activates automatically once [auth] secrets are set) ----
 # Written defensively: if authentication isn't configured yet, the app stays
 # open and simply greets the visitor generically — it will not error.
@@ -679,11 +710,10 @@ else:
                         st.error(f"❌ Save failed: {e}")
             with b2:
                 if st.button("🗑️ Delete All", use_container_width=True, key="delete_rules_btn"):
-                    if _dh.delete_supplier_rules(selected_supplier):
-                        st.success("✅ Rules deleted!")
-                        st.rerun()
-                    else:
-                        st.error("❌ Delete failed")
+                    _ask_delete(
+                        f"Permanently delete ALL customer rules for '{selected_supplier}'? "
+                        "This cannot be undone.",
+                        lambda: _dh.delete_supplier_rules(selected_supplier))
 
             with st.expander("🛠️ Manage columns (rename titles, add or delete columns)"):
                 rc1, rc2, rc3 = st.columns([2, 2, 1])
@@ -722,15 +752,20 @@ else:
                     with dc2:
                         st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
                         if st.button("🗑️ Delete column", key="cr_col_del", use_container_width=True):
-                            meta["extra_columns"] = [c for c in meta["extra_columns"] if c not in to_del]
-                            for k in to_del:
-                                meta["labels"].pop(k, None)
-                            _dh.update_rules_meta(selected_supplier, meta)
-                            cleaned = [{k: v for k, v in rec.items() if k not in to_del}
-                                       for rec in (supplier_rules or [])]
-                            _dh.update_supplier_rules(selected_supplier, cleaned)
-                            st.success("✅ Column(s) deleted!")
-                            st.rerun()
+                            if to_del:
+                                def _do_del_cols(_meta=dict(meta), _td=list(to_del),
+                                                 _rules=list(supplier_rules or [])):
+                                    _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
+                                    for k in _td:
+                                        _meta["labels"].pop(k, None)
+                                    _dh.update_rules_meta(selected_supplier, _meta)
+                                    cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rules]
+                                    return _dh.update_supplier_rules(selected_supplier, cleaned)
+                                _ask_delete(
+                                    f"Permanently delete column(s) {', '.join(to_del)} and their data? "
+                                    "This cannot be undone.", _do_del_cols)
+                            else:
+                                st.warning("Select a column to delete first.")
                 st.caption("Core columns can be renamed but not deleted (so search keeps working). "
                            "Columns you add yourself can be deleted.")
 
@@ -778,11 +813,10 @@ else:
                         st.error("❌ Save failed")
             with p2:
                 if st.button("🗑️ Delete All", use_container_width=True, key="pr_delete"):
-                    if _dh.update_product_rules(selected_supplier, []):
-                        st.success("✅ Deleted!")
-                        st.rerun()
-                    else:
-                        st.error("❌ Delete failed")
+                    _ask_delete(
+                        f"Permanently delete ALL product rules for '{selected_supplier}'? "
+                        "This cannot be undone.",
+                        lambda: _dh.update_product_rules(selected_supplier, []))
 
             with st.expander("📥 Import Product Rules (CSV)"):
                 st.caption("CSV columns: ordered_product, fresho_product, fresho_qty, ordered_unit, notes")
@@ -1068,11 +1102,10 @@ else:
 
             st.markdown("---")
             if st.button("🗑️ Delete Supplier", type="secondary", use_container_width=True, key="delete_supplier_btn"):
-                if _dh.delete_supplier(selected_supplier):
-                    st.success("✅ Deleted!")
-                    st.rerun()
-                else:
-                    st.error("❌ Delete failed")
+                _ask_delete(
+                    f"Permanently delete the entire supplier '{selected_supplier}' and ALL its "
+                    "rules, favourites and details? This cannot be undone.",
+                    lambda: _dh.delete_supplier(selected_supplier))
 
 # Add New Supplier Modal
 if st.session_state.get('show_new_supplier', False):
