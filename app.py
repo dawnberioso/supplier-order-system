@@ -160,22 +160,17 @@ st.markdown("""
         box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4) !important;
     }
 
-    /* Main title keeps the neon gradient text */
-    h1 {
-        background: linear-gradient(135deg, var(--deep-navy), var(--light-blue));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-weight: 800;
-        letter-spacing: 0.5px;
-    }
-
-    /* Section headings stay a readable dark teal */
-    h2, h3, h4, h5, h6 {
-        color: var(--head-text) !important;
+    /* Headings: medium green-to-teal gradient that stays readable on
+       light, dark, and system themes (the bright neon is only on buttons) */
+    h1, h2, h3, h4, h5, h6 {
+        background: linear-gradient(135deg, #0AA15A, #0A93B5) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
         font-weight: 700;
         letter-spacing: 0.5px;
     }
+    h1 { font-weight: 800; }
 
     /* Input field styling */
     .stTextInput > div > div > input,
@@ -225,6 +220,7 @@ st.markdown("""
         border-radius: 10px;
         border: 1px solid rgba(3, 11, 58, 0.12);
         margin-bottom: 0.5rem;
+        background: #ffffff;   /* white card: readable on light/dark/system */
     }
 
     .styled-rules-table {
@@ -232,6 +228,7 @@ st.markdown("""
         width: 100%;
         font-size: 0.9rem;
         font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+        background: #ffffff;
     }
 
     .styled-rules-table th {
@@ -379,7 +376,7 @@ if auth_configured and not _is_logged_in:
         """
         <div style='text-align: center; padding: 2.5rem 1rem 1rem;'>
             <h2>👋 Welcome!</h2>
-            <p style='font-size: 1.15rem; color: #444;'>
+            <p style='font-size: 1.15rem; color: #8b95a7;'>
                 Please sign in with Google to continue.
             </p>
         </div>
@@ -421,13 +418,6 @@ with st.sidebar:
     if st.button("📅 Shift Coverage", use_container_width=True):
         st.session_state.show_shift_coverage = True
         st.rerun()
-
-    # Toggle to switch between the styled Overview and the edit screen
-    st.toggle(
-        "✏️ Edit Rules",
-        key="edit_rules_mode",
-        help="On: edit the rules table. Off: browse the styled Overview."
-    )
 
     st.markdown("---")
     st.markdown("<h3>💾 Save Status</h3>", unsafe_allow_html=True)
@@ -562,10 +552,10 @@ if not selected_supplier:
         f"""
         <div style='text-align: center; padding: 3rem 1rem;'>
             <h2>👋 Hi, {_greeting_name}!</h2>
-            <p style='font-size: 1.25rem; color: #444; margin-top: 0.5rem;'>
+            <p style='font-size: 1.25rem; color: #8b95a7; margin-top: 0.5rem;'>
                 Which supplier are you looking for?
             </p>
-            <p style='font-size: 1rem; color: #888; margin-top: 1.5rem;'>
+            <p style='font-size: 1rem; color: #8b95a7; margin-top: 1.5rem;'>
                 👈 Pick one from the <b>🏭 Select Supplier</b> dropdown in the sidebar to get started.
             </p>
         </div>
@@ -620,7 +610,7 @@ else:
                     filtered_df['ordered_product'].str.contains(search_product, case=False, na=False)
                 ]
 
-            st.markdown(f"<p style='color: #666;'><b>📊 Showing {len(filtered_df)} of {len(df)} rules</b></p>", unsafe_allow_html=True)
+            st.markdown(f"<p style='color: #8b95a7;'><b>📊 Showing {len(filtered_df)} of {len(df)} rules</b></p>", unsafe_allow_html=True)
 
             # Proper, bold, capitalized column labels reused below
             _col_labels = {
@@ -633,65 +623,49 @@ else:
                 "created_at": "Created At",
             }
 
-            if st.session_state.get("edit_rules_mode", False):
-                # ----- Edit mode (toggled on from sidebar Quick Actions) -----
-                st.markdown("<h4>✏️ Edit Rules</h4>", unsafe_allow_html=True)
-                edited_df = st.data_editor(
-                    filtered_df,
-                    use_container_width=True,
-                    num_rows="dynamic",
-                    height=600,
-                    key="rules_editor",
-                    column_config={
-                        col: st.column_config.TextColumn(label)
-                        for col, label in _col_labels.items()
-                    }
-                )
+            # Always-editable grid (Rules Overview removed)
+            st.markdown("<h4>✏️ Edit Rules</h4>", unsafe_allow_html=True)
+            st.caption("Edit any cell directly. Use the 🔍 search boxes above to find rows. "
+                       "Changes save when you click Save.")
+            edited_df = st.data_editor(
+                filtered_df,
+                use_container_width=True,
+                num_rows="dynamic",
+                height=600,
+                key="rules_editor",
+                column_config={
+                    col: st.column_config.TextColumn(label)
+                    for col, label in _col_labels.items()
+                }
+            )
 
-                # Save changes
-                col1, col2, col3 = st.columns([1, 1, 2])
-                with col1:
-                    _filter_active = bool(search_customer or search_product)
-                    if st.button("💾 Save", use_container_width=True):
-                        try:
-                            if _filter_active and len(edited_df) < len(df):
-                                # Safety: a filter is active, so edited_df is only the
-                                # visible subset. Merge edits back into the full set
-                                # instead of overwriting and dropping hidden rows.
-                                full = df.copy()
-                                # Rows shown keep their edits; hidden rows are preserved.
-                                hidden = full.loc[~full.index.isin(filtered_df.index)]
-                                merged = pd.concat([hidden, edited_df], ignore_index=True)
-                                updated_rules = merged.to_dict('records')
-                                st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
-                            else:
-                                updated_rules = edited_df.to_dict('records')
-                            st.session_state.data_handler.update_supplier_rules(
-                                selected_supplier,
-                                updated_rules
-                            )
-                            st.success("✅ Rules saved successfully!")
-                            st.rerun()
-                        except Exception as e:
-                            st.error(f"❌ Save failed: {str(e)}")
-
-                with col2:
-                    if st.button("🗑️ Delete", use_container_width=True, key="delete_rules_btn"):
-                        if st.session_state.data_handler.delete_supplier_rules(selected_supplier):
-                            st.success("✅ Rules deleted!")
-                            st.rerun()
+            col1, col2, col3 = st.columns([1, 1, 2])
+            with col1:
+                _filter_active = bool(search_customer or search_product)
+                if st.button("💾 Save", use_container_width=True):
+                    try:
+                        if _filter_active and len(edited_df) < len(df):
+                            # Filter active: merge visible edits with hidden rows.
+                            full = df.copy()
+                            hidden = full.loc[~full.index.isin(filtered_df.index)]
+                            merged = pd.concat([hidden, edited_df], ignore_index=True)
+                            updated_rules = merged.to_dict('records')
+                            st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
                         else:
-                            st.error("❌ Delete failed")
-            else:
-                # ----- View mode: styled overview, scrollable through all products -----
-                st.markdown("<h4>👁️ Rules Overview</h4>", unsafe_allow_html=True)
-                st.caption("🔍 To find a specific product, type it in the '📦 Product:' box above — "
-                           "the table filters as you type. Scroll inside the table to browse the rest.")
-                _overview = filtered_df.rename(columns=_col_labels).fillna("")
-                _table_html = _overview.to_html(index=False, escape=True,
-                                                classes="styled-rules-table", border=0)
-                st.markdown(f"<div class='styled-rules-wrap'>{_table_html}</div>",
-                            unsafe_allow_html=True)
+                            updated_rules = edited_df.to_dict('records')
+                        st.session_state.data_handler.update_supplier_rules(
+                            selected_supplier, updated_rules)
+                        st.success("✅ Rules saved successfully!")
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"❌ Save failed: {str(e)}")
+            with col2:
+                if st.button("🗑️ Delete", use_container_width=True, key="delete_rules_btn"):
+                    if st.session_state.data_handler.delete_supplier_rules(selected_supplier):
+                        st.success("✅ Rules deleted!")
+                        st.rerun()
+                    else:
+                        st.error("❌ Delete failed")
 
     # Favorites tab: most-ordered products, organized per customer
     with tab_fav:
@@ -832,7 +806,7 @@ else:
                 try:
                     df_import = pd.read_csv(uploaded_file)
 
-                    st.markdown("<p style='color: #666;'><b>📋 Preview:</b></p>", unsafe_allow_html=True)
+                    st.markdown("<p style='color: #8b95a7;'><b>📋 Preview:</b></p>", unsafe_allow_html=True)
                     st.dataframe(df_import, use_container_width=True)
 
                     if st.button("✅ Import", use_container_width=True):
@@ -1027,7 +1001,7 @@ if st.session_state.get('show_new_supplier', False):
 # Footer
 st.markdown("---")
 st.markdown("""
-    <div style='text-align: center; color: #666; font-size: 0.85em; padding: 1.5rem;'>
+    <div style='text-align: center; color: #8b95a7; font-size: 0.85em; padding: 1.5rem;'>
     <p style='font-weight: 700; background: linear-gradient(135deg, #00E676, #00C9FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>🚀 Supplier Order Entry System v2.0</p>
     <p>Built with Streamlit ⚡ Powered by GitHub</p>
     </div>
