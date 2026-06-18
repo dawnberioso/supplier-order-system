@@ -663,16 +663,18 @@ else:
 
             df = _cust_frame(supplier_rules, all_cols)
 
+            def _clear_cr_search():
+                st.session_state["cr_sc"] = ""
+                st.session_state["cr_sp"] = ""
+
             c1, c2, c3 = st.columns(3)
             with c1:
-                search_customer = st.text_input("👤 Customer:", value="", placeholder="Search customer...", key="cr_sc")
+                search_customer = st.text_input("👤 Customer:", placeholder="Search customer...", key="cr_sc")
             with c2:
-                search_product = st.text_input("📦 Product:", value="", placeholder="Search product...", key="cr_sp")
+                search_product = st.text_input("📦 Product:", placeholder="Search product...", key="cr_sp")
             with c3:
                 st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                if st.button("🗑️ Clear", use_container_width=True, key="cr_clear"):
-                    search_customer = ""
-                    search_product = ""
+                st.button("🗑️ Clear", use_container_width=True, key="cr_clear", on_click=_clear_cr_search)
 
             filtered_df = df.copy()
             if search_customer:
@@ -864,57 +866,74 @@ else:
         else:
             fav_customer = st.selectbox("👤 Select Customer:", customer_list, key="fav_customer_select")
 
-            # Favorites belonging to the chosen customer
             cust_favs = [f for f in all_favorites
                          if str(f.get("customer", "")).strip() == fav_customer]
-            fav_cols = ["ordered_product", "fresho_product", "notes"]
+            fav_cols = ["product_name", "product_quantity", "unit", "notes"]
             fav_labels = {
-                "ordered_product": "Ordered Product",
-                "fresho_product": "Fresho Product",
+                "product_name": "Product Name",
+                "product_quantity": "Product Quantity",
+                "unit": "Unit (box/kg/g)",
                 "notes": "Notes",
             }
 
-            if cust_favs:
-                fav_df = pd.DataFrame(cust_favs)
-                for c in fav_cols:
-                    if c not in fav_df.columns:
-                        fav_df[c] = ""
-                fav_df = fav_df[fav_cols]
-            else:
-                fav_df = pd.DataFrame(columns=fav_cols)
+            def _fav_frame(records, cols):
+                d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
+                # migrate older favorites that used 'ordered_product'
+                if 'ordered_product' in d.columns and 'product_name' not in d.columns:
+                    d['product_name'] = d['ordered_product']
+                for c in cols:
+                    if c not in d.columns:
+                        d[c] = ""
+                return d[cols]
+
+            fav_df = _fav_frame(cust_favs, fav_cols)
 
             st.markdown(f"<h4>✏️ Favorite Products for {fav_customer}</h4>", unsafe_allow_html=True)
             edited_fav = st.data_editor(
-                fav_df,
-                use_container_width=True,
-                num_rows="dynamic",
-                key="favorites_editor",
-                column_config={
-                    col: st.column_config.TextColumn(label)
-                    for col, label in fav_labels.items()
-                }
-            )
+                fav_df, use_container_width=True, num_rows="dynamic", key="favorites_editor",
+                column_config={c: st.column_config.TextColumn(l) for c, l in fav_labels.items()})
 
-            if st.button("💾 Save Favorites", use_container_width=False):
+            if st.button("💾 Save Favorites", use_container_width=False, key="fav_save"):
                 try:
-                    # Preserve every other customer's favorites; replace only this customer's
                     others = [f for f in all_favorites
                               if str(f.get("customer", "")).strip() != fav_customer]
                     new_for_customer = []
                     for rec in edited_fav.fillna("").to_dict('records'):
-                        # Skip rows that are completely empty
                         if not any(str(v).strip() for v in rec.values()):
                             continue
-                        rec["customer"] = fav_customer
-                        new_for_customer.append(rec)
-                    merged = others + new_for_customer
+                        clean = {k: rec.get(k, "") for k in fav_cols}
+                        clean["customer"] = fav_customer
+                        new_for_customer.append(clean)
                     st.session_state.data_handler.update_supplier_favorites(
-                        selected_supplier, merged
-                    )
+                        selected_supplier, others + new_for_customer)
                     st.success(f"✅ Favorites saved for {fav_customer}!")
                     st.rerun()
                 except Exception as e:
                     st.error(f"❌ Save failed: {str(e)}")
+
+            with st.expander("📥 Import Favorites (CSV — bulk, all customers)"):
+                st.caption("CSV columns: customer, product_name, product_quantity, unit, notes")
+                fav_up = st.file_uploader("Choose a CSV file", type=["csv"], key="fav_csv")
+                if fav_up is not None:
+                    try:
+                        dfi = pd.read_csv(fav_up).fillna("")
+                        low = {c.lower().strip(): c for c in dfi.columns}
+                        imp_cols = ["customer"] + fav_cols
+                        rows = [{k: str(r.get(low.get(k, ""), "")) for k in imp_cols}
+                                for _, r in dfi.iterrows()]
+                        st.dataframe(dfi, use_container_width=True)
+                        fi1, fi2 = st.columns(2)
+                        if fi1.button("✅ Replace all favorites", key="fav_imp_rep", use_container_width=True):
+                            st.session_state.data_handler.update_supplier_favorites(selected_supplier, rows)
+                            st.success(f"✅ Imported {len(rows)} favorites!")
+                            st.rerun()
+                        if fi2.button("➕ Append", key="fav_imp_app", use_container_width=True):
+                            st.session_state.data_handler.update_supplier_favorites(
+                                selected_supplier, (all_favorites or []) + rows)
+                            st.success(f"✅ Appended {len(rows)} favorites!")
+                            st.rerun()
+                    except Exception as e:
+                        st.error(f"❌ Error reading CSV: {e}")
 
     # Tab 4: Import/Export (per category)
     with tab4:
@@ -939,7 +958,7 @@ else:
             ie_setter = lambda rows: _dh.update_product_rules(selected_supplier, rows)
             ie_fname = "product_rules"
         else:
-            ie_cols = ["customer", "ordered_product", "fresho_product", "notes"]
+            ie_cols = ["customer", "product_name", "product_quantity", "unit", "notes"]
             ie_data = _dh.get_supplier_favorites(selected_supplier)
             ie_setter = lambda rows: _dh.update_supplier_favorites(selected_supplier, rows)
             ie_fname = "favorites"
