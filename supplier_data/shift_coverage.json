@@ -15,6 +15,30 @@
       "shift": "asgdasg",
       "time": "",
       "notes": ""
+    },
+    {
+      "employee": "Jade",
+      "supplier": "Tassie ",
+      "days": "Sunday",
+      "shift": "8 Hours",
+      "time": "2:00 PM - 10:00 PM (AU)",
+      "notes": ""
+    },
+    {
+      "employee": "Jade",
+      "supplier": "",
+      "days": "Monday - Thursday",
+      "shift": "6 Hours",
+      "time": "3:00 PM - 10:00 (AU)",
+      "notes": ""
+    },
+    {
+      "employee": "Jade",
+      "supplier": "Coastal",
+      "days": "Sunday",
+      "shift": "8 Hours",
+      "time": "2:00 PM - 10:00 PM (AU)",
+      "notes": ""
     }
   ],
   "overview_meta": {
@@ -23,7 +47,7 @@
       "Suppliers"
     ]
   },
-  "last_updated": "2026-06-18T07:06:56.745175",
+  "last_updated": "2026-06-18T07:17:05.243888",
   "overview": [
     {
       "member": "Krista",
