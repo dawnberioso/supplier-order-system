@@ -17,14 +17,6 @@
       "notes": ""
     },
     {
-      "employee": "Ailene",
-      "supplier": "Tassie Fine Foods",
-      "days": "Sunday - Friday",
-      "shift": "",
-      "time": "",
-      "notes": ""
-    },
-    {
       "employee": "Vanessa",
       "supplier": "",
       "days": "",
@@ -137,5 +129,5 @@
       "notes": ""
     }
   ],
-  "last_updated": "2026-06-18T04:47:09.450692"
+  "last_updated": "2026-06-18T06:17:17.309009"
 }
