@@ -450,18 +450,6 @@ with st.sidebar:
         st.session_state.show_shift_coverage = True
         st.rerun()
 
-    st.markdown("---")
-    st.markdown("<h3>💾 Save Status</h3>", unsafe_allow_html=True)
-
-    if st.session_state.data_handler.is_connected():
-        st.success("✅ Connected to GitHub — changes save automatically.")
-    else:
-        st.warning(
-            "⚠️ Not connected to GitHub. The app can show data but "
-            "changes won't save. Add GITHUB_TOKEN and GITHUB_REPO in "
-            "Settings → Secrets to enable saving."
-        )
-
     # Show who's signed in (only when Google sign-in is configured)
     if auth_configured and _is_logged_in:
         st.markdown("---")
@@ -809,24 +797,74 @@ else:
         else:
             st.markdown("<h4>📦 Product Rules</h4>", unsafe_allow_html=True)
             st.caption("Product-level defaults (no customer): the Fresho product/quantity to use for each ordered product.")
+            st.info("**Delete a row:** click the row's number on the far left to select it (a tick appears), "
+                    "then press your **Delete** key, or use the **🗑 trash icon** at the top-right of the table. "
+                    "Select several to delete them together.  •  **Add a row:** type in the blank line at the bottom.")
             product_rules = _dh.get_product_rules(selected_supplier)
-            pdf = _frame(product_rules, prod_cols)
+            pmeta = _dh.get_product_rules_meta(selected_supplier)
+
+            # Columns follow the data: whatever columns your rows have (so uploads show up),
+            # falling back to the standard set when empty, plus any columns you've added.
+            if product_rules:
+                p_all_cols = []
+                for r in product_rules:
+                    for k in r.keys():
+                        if str(k) not in p_all_cols:
+                            p_all_cols.append(str(k))
+            else:
+                p_all_cols = list(prod_cols)
+            for c in pmeta["extra_columns"]:
+                if c not in p_all_cols:
+                    p_all_cols.append(c)
+
+            p_labels = dict(prod_labels)
+            for c in p_all_cols:
+                p_labels.setdefault(c, c)
+            p_labels.update(pmeta["labels"])
+
+            pdf = _frame(product_rules, p_all_cols)
+
+            def _clear_pr_search():
+                st.session_state["pr_sp"] = ""
+
+            pc1, pc2 = st.columns([2, 1])
+            with pc1:
+                search_pprod = st.text_input("📦 Product:", placeholder="Search product...", key="pr_sp")
+            with pc2:
+                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                st.button("🗑️ Clear", use_container_width=True, key="pr_clear", on_click=_clear_pr_search)
+
+            p_filtered = pdf.copy()
+            if search_pprod and 'ordered_product' in p_filtered.columns:
+                p_filtered = p_filtered[p_filtered['ordered_product'].astype(str).str.contains(search_pprod, case=False, na=False)]
+            st.markdown(f"<p style='color:#8b95a7;'><b>📊 Showing {len(p_filtered)} of {len(pdf)} rows</b></p>", unsafe_allow_html=True)
 
             edited_p = st.data_editor(
-                pdf, use_container_width=True, num_rows="dynamic", height=560,
+                p_filtered, use_container_width=True, num_rows="dynamic", height=560,
                 key="pr_editor",
-                column_config={c: st.column_config.TextColumn(l) for c, l in prod_labels.items()})
+                column_config={c: st.column_config.TextColumn(p_labels.get(c, c)) for c in p_all_cols})
 
             p1, p2, p3 = st.columns([1, 1, 2])
             with p1:
+                _pfilter_active = bool(search_pprod)
                 if st.button("💾 Save", use_container_width=True, key="pr_save"):
-                    rows = [r for r in edited_p.fillna("").to_dict('records')
-                            if any(str(v).strip() for v in r.values())]
-                    if _dh.update_product_rules(selected_supplier, rows):
-                        st.success("✅ Product rules saved!")
-                        st.rerun()
-                    else:
-                        st.error("❌ Save failed")
+                    try:
+                        if _pfilter_active and len(edited_p) < len(pdf):
+                            full = pdf.copy()
+                            hidden = full.loc[~full.index.isin(p_filtered.index)]
+                            merged = pd.concat([hidden, edited_p], ignore_index=True)
+                            updated = merged.to_dict('records')
+                            st.info(f"ℹ️ Merged {len(hidden)} hidden rows with your edits.")
+                        else:
+                            updated = edited_p.fillna("").to_dict('records')
+                        rows = [r for r in updated if any(str(v).strip() for v in r.values())]
+                        if _dh.update_product_rules(selected_supplier, rows):
+                            st.success("✅ Product rules saved!")
+                            st.rerun()
+                        else:
+                            st.error("❌ Save failed")
+                    except Exception as e:
+                        st.error(f"❌ Save failed: {e}")
             with p2:
                 if st.button("🗑️ Delete All", use_container_width=True, key="pr_delete"):
                     _ask_delete(
@@ -834,26 +872,84 @@ else:
                         "This cannot be undone.",
                         lambda: _dh.update_product_rules(selected_supplier, []))
 
-            with st.expander("📥 Import Product Rules (CSV)"):
-                st.caption("CSV columns: ordered_product, fresho_product, fresho_qty, ordered_unit, notes")
+            with st.expander("⬆️ Upload / import Product Rules (CSV)"):
+                st.caption("Your CSV's own column names are kept exactly as they are. "
+                           "**Upload & replace** = your file becomes the data (clears what's here). "
+                           "**Add to existing** = your rows are added on top.")
                 up = st.file_uploader("Choose a CSV file", type=["csv"], key="pr_csv")
                 if up is not None:
                     try:
                         dfi = pd.read_csv(up).fillna("")
-                        low = {c.lower().strip(): c for c in dfi.columns}
-                        rows = [{k: str(r.get(low.get(k, ""), "")) for k in prod_cols} for _, r in dfi.iterrows()]
+                        rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
+                                for r in dfi.to_dict('records')]
                         st.dataframe(dfi, use_container_width=True)
                         pir1, pir2 = st.columns(2)
-                        if pir1.button("✅ Replace all", key="pr_imp_rep", use_container_width=True):
+                        if pir1.button("⬆️ Upload & replace everything", key="pr_imp_rep", use_container_width=True):
                             _dh.update_product_rules(selected_supplier, rows)
-                            st.success("✅ Imported!")
+                            st.success(f"✅ Uploaded {len(rows)} rows!")
                             st.rerun()
-                        if pir2.button("➕ Append", key="pr_imp_app", use_container_width=True):
+                        if pir2.button("➕ Add to existing", key="pr_imp_app", use_container_width=True):
                             _dh.update_product_rules(selected_supplier, (product_rules or []) + rows)
-                            st.success("✅ Appended!")
+                            st.success(f"✅ Added {len(rows)} rows!")
                             st.rerun()
                     except Exception as e:
                         st.error(f"❌ Error reading CSV: {e}")
+
+            with st.expander("🛠️ Manage columns (rename, add or delete columns)"):
+                prc1, prc2, prc3 = st.columns([2, 2, 1])
+                with prc1:
+                    p_col_sel = st.selectbox("Column", p_all_cols,
+                                             format_func=lambda c: p_labels.get(c, c), key="pr_col_sel")
+                with prc2:
+                    p_new_title = st.text_input("New title", value=p_labels.get(p_col_sel, p_col_sel), key="pr_col_title")
+                with prc3:
+                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                    if st.button("Rename", key="pr_col_rename", use_container_width=True):
+                        pmeta["labels"][p_col_sel] = p_new_title.strip() or p_col_sel
+                        _dh.update_product_rules_meta(selected_supplier, pmeta)
+                        st.success("✅ Title updated!")
+                        st.rerun()
+                st.markdown("---")
+                pac1, pac2 = st.columns([3, 1])
+                with pac1:
+                    p_new_col = st.text_input("New column name", key="pr_col_addtxt",
+                                              placeholder="e.g. Order Term")
+                with pac2:
+                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                    if st.button("➕ Add column", key="pr_col_add", use_container_width=True):
+                        name = p_new_col.strip()
+                        if name and name not in p_all_cols:
+                            pmeta["extra_columns"].append(name)
+                            _dh.update_product_rules_meta(selected_supplier, pmeta)
+                            st.success(f"✅ Added '{name}'!")
+                            st.rerun()
+                        else:
+                            st.warning("Enter a unique, non-empty column name.")
+                st.markdown("---")
+                pdc1, pdc2 = st.columns([3, 1])
+                with pdc1:
+                    p_to_del = st.multiselect("Delete column(s)", p_all_cols,
+                                              format_func=lambda c: p_labels.get(c, c), key="pr_col_delsel")
+                with pdc2:
+                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
+                    if st.button("🗑️ Delete column", key="pr_col_del", use_container_width=True):
+                        if p_to_del:
+                            def _do_del_pcols(_meta=dict(pmeta), _td=list(p_to_del),
+                                              _rules=list(product_rules or [])):
+                                _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
+                                for k in _td:
+                                    _meta["labels"].pop(k, None)
+                                _dh.update_product_rules_meta(selected_supplier, _meta)
+                                cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rules]
+                                return _dh.update_product_rules(selected_supplier, cleaned)
+                            _ask_delete(
+                                "Permanently delete column(s) "
+                                f"{', '.join(p_labels.get(c, c) for c in p_to_del)} and their data? "
+                                "This cannot be undone.", _do_del_pcols)
+                        else:
+                            st.warning("Select a column to delete first.")
+                st.caption("Rename, add, or delete any column. (Deleting 'ordered_product' "
+                           "just means the search box stops filtering on it.)")
 
     # Favorites tab: most-ordered products, organized per customer
     with tab_fav:

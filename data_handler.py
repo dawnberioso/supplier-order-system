@@ -271,6 +271,22 @@ class DataHandler:
         return self._put_file(f"{supplier_name}.json", data,
                               f"Update product rules for {supplier_name}")
 
+    def get_product_rules_meta(self, supplier_name):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        meta = (data or {}).get("product_rules_meta", {})
+        return {"labels": dict(meta.get("labels", {})),
+                "extra_columns": list(meta.get("extra_columns", []))}
+
+    def update_product_rules_meta(self, supplier_name, meta):
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return False
+        data["product_rules_meta"] = {"labels": dict(meta.get("labels", {})),
+                                      "extra_columns": list(meta.get("extra_columns", []))}
+        data["last_updated"] = self._now()
+        return self._put_file(f"{supplier_name}.json", data,
+                              f"Update product rules columns for {supplier_name}")
+
     # ---------- supplier details (Time Shift, POC, etc.) ----------
 
     DETAIL_KEYS = ["time_shift_aut", "time_shift_ukt", "information", "poc", "team_ph"]
