@@ -2,7 +2,7 @@
   "supplier_name": "Fisher & Woods",
   "description": "Imported from internal customer-product-rule sheet",
   "created_at": "2024-01-15T10:30:00",
-  "last_updated": "2026-06-18T01:57:51.678257",
+  "last_updated": "2026-06-18T02:07:34.092057",
   "rules": [
     {
       "Customer Name": "Paul Thompson Cook House Ipswich",
@@ -13011,5 +13011,9 @@
       "ordered_unit": "",
       "notes": ""
     }
-  ]
+  ],
+  "rules_meta": {
+    "labels": {},
+    "extra_columns": []
+  }
 }
