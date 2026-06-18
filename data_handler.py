@@ -95,6 +95,49 @@ class DataHandler:
             print(f"_put_file error for {filename}: {e}")
             return False
 
+    def _modify(self, filename, mutate, message, default=None):
+        """Safe read-modify-write with optimistic locking.
+
+        Reads the file's content AND sha together, applies `mutate(data)`
+        (which returns the new dict), and writes with that exact sha. If
+        GitHub rejects the write because someone else changed the file in the
+        meantime (409 conflict), it re-reads the freshest content and re-applies
+        `mutate`, retrying a few times. This prevents one save from silently
+        overwriting another section's data.
+        """
+        if not self.is_connected():
+            return False
+        url = f"{self.api_base}/repos/{self.repo}/contents/{self._path(filename)}"
+        for _ in range(5):
+            current, sha = self._get_file(filename)
+            if current is None:
+                if default is None:
+                    return False  # refuse to write over an unreadable file
+                current = json.loads(json.dumps(default))  # fresh deep copy
+            new_content = mutate(current)
+            if new_content is None:
+                return False
+            raw = json.dumps(new_content, indent=2, ensure_ascii=False)
+            body = {
+                "message": message,
+                "content": base64.b64encode(raw.encode("utf-8")).decode("utf-8"),
+                "branch": self.branch,
+            }
+            if sha:
+                body["sha"] = sha
+            try:
+                r = requests.put(url, headers=self._headers(), json=body, timeout=30)
+            except Exception as e:
+                print(f"_modify error for {filename}: {e}")
+                return False
+            if r.status_code in (200, 201):
+                return True
+            if r.status_code == 409:
+                continue  # sha stale — another write landed; re-read and retry
+            print(f"_modify PUT {filename} -> {r.status_code}: {r.text[:200]}")
+            return False
+        return False
+
     def _delete_file(self, filename, message):
         if not self.is_connected():
             return False
@@ -197,22 +240,21 @@ class DataHandler:
         return data.get("rules", [])
 
     def add_rule(self, supplier_name, rule):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            return False
-        data.setdefault("rules", []).append(rule)
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Add rule to {supplier_name}")
+        def _m(data):
+            data.setdefault("rules", []).append(rule)
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Add rule to {supplier_name}")
 
     def update_supplier_rules(self, supplier_name, rules):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            data = {"supplier_name": supplier_name, "rules": []}
-        data["rules"] = rules
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Update rules for {supplier_name}")
+        def _m(data):
+            data["rules"] = rules
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Update rules for {supplier_name}",
+                            default={"supplier_name": supplier_name, "rules": []})
 
     def delete_supplier_rules(self, supplier_name):
         return self.update_supplier_rules(supplier_name, [])
@@ -226,15 +268,14 @@ class DataHandler:
         return data.get("favorites", [])
 
     def update_supplier_favorites(self, supplier_name, favorites):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            # Refuse to write if we couldn't read the existing file, so we
-            # never risk overwriting the supplier's rules with a blank file.
-            return False
-        data["favorites"] = favorites
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Update favorites for {supplier_name}")
+        # default=None => refuse to write if the file can't be read, so we
+        # never risk overwriting the supplier's rules with a blank file.
+        def _m(data):
+            data["favorites"] = favorites
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Update favorites for {supplier_name}")
 
     # ---------- rules meta (custom column titles & extra columns) ----------
 
@@ -245,14 +286,13 @@ class DataHandler:
                 "extra_columns": list(meta.get("extra_columns", []))}
 
     def update_rules_meta(self, supplier_name, meta):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            return False
-        data["rules_meta"] = {"labels": dict(meta.get("labels", {})),
-                              "extra_columns": list(meta.get("extra_columns", []))}
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Update rules columns for {supplier_name}")
+        def _m(data):
+            data["rules_meta"] = {"labels": dict(meta.get("labels", {})),
+                                  "extra_columns": list(meta.get("extra_columns", []))}
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Update rules columns for {supplier_name}")
 
     # ---------- product rules (product-level defaults, no customer) ----------
 
@@ -263,13 +303,12 @@ class DataHandler:
         return data.get("product_rules", [])
 
     def update_product_rules(self, supplier_name, rules):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            return False
-        data["product_rules"] = rules
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Update product rules for {supplier_name}")
+        def _m(data):
+            data["product_rules"] = rules
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Update product rules for {supplier_name}")
 
     def get_product_rules_meta(self, supplier_name):
         data, _ = self._get_file(f"{supplier_name}.json")
@@ -278,14 +317,13 @@ class DataHandler:
                 "extra_columns": list(meta.get("extra_columns", []))}
 
     def update_product_rules_meta(self, supplier_name, meta):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            return False
-        data["product_rules_meta"] = {"labels": dict(meta.get("labels", {})),
-                                      "extra_columns": list(meta.get("extra_columns", []))}
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Update product rules columns for {supplier_name}")
+        def _m(data):
+            data["product_rules_meta"] = {"labels": dict(meta.get("labels", {})),
+                                          "extra_columns": list(meta.get("extra_columns", []))}
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Update product rules columns for {supplier_name}")
 
     # ---------- supplier details (Time Shift, POC, etc.) ----------
 
@@ -298,13 +336,12 @@ class DataHandler:
         return {k: details.get(k, "") for k in self.DETAIL_KEYS}
 
     def update_supplier_details(self, supplier_name, details):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            return False
-        data["details"] = {k: details.get(k, "") for k in self.DETAIL_KEYS}
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Update details for {supplier_name}")
+        def _m(data):
+            data["details"] = {k: details.get(k, "") for k in self.DETAIL_KEYS}
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Update details for {supplier_name}")
 
     # ---------- required days per customer ----------
 
@@ -315,13 +352,12 @@ class DataHandler:
         return data.get("required_days", [])
 
     def update_required_days(self, supplier_name, rows):
-        data, _ = self._get_file(f"{supplier_name}.json")
-        if data is None:
-            return False
-        data["required_days"] = rows
-        data["last_updated"] = self._now()
-        return self._put_file(f"{supplier_name}.json", data,
-                              f"Update required days for {supplier_name}")
+        def _m(data):
+            data["required_days"] = rows
+            data["last_updated"] = self._now()
+            return data
+        return self._modify(f"{supplier_name}.json", _m,
+                            f"Update required days for {supplier_name}")
 
     # ---------- shift coverage (employees & schedules) ----------
 
@@ -332,12 +368,12 @@ class DataHandler:
         return data.get("rows", [])
 
     def update_shift_coverage(self, rows):
-        data, _ = self._get_file("shift_coverage.json")
-        if data is None:
-            data = {"rows": []}
-        data["rows"] = rows
-        data["last_updated"] = self._now()
-        return self._put_file("shift_coverage.json", data, "Update shift coverage")
+        def _m(data):
+            data["rows"] = rows
+            data["last_updated"] = self._now()
+            return data
+        return self._modify("shift_coverage.json", _m, "Update shift coverage",
+                            default={"rows": []})
 
     # Coverage Overview is a separate weekly roster (Member, Role, Mon-Sun),
     # kept apart from the per-supplier schedules stored in "rows".
@@ -348,12 +384,12 @@ class DataHandler:
         return data.get("overview", [])
 
     def update_coverage_overview(self, rows):
-        data, _ = self._get_file("shift_coverage.json")
-        if data is None:
-            data = {"rows": []}
-        data["overview"] = rows
-        data["last_updated"] = self._now()
-        return self._put_file("shift_coverage.json", data, "Update coverage overview")
+        def _m(data):
+            data["overview"] = rows
+            data["last_updated"] = self._now()
+            return data
+        return self._modify("shift_coverage.json", _m, "Update coverage overview",
+                            default={"rows": []})
 
     def get_coverage_meta(self):
         data, _ = self._get_file("shift_coverage.json")
@@ -362,13 +398,13 @@ class DataHandler:
                 "extra_columns": list(meta.get("extra_columns", []))}
 
     def update_coverage_meta(self, meta):
-        data, _ = self._get_file("shift_coverage.json")
-        if data is None:
-            data = {"rows": []}
-        data["overview_meta"] = {"labels": dict(meta.get("labels", {})),
-                                 "extra_columns": list(meta.get("extra_columns", []))}
-        data["last_updated"] = self._now()
-        return self._put_file("shift_coverage.json", data, "Update coverage overview columns")
+        def _m(data):
+            data["overview_meta"] = {"labels": dict(meta.get("labels", {})),
+                                     "extra_columns": list(meta.get("extra_columns", []))}
+            data["last_updated"] = self._now()
+            return data
+        return self._modify("shift_coverage.json", _m, "Update coverage overview columns",
+                            default={"rows": []})
 
     # ---------- config.json ----------
 
