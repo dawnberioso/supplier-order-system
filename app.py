@@ -533,27 +533,32 @@ if st.session_state.get('show_shift_coverage'):
                      | {str(r.get("employee", "")).strip() for r in sc_rows
                         if str(r.get("employee", "")).strip()})
 
-    # Employee-name buttons: transparent normally, colour pops only on hover.
+    # Employee-name buttons: fully transparent (no fill); hover just adds a shadow.
     st.markdown("""
         <style>
-        [class*="st-key-sc_emp_"] button {
+        div[class*="st-key-sc_emp_"] .stButton > button,
+        div[class*="st-key-sc_emp_"] button[kind="secondary"],
+        div[class*="st-key-sc_emp_"] button[data-testid] {
             background: transparent !important;
+            background-image: none !important;
+            background-color: transparent !important;
             color: #CC0066 !important;
-            border: 1px solid rgba(255, 0, 153, 0.35) !important;
+            border: 1px solid rgba(255, 0, 153, 0.30) !important;
             box-shadow: none !important;
             font-weight: 700 !important;
         }
-        [class*="st-key-sc_emp_"] button p,
-        [class*="st-key-sc_emp_"] button span,
-        [class*="st-key-sc_emp_"] button div { color: #CC0066 !important; }
-        [class*="st-key-sc_emp_"] button:hover {
-            background: linear-gradient(135deg, #FF0099, #FF77CC) !important;
-            transform: translateY(-2px) scale(1.03) !important;
-            box-shadow: 0 6px 16px rgba(255, 0, 153, 0.35) !important;
+        div[class*="st-key-sc_emp_"] button::before { display: none !important; }
+        div[class*="st-key-sc_emp_"] button p,
+        div[class*="st-key-sc_emp_"] button span,
+        div[class*="st-key-sc_emp_"] button div { color: #CC0066 !important; }
+        div[class*="st-key-sc_emp_"] button:hover,
+        div[class*="st-key-sc_emp_"] button[data-testid]:hover {
+            background: transparent !important;
+            background-image: none !important;
+            background-color: transparent !important;
+            transform: none !important;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
         }
-        [class*="st-key-sc_emp_"] button:hover p,
-        [class*="st-key-sc_emp_"] button:hover span,
-        [class*="st-key-sc_emp_"] button:hover div { color: #ffffff !important; }
         </style>
     """, unsafe_allow_html=True)
 
