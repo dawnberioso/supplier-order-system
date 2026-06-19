@@ -710,7 +710,7 @@ if st.session_state.get('show_time_off'):
 
     LEAVE_TYPES = ["Sick Leave", "Vacation Leave", "Annual Leave", "Personal Leave",
                    "Maternity Leave", "Public Holiday", "Absent", "Other"]
-    BREAK_TYPES = ["15-min Break", "30-min Lunch", "Coffee Break", "Other"]
+    BREAK_TYPES = ["15-min Break", "30-min Lunch", "1-hour Lunch", "Coffee Break", "Other"]
     EXTEND_OPTIONS = ["No extension", "+5 min", "+10 min", "+15 min"]
 
     # 12-hour time options in 15-minute steps (e.g. "10:30 AM").
@@ -943,11 +943,18 @@ if st.session_state.get('show_time_off'):
             column_config={
                 "date": st.column_config.TextColumn("Date (YYYY-MM-DD)"),
                 "name": st.column_config.TextColumn("Holiday")})
-        if st.button("💾 Save holidays", key="hol_save"):
+        hs1, hs2 = st.columns(2)
+        if hs1.button("💾 Save holidays", key="hol_save", use_container_width=True):
             rows = [r for r in edited_hol.fillna("").to_dict("records")
                     if str(r.get("date", "")).strip() or str(r.get("name", "")).strip()]
             if _dh.update_holidays(rows):
                 st.success("✅ Holidays saved!")
+                st.rerun()
+            else:
+                st.error("❌ Save failed")
+        if hs2.button("↺ Load all AU holidays", key="hol_reload", use_container_width=True):
+            if _dh.update_holidays([dict(h) for h in _dh.DEFAULT_AU_HOLIDAYS]):
+                st.success("✅ Loaded all Australian public holidays!")
                 st.rerun()
             else:
                 st.error("❌ Save failed")
