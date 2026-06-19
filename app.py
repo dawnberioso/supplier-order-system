@@ -696,6 +696,7 @@ if st.session_state.get('show_time_off'):
 
     entries = _dh.get_time_off()
     holidays = _dh.get_holidays()
+    breaks = _dh.get_breaks()
 
     # Pull the roster (from Coverage Overview) so the dropdowns offer real names
     # and we can auto-fill each person's position/role.
@@ -708,7 +709,25 @@ if st.session_state.get('show_time_off'):
     member_names = sorted(roster.keys())
 
     LEAVE_TYPES = ["Sick Leave", "Vacation Leave", "Annual Leave", "Personal Leave",
-                   "Carer's Leave", "Public Holiday", "Absent", "Other"]
+                   "Maternity Leave", "Public Holiday", "Absent", "Other"]
+    BREAK_TYPES = ["15-min Break", "30-min Lunch", "Coffee Break", "Other"]
+    EXTEND_OPTIONS = ["No extension", "+5 min", "+10 min", "+15 min"]
+
+    # 12-hour time options in 15-minute steps (e.g. "10:30 AM").
+    def _time_options():
+        opts = []
+        for h24 in range(24):
+            for mm in (0, 15, 30, 45):
+                ampm = "AM" if h24 < 12 else "PM"
+                h12 = h24 % 12 or 12
+                opts.append(f"{h12}:{mm:02d} {ampm}")
+        return opts
+    TIME_OPTIONS = _time_options()
+    # Default the time picker to "now" rounded down to the nearest 15 minutes.
+    _now_t = datetime.now()
+    _def_time = f"{_now_t.hour % 12 or 12}:{(_now_t.minute // 15) * 15:02d} " \
+                f"{'AM' if _now_t.hour < 12 else 'PM'}"
+    _def_time_idx = TIME_OPTIONS.index(_def_time) if _def_time in TIME_OPTIONS else 0
 
     def _parse_d(d):
         try:
@@ -738,10 +757,11 @@ if st.session_state.get('show_time_off'):
     today_hols = [h for h in holidays if _parse_d(h.get("date")) == today]
 
     # --- Summary metrics ---
-    m1, m2, m3 = st.columns(3)
-    m1.metric("🏖️ Staff off today", len(today_off))
-    m2.metric("📅 Upcoming", len(upcoming))
-    m3.metric("🇦🇺 Public holiday today", "Yes" if today_hols else "No")
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("🏖️ Staff Off Today", len(today_off))
+    m2.metric("☕ On Break Now", len(breaks))
+    m3.metric("📅 Upcoming Leave", len(upcoming))
+    m4.metric("🇦🇺 Public Holiday Today", "Yes" if today_hols else "No")
 
     if today_hols:
         st.success("🇦🇺 Public holiday today: " +
@@ -769,6 +789,67 @@ if st.session_state.get('show_time_off'):
         _entries_table(today_off)
     else:
         st.info("✅ Everyone's in today — no one is on leave.")
+
+    # --- Currently on break ---
+    st.markdown("<h4>☕ Currently On Break</h4>", unsafe_allow_html=True)
+    if breaks:
+        brk_disp = pd.DataFrame([{
+            "Staff Name": b.get("employee", ""),
+            "Break": b.get("break_type", ""),
+            "Started": b.get("start_time", ""),
+            "Extended": b.get("extend", "") if b.get("extend", "") not in ("", "No extension") else "—",
+            "Notes": b.get("notes", ""),
+        } for b in breaks])
+        brk_html = brk_disp.to_html(index=False, escape=True,
+                                    classes="styled-rules-table sc-table", border=0)
+        st.markdown(f"<div class='styled-rules-wrap'>{brk_html}</div>", unsafe_allow_html=True)
+    else:
+        st.info("☕ No one is on break right now.")
+
+    bc1, bc2 = st.columns(2)
+    with bc1.expander("➕ Start / Log a Break"):
+        with st.form("add_break_form"):
+            brk_emp_choice = st.selectbox(
+                "👤 Staff Name", member_names + ["➕ Other (type below)"],
+                index=None, placeholder="Choose staff...", key="brk_emp")
+            brk_emp_other = st.text_input("…or type a name", key="brk_emp_other")
+            brk_type = st.selectbox("☕ Break Type", BREAK_TYPES, key="brk_type")
+            brk_time = st.selectbox("🕐 Start Time", TIME_OPTIONS,
+                                    index=_def_time_idx, key="brk_time")
+            brk_extend = st.selectbox("⏱️ Extend Break", EXTEND_OPTIONS, key="brk_extend")
+            brk_notes = st.text_input("📝 Notes", key="brk_notes")
+            if st.form_submit_button("💾 Add to break list"):
+                bemp = (brk_emp_other.strip()
+                        if brk_emp_choice in (None, "➕ Other (type below)") else brk_emp_choice)
+                if not bemp:
+                    st.error("❌ Choose or type a staff name.")
+                else:
+                    new_break = {
+                        "employee": bemp, "break_type": brk_type,
+                        "start_time": brk_time, "extend": brk_extend,
+                        "notes": brk_notes.strip(),
+                    }
+                    if _dh.update_breaks(breaks + [new_break]):
+                        st.success(f"✅ {bemp} is on break.")
+                        st.rerun()
+                    else:
+                        st.error("❌ Save failed")
+    with bc2.expander("✅ End a Break (remove from list)"):
+        if breaks:
+            who = st.selectbox(
+                "Who's back?", list(range(len(breaks))),
+                format_func=lambda i: f"{breaks[i].get('employee', '')} "
+                                      f"({breaks[i].get('break_type', '')}, {breaks[i].get('start_time', '')})",
+                key="brk_end_sel")
+            if st.button("✅ Back from break", key="brk_end_btn", use_container_width=True):
+                remaining = [b for j, b in enumerate(breaks) if j != who]
+                if _dh.update_breaks(remaining):
+                    st.success("✅ Removed from break list.")
+                    st.rerun()
+                else:
+                    st.error("❌ Save failed")
+        else:
+            st.caption("No one is on break.")
 
     # --- Upcoming time off (dropdown) ---
     with st.expander(f"📅 Upcoming Time Off ({len(upcoming)})"):

@@ -456,6 +456,20 @@ class DataHandler:
         return self._modify("time_off.json", _m, "Update public holidays",
                             default={"entries": [], "holidays": []})
 
+    def get_breaks(self):
+        data, _ = self._get_file("time_off.json")
+        if data is None:
+            return []
+        return data.get("breaks", [])
+
+    def update_breaks(self, rows):
+        def _m(data):
+            data["breaks"] = rows
+            data["last_updated"] = self._now()
+            return data
+        return self._modify("time_off.json", _m, "Update staff on break",
+                            default={"entries": [], "holidays": [], "breaks": []})
+
     # ---------- config.json ----------
 
     def _add_to_config(self, supplier_name):
