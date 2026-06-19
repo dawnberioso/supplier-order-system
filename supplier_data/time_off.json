@@ -11,5 +11,14 @@
     }
   ],
   "holidays": [],
-  "last_updated": "2026-06-19T00:15:51.670537"
+  "last_updated": "2026-06-19T00:18:18.534383",
+  "breaks": [
+    {
+      "employee": "Ailene",
+      "break_type": "15-min Break",
+      "start_time": "12:15 AM",
+      "extend": "No extension",
+      "notes": ""
+    }
+  ]
 }
