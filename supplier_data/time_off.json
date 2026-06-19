@@ -8,10 +8,19 @@
       "end_date": "2026-07-12",
       "cover_person": "Renilyn",
       "notes": "Going on vacation in North Korea because I'm stressed. If anything comes up, just ping me. Thanks!"
+    },
+    {
+      "employee": "Rose",
+      "position": "",
+      "leave_type": "Sick Leave",
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-19",
+      "cover_person": "Jade",
+      "notes": "wala lang"
     }
   ],
   "holidays": [],
-  "last_updated": "2026-06-19T00:18:18.534383",
+  "last_updated": "2026-06-19T00:19:19.763959",
   "breaks": [
     {
       "employee": "Ailene",
