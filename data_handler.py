@@ -163,7 +163,7 @@ class DataHandler:
                 return []
             # Internal data files that are NOT suppliers (so they never show in
             # the supplier dropdown and can't be deleted as one).
-            reserved = {"config.json", "shift_coverage.json"}
+            reserved = {"config.json", "shift_coverage.json", "time_off.json"}
             files = []
             for item in r.json():
                 name = item.get("name", "")
@@ -408,6 +408,53 @@ class DataHandler:
             return data
         return self._modify("shift_coverage.json", _m, "Update coverage overview columns",
                             default={"rows": []})
+
+    # ---------- general time off (leave entries & public holidays) ----------
+
+    # Australian national public holidays for 2026 (seed values shown until the
+    # user edits & saves their own list). State-specific days can be added in-app.
+    DEFAULT_AU_HOLIDAYS = [
+        {"date": "2026-01-01", "name": "New Year's Day"},
+        {"date": "2026-01-26", "name": "Australia Day"},
+        {"date": "2026-04-03", "name": "Good Friday"},
+        {"date": "2026-04-04", "name": "Easter Saturday"},
+        {"date": "2026-04-05", "name": "Easter Sunday"},
+        {"date": "2026-04-06", "name": "Easter Monday"},
+        {"date": "2026-04-25", "name": "Anzac Day"},
+        {"date": "2026-06-08", "name": "King's Birthday"},
+        {"date": "2026-12-25", "name": "Christmas Day"},
+        {"date": "2026-12-26", "name": "Boxing Day"},
+    ]
+
+    def get_time_off(self):
+        data, _ = self._get_file("time_off.json")
+        if data is None:
+            return []
+        return data.get("entries", [])
+
+    def update_time_off(self, rows):
+        def _m(data):
+            data["entries"] = rows
+            data["last_updated"] = self._now()
+            return data
+        return self._modify("time_off.json", _m, "Update time off entries",
+                            default={"entries": [], "holidays": []})
+
+    def get_holidays(self):
+        # If no list has been saved yet, fall back to the AU national defaults so
+        # holidays appear on the dashboard without requiring a first save.
+        data, _ = self._get_file("time_off.json")
+        if data is None or "holidays" not in data:
+            return [dict(h) for h in self.DEFAULT_AU_HOLIDAYS]
+        return data.get("holidays", [])
+
+    def update_holidays(self, rows):
+        def _m(data):
+            data["holidays"] = rows
+            data["last_updated"] = self._now()
+            return data
+        return self._modify("time_off.json", _m, "Update public holidays",
+                            default={"entries": [], "holidays": []})
 
     # ---------- config.json ----------
 

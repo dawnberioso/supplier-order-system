@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 import os
-from datetime import datetime
+from datetime import datetime, date
 from data_handler import DataHandler
 
 # Page configuration
@@ -464,9 +464,14 @@ with st.sidebar:
     if st.button("✨ Add New Supplier", use_container_width=True):
         st.session_state.show_new_supplier = True
 
-    st.markdown("**Views**", unsafe_allow_html=False)
+    st.markdown("**Schedules**", unsafe_allow_html=False)
     if st.button("📅 Shift Coverage", use_container_width=True):
         st.session_state.show_shift_coverage = True
+        st.session_state.show_time_off = False
+        st.rerun()
+    if st.button("🌴 General Time Off", use_container_width=True):
+        st.session_state.show_time_off = True
+        st.session_state.show_shift_coverage = False
         st.rerun()
 
     # Show who's signed in (only when Google sign-in is configured)
@@ -677,6 +682,194 @@ if st.session_state.get('show_shift_coverage'):
                             "This cannot be undone.", _do_del_ov_cols)
                     else:
                         st.warning("Select a column to delete first.")
+
+    st.stop()
+
+# ---- General Time Off page (Staff on day off, leave types, AU holidays) ----
+if st.session_state.get('show_time_off'):
+    _dh = st.session_state.data_handler
+    st.markdown("<h1 style='text-align:center;'>🌴 General Time Off</h1>", unsafe_allow_html=True)
+    if st.button("⬅️ Back to Dashboard", key="to_back"):
+        st.session_state.show_time_off = False
+        st.rerun()
+    st.markdown("---")
+
+    entries = _dh.get_time_off()
+    holidays = _dh.get_holidays()
+
+    # Pull the roster (from Coverage Overview) so the dropdowns offer real names
+    # and we can auto-fill each person's position/role.
+    overview_rows = _dh.get_coverage_overview()
+    roster = {}
+    for _r in overview_rows:
+        _nm = str(_r.get("member", "")).strip()
+        if _nm:
+            roster[_nm] = str(_r.get("role", "")).strip()
+    member_names = sorted(roster.keys())
+
+    LEAVE_TYPES = ["Sick Leave", "Vacation Leave", "Annual Leave", "Personal Leave",
+                   "Carer's Leave", "Public Holiday", "Absent", "Other"]
+
+    def _parse_d(d):
+        try:
+            return date.fromisoformat(str(d)[:10])
+        except Exception:
+            return None
+
+    def _fmt_d(d):
+        dt = _parse_d(d)
+        return dt.strftime("%d/%m/%Y") if dt else str(d or "")
+
+    today = date.today()
+
+    def _active_on(recs, day):
+        out = []
+        for e in recs:
+            s = _parse_d(e.get("start_date"))
+            en = _parse_d(e.get("end_date")) or s
+            if s and en and s <= day <= en:
+                out.append(e)
+        return out
+
+    today_off = _active_on(entries, today)
+    upcoming = sorted(
+        [e for e in entries if (_parse_d(e.get("start_date")) and _parse_d(e.get("start_date")) > today)],
+        key=lambda e: _parse_d(e.get("start_date")) or today)
+    today_hols = [h for h in holidays if _parse_d(h.get("date")) == today]
+
+    # --- Summary metrics ---
+    m1, m2, m3 = st.columns(3)
+    m1.metric("🏖️ Staff off today", len(today_off))
+    m2.metric("📅 Upcoming", len(upcoming))
+    m3.metric("🇦🇺 Public holiday today", "Yes" if today_hols else "No")
+
+    if today_hols:
+        st.success("🇦🇺 Public holiday today: " +
+                   ", ".join(h.get("name", "") for h in today_hols))
+
+    # --- Staff on day off today ---
+    st.markdown(f"<h4>👥 Staff On Day Off Today — {today.strftime('%A, %d %B %Y')}</h4>",
+                unsafe_allow_html=True)
+
+    def _entries_table(recs):
+        disp = pd.DataFrame([{
+            "Staff Name": e.get("employee", ""),
+            "Position": e.get("position", "") or roster.get(e.get("employee", ""), ""),
+            "Leave Type": e.get("leave_type", ""),
+            "From": _fmt_d(e.get("start_date")),
+            "To": _fmt_d(e.get("end_date")),
+            "Cover Person": e.get("cover_person", ""),
+            "Notes": e.get("notes", ""),
+        } for e in recs])
+        html = disp.to_html(index=False, escape=True,
+                            classes="styled-rules-table sc-table", border=0)
+        st.markdown(f"<div class='styled-rules-wrap'>{html}</div>", unsafe_allow_html=True)
+
+    if today_off:
+        _entries_table(today_off)
+    else:
+        st.info("✅ Everyone's in today — no one is on leave.")
+
+    # --- Upcoming time off (dropdown) ---
+    with st.expander(f"📅 Upcoming Time Off ({len(upcoming)})"):
+        if upcoming:
+            _entries_table(upcoming)
+        else:
+            st.caption("No upcoming leave scheduled.")
+
+    # --- Add time off (dropdowns to conserve space) ---
+    with st.expander("➕ Add Time Off"):
+        with st.form("add_time_off_form"):
+            ac1, ac2 = st.columns(2)
+            with ac1:
+                emp_choice = st.selectbox(
+                    "👤 Staff Name", member_names + ["➕ Other (type below)"],
+                    index=None, placeholder="Choose staff...")
+                emp_other = st.text_input("…or type a name", key="to_emp_other")
+                leave_type = st.selectbox("🏷️ Leave Type", LEAVE_TYPES)
+                cover_choice = st.selectbox("🤝 Cover Person", ["— none —"] + member_names)
+            with ac2:
+                position = st.text_input("💼 Position (auto-fills from roster if blank)")
+                start_d = st.date_input("📅 From", value=today, format="DD/MM/YYYY")
+                end_d = st.date_input("📅 To", value=today, format="DD/MM/YYYY")
+                notes = st.text_input("📝 Notes")
+            if st.form_submit_button("💾 Add"):
+                emp = (emp_other.strip()
+                       if emp_choice in (None, "➕ Other (type below)") else emp_choice)
+                if not emp:
+                    st.error("❌ Choose or type a staff name.")
+                elif end_d < start_d:
+                    st.error("❌ 'To' date can't be before 'From' date.")
+                else:
+                    new_entry = {
+                        "employee": emp,
+                        "position": position.strip() or roster.get(emp, ""),
+                        "leave_type": leave_type,
+                        "start_date": start_d.isoformat(),
+                        "end_date": end_d.isoformat(),
+                        "cover_person": "" if cover_choice == "— none —" else cover_choice,
+                        "notes": notes.strip(),
+                    }
+                    if _dh.update_time_off(entries + [new_entry]):
+                        st.success(f"✅ Added leave for {emp}!")
+                        st.rerun()
+                    else:
+                        st.error("❌ Save failed")
+
+    # --- Edit / delete all entries (dropdown) ---
+    with st.expander("🗂️ All Time Off (edit / delete rows)"):
+        st.caption("Dates use **YYYY-MM-DD**. **Add a row:** type in the blank bottom line. "
+                   "**Delete a row:** click its row number, then press Delete.")
+        to_cols = ["employee", "position", "leave_type", "start_date",
+                   "end_date", "cover_person", "notes"]
+        to_labels = {"employee": "Staff Name", "position": "Position",
+                     "leave_type": "Leave Type", "start_date": "From (YYYY-MM-DD)",
+                     "end_date": "To (YYYY-MM-DD)", "cover_person": "Cover Person",
+                     "notes": "Notes"}
+        to_df = pd.DataFrame(entries) if entries else pd.DataFrame(columns=to_cols)
+        for c in to_cols:
+            if c not in to_df.columns:
+                to_df[c] = ""
+        to_df = to_df[to_cols].fillna("")
+        edited_to = st.data_editor(
+            to_df, num_rows="dynamic", use_container_width=True, key="to_editor",
+            column_config={
+                "leave_type": st.column_config.SelectboxColumn(
+                    "Leave Type", options=LEAVE_TYPES, required=False),
+                **{c: st.column_config.TextColumn(to_labels[c])
+                   for c in to_cols if c != "leave_type"}})
+        if st.button("💾 Save all entries", key="to_save_all"):
+            rows = [r for r in edited_to.fillna("").to_dict("records")
+                    if any(str(v).strip() for v in r.values())]
+            if _dh.update_time_off(rows):
+                st.success("✅ Time off saved!")
+                st.rerun()
+            else:
+                st.error("❌ Save failed")
+
+    # --- Australian public holidays (dropdown) ---
+    with st.expander("🇦🇺 Australian Public Holidays"):
+        st.caption("These show on the dashboard when today is a holiday. "
+                   "Seeded with 2026 national holidays — edit dates (YYYY-MM-DD), "
+                   "rename, or add your state's days, then Save.")
+        hol_df = pd.DataFrame(holidays) if holidays else pd.DataFrame(columns=["date", "name"])
+        for c in ["date", "name"]:
+            if c not in hol_df.columns:
+                hol_df[c] = ""
+        hol_df = hol_df[["date", "name"]].fillna("")
+        edited_hol = st.data_editor(
+            hol_df, num_rows="dynamic", use_container_width=True, key="hol_editor",
+            column_config={
+                "date": st.column_config.TextColumn("Date (YYYY-MM-DD)"),
+                "name": st.column_config.TextColumn("Holiday")})
+        if st.button("💾 Save holidays", key="hol_save"):
+            rows = [r for r in edited_hol.fillna("").to_dict("records")
+                    if str(r.get("date", "")).strip() or str(r.get("name", "")).strip()]
+            if _dh.update_holidays(rows):
+                st.success("✅ Holidays saved!")
+                st.rerun()
+            else:
+                st.error("❌ Save failed")
 
     st.stop()
 
