@@ -166,10 +166,10 @@
       "member": "Ailene",
       "role": "Shift Manager",
       "mon": "5pm-2am",
-      "tue": "OFF | Nisa",
+      "tue": "5pm-2am",
       "wed": "5pm-2am",
       "thu": "5pm-2am",
-      "fri": "5pm-2am",
+      "fri": "OFF",
       "sat": "OFF",
       "sun": "5pm-2am",
       "suppliers": ""
@@ -179,5 +179,5 @@
     "labels": {},
     "extra_columns": []
   },
-  "last_updated": "2026-06-18T08:14:48.212001"
+  "last_updated": "2026-06-22T23:21:23.445016"
 }
