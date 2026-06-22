@@ -17,6 +17,15 @@
       "end_date": "2026-06-19",
       "cover_person": "Jade",
       "notes": "Jade will cover Oceanmade for me for 8 hrs"
+    },
+    {
+      "employee": "Rose",
+      "position": "",
+      "leave_type": "Sick Leave",
+      "start_date": "2026-06-22",
+      "end_date": "2026-06-22",
+      "cover_person": "",
+      "notes": ""
     }
   ],
   "holidays": [
@@ -61,7 +70,7 @@
       "name": "Boxing Day"
     }
   ],
-  "last_updated": "2026-06-19T00:48:31.465511",
+  "last_updated": "2026-06-22T23:22:18.656674",
   "breaks": [
     {
       "employee": "Ailene",
