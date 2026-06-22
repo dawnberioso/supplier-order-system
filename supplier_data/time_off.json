@@ -35,6 +35,15 @@
       "end_date": "2026-06-22",
       "cover_person": "",
       "notes": ""
+    },
+    {
+      "employee": "Rose",
+      "position": "",
+      "leave_type": "Maternity Leave",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-02",
+      "cover_person": "",
+      "notes": "Baby to be followed."
     }
   ],
   "holidays": [
@@ -79,7 +88,7 @@
       "name": "Boxing Day"
     }
   ],
-  "last_updated": "2026-06-22T23:22:34.110610",
+  "last_updated": "2026-06-22T23:23:22.858017",
   "breaks": [
     {
       "employee": "Ailene",
