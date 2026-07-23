@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 import json
 import os
-from datetime import datetime, date
+from datetime import datetime
 from data_handler import DataHandler
 
 # Page configuration
 st.set_page_config(
     page_title="Supplier Order Entry System",
-    page_icon="📦",
+    page_icon=":material/inventory_2:",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -16,1557 +16,382 @@ st.set_page_config(
 # Initialize session state
 if 'data_handler' not in st.session_state:
     st.session_state.data_handler = DataHandler()
-
+    
 if 'current_supplier' not in st.session_state:
     st.session_state.current_supplier = None
 
-# Custom CSS with modern button styling, animations, gradients, and company colors
+# Custom CSS
 st.markdown("""
     <style>
-    :root {
-        --deep-navy: #B794F6;     /* pastel purple (gradient start) */
-        --light-blue: #D6BCFA;    /* lighter lavender (gradient end) */
-        --accent-teal: #C4A5F0;
-        --success-green: #00E676;
-        --warning-amber: #F59E0B;
-        --btn-text: #3B2063;      /* deep purple text on pastel */
-        --head-text: #6B46C1;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
     .main {
         padding: 0rem 0rem;
     }
-
-    /* Tab styling with gradient background */
-    .stTabs [data-baseweb="tab-list"] {
-        background: linear-gradient(90deg, rgba(3, 11, 58, 0.05), rgba(139, 92, 246, 0.05));
-        border-radius: 12px;
-        padding: 0.6rem;
-        margin-bottom: 1.5rem;
-        gap: 0.75rem;
-        display: flex;
-    }
-
     .stTabs [data-baseweb="tab-list"] button {
-        font-size: 1.15em;
-        font-weight: 600;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        flex: 1 1 0;
-        padding: 0.85rem 1.25rem;
-        justify-content: center;
-    }
-
-    .stTabs [data-baseweb="tab-list"] button[aria-selected="true"] {
-        background: linear-gradient(135deg, var(--deep-navy), var(--light-blue)) !important;
-        color: #3B2063 !important;
-        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.25);
-    }
-
-    /* Modern button styling with animations */
-    .stButton > button {
-        border-radius: 8px !important;
-        border: none !important;
-        background: linear-gradient(135deg, var(--deep-navy), var(--light-blue)) !important;
-        color: #3B2063 !important;
-        font-weight: 800 !important;
-        font-family: 'Segoe UI', 'Trebuchet MS', sans-serif !important;
-        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-        padding: 0.6rem 1.2rem !important;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .stButton > button::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.1);
-        transition: left 0.3s ease;
-        z-index: 0;
-    }
-
-    .stButton > button:hover::before {
-        left: 100%;
-    }
-
-    .stButton > button:hover {
-        background: linear-gradient(135deg, var(--light-blue), var(--deep-navy)) !important;
-        transform: translateY(-3px) scale(1.02) !important;
-        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4) !important;
-    }
-
-    .stButton > button:active {
-        transform: translateY(-1px) scale(0.98) !important;
-    }
-
-    /* Keep the gradient on every button kind (Streamlit defaults to "secondary") */
-    .stButton > button[kind="secondary"] {
-        background: linear-gradient(135deg, var(--deep-navy), var(--light-blue)) !important;
-        border: none !important;
-        color: #3B2063 !important;
-    }
-
-    .stButton > button[kind="secondary"]:hover {
-        background: linear-gradient(135deg, var(--light-blue), var(--deep-navy)) !important;
-        transform: translateY(-3px) scale(1.02) !important;
-        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4) !important;
-    }
-
-    /* Force the button label and icon white on the gradient */
-    .stButton > button p,
-    .stButton > button span,
-    .stButton > button div {
-        color: #3B2063 !important;
-    }
-
-    /* Form submit button with gradient */
-    .stFormSubmitButton > button {
-        border-radius: 8px !important;
-        background: linear-gradient(135deg, var(--light-blue), var(--accent-teal)) !important;
-        color: #3B2063 !important;
-        font-weight: 800 !important;
-        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-        padding: 0.7rem 1.5rem !important;
-        border: none !important;
-    }
-
-    .stFormSubmitButton > button:hover {
-        background: linear-gradient(135deg, var(--accent-teal), var(--light-blue)) !important;
-        transform: translateY(-3px) scale(1.02) !important;
-        box-shadow: 0 8px 20px rgba(26, 186, 220, 0.4) !important;
-    }
-
-    /* Download button */
-    .stDownloadButton > button {
-        border-radius: 8px !important;
-        background: linear-gradient(135deg, var(--success-green), var(--light-blue)) !important;
-        color: #3B2063 !important;
-        font-weight: 700 !important;
-        transition: all 0.3s ease !important;
-        border: none !important;
-    }
-
-    .stDownloadButton > button:hover {
-        background: linear-gradient(135deg, var(--light-blue), var(--success-green)) !important;
-        transform: translateY(-3px) scale(1.02) !important;
-        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4) !important;
-    }
-
-    /* Headings: medium purple gradient that stays readable on
-       light, dark, and system themes (the pastel fill is only on buttons) */
-    h1, h2, h3, h4, h5, h6 {
-        background: linear-gradient(135deg, #7C3AED, #A855F7) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-    }
-    h1 { font-weight: 800; }
-
-    /* Sidebar: slightly deeper purple so it reads as a distinct panel */
-    [data-testid="stSidebarContent"] .stButton > button,
-    [data-testid="stSidebarContent"] .stButton > button[kind="secondary"] {
-        background: linear-gradient(135deg, #A78BFA, #C4B5FD) !important;
-        color: #3B2063 !important;
-    }
-    [data-testid="stSidebarContent"] .stButton > button:hover,
-    [data-testid="stSidebarContent"] .stButton > button[kind="secondary"]:hover {
-        background: linear-gradient(135deg, #C4B5FD, #A78BFA) !important;
-        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4) !important;
-        transform: translateY(-3px) scale(1.02) !important;
-    }
-    [data-testid="stSidebarContent"] .stButton > button p,
-    [data-testid="stSidebarContent"] .stButton > button span,
-    [data-testid="stSidebarContent"] .stButton > button div {
-        color: #3B2063 !important;
-    }
-
-    /* Input field styling */
-    .stTextInput > div > div > input,
-    .stTextArea > div > div > textarea,
-    .stSelectbox > div > div > select {
-        border-radius: 6px !important;
-        border: 2px solid var(--light-blue) !important;
-        transition: all 0.3s ease !important;
-    }
-
-    .stTextInput > div > div > input:focus,
-    .stTextArea > div > div > textarea:focus,
-    .stSelectbox > div > div > select:focus {
-        border-color: var(--deep-navy) !important;
-        box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1) !important;
-    }
-
-    /* Logo container with animation */
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1.5rem 0;
-        animation: fadeInDown 0.6s ease-out;
-        background: transparent;
-    }
-
-    .logo-container img {
-        max-height: 600px;
-        width: auto;
-        transition: all 0.3s ease;
-        background-color: transparent !important;
-        mix-blend-mode: screen;
-        margin-bottom: -20px;
-        margin-left: 120px;
-    }
-
-    .logo-container img:hover {
-        transform: scale(1.08);
-        mix-blend-mode: lighten;
-    }
-
-    /* Styled read-only rules table */
-    .styled-rules-wrap {
-        max-height: 82vh;
-        overflow: auto;
-        border-radius: 10px;
-        border: 1px solid rgba(3, 11, 58, 0.12);
-        margin-bottom: 0.5rem;
-        background: #ffffff;   /* white card: readable on light/dark/system */
-    }
-
-    .styled-rules-table {
-        border-collapse: collapse;
-        width: 100%;
-        font-size: 0.9rem;
-        font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
-        background: #ffffff;
-    }
-
-    .styled-rules-table th {
-        background: linear-gradient(135deg, var(--deep-navy), var(--light-blue));
-        color: #3B2063 !important;
-        font-weight: 800;
-        text-align: left;
-        padding: 10px 14px;
-        position: sticky;
-        top: 0;
-        white-space: nowrap;
-    }
-
-    .styled-rules-table td {
-        padding: 8px 14px;
-        border-bottom: 1px solid rgba(3, 11, 58, 0.06);
-        color: #333;
-    }
-
-    .styled-rules-table tr:nth-child(even) td {
-        background: rgba(139, 92, 246, 0.04);
-    }
-
-    /* Customer column (first) in dark bold */
-    .styled-rules-table td:first-child {
-        color: #0a2e3a;
-        font-weight: 700;
-    }
-
-    /* Shift-coverage table: bold the Employee (1st) and Supplier (2nd) columns */
-    .sc-table td:nth-child(1),
-    .sc-table td:nth-child(2) {
-        color: #0a2e3a;
-        font-weight: 700;
-    }
-
-    /* Message styling */
-    .stSuccess {
-        background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(26, 186, 220, 0.1));
-        border-left: 4px solid var(--success-green);
-        border-radius: 6px;
-        animation: slideInLeft 0.4s ease-out;
-    }
-
-    .stError {
-        background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(249, 115, 115, 0.1));
-        border-left: 4px solid #EF4444;
-        border-radius: 6px;
-        animation: slideInLeft 0.4s ease-out;
-    }
-
-    .stWarning {
-        background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1));
-        border-left: 4px solid var(--warning-amber);
-        border-radius: 6px;
-        animation: slideInLeft 0.4s ease-out;
-    }
-
-    .stInfo {
-        background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(26, 186, 220, 0.1));
-        border-left: 4px solid var(--light-blue);
-        border-radius: 6px;
-        animation: slideInLeft 0.4s ease-out;
-    }
-
-    /* Animations */
-    @keyframes fadeInDown {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideInUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideInLeft {
-        from { opacity: 0; transform: translateX(-20px); }
-        to { opacity: 1; transform: translateX(0); }
-    }
-
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .stTabs [data-baseweb="tab-list"] button {
-            font-size: 0.95em;
-            padding: 0.5rem 0.8rem;
-        }
-
-        .stButton > button,
-        .stFormSubmitButton > button,
-        .stDownloadButton > button {
-            padding: 0.5rem 1rem !important;
-            font-size: 0.95em;
-        }
-
-        h1 { font-size: 1.8em !important; }
-        h2 { font-size: 1.5em !important; }
-        h3 { font-size: 1.3em !important; }
-        h4 { font-size: 1.1em !important; }
-    }
-
-    @media (max-width: 480px) {
-        .stButton > button,
-        .stFormSubmitButton > button,
-        .stDownloadButton > button {
-            padding: 0.5rem 0.8rem !important;
-            font-size: 0.9em;
-            width: 100% !important;
-        }
-
-        h1 { font-size: 1.5em !important; }
-        h2 { font-size: 1.3em !important; }
-        h3 { font-size: 1.1em !important; }
+        font-size: 1.1em;
     }
     </style>
     """, unsafe_allow_html=True)
 
-# App title (logo removed)
-col_left, col_center, col_right = st.columns([1, 2, 1])
-with col_center:
-    st.markdown("<h1 style='text-align: center;'>🚀 Supplier Order Entry System</h1>", unsafe_allow_html=True)
-
+# Header
+st.title("Supplier Order Entry Management System")
 st.markdown("---")
-
-
-# ---- Reusable "are you sure?" delete confirmation pop-up ----
-@st.dialog("⚠️ Confirm permanent delete")
-def _confirm_delete_dialog():
-    st.warning(st.session_state.get(
-        "_del_message",
-        "Are you sure you want to permanently delete this? This cannot be undone."))
-    cc1, cc2 = st.columns(2)
-    if cc1.button("✅ Yes, delete", use_container_width=True, key="_del_yes"):
-        fn = st.session_state.get("_del_action")
-        st.session_state["_del_result"] = "ok" if (callable(fn) and fn()) else "fail"
-        st.session_state["_del_action"] = None
-        st.rerun()
-    if cc2.button("❌ Cancel", use_container_width=True, key="_del_no"):
-        st.session_state["_del_action"] = None
-        st.rerun()
-
-
-def _ask_delete(message, action):
-    st.session_state["_del_message"] = message
-    st.session_state["_del_action"] = action
-    _confirm_delete_dialog()
-
-
-# Show the outcome of a confirmed delete (after the dialog closes)
-_del_res = st.session_state.pop("_del_result", None)
-if _del_res == "ok":
-    st.toast("✅ Deleted.")
-elif _del_res == "fail":
-    st.toast("❌ Delete failed.")
-
-# ---- Google sign-in (activates automatically once [auth] secrets are set) ----
-# Written defensively: if authentication isn't configured yet, the app stays
-# open and simply greets the visitor generically — it will not error.
-auth_configured = True
-try:
-    _is_logged_in = st.user.is_logged_in
-except Exception:
-    auth_configured = False
-    _is_logged_in = False
-
-if auth_configured and _is_logged_in:
-    visitor_name = (getattr(st.user, "name", None)
-                    or getattr(st.user, "email", None)
-                    or "there")
-else:
-    visitor_name = "there"
-
-# If sign-in IS configured but the visitor hasn't logged in, show a login page.
-if auth_configured and not _is_logged_in:
-    st.markdown(
-        """
-        <div style='text-align: center; padding: 2.5rem 1rem 1rem;'>
-            <h2>👋 Welcome!</h2>
-            <p style='font-size: 1.15rem; color: #8b95a7;'>
-                Please sign in with Google to continue.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-    c1, c2, c3 = st.columns([1, 1, 1])
-    with c2:
-        st.button("🔐 Sign in with Google", use_container_width=True, on_click=st.login)
-    st.stop()
 
 # Sidebar
 with st.sidebar:
-    st.markdown("<h2>🗂️ Navigation</h2>", unsafe_allow_html=True)
-
+    st.header("Settings & Navigation")
+    
     # Get available suppliers
     suppliers = st.session_state.data_handler.get_all_suppliers()
-
+    
     if suppliers:
         selected_supplier = st.selectbox(
-            "🏭 Select Supplier:",
+            "Select Supplier:",
             suppliers,
-            index=None,
-            placeholder="Choose a supplier...",
             key="supplier_select"
         )
         st.session_state.current_supplier = selected_supplier
     else:
-        st.info("📦 No suppliers yet. Create your first supplier!")
+        st.warning("No suppliers found. Create one first!")
         selected_supplier = None
-
+    
     st.markdown("---")
-    st.markdown("<h3>⚡ Quick Actions</h3>", unsafe_allow_html=True)
-
-    st.markdown("**Suppliers**", unsafe_allow_html=False)
-    if st.button("✨ Add New Supplier", use_container_width=True):
-        st.session_state.show_new_supplier = True
-
-    st.markdown("**Schedules**", unsafe_allow_html=False)
-    if st.button("📅 Shift Coverage", use_container_width=True):
-        st.session_state.show_shift_coverage = True
-        st.session_state.show_time_off = False
-        st.rerun()
-    if st.button("🌴 General Time Off", use_container_width=True):
-        st.session_state.show_time_off = True
-        st.session_state.show_shift_coverage = False
-        st.rerun()
-
-    # Show who's signed in (only when Google sign-in is configured)
-    if auth_configured and _is_logged_in:
-        st.markdown("---")
-        st.caption(f"👤 Signed in as **{visitor_name}**")
-        st.button("🚪 Log out", use_container_width=True, on_click=st.logout)
-
-# ---- Shift Coverage page (replaces the dashboard when active) ----
-if st.session_state.get('show_shift_coverage'):
-    _dh = st.session_state.data_handler
-    st.markdown("<h1 style='text-align:center;'>📅 Shift Coverage</h1>", unsafe_allow_html=True)
-    if st.button("⬅️ Back to Dashboard", key="sc_back"):
-        st.session_state.show_shift_coverage = False
-        st.session_state.sc_employee = None
-        st.rerun()
-    st.markdown("---")
-
-    sc_cols = ["employee", "supplier", "days", "shift", "time", "notes"]
-    sc_labels = {"employee": "Employee", "supplier": "Supplier", "days": "Days",
-                 "shift": "Shift", "time": "Time", "notes": "Notes"}
-    sc_rows = _dh.get_shift_coverage()
-
-    def _sc_df(records, cols):
-        if records:
-            d = pd.DataFrame(records)
-            for c in cols:
-                if c not in d.columns:
-                    d[c] = ""
-            return d[cols]
-        return pd.DataFrame(columns=cols)
-
-    # Coverage Overview is a separate weekly roster (Member, Role, Mon-Sun).
-    ov_base_cols = ["member", "role", "mon", "tue", "wed", "thu", "fri", "sat", "sun", "suppliers"]
-    ov_base_labels = {"member": "Member", "role": "Role", "mon": "Monday", "tue": "Tuesday",
-                      "wed": "Wednesday", "thu": "Thursday", "fri": "Friday", "sat": "Saturday",
-                      "sun": "Sunday", "suppliers": "Suppliers"}
-    overview_rows = _dh.get_coverage_overview()
-    ov_meta = _dh.get_coverage_meta()
-
-    # Columns follow the data, fall back to the standard week, plus any added columns.
-    if overview_rows:
-        ov_cols = []
-        for r in overview_rows:
-            for k in r.keys():
-                if str(k) not in ov_cols:
-                    ov_cols.append(str(k))
-        for c in ov_base_cols:
-            if c not in ov_cols:
-                ov_cols.append(c)
-    else:
-        ov_cols = list(ov_base_cols)
-    for c in ov_meta["extra_columns"]:
-        if c not in ov_cols:
-            ov_cols.append(c)
-
-    ov_labels = dict(ov_base_labels)
-    for c in ov_cols:
-        ov_labels.setdefault(c, c)
-    ov_labels.update(ov_meta["labels"])
-
-    # Member list comes from the overview roster, plus anyone with a saved schedule.
-    members = sorted({str(r.get("member", "")).strip() for r in overview_rows
-                      if str(r.get("member", "")).strip()}
-                     | {str(r.get("employee", "")).strip() for r in sc_rows
-                        if str(r.get("employee", "")).strip()})
-
-    # Employee-name buttons: fully transparent (no fill); hover just adds a shadow.
-    st.markdown("""
-        <style>
-        div[class*="st-key-sc_emp_"] .stButton > button,
-        div[class*="st-key-sc_emp_"] button[kind="secondary"],
-        div[class*="st-key-sc_emp_"] button[data-testid] {
-            background: transparent !important;
-            background-image: none !important;
-            background-color: transparent !important;
-            color: #7C3AED !important;
-            border: 1px solid rgba(124, 58, 237, 0.30) !important;
-            box-shadow: none !important;
-            font-weight: 700 !important;
-        }
-        div[class*="st-key-sc_emp_"] button::before { display: none !important; }
-        div[class*="st-key-sc_emp_"] button p,
-        div[class*="st-key-sc_emp_"] button span,
-        div[class*="st-key-sc_emp_"] button div { color: #7C3AED !important; }
-        div[class*="st-key-sc_emp_"] button:hover,
-        div[class*="st-key-sc_emp_"] button[data-testid]:hover {
-            background: transparent !important;
-            background-image: none !important;
-            background-color: transparent !important;
-            transform: none !important;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
-        }
-        </style>
-    """, unsafe_allow_html=True)
-
-    if members:
-        st.markdown("<h4>👤 Employee's Schedule</h4>", unsafe_allow_html=True)
-        st.caption("Click a name to open and edit that person's own per-supplier schedule.")
-        ncol = min(len(members), 5)
-        ecols = st.columns(ncol)
-        for i, emp in enumerate(members):
-            if ecols[i % ncol].button(emp, key=f"sc_emp_{i}", use_container_width=True):
-                st.session_state.sc_employee = emp
-                st.rerun()
-
-    sel_emp = st.session_state.get('sc_employee')
-
-    if sel_emp and sel_emp in members:
-        st.markdown(f"<h4>✏️ {sel_emp}'s schedule (per supplier)</h4>", unsafe_allow_html=True)
-        emp_cols = ["supplier", "days", "shift", "time", "notes"]
-        emp_df = _sc_df([r for r in sc_rows if str(r.get("employee", "")).strip() == sel_emp], emp_cols)
-        edited_emp = st.data_editor(
-            emp_df, num_rows="dynamic", use_container_width=True, key="sc_emp_editor",
-            column_config={c: st.column_config.TextColumn(sc_labels[c]) for c in emp_cols})
-        c1, c2 = st.columns(2)
-        if c1.button(f"💾 Save {sel_emp}'s schedule", key="sc_save_emp", use_container_width=True):
-            others = [r for r in sc_rows if str(r.get("employee", "")).strip() != sel_emp]
-            newrows = []
-            for rec in edited_emp.fillna("").to_dict("records"):
-                if not any(str(v).strip() for v in rec.values()):
-                    continue
-                newrows.append({"employee": sel_emp, **{k: rec.get(k, "") for k in emp_cols}})
-            if _dh.update_shift_coverage(others + newrows):
-                st.success("✅ Saved!")
-                st.rerun()
-            else:
-                st.error("❌ Save failed")
-        if c2.button("⬅️ Back to overview", key="sc_emp_back", use_container_width=True):
-            st.session_state.sc_employee = None
+    st.subheader("Quick Actions")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("Add New Supplier"):
+            st.session_state.show_new_supplier = True
+    with col2:
+        if st.button("Refresh Data"):
             st.rerun()
-    else:
-        st.markdown("<h4>👁️ Coverage Overview</h4>", unsafe_allow_html=True)
-        st.caption("Weekly roster — Member, Role and Monday–Sunday. (Per-supplier schedules "
-                   "live inside each name above, not here.)")
-        if overview_rows:
-            ov = _sc_df(overview_rows, ov_cols).rename(columns=ov_labels).fillna("")
-            html = ov.to_html(index=False, escape=True,
-                              classes="styled-rules-table sc-table", border=0)
-            st.markdown(f"<div class='styled-rules-wrap'>{html}</div>", unsafe_allow_html=True)
-
-        with st.expander("✏️ Edit All Coverage (add / delete rows)"):
-            st.caption("**Add a row:** type in the blank line at the bottom.  "
-                       "**Delete a row:** click its row number, then press Delete (or the 🗑 icon top-right).")
-            ov_df = _sc_df(overview_rows, ov_cols)
-            edited_ov = st.data_editor(
-                ov_df, num_rows="dynamic", use_container_width=True, key="sc_ov_editor",
-                column_config={c: st.column_config.TextColumn(ov_labels.get(c, c)) for c in ov_cols})
-            if st.button("💾 Save Coverage", key="sc_save_ov"):
-                newrows = [r for r in edited_ov.fillna("").to_dict("records")
-                           if any(str(v).strip() for v in r.values())]
-                if _dh.update_coverage_overview(newrows):
-                    st.success("✅ Coverage saved!")
-                    st.rerun()
-                else:
-                    st.error("❌ Save failed")
-
-        with st.expander("🛠️ Manage columns (rename, add or delete columns)"):
-            oc1, oc2, oc3 = st.columns([2, 2, 1])
-            with oc1:
-                ov_col_sel = st.selectbox("Column", ov_cols,
-                                          format_func=lambda c: ov_labels.get(c, c), key="ov_col_sel")
-            with oc2:
-                ov_new_title = st.text_input("New title", value=ov_labels.get(ov_col_sel, ov_col_sel), key="ov_col_title")
-            with oc3:
-                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                if st.button("Rename", key="ov_col_rename", use_container_width=True):
-                    ov_meta["labels"][ov_col_sel] = ov_new_title.strip() or ov_col_sel
-                    _dh.update_coverage_meta(ov_meta)
-                    st.success("✅ Title updated!")
-                    st.rerun()
-            st.markdown("---")
-            oa1, oa2 = st.columns([3, 1])
-            with oa1:
-                ov_new_col = st.text_input("New column name", key="ov_col_addtxt",
-                                           placeholder="e.g. Public Holiday")
-            with oa2:
-                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                if st.button("➕ Add column", key="ov_col_add", use_container_width=True):
-                    name = ov_new_col.strip()
-                    if name and name not in ov_cols:
-                        ov_meta["extra_columns"].append(name)
-                        _dh.update_coverage_meta(ov_meta)
-                        st.success(f"✅ Added '{name}'!")
-                        st.rerun()
-                    else:
-                        st.warning("Enter a unique, non-empty column name.")
-            st.markdown("---")
-            od1, od2 = st.columns([3, 1])
-            with od1:
-                ov_to_del = st.multiselect("Delete column(s)", ov_cols,
-                                           format_func=lambda c: ov_labels.get(c, c), key="ov_col_delsel")
-            with od2:
-                st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                if st.button("🗑️ Delete column", key="ov_col_del", use_container_width=True):
-                    if ov_to_del:
-                        def _do_del_ov_cols(_meta=dict(ov_meta), _td=list(ov_to_del),
-                                            _rows=list(overview_rows or [])):
-                            _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
-                            for k in _td:
-                                _meta["labels"].pop(k, None)
-                            _dh.update_coverage_meta(_meta)
-                            cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rows]
-                            return _dh.update_coverage_overview(cleaned)
-                        _ask_delete(
-                            "Permanently delete column(s) "
-                            f"{', '.join(ov_labels.get(c, c) for c in ov_to_del)} and their data? "
-                            "This cannot be undone.", _do_del_ov_cols)
-                    else:
-                        st.warning("Select a column to delete first.")
-
-    st.stop()
-
-# ---- General Time Off page (Staff on day off, leave types, AU holidays) ----
-if st.session_state.get('show_time_off'):
-    _dh = st.session_state.data_handler
-    st.markdown("<h1 style='text-align:center;'>🌴 General Time Off</h1>", unsafe_allow_html=True)
-    if st.button("⬅️ Back to Dashboard", key="to_back"):
-        st.session_state.show_time_off = False
-        st.rerun()
+    
     st.markdown("---")
+    st.subheader("Save Status")
 
-    entries = _dh.get_time_off()
-    holidays = _dh.get_holidays()
-    breaks = _dh.get_breaks()
-
-    # Pull the roster (from Coverage Overview) so the dropdowns offer real names
-    # and we can auto-fill each person's position/role.
-    overview_rows = _dh.get_coverage_overview()
-    roster = {}
-    for _r in overview_rows:
-        _nm = str(_r.get("member", "")).strip()
-        if _nm:
-            roster[_nm] = str(_r.get("role", "")).strip()
-    member_names = sorted(roster.keys())
-
-    LEAVE_TYPES = ["Sick Leave", "Vacation Leave", "Annual Leave", "Personal Leave",
-                   "Maternity Leave", "Public Holiday", "Absent", "Other"]
-    BREAK_TYPES = ["15-min Break", "30-min Lunch", "1-hour Lunch", "Coffee Break", "Other"]
-    EXTEND_OPTIONS = ["No extension", "+5 min", "+10 min", "+15 min"]
-
-    # 12-hour time options in 15-minute steps (e.g. "10:30 AM").
-    def _time_options():
-        opts = []
-        for h24 in range(24):
-            for mm in (0, 15, 30, 45):
-                ampm = "AM" if h24 < 12 else "PM"
-                h12 = h24 % 12 or 12
-                opts.append(f"{h12}:{mm:02d} {ampm}")
-        return opts
-    TIME_OPTIONS = _time_options()
-    # Default the time picker to "now" rounded down to the nearest 15 minutes.
-    _now_t = datetime.now()
-    _def_time = f"{_now_t.hour % 12 or 12}:{(_now_t.minute // 15) * 15:02d} " \
-                f"{'AM' if _now_t.hour < 12 else 'PM'}"
-    _def_time_idx = TIME_OPTIONS.index(_def_time) if _def_time in TIME_OPTIONS else 0
-
-    def _parse_d(d):
-        try:
-            return date.fromisoformat(str(d)[:10])
-        except Exception:
-            return None
-
-    def _fmt_d(d):
-        dt = _parse_d(d)
-        return dt.strftime("%d/%m/%Y") if dt else str(d or "")
-
-    today = date.today()
-
-    def _active_on(recs, day):
-        out = []
-        for e in recs:
-            s = _parse_d(e.get("start_date"))
-            en = _parse_d(e.get("end_date")) or s
-            if s and en and s <= day <= en:
-                out.append(e)
-        return out
-
-    today_off = _active_on(entries, today)
-    upcoming = sorted(
-        [e for e in entries if (_parse_d(e.get("start_date")) and _parse_d(e.get("start_date")) > today)],
-        key=lambda e: _parse_d(e.get("start_date")) or today)
-    today_hols = [h for h in holidays if _parse_d(h.get("date")) == today]
-
-    # --- Summary metrics ---
-    m1, m2, m3, m4 = st.columns(4)
-    m1.metric("🏖️ Staff Off Today", len(today_off))
-    m2.metric("☕ On Break Now", len(breaks))
-    m3.metric("📅 Upcoming Leave", len(upcoming))
-    m4.metric("🇦🇺 Public Holiday Today", "Yes" if today_hols else "No")
-
-    if today_hols:
-        st.success("🇦🇺 Public holiday today: " +
-                   ", ".join(h.get("name", "") for h in today_hols))
-
-    # --- Staff on day off today ---
-    st.markdown(f"<h4>👥 Staff On Day Off Today — {today.strftime('%A, %d %B %Y')}</h4>",
-                unsafe_allow_html=True)
-
-    def _entries_table(recs):
-        disp = pd.DataFrame([{
-            "Staff Name": e.get("employee", ""),
-            "Position": e.get("position", "") or roster.get(e.get("employee", ""), ""),
-            "Leave Type": e.get("leave_type", ""),
-            "From": _fmt_d(e.get("start_date")),
-            "To": _fmt_d(e.get("end_date")),
-            "Cover Person": e.get("cover_person", ""),
-            "Notes": e.get("notes", ""),
-        } for e in recs])
-        html = disp.to_html(index=False, escape=True,
-                            classes="styled-rules-table sc-table", border=0)
-        st.markdown(f"<div class='styled-rules-wrap'>{html}</div>", unsafe_allow_html=True)
-
-    if today_off:
-        _entries_table(today_off)
+    if st.session_state.data_handler.is_connected():
+        st.success("Connected to GitHub - changes save automatically.")
     else:
-        st.info("✅ Everyone's in today — no one is on leave.")
-
-    # --- Currently on break ---
-    st.markdown("<h4>☕ Currently On Break</h4>", unsafe_allow_html=True)
-    if breaks:
-        brk_disp = pd.DataFrame([{
-            "Staff Name": b.get("employee", ""),
-            "Break": b.get("break_type", ""),
-            "Started": b.get("start_time", ""),
-            "Extended": b.get("extend", "") if b.get("extend", "") not in ("", "No extension") else "—",
-            "Notes": b.get("notes", ""),
-        } for b in breaks])
-        brk_html = brk_disp.to_html(index=False, escape=True,
-                                    classes="styled-rules-table sc-table", border=0)
-        st.markdown(f"<div class='styled-rules-wrap'>{brk_html}</div>", unsafe_allow_html=True)
-    else:
-        st.info("☕ No one is on break right now.")
-
-    bc1, bc2 = st.columns(2)
-    with bc1.expander("➕ Start / Log a Break"):
-        with st.form("add_break_form"):
-            brk_emp_choice = st.selectbox(
-                "👤 Staff Name", member_names + ["➕ Other (type below)"],
-                index=None, placeholder="Choose staff...", key="brk_emp")
-            brk_emp_other = st.text_input("…or type a name", key="brk_emp_other")
-            brk_type = st.selectbox("☕ Break Type", BREAK_TYPES, key="brk_type")
-            brk_time = st.selectbox("🕐 Start Time", TIME_OPTIONS,
-                                    index=_def_time_idx, key="brk_time")
-            brk_extend = st.selectbox("⏱️ Extend Break", EXTEND_OPTIONS, key="brk_extend")
-            brk_notes = st.text_input("📝 Notes", key="brk_notes")
-            if st.form_submit_button("💾 Add to break list"):
-                bemp = (brk_emp_other.strip()
-                        if brk_emp_choice in (None, "➕ Other (type below)") else brk_emp_choice)
-                if not bemp:
-                    st.error("❌ Choose or type a staff name.")
-                else:
-                    new_break = {
-                        "employee": bemp, "break_type": brk_type,
-                        "start_time": brk_time, "extend": brk_extend,
-                        "notes": brk_notes.strip(),
-                    }
-                    if _dh.update_breaks(breaks + [new_break]):
-                        st.success(f"✅ {bemp} is on break.")
-                        st.rerun()
-                    else:
-                        st.error("❌ Save failed")
-    with bc2.expander("✅ End a Break (remove from list)"):
-        if breaks:
-            who = st.selectbox(
-                "Who's back?", list(range(len(breaks))),
-                format_func=lambda i: f"{breaks[i].get('employee', '')} "
-                                      f"({breaks[i].get('break_type', '')}, {breaks[i].get('start_time', '')})",
-                key="brk_end_sel")
-            if st.button("✅ Back from break", key="brk_end_btn", use_container_width=True):
-                remaining = [b for j, b in enumerate(breaks) if j != who]
-                if _dh.update_breaks(remaining):
-                    st.success("✅ Removed from break list.")
-                    st.rerun()
-                else:
-                    st.error("❌ Save failed")
-        else:
-            st.caption("No one is on break.")
-
-    # --- Upcoming time off (dropdown) ---
-    with st.expander(f"📅 Upcoming Time Off ({len(upcoming)})"):
-        if upcoming:
-            _entries_table(upcoming)
-        else:
-            st.caption("No upcoming leave scheduled.")
-
-    # --- Add time off (dropdowns to conserve space) ---
-    with st.expander("➕ Add Time Off"):
-        with st.form("add_time_off_form"):
-            ac1, ac2 = st.columns(2)
-            with ac1:
-                emp_choice = st.selectbox(
-                    "👤 Staff Name", member_names + ["➕ Other (type below)"],
-                    index=None, placeholder="Choose staff...")
-                emp_other = st.text_input("…or type a name", key="to_emp_other")
-                leave_type = st.selectbox("🏷️ Leave Type", LEAVE_TYPES)
-                cover_choice = st.selectbox("🤝 Cover Person", ["— none —"] + member_names)
-            with ac2:
-                position = st.text_input("💼 Position (auto-fills from roster if blank)")
-                start_d = st.date_input("📅 From", value=today, format="DD/MM/YYYY")
-                end_d = st.date_input("📅 To", value=today, format="DD/MM/YYYY")
-                notes = st.text_input("📝 Notes")
-            if st.form_submit_button("💾 Add"):
-                emp = (emp_other.strip()
-                       if emp_choice in (None, "➕ Other (type below)") else emp_choice)
-                if not emp:
-                    st.error("❌ Choose or type a staff name.")
-                elif end_d < start_d:
-                    st.error("❌ 'To' date can't be before 'From' date.")
-                else:
-                    new_entry = {
-                        "employee": emp,
-                        "position": position.strip() or roster.get(emp, ""),
-                        "leave_type": leave_type,
-                        "start_date": start_d.isoformat(),
-                        "end_date": end_d.isoformat(),
-                        "cover_person": "" if cover_choice == "— none —" else cover_choice,
-                        "notes": notes.strip(),
-                    }
-                    if _dh.update_time_off(entries + [new_entry]):
-                        st.success(f"✅ Added leave for {emp}!")
-                        st.rerun()
-                    else:
-                        st.error("❌ Save failed")
-
-    # --- Edit / delete all entries (dropdown) ---
-    with st.expander("🗂️ All Time Off (edit / delete rows)"):
-        st.caption("Dates use **YYYY-MM-DD**. **Add a row:** type in the blank bottom line. "
-                   "**Delete a row:** click its row number, then press Delete.")
-        to_cols = ["employee", "position", "leave_type", "start_date",
-                   "end_date", "cover_person", "notes"]
-        to_labels = {"employee": "Staff Name", "position": "Position",
-                     "leave_type": "Leave Type", "start_date": "From (YYYY-MM-DD)",
-                     "end_date": "To (YYYY-MM-DD)", "cover_person": "Cover Person",
-                     "notes": "Notes"}
-        to_df = pd.DataFrame(entries) if entries else pd.DataFrame(columns=to_cols)
-        for c in to_cols:
-            if c not in to_df.columns:
-                to_df[c] = ""
-        to_df = to_df[to_cols].fillna("")
-        edited_to = st.data_editor(
-            to_df, num_rows="dynamic", use_container_width=True, key="to_editor",
-            column_config={
-                "leave_type": st.column_config.SelectboxColumn(
-                    "Leave Type", options=LEAVE_TYPES, required=False),
-                **{c: st.column_config.TextColumn(to_labels[c])
-                   for c in to_cols if c != "leave_type"}})
-        if st.button("💾 Save all entries", key="to_save_all"):
-            rows = [r for r in edited_to.fillna("").to_dict("records")
-                    if any(str(v).strip() for v in r.values())]
-            if _dh.update_time_off(rows):
-                st.success("✅ Time off saved!")
-                st.rerun()
-            else:
-                st.error("❌ Save failed")
-
-    # --- Australian public holidays (dropdown) ---
-    with st.expander("🇦🇺 Australian Public Holidays"):
-        st.caption("These show on the dashboard when today is a holiday. "
-                   "Seeded with 2026 national holidays — edit dates (YYYY-MM-DD), "
-                   "rename, or add your state's days, then Save.")
-        hol_df = pd.DataFrame(holidays) if holidays else pd.DataFrame(columns=["date", "name"])
-        for c in ["date", "name"]:
-            if c not in hol_df.columns:
-                hol_df[c] = ""
-        hol_df = hol_df[["date", "name"]].fillna("")
-        edited_hol = st.data_editor(
-            hol_df, num_rows="dynamic", use_container_width=True, key="hol_editor",
-            column_config={
-                "date": st.column_config.TextColumn("Date (YYYY-MM-DD)"),
-                "name": st.column_config.TextColumn("Holiday")})
-        hs1, hs2 = st.columns(2)
-        if hs1.button("💾 Save holidays", key="hol_save", use_container_width=True):
-            rows = [r for r in edited_hol.fillna("").to_dict("records")
-                    if str(r.get("date", "")).strip() or str(r.get("name", "")).strip()]
-            if _dh.update_holidays(rows):
-                st.success("✅ Holidays saved!")
-                st.rerun()
-            else:
-                st.error("❌ Save failed")
-        if hs2.button("↺ Load all AU holidays", key="hol_reload", use_container_width=True):
-            if _dh.update_holidays([dict(h) for h in _dh.DEFAULT_AU_HOLIDAYS]):
-                st.success("✅ Loaded all Australian public holidays!")
-                st.rerun()
-            else:
-                st.error("❌ Save failed")
-
-    st.stop()
+        st.warning(
+            "Not connected to GitHub. The app can show data but "
+            "changes won't save. Add GITHUB_TOKEN and GITHUB_REPO in "
+            "Settings → Secrets to enable saving."
+        )
 
 # Main content area
 if not selected_supplier:
-    # Greet by first name only (e.g. "Dawn Berioso" -> "Dawn")
-    _greeting_name = visitor_name.split("@")[0].split()[0] if visitor_name != "there" else "there"
-    st.markdown(
-        f"""
-        <div style='text-align: center; padding: 3rem 1rem;'>
-            <h2>👋 Hi, {_greeting_name}!</h2>
-            <p style='font-size: 1.25rem; color: #8b95a7; margin-top: 0.5rem;'>
-                Which supplier are you looking for?
-            </p>
-            <p style='font-size: 1rem; color: #8b95a7; margin-top: 1.5rem;'>
-                👈 Pick one from the <b>🏭 Select Supplier</b> dropdown in the sidebar to get started.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    st.info("Please select a supplier from the sidebar to get started.")
 else:
     # Create tabs
-    tab1, tab_fav, tab5 = st.tabs([
-        "📋 Supplier Rules",
-        "⭐ Favorites",
-        "ℹ️ Supplier Information"
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "View & Edit Rules",
+        "Add New Rule",
+        "Analytics",
+        "Import/Export",
+        "Supplier Info"
     ])
-
-    # Tab 1: Supplier Rules (Customer Rules / Product Rules)
+    
+    # Tab 1: View & Edit Rules
     with tab1:
-        _dh = st.session_state.data_handler
-        st.markdown(f"<h3>📋 Supplier Rules - {selected_supplier}</h3>", unsafe_allow_html=True)
-
-        rules_view = st.radio(
-            "Choose a rules set:",
-            ["👤 Customer Rules", "📦 Product Rules"],
-            horizontal=True, key="rules_view_choice", label_visibility="collapsed")
-
-        cust_labels = {
-            "customer": "Customer", "ordered_product": "Ordered Product",
-            "ordered_unit": "Ordered Unit", "fresho_product": "Fresho Product",
-            "fresho_qty": "Fresho Qty", "other_comments": "Other Comments",
-            "created_by": "Created By",
-        }
-        cust_cols = list(cust_labels.keys())
-        # Who is making the edit (for the "Created By" stamp), date as dd/mm/yy
-        _stamp_name = (visitor_name.split("@")[0].split()[0]
-                       if visitor_name and visitor_name != "there" else "User")
-        _stamp = f"{_stamp_name} {datetime.now().strftime('%d/%m/%y')}"
-        prod_labels = {
-            "ordered_product": "Ordered Product", "fresho_product": "Fresho Product",
-            "fresho_qty": "Fresho Qty", "ordered_unit": "Ordered Unit", "notes": "Notes",
-        }
-        prod_cols = list(prod_labels.keys())
-
-        def _frame(records, cols):
-            d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
-            for c in cols:
-                if c not in d.columns:
-                    d[c] = ""
-            return d[cols]
-
-        if rules_view == "👤 Customer Rules":
-            st.markdown("<h4>👤 Customer Rules</h4>", unsafe_allow_html=True)
-            supplier_rules = _dh.get_supplier_rules(selected_supplier)
-            meta = _dh.get_rules_meta(selected_supplier)
-
-            # Columns follow the data: whatever columns your rows have (so uploads show up),
-            # falling back to the standard set when empty, plus any columns you've added.
-            if supplier_rules:
-                all_cols = []
-                for r in supplier_rules:
-                    for k in r.keys():
-                        if str(k) not in all_cols:
-                            all_cols.append(str(k))
-            else:
-                all_cols = list(cust_cols)
-            for c in meta["extra_columns"]:
-                if c not in all_cols:
-                    all_cols.append(c)
-
-            labels = dict(cust_labels)
-            for c in all_cols:
-                labels.setdefault(c, c)
-            labels.update(meta["labels"])
-
-            def _cust_frame(records, cols):
-                d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
-                if 'created_at' in d.columns and 'created_by' not in d.columns and 'created_by' in cols:
-                    d['created_by'] = d['created_at']
-                for c in cols:
-                    if c not in d.columns:
-                        d[c] = ""
-                return d[cols].fillna("")
-
-            df = _cust_frame(supplier_rules, all_cols)
-
-            crs1, crs2 = st.columns([1, 3], vertical_alignment="center")
-            _cr_sort = crs1.checkbox("🔤 Sort A→Z", key="cr_sort_az")
-            if _cr_sort and len(df) > 0:
-                df = df.sort_values(by=df.columns[0], ignore_index=True)
-            crs2.markdown(f"<p style='color:#8b95a7; margin:0;'><b>📊 {len(df)} rows</b></p>", unsafe_allow_html=True)
-
+        st.subheader(f"Order Rules for {selected_supplier}")
+        
+        # Get supplier data
+        supplier_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
+        
+        if not supplier_rules or len(supplier_rules) == 0:
+            st.info("No rules yet. Add your first rule using the 'Add New Rule' tab!")
+        else:
+            # Convert to DataFrame for easier viewing
+            df = pd.DataFrame(supplier_rules)
+            
+            # Search/Filter section
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                search_customer = st.text_input("Search by Customer:", value="")
+            with col2:
+                search_product = st.text_input("Search by Product:", value="")
+            with col3:
+                if st.button("Clear Filters"):
+                    search_customer = ""
+                    search_product = ""
+            
+            # Apply filters
+            filtered_df = df.copy()
+            if search_customer:
+                filtered_df = filtered_df[
+                    filtered_df['customer'].str.contains(search_customer, case=False, na=False)
+                ]
+            if search_product:
+                filtered_df = filtered_df[
+                    filtered_df['ordered_product'].str.contains(search_product, case=False, na=False)
+                ]
+            
+            st.write(f"Showing {len(filtered_df)} of {len(df)} rules")
+            
+            # Editable data grid
+            st.subheader("Edit Rules")
             edited_df = st.data_editor(
-                df, use_container_width=True, num_rows="dynamic", height=800,
-                key="cr_editor",
-                column_config={c: st.column_config.TextColumn(labels.get(c, c)) for c in all_cols})
-
-            b1, b2, b3 = st.columns([1, 1, 2])
-            with b1:
-                if st.button("💾 Save", use_container_width=True, key="cr_save"):
+                filtered_df,
+                use_container_width=True,
+                num_rows="dynamic",
+                key="rules_editor"
+            )
+            
+            # Save changes
+            col1, col2, col3 = st.columns([1, 1, 2])
+            with col1:
+                _filter_active = bool(search_customer or search_product)
+                if st.button("Save Changes"):
                     try:
-                        updated = edited_df.to_dict('records')
-                        for rec in updated:
-                            if 'created_by' in all_cols and not str(rec.get('created_by', '')).strip():
-                                rec['created_by'] = _stamp
-                        _dh.update_supplier_rules(selected_supplier, updated)
-                        st.success("✅ Customer rules saved!")
+                        if _filter_active and len(edited_df) < len(df):
+                            # Safety: a filter is active, so edited_df is only the
+                            # visible subset. Merge edits back into the full set
+                            # instead of overwriting and dropping hidden rows.
+                            full = df.copy()
+                            # Rows shown keep their edits; hidden rows are preserved.
+                            hidden = full.loc[~full.index.isin(filtered_df.index)]
+                            merged = pd.concat([hidden, edited_df], ignore_index=True)
+                            updated_rules = merged.to_dict('records')
+                            st.info(f"Filter was active - merged your edits with {len(hidden)} hidden rows so nothing was lost.")
+                        else:
+                            updated_rules = edited_df.to_dict('records')
+                        st.session_state.data_handler.update_supplier_rules(
+                            selected_supplier,
+                            updated_rules
+                        )
+                        st.success("Rules updated successfully!")
                         st.rerun()
                     except Exception as e:
-                        st.error(f"❌ Save failed: {e}")
-            with b2:
-                if st.button("🗑️ Delete All", use_container_width=True, key="delete_rules_btn"):
-                    _ask_delete(
-                        f"Permanently delete ALL customer rules for '{selected_supplier}'? "
-                        "This cannot be undone.",
-                        lambda: _dh.delete_supplier_rules(selected_supplier))
-
-            with st.expander("📁 Import / Export Customer Rules"):
-                # Export
-                if supplier_rules:
-                    _cr_exp = pd.DataFrame(supplier_rules)
-                    for c in all_cols:
-                        if c not in _cr_exp.columns:
-                            _cr_exp[c] = ""
-                    st.download_button(
-                        "⬇️ Export CSV", data=_cr_exp.to_csv(index=False),
-                        file_name=f"{selected_supplier}_customer_rules_{datetime.now().strftime('%Y%m%d')}.csv",
-                        mime="text/csv", use_container_width=True, key="cr_export")
-                else:
-                    st.caption("No data to export yet.")
-                st.markdown("---")
-                st.caption("Your CSV's own column names are kept exactly. "
-                           "**Upload & replace** = your file becomes the data. "
-                           "**Add to existing** = rows added on top.")
-                up = st.file_uploader("Choose a CSV file", type=["csv"], key="cr_csv")
-                if up is not None:
-                    try:
-                        dfi = pd.read_csv(up).fillna("")
-                        rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
-                                for r in dfi.to_dict('records')]
-                        st.dataframe(dfi, use_container_width=True)
-                        ir1, ir2 = st.columns(2)
-                        if ir1.button("⬆️ Upload", key="cr_imp_rep", use_container_width=True):
-                            _dh.update_supplier_rules(selected_supplier, rows)
-                            st.success(f"✅ Uploaded {len(rows)} rows!")
-                            st.rerun()
-                        if ir2.button("➕ Add to existing", key="cr_imp_app", use_container_width=True):
-                            _dh.update_supplier_rules(selected_supplier, (supplier_rules or []) + rows)
-                            st.success(f"✅ Added {len(rows)} rows!")
-                            st.rerun()
-                    except Exception as e:
-                        st.error(f"❌ Error reading CSV: {e}")
-
-            with st.expander("🛠️ Manage columns (rename, add or delete columns)"):
-                rc1, rc2, rc3 = st.columns([2, 2, 1])
-                with rc1:
-                    col_sel = st.selectbox("Column", all_cols,
-                                           format_func=lambda c: labels.get(c, c), key="cr_col_sel")
-                with rc2:
-                    new_title = st.text_input("New title", value=labels.get(col_sel, col_sel), key="cr_col_title")
-                with rc3:
-                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                    if st.button("Rename", key="cr_col_rename", use_container_width=True):
-                        meta["labels"][col_sel] = new_title.strip() or col_sel
-                        _dh.update_rules_meta(selected_supplier, meta)
-                        st.success("✅ Title updated!")
+                        st.error(f"Error saving rules: {str(e)}")
+            
+            with col2:
+                if st.button("Delete All Shown"):
+                    if st.session_state.data_handler.delete_supplier_rules(selected_supplier):
+                        st.success("Rules deleted!")
                         st.rerun()
-                st.markdown("---")
-                ac1, ac2 = st.columns([3, 1])
-                with ac1:
-                    new_col = st.text_input("New column name", key="cr_col_addtxt",
-                                            placeholder="e.g. Order Term")
-                with ac2:
-                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                    if st.button("➕ Add column", key="cr_col_add", use_container_width=True):
-                        name = new_col.strip()
-                        if name and name not in all_cols:
-                            meta["extra_columns"].append(name)
-                            _dh.update_rules_meta(selected_supplier, meta)
-                            st.success(f"✅ Added '{name}'!")
-                            st.rerun()
-                        else:
-                            st.warning("Enter a unique, non-empty column name.")
-                st.markdown("---")
-                dc1, dc2 = st.columns([3, 1])
-                with dc1:
-                    to_del = st.multiselect("Delete column(s)", all_cols,
-                                            format_func=lambda c: labels.get(c, c), key="cr_col_delsel")
-                with dc2:
-                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                    if st.button("🗑️ Delete column", key="cr_col_del", use_container_width=True):
-                        if to_del:
-                            def _do_del_cols(_meta=dict(meta), _td=list(to_del),
-                                             _rules=list(supplier_rules or [])):
-                                _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
-                                for k in _td:
-                                    _meta["labels"].pop(k, None)
-                                _dh.update_rules_meta(selected_supplier, _meta)
-                                cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rules]
-                                return _dh.update_supplier_rules(selected_supplier, cleaned)
-                            _ask_delete(
-                                "Permanently delete column(s) "
-                                f"{', '.join(labels.get(c, c) for c in to_del)} and their data? "
-                                "This cannot be undone.", _do_del_cols)
-                        else:
-                            st.warning("Select a column to delete first.")
-                st.caption("Rename, add, or delete any column. (Deleting 'customer' or 'ordered_product' "
-                           "just means the search boxes stop filtering on it.)")
-
-        else:
-            st.markdown("<h4>📦 Product Rules</h4>", unsafe_allow_html=True)
-            st.caption("Product-level defaults (no customer): the Fresho product/quantity to use for each ordered product.")
-            product_rules = _dh.get_product_rules(selected_supplier)
-            pmeta = _dh.get_product_rules_meta(selected_supplier)
-
-            # Columns follow the data: whatever columns your rows have (so uploads show up),
-            # falling back to the standard set when empty, plus any columns you've added.
-            if product_rules:
-                p_all_cols = []
-                for r in product_rules:
-                    for k in r.keys():
-                        if str(k) not in p_all_cols:
-                            p_all_cols.append(str(k))
-            else:
-                p_all_cols = list(prod_cols)
-            for c in pmeta["extra_columns"]:
-                if c not in p_all_cols:
-                    p_all_cols.append(c)
-
-            p_labels = dict(prod_labels)
-            for c in p_all_cols:
-                p_labels.setdefault(c, c)
-            p_labels.update(pmeta["labels"])
-
-            pdf = _frame(product_rules, p_all_cols)
-
-            prs1, prs2 = st.columns([1, 3], vertical_alignment="center")
-            _pr_sort = prs1.checkbox("🔤 Sort A→Z", key="pr_sort_az")
-            if _pr_sort and len(pdf) > 0:
-                pdf = pdf.sort_values(by=pdf.columns[0], ignore_index=True)
-            prs2.markdown(f"<p style='color:#8b95a7; margin:0;'><b>📊 {len(pdf)} rows</b></p>", unsafe_allow_html=True)
-
-            edited_p = st.data_editor(
-                pdf, use_container_width=True, num_rows="dynamic", height=800,
-                key="pr_editor",
-                column_config={c: st.column_config.TextColumn(p_labels.get(c, c)) for c in p_all_cols})
-
-            p1, p2, p3 = st.columns([1, 1, 2])
-            with p1:
-                if st.button("💾 Save", use_container_width=True, key="pr_save"):
-                    try:
-                        rows = [r for r in edited_p.fillna("").to_dict('records')
-                                if any(str(v).strip() for v in r.values())]
-                        if _dh.update_product_rules(selected_supplier, rows):
-                            st.success("✅ Product rules saved!")
-                            st.rerun()
-                        else:
-                            st.error("❌ Save failed")
-                    except Exception as e:
-                        st.error(f"❌ Save failed: {e}")
-            with p2:
-                if st.button("🗑️ Delete All", use_container_width=True, key="pr_delete"):
-                    _ask_delete(
-                        f"Permanently delete ALL product rules for '{selected_supplier}'? "
-                        "This cannot be undone.",
-                        lambda: _dh.update_product_rules(selected_supplier, []))
-
-            with st.expander("📁 Import / Export Product Rules"):
-                # Export
-                if product_rules:
-                    _pr_exp = pd.DataFrame(product_rules)
-                    for c in p_all_cols:
-                        if c not in _pr_exp.columns:
-                            _pr_exp[c] = ""
-                    st.download_button(
-                        "⬇️ Export CSV", data=_pr_exp.to_csv(index=False),
-                        file_name=f"{selected_supplier}_product_rules_{datetime.now().strftime('%Y%m%d')}.csv",
-                        mime="text/csv", use_container_width=True, key="pr_export")
-                else:
-                    st.caption("No data to export yet.")
-                st.markdown("---")
-                st.caption("Your CSV's own column names are kept exactly. "
-                           "**Upload & replace** = your file becomes the data. "
-                           "**Add to existing** = rows added on top.")
-                up = st.file_uploader("Choose a CSV file", type=["csv"], key="pr_csv")
-                if up is not None:
-                    try:
-                        dfi = pd.read_csv(up).fillna("")
-                        rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
-                                for r in dfi.to_dict('records')]
-                        st.dataframe(dfi, use_container_width=True)
-                        pir1, pir2 = st.columns(2)
-                        if pir1.button("⬆️ Upload", key="pr_imp_rep", use_container_width=True):
-                            _dh.update_product_rules(selected_supplier, rows)
-                            st.success(f"✅ Uploaded {len(rows)} rows!")
-                            st.rerun()
-                        if pir2.button("➕ Add to existing", key="pr_imp_app", use_container_width=True):
-                            _dh.update_product_rules(selected_supplier, (product_rules or []) + rows)
-                            st.success(f"✅ Added {len(rows)} rows!")
-                            st.rerun()
-                    except Exception as e:
-                        st.error(f"❌ Error reading CSV: {e}")
-
-            with st.expander("🛠️ Manage columns (rename, add or delete columns)"):
-                prc1, prc2, prc3 = st.columns([2, 2, 1])
-                with prc1:
-                    p_col_sel = st.selectbox("Column", p_all_cols,
-                                             format_func=lambda c: p_labels.get(c, c), key="pr_col_sel")
-                with prc2:
-                    p_new_title = st.text_input("New title", value=p_labels.get(p_col_sel, p_col_sel), key="pr_col_title")
-                with prc3:
-                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                    if st.button("Rename", key="pr_col_rename", use_container_width=True):
-                        pmeta["labels"][p_col_sel] = p_new_title.strip() or p_col_sel
-                        _dh.update_product_rules_meta(selected_supplier, pmeta)
-                        st.success("✅ Title updated!")
-                        st.rerun()
-                st.markdown("---")
-                pac1, pac2 = st.columns([3, 1])
-                with pac1:
-                    p_new_col = st.text_input("New column name", key="pr_col_addtxt",
-                                              placeholder="e.g. Order Term")
-                with pac2:
-                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                    if st.button("➕ Add column", key="pr_col_add", use_container_width=True):
-                        name = p_new_col.strip()
-                        if name and name not in p_all_cols:
-                            pmeta["extra_columns"].append(name)
-                            _dh.update_product_rules_meta(selected_supplier, pmeta)
-                            st.success(f"✅ Added '{name}'!")
-                            st.rerun()
-                        else:
-                            st.warning("Enter a unique, non-empty column name.")
-                st.markdown("---")
-                pdc1, pdc2 = st.columns([3, 1])
-                with pdc1:
-                    p_to_del = st.multiselect("Delete column(s)", p_all_cols,
-                                              format_func=lambda c: p_labels.get(c, c), key="pr_col_delsel")
-                with pdc2:
-                    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-                    if st.button("🗑️ Delete column", key="pr_col_del", use_container_width=True):
-                        if p_to_del:
-                            def _do_del_pcols(_meta=dict(pmeta), _td=list(p_to_del),
-                                              _rules=list(product_rules or [])):
-                                _meta["extra_columns"] = [c for c in _meta["extra_columns"] if c not in _td]
-                                for k in _td:
-                                    _meta["labels"].pop(k, None)
-                                _dh.update_product_rules_meta(selected_supplier, _meta)
-                                cleaned = [{k: v for k, v in rec.items() if k not in _td} for rec in _rules]
-                                return _dh.update_product_rules(selected_supplier, cleaned)
-                            _ask_delete(
-                                "Permanently delete column(s) "
-                                f"{', '.join(p_labels.get(c, c) for c in p_to_del)} and their data? "
-                                "This cannot be undone.", _do_del_pcols)
-                        else:
-                            st.warning("Select a column to delete first.")
-                st.caption("Rename, add, or delete any column. (Deleting 'ordered_product' "
-                           "just means the search box stops filtering on it.)")
-
-    # Favorites tab: most-ordered products, organized per customer
-    with tab_fav:
-        st.markdown(f"<h3>⭐ Favorites - {selected_supplier}</h3>", unsafe_allow_html=True)
-        st.caption("Pick a customer, then list the products they order most. Each customer keeps their own favorites.")
-
-        all_favorites = st.session_state.data_handler.get_supplier_favorites(selected_supplier)
-        all_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
-
-        # Build the customer list from existing rules and any saved favorites
-        customers = set()
-        for _r in all_rules:
-            _c = str(_r.get("customer", "")).strip()
-            if _c:
-                customers.add(_c)
-        for _f in all_favorites:
-            _c = str(_f.get("customer", "")).strip()
-            if _c:
-                customers.add(_c)
-        customer_list = sorted(customers)
-
-        # Favorites keep the CSV's own columns exactly (like Customer Rules),
-        # so imported data shows up unchanged.
-        fav_known_labels = {
-            "customer": "Customer", "customer_name": "Customer Name",
-            "customer_code": "Customer Code", "product_name": "Product Name",
-            "product_code": "Product Code", "product_quantity": "Product Quantity",
-            "unit": "Unit", "unit_code": "Unit Code", "notes": "Notes",
-        }
-        fav_default_cols = ["customer", "product_name", "product_quantity", "unit", "notes"]
-
-        # Columns follow the data; fall back to defaults when empty.
-        if all_favorites:
-            fav_all_cols = []
-            for r in all_favorites:
-                for k in r.keys():
-                    if str(k) not in fav_all_cols:
-                        fav_all_cols.append(str(k))
-        else:
-            fav_all_cols = list(fav_default_cols)
-
-        def _fav_label(c):
-            return fav_known_labels.get(c, c)
-
-        # Detect the column that names the customer (for the per-customer view).
-        fav_cust_key = next((c for c in ["customer", "customer_name"] if c in fav_all_cols), None)
-        if fav_cust_key is None:
-            fav_cust_key = next((c for c in fav_all_cols if "customer" in c.lower()), None)
-
-        def _fav_frame(records, cols):
-            d = pd.DataFrame(records) if records else pd.DataFrame(columns=cols)
-            if 'ordered_product' in d.columns and 'product_name' not in d.columns:
-                d['product_name'] = d['ordered_product']
-            for c in cols:
-                if c not in d.columns:
-                    d[c] = ""
-            return d[cols].fillna("")
-
-        # Supplier-wide sheet: every favorite, exactly as imported.
-        st.markdown("<h4>📋 All Favorites (whole supplier)</h4>", unsafe_allow_html=True)
-        st.caption("Every favorite for this supplier, with your CSV's own columns. Anything you import appears here.")
-        all_fav_df = _fav_frame(all_favorites, fav_all_cols)
-        st.markdown(f"<p style='color:#8b95a7; margin:0 0 6px;'><b>📊 {len(all_fav_df)} rows</b></p>",
-                    unsafe_allow_html=True)
-        edited_all_fav = st.data_editor(
-            all_fav_df, use_container_width=True, num_rows="dynamic", height=400,
-            key="all_fav_editor",
-            column_config={c: st.column_config.TextColumn(_fav_label(c)) for c in fav_all_cols})
-        if st.button("💾 Save all favorites", key="all_fav_save"):
-            rows = [r for r in edited_all_fav.fillna("").to_dict("records")
-                    if any(str(v).strip() for v in r.values())]
-            if st.session_state.data_handler.update_supplier_favorites(selected_supplier, rows):
-                st.success("✅ All favorites saved!")
-                st.rerun()
-            else:
-                st.error("❌ Save failed")
-
-        # Import / Export is always shown (like Customer & Product Rules),
-        # even when this supplier has no customers/favorites yet.
-        with st.expander("📁 Import / Export Favorites (all customers)"):
-            # Export
-            if all_favorites:
-                _fav_exp = pd.DataFrame(all_favorites)
-                st.download_button(
-                    "⬇️ Export CSV", data=_fav_exp.to_csv(index=False),
-                    file_name=f"{selected_supplier}_favorites_{datetime.now().strftime('%Y%m%d')}.csv",
-                    mime="text/csv", use_container_width=True, key="fav_export")
-            else:
-                st.caption("No favorites to export yet.")
+                    else:
+                        st.error("Error deleting rules")
+            
+            # Display statistics
             st.markdown("---")
-            st.caption("Your CSV's own column names are kept exactly. "
-                       "**Upload** = your file becomes all favorites. "
-                       "**Add to existing** = rows added on top.")
-            fav_up = st.file_uploader("Choose a CSV file", type=["csv"], key="fav_csv")
-            if fav_up is not None:
-                try:
-                    dfi = pd.read_csv(fav_up).fillna("")
-                    # Keep the CSV's own columns exactly as they are.
-                    rows = [{str(k): ("" if str(v) == "nan" else str(v)) for k, v in r.items()}
-                            for r in dfi.to_dict('records')]
-                    rows = [x for x in rows if any(str(v).strip() for v in x.values())]
-                    st.dataframe(dfi, use_container_width=True)
-                    fi1, fi2 = st.columns(2)
-                    if fi1.button("⬆️ Upload", key="fav_imp_rep", use_container_width=True):
-                        st.session_state.data_handler.update_supplier_favorites(selected_supplier, rows)
-                        st.success(f"✅ Imported {len(rows)} favorites!")
-                        st.rerun()
-                    if fi2.button("➕ Add to existing", key="fav_imp_app", use_container_width=True):
-                        st.session_state.data_handler.update_supplier_favorites(
-                            selected_supplier, (all_favorites or []) + rows)
-                        st.success(f"✅ Added {len(rows)} favorites!")
-                        st.rerun()
-                except Exception as e:
-                    st.error(f"❌ Error reading CSV: {e}")
-
-    # Tab 5: Supplier Information
-    with tab5:
-        st.markdown(f"<h3>ℹ️ Supplier Information - {selected_supplier}</h3>", unsafe_allow_html=True)
-
-        _dh = st.session_state.data_handler
-        supplier_info = _dh.get_supplier_info(selected_supplier)
-        details = _dh.get_supplier_details(selected_supplier)
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            st.markdown("<h4>📋 Information</h4>", unsafe_allow_html=True)
-            st.markdown(f"**🏭 Name:** {supplier_info.get('supplier_name', 'N/A')}")
-            st.markdown(f"**🕐 Time Shift AUT:** {details.get('time_shift_aut') or '—'}")
-            st.markdown(f"**🕐 Time Shift UKT:** {details.get('time_shift_ukt') or '—'}")
-            st.markdown(f"**👤 POC:** {details.get('poc') or '—'}")
-            st.markdown(f"**👥 Team PH:** {details.get('team_ph') or '—'}")
-            st.markdown(f"**📝 Information:** {details.get('information') or '—'}")
-
-            st.markdown("<h4>📆 Required Days</h4>", unsafe_allow_html=True)
-            req = _dh.get_required_days(selected_supplier)
-            req_cols = ["customer", "required_days"]
-
-            # Display as simple list
-            if req:
-                for _rrow in req:
-                    _c = _rrow.get("customer", "").strip()
-                    _d = _rrow.get("required_days", "").strip()
-                    if _c:
-                        st.markdown(f"**{_c}:** {_d or '—'}")
-            else:
-                st.caption("No required days set yet.")
-
-            with st.expander("✏️ Edit Required Days"):
-                if req:
-                    req_df = pd.DataFrame(req)
-                    for c in req_cols:
-                        if c not in req_df.columns:
-                            req_df[c] = ""
-                    req_df = req_df[req_cols]
+            st.subheader("Quick Stats")
+            col1, col2, col3, col4 = st.columns(4)
+            
+            with col1:
+                st.metric("Total Rules", len(df))
+            with col2:
+                st.metric("Unique Customers", df['customer'].nunique())
+            with col3:
+                st.metric("Unique Products", df['ordered_product'].nunique())
+            with col4:
+                # Pull last_updated from the supplier file (not the rules rows)
+                _info = st.session_state.data_handler.get_supplier_info(selected_supplier)
+                _last = _info.get('last_updated', 'N/A')
+                st.metric("Last Updated", str(_last)[:10] if _last != 'N/A' else "N/A")
+    
+    # Tab 2: Add New Rule
+    with tab2:
+        st.subheader(f"Add New Rule - {selected_supplier}")
+        
+        with st.form("new_rule_form"):
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                customer = st.text_input("Customer Name *")
+                ordered_product = st.text_input("Ordered Product *")
+                ordered_unit = st.text_input("Ordered Unit (e.g., box, bag, jar)")
+            
+            with col2:
+                fresho_product = st.text_input("Fresho Product (Substitute) *")
+                fresho_qty = st.text_input("Fresho Quantity")
+                other_comments = st.text_area("Other Comments", height=100)
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                submitted = st.form_submit_button("Add Rule", use_container_width=True)
+            with col2:
+                st.form_submit_button("Clear Form", use_container_width=True)
+            
+            if submitted:
+                if not customer or not ordered_product or not fresho_product:
+                    st.error("Please fill in all required fields (marked with *)")
                 else:
-                    req_df = pd.DataFrame(columns=req_cols)
-
-                edited_req = st.data_editor(
-                    req_df, use_container_width=True, num_rows="dynamic",
-                    key="reqdays_editor",
-                    column_config={
-                        "customer": st.column_config.TextColumn("Customer"),
-                        "required_days": st.column_config.TextColumn("Required Days"),
-                    })
-                # Auto-save on change
-                _rd_prev_key = f"_rd_prev_{selected_supplier}"
-                _rd_current = [r for r in edited_req.fillna("").to_dict("records")
-                               if any(str(v).strip() for v in r.values())]
-                _rd_prev = st.session_state.get(_rd_prev_key, req or [])
-                if _rd_current != _rd_prev:
-                    if _dh.update_required_days(selected_supplier, _rd_current):
-                        st.session_state[_rd_prev_key] = _rd_current
-                        st.toast("✅ Required Days saved")
-
+                    new_rule = {
+                        'customer': customer,
+                        'ordered_product': ordered_product,
+                        'ordered_unit': ordered_unit or '',
+                        'fresho_product': fresho_product,
+                        'fresho_qty': fresho_qty or '',
+                        'other_comments': other_comments or '',
+                        'created_at': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    }
+                    
+                    if st.session_state.data_handler.add_rule(selected_supplier, new_rule):
+                        st.success("Rule added successfully!")
+                        st.rerun()
+                    else:
+                        st.error("Error adding rule")
+    
+    # Tab 3: Analytics
+    with tab3:
+        st.subheader(f"Analytics - {selected_supplier}")
+        
+        supplier_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
+        
+        if supplier_rules:
+            df = pd.DataFrame(supplier_rules)
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.subheader("Top Customers")
+                top_customers = df['customer'].value_counts().head(10)
+                st.bar_chart(top_customers)
+            
+            with col2:
+                st.subheader("Top Ordered Products")
+                top_products = df['ordered_product'].value_counts().head(10)
+                st.bar_chart(top_products)
+            
+            st.markdown("---")
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.subheader("Ordered Units Distribution")
+                units = df['ordered_unit'].value_counts()
+                st.bar_chart(units)
+            
+            with col2:
+                st.metric("Total Rules", len(df))
+                st.metric("Unique Customers", df['customer'].nunique())
+                st.metric("Unique Products", df['ordered_product'].nunique())
+                st.metric("Rules with Comments", len(df[df['other_comments'].notna()]))
+        else:
+            st.info("No data to analyze yet.")
+    
+    # Tab 4: Import/Export
+    with tab4:
+        st.subheader(f"Import/Export - {selected_supplier}")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.subheader("Import from CSV")
+            
+            uploaded_file = st.file_uploader(
+                "Choose a CSV file",
+                type=['csv'],
+                key="csv_upload"
+            )
+            
+            if uploaded_file is not None:
+                try:
+                    df_import = pd.read_csv(uploaded_file)
+                    
+                    st.write("Preview of imported data:")
+                    st.dataframe(df_import)
+                    
+                    if st.button("Import This Data"):
+                        # Convert to list of dicts
+                        rules = df_import.to_dict('records')
+                        
+                        # Add timestamps
+                        for rule in rules:
+                            rule['created_at'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        
+                        if st.session_state.data_handler.update_supplier_rules(
+                            selected_supplier,
+                            rules
+                        ):
+                            st.success(f"Imported {len(rules)} rules successfully!")
+                            st.rerun()
+                        else:
+                            st.error("Error importing data")
+                
+                except Exception as e:
+                    st.error(f"Error reading CSV: {str(e)}")
+        
         with col2:
-            st.markdown("<h4>⚙️ Manage</h4>", unsafe_allow_html=True)
-
-            # Rename + Delete side by side
-            mn1, mn2, mn3 = st.columns([3, 1, 1])
-            new_name = mn1.text_input("🏷️ Rename:", value=selected_supplier, label_visibility="collapsed",
-                                      placeholder="Supplier name")
-            if mn2.button("✏️ Update", use_container_width=True, key="sup_rename_btn"):
-                if _dh.rename_supplier(selected_supplier, new_name):
-                    st.success(f"✅ Renamed to {new_name}")
+            st.subheader("Export to CSV")
+            
+            supplier_rules = st.session_state.data_handler.get_supplier_rules(selected_supplier)
+            
+            if supplier_rules:
+                df_export = pd.DataFrame(supplier_rules)
+                
+                csv = df_export.to_csv(index=False)
+                
+                st.download_button(
+                    label="Download CSV",
+                    data=csv,
+                    file_name=f"{selected_supplier}_rules_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                    mime="text/csv",
+                    use_container_width=True
+                )
+                
+                st.success(f"Ready to download! ({len(supplier_rules)} rules)")
+            else:
+                st.info("No data to export yet.")
+    
+    # Tab 5: Supplier Info
+    with tab5:
+        st.subheader(f"Supplier Information - {selected_supplier}")
+        
+        supplier_info = st.session_state.data_handler.get_supplier_info(selected_supplier)
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.write(f"**Supplier Name:** {supplier_info.get('supplier_name', 'N/A')}")
+            st.write(f"**Created:** {supplier_info.get('created_at', 'N/A')}")
+            st.write(f"**Last Updated:** {supplier_info.get('last_updated', 'N/A')}")
+            st.write(f"**Total Rules:** {len(st.session_state.data_handler.get_supplier_rules(selected_supplier))}")
+        
+        with col2:
+            st.subheader("Actions")
+            
+            new_name = st.text_input("Rename supplier:", value=selected_supplier)
+            
+            if st.button("Update Supplier Name"):
+                if st.session_state.data_handler.rename_supplier(selected_supplier, new_name):
+                    st.success(f"Renamed to {new_name}")
                     st.rerun()
                 else:
-                    st.error("❌ Update failed")
-            if mn3.button("🗑️ Delete", use_container_width=True, key="delete_supplier_btn"):
-                _ask_delete(
-                    f"Permanently delete the entire supplier '{selected_supplier}' and ALL its "
-                    "rules, favourites and details? This cannot be undone.",
-                    lambda: _dh.delete_supplier(selected_supplier))
-
+                    st.error("Error renaming supplier")
+            
             st.markdown("---")
-            with st.expander("✏️ Edit Supplier Details"):
-                with st.form("supplier_details_form"):
-                    d_aut = st.text_input("🕐 Time Shift AUT", value=details.get("time_shift_aut", ""))
-                    d_ukt = st.text_input("🕐 Time Shift UKT", value=details.get("time_shift_ukt", ""))
-                    d_poc = st.text_input("👤 POC", value=details.get("poc", ""))
-                    d_team = st.text_input("👥 Team PH", value=details.get("team_ph", ""))
-                    d_info = st.text_area("📝 Information", value=details.get("information", ""), height=100)
-                    if st.form_submit_button("💾 Save Details"):
-                        if _dh.update_supplier_details(selected_supplier, {
-                            "time_shift_aut": d_aut, "time_shift_ukt": d_ukt,
-                            "poc": d_poc, "team_ph": d_team, "information": d_info,
-                        }):
-                            st.success("✅ Details saved!")
-                            st.rerun()
-                        else:
-                            st.error("❌ Save failed")
+            
+            if st.button("Delete Entire Supplier", type="secondary"):
+                if st.session_state.data_handler.delete_supplier(selected_supplier):
+                    st.success("Supplier deleted!")
+                    st.rerun()
+                else:
+                    st.error("Error deleting supplier")
 
 # Add New Supplier Modal
 if st.session_state.get('show_new_supplier', False):
     with st.form("new_supplier_form"):
-        st.markdown("<h3>🏭 New Supplier</h3>", unsafe_allow_html=True)
-
-        supplier_name = st.text_input("🏷️ Name *")
-        description = st.text_area("📝 Description (optional)")
-
-        if st.form_submit_button("✅ Create"):
+        st.subheader("Create New Supplier")
+        
+        supplier_name = st.text_input("Supplier Name *")
+        description = st.text_area("Description (optional)")
+        
+        if st.form_submit_button("Create Supplier"):
             if not supplier_name:
-                st.error("❌ Name required")
+                st.error("Please enter a supplier name")
             else:
                 if st.session_state.data_handler.create_supplier(supplier_name, description):
-                    st.success(f"✅ Created '{supplier_name}'!")
+                    st.success(f"Supplier '{supplier_name}' created!")
                     st.session_state.show_new_supplier = False
                     st.rerun()
                 else:
-                    st.error("❌ Create failed")
+                    st.error("Error creating supplier")
 
-# Footer with mini save status
-_connected = st.session_state.data_handler.is_connected()
-_status_icon = "🟢" if _connected else "🟡"
-_status_text = "Auto-saving" if _connected else "Not saving (check GitHub secrets)"
+# Footer
 st.markdown("---")
-st.markdown(f"""
-    <div style='text-align: center; color: #8b95a7; font-size: 0.8em; padding: 1rem 1.5rem;'>
-    <p style='font-weight: 700; background: linear-gradient(135deg, #7C3AED, #A855F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>🚀 Supplier Order Entry System v2.0</p>
-    <p>{_status_icon} {_status_text} &nbsp;·&nbsp; Built with Streamlit</p>
+st.markdown("""
+    <div style='text-align: center; color: gray; font-size: 0.8em;'>
+    <p>Supplier Order Entry Management System v1.0</p>
+    <p>Built with Streamlit | Data stored in GitHub</p>
     </div>
     """, unsafe_allow_html=True)
