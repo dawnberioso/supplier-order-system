@@ -29,6 +29,14 @@ st.markdown("""
     .stTabs [data-baseweb="tab-list"] button {
         font-size: 1.1em;
     }
+    h1, h2, h3, h4, h5, h6 {
+        color: #1B3A5C !important;
+    }
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3 {
+        color: #1B3A5C !important;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -65,16 +73,12 @@ with st.sidebar:
         if st.button("Refresh Data"):
             st.rerun()
     
-    st.markdown("---")
-    st.subheader("Save Status")
-
-    if st.session_state.data_handler.is_connected():
-        st.success("Connected to GitHub - changes save automatically.")
-    else:
+    if not st.session_state.data_handler.is_connected():
+        st.markdown("---")
         st.warning(
             "Not connected to GitHub. The app can show data but "
             "changes won't save. Add GITHUB_TOKEN and GITHUB_REPO in "
-            "Settings → Secrets to enable saving."
+            "Settings > Secrets to enable saving."
         )
 
 # Main content area
