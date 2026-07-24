@@ -402,40 +402,12 @@ if _del_res == "ok":
 elif _del_res == "fail":
     st.toast("Delete failed.")
 
-# ---- Google sign-in (activates automatically once [auth] secrets are set) ----
-# Written defensively: if authentication isn't configured yet, the app stays
-# open and simply greets the visitor generically — it will not error.
-auth_configured = True
-try:
-    _is_logged_in = st.user.is_logged_in
-except Exception:
-    auth_configured = False
-    _is_logged_in = False
-
-if auth_configured and _is_logged_in:
-    visitor_name = (getattr(st.user, "name", None)
-                    or getattr(st.user, "email", None)
-                    or "there")
-else:
-    visitor_name = "there"
-
-# If sign-in IS configured but the visitor hasn't logged in, show a login page.
-if auth_configured and not _is_logged_in:
-    st.markdown(
-        """
-        <div style='text-align: center; padding: 2.5rem 1rem 1rem;'>
-            <h2>Welcome!</h2>
-            <p style='font-size: 1.15rem; color: #8b95a7;'>
-                Please sign in with Google to continue.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-    c1, c2, c3 = st.columns([1, 1, 1])
-    with c2:
-        st.button("Sign in with Google", use_container_width=True, on_click=st.login)
-    st.stop()
+# ---- Access: open link (no sign-in required) ----
+# The app is intentionally open — anyone with the link can use it. There is no
+# Google sign-in. visitor_name stays generic so greetings and stamps still work.
+auth_configured = False
+_is_logged_in = False
+visitor_name = "there"
 
 # Sidebar
 with st.sidebar:
@@ -473,12 +445,6 @@ with st.sidebar:
         st.session_state.show_time_off = True
         st.session_state.show_shift_coverage = False
         st.rerun()
-
-    # Show who's signed in (only when Google sign-in is configured)
-    if auth_configured and _is_logged_in:
-        st.markdown("---")
-        st.caption(f"Signed in as **{visitor_name}**")
-        st.button("Log out", use_container_width=True, on_click=st.logout)
 
 # ---- Shift Coverage page (replaces the dashboard when active) ----
 if st.session_state.get('show_shift_coverage'):
