@@ -998,7 +998,7 @@ else:
                 all_cols = []
                 for r in supplier_rules:
                     for k in r.keys():
-                        if str(k) not in all_cols:
+                        if str(k) != 'created_at' and str(k) not in all_cols:
                             all_cols.append(str(k))
             else:
                 all_cols = list(cust_cols)
@@ -1157,7 +1157,7 @@ else:
                 p_all_cols = []
                 for r in product_rules:
                     for k in r.keys():
-                        if str(k) not in p_all_cols:
+                        if str(k) != 'created_at' and str(k) not in p_all_cols:
                             p_all_cols.append(str(k))
             else:
                 p_all_cols = list(prod_cols)
@@ -1330,7 +1330,7 @@ else:
             fav_all_cols = []
             for r in all_favorites:
                 for k in r.keys():
-                    if str(k) not in fav_all_cols:
+                    if str(k) != 'created_at' and str(k) not in fav_all_cols:
                         fav_all_cols.append(str(k))
         else:
             fav_all_cols = list(fav_default_cols)
