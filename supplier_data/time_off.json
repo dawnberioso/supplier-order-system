@@ -1,12 +1,12 @@
 {
   "entries": [
     {
-      "employee": "White Lion",
-      "position": "69",
+      "employee": "Renilyn",
+      "position": "",
       "leave_type": "Vacation Leave",
       "start_date": "2026-07-01",
       "end_date": "2026-07-12",
-      "cover_person": "Renilyn",
+      "cover_person": "Rhea",
       "notes": "Going on vacation in North Korea because I'm stressed. If anything comes up, just ping me. Thanks!"
     },
     {
@@ -15,17 +15,17 @@
       "leave_type": "Sick Leave",
       "start_date": "2026-06-19",
       "end_date": "2026-06-19",
-      "cover_person": "Jade",
+      "cover_person": "Grace",
       "notes": "Jade will cover Oceanmade for me for 8 hrs"
     },
     {
-      "employee": "Rose",
+      "employee": "",
       "position": "",
       "leave_type": "Maternity Leave",
-      "start_date": "2026-08-29",
-      "end_date": "2026-09-02",
+      "start_date": "",
+      "end_date": "",
       "cover_person": "",
-      "notes": "Baby to be followed."
+      "notes": ""
     }
   ],
   "holidays": [
@@ -70,7 +70,7 @@
       "name": "Boxing Day"
     }
   ],
-  "last_updated": "2026-06-24T15:15:21.396007",
+  "last_updated": "2026-07-26T16:03:05.615939",
   "breaks": [
     {
       "employee": "Ailene",
