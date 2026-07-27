@@ -15,6 +15,14 @@
       "shift": "",
       "time": "",
       "notes": ""
+    },
+    {
+      "employee": "Ailene",
+      "supplier": "Oceanmade",
+      "days": "",
+      "shift": "Day",
+      "time": "",
+      "notes": "Shift Manager"
     }
   ],
   "overview": [
@@ -179,5 +187,5 @@
     "labels": {},
     "extra_columns": []
   },
-  "last_updated": "2026-07-26T16:01:29.326246"
+  "last_updated": "2026-07-27T05:08:28.911368"
 }
