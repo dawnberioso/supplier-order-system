@@ -2,7 +2,7 @@
   "supplier_name": "Greenpoint",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "G E N E R A L R U L E": "Sunday-Wed (4hrs) 9pm-1am\n Thursday-Friday (5hrs) 8pm-1am",
@@ -4194,14 +4194,6 @@
       "rows": 998,
       "files": [
         "extra/Greenpoint/RHEA.json"
-      ]
-    },
-    {
-      "name": "LIVE TRACKING",
-      "slug": "LIVE TRACKING",
-      "rows": 269,
-      "files": [
-        "extra/Greenpoint/LIVE TRACKING.json"
       ]
     }
   ]

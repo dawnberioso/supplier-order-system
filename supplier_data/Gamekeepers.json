@@ -2,7 +2,7 @@
   "supplier_name": "Gamekeepers",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer Name in Fresho": "JJJ Bros Pty Ltd",
@@ -3605,16 +3605,6 @@
       "rows": 4337,
       "files": [
         "extra/Gamekeepers/Feedback.json"
-      ]
-    },
-    {
-      "name": "Live Tracking",
-      "slug": "Live Tracking",
-      "rows": 15878,
-      "files": [
-        "extra/Gamekeepers/Live Tracking.part1.json",
-        "extra/Gamekeepers/Live Tracking.part2.json",
-        "extra/Gamekeepers/Live Tracking.part3.json"
       ]
     },
     {

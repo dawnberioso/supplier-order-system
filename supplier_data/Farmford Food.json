@@ -2,7 +2,7 @@
   "supplier_name": "Farmford Food",
   "description": "",
   "created_at": "2026-06-16T00:09:44.416572",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "NO SUPPLY: IGNORE": "",
@@ -105924,18 +105924,6 @@
       "rows": 97,
       "files": [
         "extra/Farmford Food/Trixy Notes.json"
-      ]
-    },
-    {
-      "name": "Tracking",
-      "slug": "Tracking",
-      "rows": 24097,
-      "files": [
-        "extra/Farmford Food/Tracking.part1.json",
-        "extra/Farmford Food/Tracking.part2.json",
-        "extra/Farmford Food/Tracking.part3.json",
-        "extra/Farmford Food/Tracking.part4.json",
-        "extra/Farmford Food/Tracking.part5.json"
       ]
     },
     {

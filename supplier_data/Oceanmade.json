@@ -2,7 +2,7 @@
   "supplier_name": "Oceanmade",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Guide": "dimitri@oceanmade.com.au (0434017446) / support@systima.com.au (0383530530)",
@@ -2173,46 +2173,6 @@
         "extra/Oceanmade/Orders.part7.json",
         "extra/Oceanmade/Orders.part8.json",
         "extra/Oceanmade/Orders.part9.json"
-      ]
-    },
-    {
-      "name": "Nisa training",
-      "slug": "Nisa training",
-      "rows": 154,
-      "files": [
-        "extra/Oceanmade/Nisa training.json"
-      ]
-    },
-    {
-      "name": "Vanessa training",
-      "slug": "Vanessa training",
-      "rows": 130,
-      "files": [
-        "extra/Oceanmade/Vanessa training.json"
-      ]
-    },
-    {
-      "name": "Rhea Training",
-      "slug": "Rhea Training",
-      "rows": 5,
-      "files": [
-        "extra/Oceanmade/Rhea Training.json"
-      ]
-    },
-    {
-      "name": "Renilyn Training",
-      "slug": "Renilyn Training",
-      "rows": 69,
-      "files": [
-        "extra/Oceanmade/Renilyn Training.json"
-      ]
-    },
-    {
-      "name": "JADE",
-      "slug": "JADE",
-      "rows": 4,
-      "files": [
-        "extra/Oceanmade/JADE.json"
       ]
     }
   ]

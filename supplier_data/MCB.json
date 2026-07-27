@@ -2,7 +2,7 @@
   "supplier_name": "MCB",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer": "",
@@ -10710,14 +10710,6 @@
   ],
   "extra_sheets": [
     {
-      "name": "Training ",
-      "slug": "Training",
-      "rows": 797,
-      "files": [
-        "extra/MCB/Training.json"
-      ]
-    },
-    {
       "name": "Customers",
       "slug": "Customers",
       "rows": 277,
@@ -10747,14 +10739,6 @@
       "rows": 226,
       "files": [
         "extra/MCB/Eden.json"
-      ]
-    },
-    {
-      "name": "Jade",
-      "slug": "Jade",
-      "rows": 20,
-      "files": [
-        "extra/MCB/Jade.json"
       ]
     }
   ]

@@ -2,7 +2,7 @@
   "supplier_name": "Heritage (Fruits and Vegetables)",
   "description": "",
   "created_at": "2026-06-17T22:22:25.660070",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer Name in Fresho": "MARKETMAN ORDERS",
@@ -4900,17 +4900,6 @@
       "rows": 24,
       "files": [
         "extra/Heritage (Fruits and Vegetables)/Shift.json"
-      ]
-    },
-    {
-      "name": "Tracking LIVE",
-      "slug": "Tracking LIVE",
-      "rows": 17031,
-      "files": [
-        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part1.json",
-        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part2.json",
-        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part3.json",
-        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part4.json"
       ]
     },
     {

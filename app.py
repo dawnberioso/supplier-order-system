@@ -20,6 +20,68 @@ if 'data_handler' not in st.session_state:
 if 'current_supplier' not in st.session_state:
     st.session_state.current_supplier = None
 
+
+def _pretty(label):
+    """Title-case a section label, keeping short acronyms (VM, BE, MCB) intact."""
+    if label in ("Customer Rules", "Product Rules"):
+        return label
+    out = []
+    for w in str(label).split():
+        if w.isupper() and len(w) <= 3:
+            out.append(w)
+        elif w[:1].isalpha():
+            out.append(w[:1].upper() + w[1:].lower())
+        else:
+            out.append(w)
+    return " ".join(out) or str(label)
+
+
+def _save_extra_sheet(dh, supplier, entry, rows):
+    """Write an edited extra (tracker) sheet back to its chunked part files and
+    update the supplier's index. Uses only pre-existing DataHandler methods so it
+    works even if a cached instance predates the extra-sheet helpers."""
+    import re as _re
+    files = entry.get("files", [])
+    if not files:
+        return False
+    base = _re.sub(r"(\.part\d+)?\.json$", "", files[0])   # extra/<slug_dir>/<slug>
+    name = entry.get("name", "")
+    first, _ = dh._get_file(files[0])
+    styles = (first or {}).get("cell_styles", {}) or {}
+    cols = (list(rows[0].keys()) if rows else (first or {}).get("columns", []))
+    ch = 900_000
+    full = json.dumps(rows, ensure_ascii=False)
+    if not rows or len(full.encode("utf-8")) <= ch:
+        parts = [rows]
+    else:
+        avg = max(1, len(full.encode("utf-8")) // len(rows))
+        per = max(1, ch // avg)
+        parts = [rows[i:i + per] for i in range(0, len(rows), per)]
+    new_files = []
+    for pi, part in enumerate(parts, 1):
+        rel = f"{base}.json" if len(parts) == 1 else f"{base}.part{pi}.json"
+        payload = {"supplier": supplier, "name": name, "part": pi, "parts": len(parts),
+                   "columns": cols, "rows": part}
+        if pi == 1 and styles:
+            payload["cell_styles"] = styles
+        if not dh._put_file(rel, payload, f"Edit {name} for {supplier}"):
+            return False
+        new_files.append(rel)
+    for old in files:
+        if old not in new_files:
+            dh._delete_file(old, f"Prune {name} part for {supplier}")
+
+    def _mut(data, _nf=new_files, _n=len(rows), _name=name):
+        for e in data.get("extra_sheets", []):
+            if e.get("name") == _name:
+                e["files"] = _nf
+                e["rows"] = _n
+                break
+        data["last_updated"] = datetime.now().isoformat()
+        return data
+
+    return dh._modify(f"{supplier}.json", _mut, f"Update extra index for {supplier}")
+
 # Custom CSS with modern button styling, animations, gradients, and company colors
 st.markdown("""
     <style>
@@ -970,7 +1032,8 @@ else:
         rules_view = st.radio(
             "Choose a section:",
             ["Customer Rules", "Product Rules"] + _extra_names,
-            horizontal=True, key="rules_view_choice", label_visibility="collapsed")
+            horizontal=True, key="rules_view_choice", label_visibility="collapsed",
+            format_func=_pretty)
 
         cust_labels = {
             "customer": "Customer", "ordered_product": "Ordered Product",
@@ -1305,35 +1368,87 @@ else:
                            "just means the search box stops filtering on it.)")
 
         else:
-            # An imported workbook sheet — read-only reference/log data.
+            # An imported workbook sheet. Trackers are editable (via a toggle) and
+            # show the Excel cell colours; other sheets are read-only reference data.
             _entry = next((e for e in _extra_index if e.get("name") == rules_view), None)
-            st.markdown(f"<h4>{rules_view}</h4>", unsafe_allow_html=True)
+            st.markdown(f"<h4>{_pretty(rules_view)}</h4>", unsafe_allow_html=True)
             if _entry is None:
                 st.info("This section could not be found.")
             else:
-                st.caption(f"{_entry.get('rows', 0):,} rows · read-only (imported from the workbook)")
+                _editable = bool(_entry.get("editable"))
+                _slug = _entry.get("slug", "sheet")
                 with st.spinner("Loading sheet…"):
-                    _cols, _rows = [], []
-                    for _rel in _entry.get("files", []):
+                    _cols, _rows, _styles = [], [], {}
+                    for _i, _rel in enumerate(_entry.get("files", [])):
                         _part, _ = _dh._get_file(_rel)
                         if _part:
                             if not _cols:
                                 _cols = _part.get("columns", [])
+                            if _i == 0:
+                                _styles = _part.get("cell_styles", {}) or {}
                             _rows.extend(_part.get("rows", []))
-                if _rows:
+                if not _rows:
+                    st.info("This sheet has no data.")
+                else:
                     _cols = _cols or list(_rows[0].keys())
                     _xdf = pd.DataFrame(_rows)
                     for c in _cols:
                         if c not in _xdf.columns:
                             _xdf[c] = ""
                     _xdf = _xdf[_cols]
-                    st.dataframe(_xdf, use_container_width=True, height=800)
+
+                    _edit_mode = False
+                    if _editable:
+                        _edit_mode = st.toggle(
+                            "Edit mode", key=f"extra_edit_{_slug}",
+                            help="Switch on to edit and save this tracker. Colours show in view mode.")
+                    st.caption(f"{_entry.get('rows', 0):,} rows · " + (
+                        "editing" if _edit_mode else
+                        ("read-only, colour-coded" if _styles else "read-only")))
+
+                    if _edit_mode:
+                        _edited = st.data_editor(
+                            _xdf, use_container_width=True, num_rows="dynamic",
+                            height=800, key=f"extra_editor_{_slug}")
+                        if st.button("Save", key=f"extra_save_{_slug}"):
+                            try:
+                                _newrows = [r for r in _edited.fillna("").to_dict("records")
+                                            if any(str(v).strip() for v in r.values())]
+                                if _save_extra_sheet(_dh, selected_supplier, _entry, _newrows):
+                                    st.success("Saved!")
+                                    st.rerun()
+                                else:
+                                    st.error("Save failed")
+                            except Exception as _e:
+                                st.error(f"Save failed: {_e}")
+                    elif _styles:
+                        def _style_fn(df, _st=_styles):
+                            out = pd.DataFrame("", index=df.index, columns=df.columns)
+                            for _r, _cc in _st.items():
+                                try:
+                                    _ri = int(_r)
+                                except (TypeError, ValueError):
+                                    continue
+                                if _ri not in out.index:
+                                    continue
+                                for _cn, _css in _cc.items():
+                                    if _cn in out.columns:
+                                        _s = ""
+                                        if _css.get("bg"):
+                                            _s += f"background-color: {_css['bg']};"
+                                        if _css.get("fg"):
+                                            _s += f"color: {_css['fg']};"
+                                        out.at[_ri, _cn] = _s
+                            return out
+                        st.dataframe(_xdf.style.apply(_style_fn, axis=None),
+                                     use_container_width=True, height=800)
+                    else:
+                        st.dataframe(_xdf, use_container_width=True, height=800)
+
                     st.download_button(
                         "Export CSV", data=_xdf.to_csv(index=False),
-                        file_name=f"{selected_supplier}_{_entry.get('slug','sheet')}_{datetime.now().strftime('%Y%m%d')}.csv",
-                        mime="text/csv", key="extra_export")
-                else:
-                    st.info("This sheet has no data.")
+                        file_name=f"{selected_supplier}_{_slug}_{datetime.now().strftime('%Y%m%d')}.csv",
+                        mime="text/csv", key=f"extra_export_{_slug}")
 
     # Favorites tab: most-ordered products, organized per customer
     with tab_fav:

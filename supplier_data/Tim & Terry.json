@@ -2,7 +2,7 @@
   "supplier_name": "Tim & Terry",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer": "Balaka Place Fish Shop",
@@ -24660,36 +24660,11 @@
       ]
     },
     {
-      "name": "Live Tracking",
-      "slug": "Live Tracking",
-      "rows": 12262,
-      "files": [
-        "extra/Tim Terry/Live Tracking.part1.json",
-        "extra/Tim Terry/Live Tracking.part2.json"
-      ]
-    },
-    {
-      "name": "Supplier Specific Time Tracking",
-      "slug": "Supplier Specific Time Tracking",
-      "rows": 917,
-      "files": [
-        "extra/Tim Terry/Supplier Specific Time Tracking.json"
-      ]
-    },
-    {
       "name": "Customer Contact Guide",
       "slug": "Customer Contact Guide",
       "rows": 2145,
       "files": [
         "extra/Tim Terry/Customer Contact Guide.json"
-      ]
-    },
-    {
-      "name": "Training",
-      "slug": "Training",
-      "rows": 335,
-      "files": [
-        "extra/Tim Terry/Training.json"
       ]
     }
   ]

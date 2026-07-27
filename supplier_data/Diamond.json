@@ -2,7 +2,7 @@
   "supplier_name": "Diamond",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer": "Al Jenan Butchery Greenvalley",
@@ -151,15 +151,6 @@
       "rows": 6,
       "files": [
         "extra/Diamond/Rules.json"
-      ]
-    },
-    {
-      "name": "Tracking",
-      "slug": "Tracking",
-      "rows": 8972,
-      "files": [
-        "extra/Diamond/Tracking.part1.json",
-        "extra/Diamond/Tracking.part2.json"
       ]
     },
     {

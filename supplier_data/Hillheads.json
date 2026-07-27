@@ -2,7 +2,7 @@
   "supplier_name": "Hillheads",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "TERMS": "cas / bag / sack",
@@ -1799,15 +1799,6 @@
       "rows": 140,
       "files": [
         "extra/Hillheads/Customer Notes.json"
-      ]
-    },
-    {
-      "name": "LIVE TRACKING",
-      "slug": "LIVE TRACKING",
-      "rows": 12150,
-      "files": [
-        "extra/Hillheads/LIVE TRACKING.part1.json",
-        "extra/Hillheads/LIVE TRACKING.part2.json"
       ]
     }
   ]

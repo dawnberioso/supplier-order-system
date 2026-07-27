@@ -2,7 +2,7 @@
   "supplier_name": "MyButcher",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
@@ -2080,31 +2080,6 @@
     }
   ],
   "extra_sheets": [
-    {
-      "name": "Supplier Specific Time Tracking",
-      "slug": "Supplier Specific Time Tracking",
-      "rows": 1208,
-      "files": [
-        "extra/MyButcher/Supplier Specific Time Tracking.json"
-      ]
-    },
-    {
-      "name": "Live Tracking",
-      "slug": "Live Tracking",
-      "rows": 8700,
-      "files": [
-        "extra/MyButcher/Live Tracking.part1.json",
-        "extra/MyButcher/Live Tracking.part2.json"
-      ]
-    },
-    {
-      "name": "JADE",
-      "slug": "JADE",
-      "rows": 28,
-      "files": [
-        "extra/MyButcher/JADE.json"
-      ]
-    },
     {
       "name": "Supplier Feedback",
       "slug": "Supplier Feedback",

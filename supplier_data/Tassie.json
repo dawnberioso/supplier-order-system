@@ -2,7 +2,7 @@
   "supplier_name": "Tassie",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer Name": "Porgie & Mr Jones",
@@ -2369,23 +2369,6 @@
       "rows": 71,
       "files": [
         "extra/Tassie/Supplier Feedback.json"
-      ]
-    },
-    {
-      "name": "Live Tracking",
-      "slug": "Live Tracking",
-      "rows": 9745,
-      "files": [
-        "extra/Tassie/Live Tracking.part1.json",
-        "extra/Tassie/Live Tracking.part2.json"
-      ]
-    },
-    {
-      "name": "JADE",
-      "slug": "JADE",
-      "rows": 4,
-      "files": [
-        "extra/Tassie/JADE.json"
       ]
     }
   ]

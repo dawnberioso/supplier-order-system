@@ -2,7 +2,7 @@
   "supplier_name": "Dales Chef's  Choice",
   "description": "",
   "created_at": "2026-06-17T16:03:34.336105",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Company": "",
@@ -17662,15 +17662,6 @@
       "rows": 155,
       "files": [
         "extra/Dales Chef s Choice/CustProd Rule.json"
-      ]
-    },
-    {
-      "name": "LIVE TRACKING",
-      "slug": "LIVE TRACKING",
-      "rows": 14922,
-      "files": [
-        "extra/Dales Chef s Choice/LIVE TRACKING.part1.json",
-        "extra/Dales Chef s Choice/LIVE TRACKING.part2.json"
       ]
     }
   ]

@@ -2,7 +2,7 @@
   "supplier_name": "Bodiam Meat",
   "description": "",
   "created_at": "2026-06-15T23:59:32.268501",
-  "last_updated": "2026-07-27T14:11:37.658144",
+  "last_updated": "2026-07-27T15:05:06.892926",
   "rules": [
     {
       "Customer Names": "Di Lietos Coffee Lounge Eastbourne",
@@ -7135,26 +7135,6 @@
       "rows": 176,
       "files": [
         "extra/Bodiam Meat/Customer Names List.json"
-      ]
-    },
-    {
-      "name": "Tracking 2025- 26",
-      "slug": "Tracking 2025- 26",
-      "rows": 13864,
-      "files": [
-        "extra/Bodiam Meat/Tracking 2025- 26.part1.json",
-        "extra/Bodiam Meat/Tracking 2025- 26.part2.json",
-        "extra/Bodiam Meat/Tracking 2025- 26.part3.json",
-        "extra/Bodiam Meat/Tracking 2025- 26.part4.json",
-        "extra/Bodiam Meat/Tracking 2025- 26.part5.json"
-      ]
-    },
-    {
-      "name": "Ellen Training",
-      "slug": "Ellen Training",
-      "rows": 48,
-      "files": [
-        "extra/Bodiam Meat/Ellen Training.json"
       ]
     }
   ]
