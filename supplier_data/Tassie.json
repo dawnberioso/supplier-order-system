@@ -2,1267 +2,1132 @@
   "supplier_name": "Tassie",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T15:05:06.892926",
+  "last_updated": "2026-07-27T05:14:48.094931",
   "rules": [
     {
-      "Customer Name": "Porgie & Mr Jones",
-      "Order by Customer": "8 x 250g mb4 scotch fillet",
-      "Fresho Name": "product not found",
-      "Product Code": "BCSRMB4P",
-      "Remarks": "BCSRMB4P beef cuberoll mb4 pink p/c – then there needs to be a remark to say 8x 250g pieces"
+      "Customer Name": "",
+      "Order by Customer": "Porterhouse ",
+      "Quantity": "",
+      " Fresho Name": "striploin",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "",
-      "Fresho Name": "maybe we can use   Beef: Cuberoll MB4 Pink Piece",
-      "Product Code": "BCSRMB4",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Chicken Breast Skin Off",
-      "Fresho Name": "Chicken: Breast Skin Off RW",
-      "Product Code": "CBRSOFF",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "chicken schnitzel 200-220 x 1 box",
-      "Fresho Name": "Schnitzel: Chicken Panko 200-220g (30) Box",
-      "Product Code": "CSPA200",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "kaiserfleisch bacon lago 4kg x 1 pack",
-      "Fresho Name": "Sgs: Kaiserfleisch Whole - Lago Kg",
-      "Product Code": "SKAISWL",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Meat 2 Please",
-      "Order by Customer": "4kg ribs",
-      "Fresho Name": "Chicken: Ribs Skin On",
-      "Product Code": "CRIBSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "20kg thigh skin on",
-      "Fresho Name": "Chicken: Thigh Skin On",
-      "Product Code": "CTHISON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "80kg wings",
-      "Fresho Name": "product not found",
-      "Product Code": "CWISMAL",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "1box 300gm schnitzels",
-      "Fresho Name": "Schnitzel: Chicken Panko 300-340g (30)",
-      "Product Code": "CSPAN20",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "15boxes 250gm schnitzels",
-      "Fresho Name": "Schnitzel: Chicken Panko 250-280g (30)",
-      "Product Code": "CSPAN25",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "60kg breast skin on",
-      "Fresho Name": "Chicken: Breast Skin On RW",
-      "Product Code": "CBRSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Bentleigh RSL",
-      "Order by Customer": "5KG THIN ITALIAN SAUSAGES",
-      "Fresho Name": "Saus: Italian Thin",
-      "Product Code": "SAUSITA",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Brimlea Aged Care",
-      "Order by Customer": "SAUSAGES 70",
-      "Fresho Name": "Saus: Beef Bbq Thin",
-      "Product Code": "SAUSBBQ",
-      "Remarks": "Sausbbq- saus: beef tn , this is for 70 pieces – each sausages weighs approx. 70-80g so this would be 5.5kg with a note to say 70 pieces"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "ROAST LAMB 12KG",
-      "Fresho Name": "Lamb: Leg Boned & Rolled 2049 Piece",
-      "Product Code": "LLEGRKG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "PORK BELLY 12KG",
-      "Fresho Name": "Pork: Belly Boneless Kg",
-      "Product Code": "PBELLBO",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "SAUSAGES 5KG",
-      "Fresho Name": "Saus: Beef Bbq Thin Kg",
-      "Product Code": "SAUSBBQ",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "ROAST PORK 12KG",
-      "Fresho Name": "Pork: Leg Boned & Rolled Netted Kg",
-      "Product Code": "PLBRN",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Oyster Blade 65 slices",
-      "Fresho Name": "Beef - Oyster Blade Steak 180g Kg",
-      "Product Code": "BOYSLIC",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "CHICKEN SCHNITZEL",
-      "Fresho Name": "Schnitzel: Chicken Plain 140g (30) Box",
-      "Product Code": "CS14HC",
-      "Remarks": ""
+      "Order by Customer": "Scotch ",
+      "Quantity": "",
+      " Fresho Name": "cuberoll",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
     },
     {
       "Customer Name": "New Northcote Tavern",
-      "Order by Customer": "CBRSUP CHICKEN: BREAST SUPREME",
-      "Fresho Name": "product not found",
+      "Order by Customer": "SMALLGOODS: SALAMI SLICED",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Salami Sliced Mild Casa 500g",
+      "Quantity.1": "",
+      "Product Code": "SSASCAS ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "CHICKEN: BREAST SUPREME",
+      "Quantity": "",
+      " Fresho Name": "Chicken Breast Supreme",
+      "Quantity.1": "",
       "Product Code": "CBRSUP",
-      "Remarks": "this is in the system – cbrsup chicken : breast supreme"
-    },
-    {
-      "Customer Name": "TRCC - Long Island Village",
-      "Order by Customer": "Chicken Maryland Whole",
-      "Fresho Name": "Chicken: Maryland Supreme",
-      "Product Code": "CMARYKG",
-      "Remarks": "Chicken Maryland Whole is the same with Chicken: Whole Maryland Bone In Kg? ,   yes chicken Maryland whole is CMARYKG"
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "Beef mince",
-      "Fresho Name": "Beef: Mince 85Cl",
-      "Product Code": "BMINC85",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Ham steak",
-      "Fresho Name": "product not found",
-      "Product Code": "SHAMSTK",
-      "Remarks": "sgs: ham steaks 100g (10)"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "16 PC Chicken Maryland WHOLE - SIZE 16",
-      "Fresho Name": "Chicken: Whole Maryland Bone In Kg",
-      "Product Code": "CMARYW",
-      "Remarks": "Note: 16 PIECES #16"
-    },
-    {
-      "Customer Name": "The Sporting Globe Geelong",
-      "Order by Customer": "CHICKEN SCHNITZEL",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCNPRS",
-      "Remarks": "For all sporting globes their codes are on their orders, they have 2 schnitzel codes CSCNPRS 260-290g and CSC1501RS 140-160g"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "CHICKEN SCHNITZEL",
-      "Fresho Name": "product not found",
-      "Product Code": "CSC1501RS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Transport Hotel",
-      "Order by Customer": "15 kg of chicken thighs boneless raw skin/on",
-      "Fresho Name": "Chicken: Thigh Skin On Kg",
+      "Order by Customer": "Chicken: Thigh Skin On",
+      "Quantity": "4each",
+      " Fresho Name": "Chicken: Thigh Skin On",
+      "Quantity.1": "4kg",
       "Product Code": "CTHISON",
-      "Remarks": ""
+      " Remarks": "booked as kg since they didn't order in pieces"
     },
     {
       "Customer Name": "",
-      "Order by Customer": "sliced pepperoni'",
-      "Fresho Name": "Sgs: Salami Sliced Mild Casa 500g",
-      "Product Code": "SSASCAS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Lindens Country Meats",
-      "Order by Customer": "120kg chic frames",
-      "Fresho Name": "Chicken: Bones 10kg Box",
-      "Product Code": "CBONE4",
-      "Remarks": ""
+      "Order by Customer": " Chicken: Thigh Skin On",
+      "Quantity": "4 each",
+      " Fresho Name": "Chicken: Thigh Skin On",
+      "Quantity.1": "4kg",
+      "Product Code": "CTHISON ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "1 box sr2 eye fillet",
-      "Fresho Name": "Beef: Eye Fillet MB2 Blue Box",
-      "Product Code": "BELRBW",
-      "Remarks": ""
+      "Order by Customer": "Beef Chuck",
+      "Quantity": "",
+      " Fresho Name": "Beef: Chuck Whole Piece (5-6kg) ",
+      "Quantity.1": "",
+      "Product Code": "BCHUCK ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "2 box 95cl",
-      "Fresho Name": "product not found",
-      "Product Code": "BTRIM90",
-      "Remarks": "BTRIM90   beef trim 95cl"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 bag bread crumbs",
-      "Fresho Name": "product not found",
-      "Product Code": "MISCBREAD",
-      "Remarks": "both items are in their template in som – MISCBREAD and MISCMEAL"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "1 bag sausage meal",
-      "Fresho Name": "product not found",
-      "Product Code": "MISCMEAL",
-      "Remarks": "both items are in their template in som – MISCBREAD and MISCMEAL"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "5 kg maryland",
-      "Fresho Name": "Chicken: Whole Maryland Bone In",
-      "Product Code": "CMARYW",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "10 kg wings",
-      "Fresho Name": "Chicken: Wings",
-      "Product Code": "CWINGKG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "1 box boneless rindless pork loin",
-      "Fresho Name": "product not found",
-      "Product Code": "PLOINBRB",
-      "Remarks": "PLOINBRB -with a note rindless"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 box tbone",
-      "Fresho Name": "product not found",
-      "Product Code": "BTONB",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 bags bread crumbs",
-      "Fresho Name": "product not found",
-      "Product Code": "MISCBREAD",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Zagame's House Carlton",
-      "Order by Customer": "Lamb merguez sausage mix x 4 kg",
-      "Fresho Name": "product not found",
-      "Product Code": "LMERGM",
-      "Remarks": "LMERGM – lamb: Merguez mince"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "3 racks of Pork cutlet rind on skin off",
-      "Fresho Name": "product not found",
-      "Product Code": "PRACKS",
-      "Remarks": "PRACKS  - with a note in remarks to say skin off"
-    },
-    {
-      "Customer Name": "IGA Cockatoo",
-      "Order by Customer": "10x 20kg",
-      "Fresho Name": "Fruitwood Lump Charcoal 20kg",
-      "Product Code": "MFLCHAR",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "20x 12kg",
-      "Fresho Name": "Coffeewood Lump Charcoal 12kg",
-      "Product Code": "MCWCHAR",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "12 x mixed chips",
-      "Fresho Name": "product not found",
-      "Product Code": "",
-      "Remarks": "there are several codes for this – it depends on what flavours we have in stock -  misc: mg cmokimg chips"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "6 x hex briquettes",
-      "Fresho Name": "Hex Briquettes 10kg",
-      "Product Code": "MBRIQ10",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Revolver Upstairs",
-      "Order by Customer": "Beef porterhouse 4 kgs",
-      "Fresho Name": "Beef: Striploin YG Piece",
-      "Product Code": "BSLWYG",
-      "Remarks": "porterhouse is striploin – they order BSLWYG – beef striploin yg green piece"
-    },
-    {
-      "Customer Name": "Epicurex",
-      "Order by Customer": "TURKEY BREAST X 2 PIECES",
-      "Fresho Name": "Turkey: Breast Fillet",
-      "Product Code": "CTUBR",
-      "Remarks": "CTUBR turkey breast fillet 2.5kg ave"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "LAMB SHOULDER X 2 PIECES (NO NET)",
-      "Fresho Name": "Lamb: Shoulder Boneless Each",
-      "Product Code": "LSHOUBO",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Bowows",
-      "Order by Customer": "4T x chicken MDM",
-      "Fresho Name": "product not found",
-      "Product Code": "CMDMFRZ",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Chicken trim x 200kg",
-      "Fresho Name": "product not found",
-      "Product Code": "",
-      "Remarks": "CTRIMB – chicken trim rspca"
-    },
-    {
-      "Customer Name": "Pearson Foods",
-      "Order by Customer": "2x 2kg Chicken",
-      "Fresho Name": "Chicken: Thigh Mince",
-      "Product Code": "CMINCKG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "20x 8kg Beef Mince",
-      "Fresho Name": "product not found",
-      "Product Code": "BMINP85",
-      "Remarks": "this is BMINP85 beef mince pearson 85cl"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "3x Tomahawks",
-      "Fresho Name": "Beef: Tomahawk Piece 1.2 -1.6kg",
-      "Product Code": "BTOMAHA1",
-      "Remarks": "BTOMAHA1 – beef tomahawk p/c 1.2-1.4kg"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Chicken Whole Schnitzel",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCHNZL",
-      "Remarks": "CSCHNZL each piece they receive is 300g panko"
-    },
-    {
-      "Customer Name": "Mentone RSL",
-      "Order by Customer": "1 pack sr msa porterhouse 300g",
-      "Fresho Name": "Beef: Striploin SR+ MSA 300g 5 Pack",
-      "Product Code": "BSL305",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 boxes panko chicken schnitzel 250g",
-      "Fresho Name": "Schnitzel: Chicken Panko 250-280g (30) Box",
-      "Product Code": "CSPAN25",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Micah Coffee Brewers",
-      "Order by Customer": "15kg of Rump cap MB4 in purple packaging",
-      "Fresho Name": "Beef: Rump Caps MB4+ Piece",
-      "Product Code": "BRUMPCP",
-      "Remarks": "code is BRUMPCP beef rump caps MB2/4+ with a note down in remarks to say that they are after MB4 purple packaging"
-    },
-    {
-      "Customer Name": "cafe 445",
-      "Order by Customer": "1 bag chorizo (casalingo)",
-      "Fresho Name": "Sgs: Chorizo Cassalingo Mild",
-      "Product Code": "SCHOCAS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "10pcs cube roll sliced 100gm",
-      "Fresho Name": "Beef: Cuberoll Steak Sandwich 10 Pack",
-      "Product Code": "BSAND10",
-      "Remarks": "BSAND10 – beef cuberoll s/wich steal 100g (10)"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 bags bacon",
-      "Fresho Name": "Sgs: Bacon Long Rindless Lago",
-      "Product Code": "SBACONL",
-      "Remarks": "SBACONL is the default bacon"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "3 bags bacon",
-      "Fresho Name": "Sgs: Bacon Long Rindless Lago Each (2.5Kg)",
-      "Product Code": "SBACONL",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "3kg chicken sausages(thick one please)",
-      "Fresho Name": "Saus: Chicken & Chive Thick Kg",
-      "Product Code": "SAUCOTK",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Temptation Bakery",
-      "Order by Customer": "HGP Free Beef Coarse Mince 85CL 10mm Halal",
-      "Fresho Name": "Beef: Mince 85Cl Coarse",
-      "Product Code": "BM85CL",
-      "Remarks": "codes on their orders are their codes not ours"
-    },
-    {
-      "Customer Name": "Prettys Prime Cuts",
-      "Order by Customer": "1 X BOX PORK SCOTCH",
-      "Fresho Name": "Pork: Neck Box Buy",
-      "Product Code": "PNECKBB",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 box lamb racks",
-      "Fresho Name": "Lamb: Rack 2004 Box Buy",
-      "Product Code": "LRACKBB",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "20kg Breast fillets s/on",
-      "Fresho Name": "Chicken: Breast Skin On RW Kg",
-      "Product Code": "CBRSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "10kg ribs chicken",
-      "Fresho Name": "Chicken: Ribs Skin On Kg",
-      "Product Code": "CRIBSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "10kg tenderloins chicken",
-      "Fresho Name": "Chicken: Tenderloins Rw Kg",
-      "Product Code": "CTENDKG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Fastrac Foodservice - Somerville",
-      "Order by Customer": "Corned Beef Pickled Fresh Kg",
-      "Fresho Name": "Beef: Silverside Corned Piece Kg",
-      "Product Code": "BSILV4",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Pork Neck",
-      "Fresho Name": "Pork: Neck (Scotch) Kg",
-      "Product Code": "PNECK",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "PORK BELLY SKIN OFF",
-      "Fresho Name": "Pork - Belly Bone Out Rind Off Kg",
+      "Order by Customer": "Pork Belly Boneless Rind On",
+      "Quantity": "",
+      " Fresho Name": "Pork - Belly Bone Out Rind Off ",
+      "Quantity.1": "",
       "Product Code": "PBEBOS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Cash Sale - Tassie Fine Foods",
-      "Order by Customer": "10x firelighters (24) @ $7.00",
-      "Fresho Name": "product not found",
-      "Product Code": "FIREL",
-      "Remarks": "there is no meat 2 u customer and it should be under cash sales , code is FIREL"
-    },
-    {
-      "Customer Name": "Restaurant 1903",
-      "Order by Customer": "10 pcs 250gram striploin YG (2 packs)",
-      "Fresho Name": "Beef: Striploin YG 250g 5 Pack",
-      "Product Code": "BSYG255",
-      "Remarks": "they are ordering 10 pieces which goes through as 2 packs as there is 5 pieces per pack"
-    },
-    {
-      "Customer Name": "Wonthaggi Club",
-      "Order by Customer": "Ribe eye roll lip on AMG $24/kg x 2 boxes",
-      "Fresho Name": "product not found",
-      "Product Code": "BRIBOP",
-      "Remarks": "use code BRIBOP beef ribeye yg box – and then a remark with the extra information roll lip on AMG"
-    },
-    {
-      "Customer Name": "Noble Park Junior Football Club",
-      "Order by Customer": "THE USUAL MEAT TRAYS PLEASE",
-      "Fresho Name": "product not found",
-      "Product Code": "MTLONG1",
-      "Remarks": "As per their template MTLONG1 and MTLONG2"
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "THE USUAL MEAT TRAYS PLEASE",
-      "Fresho Name": "product not found",
-      "Product Code": "MTLONG2",
-      "Remarks": "As per their template MTLONG1 and MTLONG2"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "10KG CHICKEN BREAST SKIN OFF",
-      "Fresho Name": "Chicken: Breast Skin Off #20 Kg",
-      "Product Code": "CBSOTON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 X BOXES REGULAR SNITZ - 250GM",
-      "Fresho Name": "Schnitzel: Chicken Plain 250-280g (30) Box",
-      "Product Code": "CSCH20",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Elevation at Emerald",
-      "Order by Customer": "Chicken Breasts on 300-350g with UOM 5kg and order qty is 6",
-      "Fresho Name": "Chicken: Breast Skin On #20",
-      "Product Code": "CBRSNKG",
-      "Remarks": "yes there is a code for that size range – CBRSNKG chicken breast s/on #20 300-350g and yes, total is 30kg"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Schnitzel: Chicken Panko 300-340g (10 Pack)",
-      "Fresho Name": "product not found",
-      "Product Code": "CSPA310",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Something Good",
-      "Order by Customer": "1 x Pork Belly (one with as little skin as possible please)",
-      "Fresho Name": "Pork: Belly Boneless Each",
-      "Product Code": "PBELLBO",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "5 x Bacon Sliced Long (2.5kg)",
-      "Fresho Name": "Sgs: Bacon Long Rindless Lago Each (2.5Kg)",
-      "Product Code": "SBACONL",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "The Sporting Globe Richmond",
-      "Order by Customer": "5box Tenderloin Skewer 40gms",
-      "Fresho Name": "product not found",
-      "Product Code": "CTSK40",
-      "Remarks": "chicken 40g (100) tndr skewer rsoca"
-    },
-    {
-      "Customer Name": "First Early Learning - HASTINGS",
-      "Order by Customer": "12kgs of beef mince",
-      "Fresho Name": "Beef: Mince 95Cl Kg",
-      "Product Code": "",
-      "Remarks": "they order BMINC95 which ius beef mince 95cl"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "8kgs chicken breast",
-      "Fresho Name": "Sgs: Bacon Short Lago Each (2.5Kg)",
-      "Product Code": "SBACONS",
-      "Remarks": "they order chicken breast diced hC 5mm –, when they order bacon they want SBACONS"
-    },
-    {
-      "Customer Name": "Wonthaggi Club",
-      "Order by Customer": "3 x boxes cooked pork ribs",
-      "Fresho Name": "Pork: Ribs Cooked Hershell Box Buy Box (20kg)",
-      "Product Code": "PAMCOOH",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "TGI Fridays - Melbourne Central",
-      "Order by Customer": "CHICKEN STRIP CRUMBED FRSH 25-35GM KG",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCTRS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Thailicious at Clyde",
-      "Order by Customer": "beef slice 13kg",
-      "Fresho Name": "Beef: Asian Cut Beef: 40mmx40mm Kg",
-      "Product Code": "ASBSTO",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "pork neck slice 4kg",
-      "Fresho Name": "Pork: Neck Sliced Asian Kg",
-      "Product Code": "PNECKSL",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Whites Prime Meats",
-      "Order by Customer": "60 breast fillets s/on",
-      "Fresho Name": "Chicken: Breast Skin On RW Kg",
-      "Product Code": "CBRSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "20kg drumstick",
-      "Fresho Name": "Chicken: Drumsticks Bone In Kg",
-      "Product Code": "CDRUMKG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "10kg ribs not frozen",
-      "Fresho Name": "Chicken: Ribs Skin On Kg",
-      "Product Code": "CRIBSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "15 kg xxl breast fillets s/on",
-      "Fresho Name": "Chicken: Breast Skin On RW",
-      "Product Code": "CBRSON",
-      "Remarks": "with a note \"XXL\""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "30kg m/land b/in",
-      "Fresho Name": "Chicken: Whole Maryland Bone In",
+      "Order by Customer": "Chicken maryland",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Whole Maryland Bone In",
+      "Quantity.1": "",
       "Product Code": "CMARYW",
-      "Remarks": ""
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "chicken trim",
-      "Fresho Name": "product not found",
-      "Product Code": "CTRIMB",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Trios Sports Club (MLF)",
-      "Order by Customer": "10 kg chicken tenderloins",
-      "Fresho Name": "Chicken: Tenderloins Rw Kg",
-      "Product Code": "CTENDKG",
-      "Remarks": ""
+      "Order by Customer": "SGS: HAM SLICED TIBALDI 1KG",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Ham Sliced Tibaldi Pack (1kg)",
+      "Quantity.1": "",
+      "Product Code": "SHAMTV",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "2 units of the marinated topside",
-      "Fresho Name": "Beef: Topside Marinated R/Wine Garlic Each",
-      "Product Code": "BTOPRGS",
-      "Remarks": ""
+      "Order by Customer": " lamb shoulder",
+      "Quantity": "3 units",
+      " Fresho Name": "Lamb: Shoulder Square Cut",
+      "Quantity.1": "",
+      "Product Code": "LSSQUA",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "8 units of pork shoulder rolled and netted(for roasting)",
-      "Fresho Name": "Pork: Shoulder Boned Rolled, String Only Each",
-      "Product Code": "PSHBR",
-      "Remarks": "Note: Netted not String"
-    },
-    {
-      "Customer Name": "Frankies Carrum Downs",
-      "Order by Customer": "chicken tenderloin 5kg",
-      "Fresho Name": "Chicken: Tenderloins Rw Kg",
-      "Product Code": "CTENDKG",
-      "Remarks": ""
+      "Order by Customer": " Pork Sausage",
+      "Quantity": "3kg",
+      " Fresho Name": "Saus: Mince Irish Pork ",
+      "Quantity.1": "",
+      "Product Code": "PSMIN",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "Chicken schnitzel panko 1box",
-      "Fresho Name": "Schnitzel: Chicken Panko 250-280g (30) Box",
-      "Product Code": "CSPAN25",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Chatter Box Cafe",
-      "Order by Customer": "1 box chicken snitzel 300gm panko crumbed",
-      "Fresho Name": "Schnitzel: Chicken Panko 300-340g (30) Box",
-      "Product Code": "CSPAN20",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 each y/g green scotch fillet",
-      "Fresho Name": "Beef: Cuberoll YG Piece Kg",
-      "Product Code": "BCYGWHO",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Red Hill Bakery Balnarring",
-      "Order by Customer": "BEEF BRISKET DICED LEAN",
-      "Fresho Name": "Beef: Diced Brisket Kg",
-      "Product Code": "BBRISKD",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "5X5KG BEEF MINCE",
-      "Fresho Name": "Beef Mince 95CL 5KG Bulk Pack Kilogram",
-      "Product Code": "BMINL5",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Mabel Jones Cafe",
-      "Order by Customer": "Chicken breast skin off 8kg",
-      "Fresho Name": "Chicken: Breast Skin Off RW Kg",
-      "Product Code": "CBRSOFF",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Brisket 2-4 marble score 12kg",
-      "Fresho Name": "Beef: Brisket S/Rangers MB2+ Kg",
+      "Order by Customer": "whole brisket ",
+      "Quantity": "",
+      " Fresho Name": "Beef: Brisket S/Rangers MB2+",
+      "Quantity.1": "",
       "Product Code": "BBRISSR",
-      "Remarks": ""
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "The Clayton Hotel (MLF)",
+      "Order by Customer": "Lamb Backstrap Mutton",
+      "Quantity": "",
+      " Fresho Name": "Lamb: Mutton Backstrap RW",
+      "Quantity.1": "",
+      "Product Code": "LMUTSTR ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Mr McCracken (MLF)",
+      "Order by Customer": "Heritage Smoked Ham",
+      "Quantity": "6kg",
+      " Fresho Name": "Sgs: Ham Casalingo Heritage Half",
+      "Quantity.1": "2pcs",
+      "Product Code": "SHCHH ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "Beef burger waygu 1 box",
-      "Fresho Name": "Burger: Beef Waygu 140g (30) Box (30 x 140g)",
-      "Product Code": "BBW1530",
-      "Remarks": ""
+      "Order by Customer": "Lamb Kofta Balls 60G (20/Pkt)",
+      "Quantity": "",
+      " Fresho Name": "Lamb Kofta Balls 60G (20)",
+      "Quantity.1": "",
+      "Product Code": "LKOFB60 ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Pork Sausage mince Italian casalingo",
+      "Quantity": "",
+      " Fresho Name": "Pork Sausage Mince Italian Casalingo",
+      "Quantity.1": "",
+      "Product Code": "PSMICAS",
+      " Remarks": ""
     },
     {
       "Customer Name": "Ivan's Pies",
-      "Order by Customer": "Chicken Whole Schnitzel",
-      "Fresho Name": "Schnitzel: Chicken Plain 250-280g (10) Box",
-      "Product Code": "CSCHN10",
-      "Remarks": ""
+      "Order by Customer": "products are halal, but in Fresho the products aren’t marked as halal",
+      "Quantity": "",
+      " Fresho Name": "add a note : HALAL",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
       "Order by Customer": "Beef Diced Angus 20mm",
-      "Fresho Name": "product not found",
+      "Quantity": "",
+      " Fresho Name": "Beef Diced Angus 20mm",
+      "Quantity.1": "",
       "Product Code": "BDICA20",
-      "Remarks": ""
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Chicken Whole Schnitzel",
+      "Quantity": "",
+      " Fresho Name": "Schnitzel: Chicken Plain 250-280g (10) ",
+      "Quantity.1": "",
+      "Product Code": "CSCHN10 ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Lamb Diced 20mm",
+      "Quantity": "",
+      " Fresho Name": "Lamb - Diced 20mm",
+      "Quantity.1": "",
+      "Product Code": "LDICE20 ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Beef Mince Corona Sausage 70cl",
+      "Quantity": "",
+      " Fresho Name": "Beef Sausage Mince Halal Corona",
+      "Quantity.1": "",
+      "Product Code": "BSAMHQ ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
       "Order by Customer": "Beef Mince Sausage 70cl Halal",
-      "Fresho Name": "Saus: Beef Sausage Mince Kg",
-      "Product Code": "BSAM",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Centre Charcoal Chicken",
-      "Order by Customer": "30 (HALAL) Maryland fillet skin on",
-      "Fresho Name": "Chicken: Maryland Fillet Skin On Kg",
-      "Product Code": "CMFSON",
-      "Remarks": "with a note HALAL"
-    },
-    {
-      "Customer Name": "Bigger Than Texas",
-      "Order by Customer": "3 x boxes pork ribs",
-      "Fresho Name": "Pork: Ribs USA 20Kg (Box Buy) CTN (20kg)",
-      "Product Code": "PAMRIBH",
-      "Remarks": ""
+      "Quantity": "",
+      " Fresho Name": "Saus: Beef Sausage Mince",
+      "Quantity.1": "",
+      "Product Code": "BSAM ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "1 x box Brisket",
-      "Fresho Name": "product not found",
-      "Product Code": "BBRISSRB",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Freddies Kitchen",
-      "Order by Customer": "2 box crumbed chicken parma",
-      "Fresho Name": "Schnitzel: Chicken Panko 300-340g (30) Box",
-      "Product Code": "CSPAN20",
-      "Remarks": ""
+      "Order by Customer": "Beef Mince 90cl Halal",
+      "Quantity": "",
+      " Fresho Name": "Beef Mince 90cl Ivan Halal",
+      "Quantity.1": "",
+      "Product Code": "BMINH90I",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "8 kg beef brisket leaf one please",
-      "Fresho Name": "Beef: Brisket S/Rangers MB2+ Kg",
-      "Product Code": "BBRISSR",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Workshop Brothers Southbank",
-      "Order by Customer": "5 pack ham sliced",
-      "Fresho Name": "Sgs: Ham Sliced Lago Pack (1kg)",
-      "Product Code": "SHAMSLI",
-      "Remarks": ""
+      "Order by Customer": "Beef Mince 80cl Hala",
+      "Quantity": "",
+      " Fresho Name": "Beef: Mince 85Cl ",
+      "Quantity.1": "",
+      "Product Code": "bminc85",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "6 kg chicken breast",
-      "Fresho Name": "Chicken: Breast Skin Off RW Kg",
-      "Product Code": "CBRSOFF",
-      "Remarks": ""
+      "Order by Customer": "Grass fed HGP Free Beef 30mm",
+      "Quantity": "",
+      " Fresho Name": "Beef: Diced G/fed HGP Free 30mm",
+      "Quantity.1": "",
+      "Product Code": "BDGF30",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "1 box chicken schnitzel",
-      "Fresho Name": "Schnitzel: Chicken Panko 150-170g (30) Box",
-      "Product Code": "CSPAN15",
-      "Remarks": ""
+      "Order by Customer": "pork mince",
+      "Quantity": "",
+      " Fresho Name": "Pork: Mince Free Range 75cl",
+      "Quantity.1": "",
+      "Product Code": "PMFR75 ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "Chicken: Breast Skin Off",
-      "Fresho Name": "Chicken: Breast Skin Off RW Kg",
-      "Product Code": "CBRSOFF",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Melbourne Food Distributors",
-      "Order by Customer": "Lamb Shanks Frozen",
-      "Fresho Name": "Lamb: Shanks Forequarter 380g Average Kg",
-      "Product Code": "LSHANKG",
-      "Remarks": ""
+      "Order by Customer": "Beef Diced Angus 30 x30 HGP free",
+      "Quantity": "",
+      " Fresho Name": "Beef: Diced G/fed HGP Free 30mm Kilogram",
+      "Quantity.1": "",
+      "Product Code": "BDGF30",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "HALAL ROAST BEEF SILVERSIDE KG",
-      "Fresho Name": "Beef: Silverside Each (Approx 2.5-3kg)",
-      "Product Code": "BSILTC",
-      "Remarks": "with a note HALAL"
+      "Order by Customer": "Chicken Breast Fillet Skin Off",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Breast Skin Off RW ",
+      "Quantity.1": "",
+      "Product Code": "cbrsoff",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Toorak Hotel (MLF)",
+      "Order by Customer": "Pork Sausage mince Italian casalingo",
+      "Quantity": "",
+      " Fresho Name": "Pork Sausage Mince Italian Casalingo",
+      "Quantity.1": "",
+      "Product Code": "PSMICAS ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "HALAL CHICKEN TENDERLOINS KG",
-      "Fresho Name": "Chicken: Tenderloins Rw Kg",
-      "Product Code": "CTENDKG",
-      "Remarks": "with a note HALAL"
+      "Order by Customer": "B/Flied #17 Chicken wing tip/thigh bone removed",
+      "Quantity": "",
+      " Fresho Name": "Chicken Whole Butterflied #17 - Drumstick bone in and wing tip removed",
+      "Quantity.1": "",
+      "Product Code": "CWHB17",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "PORK DICED. 5-10MM DICE",
-      "Fresho Name": "Pork: Diced Leg Kg",
-      "Product Code": "",
-      "Remarks": "with a note 5mm"
+      "Order by Customer": "Maryland fillet cut 50gr skin on",
+      "Quantity": "",
+      " Fresho Name": "Chicken Maryland Fillet Skin on 50g",
+      "Quantity.1": "",
+      "Product Code": "CMFC50 ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "HALAL LAMB AND ROSEMARY CHIPOLATA SAUSAGES 6 X 2 KG",
-      "Fresho Name": "Saus: Lamb & Rosemary Chippa Thin Kg",
-      "Product Code": "SAULARC",
-      "Remarks": "with a note HALAL"
+      "Order by Customer": "beef Eye Fillet Bonded Grass Fed Whole Piece 1.6-2kg ",
+      "Quantity": "2kg",
+      " Fresho Name": "Beef: Eye Fillet Bonded Whole Piece",
+      "Quantity.1": "1 piece",
+      "Product Code": "BEYEFIG ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Hotel South Melbourne",
+      "Order by Customer": "LAMB: SHOULDER BONE IN",
+      "Quantity": "",
+      " Fresho Name": "Lamb: Shoulder Square Cut",
+      "Quantity.1": "",
+      "Product Code": "LSSQUA ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "CHICKEN MINCE KG",
-      "Fresho Name": "Chicken: Thigh Mince Kg",
-      "Product Code": "CMINCKG",
-      "Remarks": ""
+      "Order by Customer": "SMALLGOODS: SALAMI SLICED",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Salami Sliced Mild Casa 500g",
+      "Quantity.1": "",
+      "Product Code": "SSASCAS ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Grand Hotel Mornington (MLF)",
+      "Order by Customer": "Veal Fillets (2kg Packs)",
+      "Quantity": "",
+      " Fresho Name": "Veal Fillet (2kg Packs)",
+      "Quantity.1": "",
+      "Product Code": "VFILLET",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "Halal Chicken Breast Fillet Skin On kg",
-      "Fresho Name": "Chicken: Breast Skin On RW Kg",
-      "Product Code": "CBRSON",
-      "Remarks": "with a note HALAL"
+      "Order by Customer": "Lamb Backstrap Mutton",
+      "Quantity": "",
+      " Fresho Name": "Lamb: Mutton Backstrap RW",
+      "Quantity.1": "",
+      "Product Code": "LMUTSTR ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "The Cove Hotel",
+      "Order by Customer": "Lamb Backstrap Mutton",
+      "Quantity": "",
+      " Fresho Name": "Lamb: Mutton Backstrap RW",
+      "Quantity.1": "",
+      "Product Code": "LMUTSTR ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Royal Hotel Koo Wee Rup (MLF)",
+      "Order by Customer": "Lamb Backstrap Mutton",
+      "Quantity": "",
+      " Fresho Name": "Lamb: Mutton Backstrap RW",
+      "Quantity.1": "",
+      "Product Code": "LMUTSTR ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Waverley RSL (MLF)",
+      "Order by Customer": "Lamb Leg Boned & Rolled Piece (Approx 2.8kg)",
+      "Quantity": "",
+      " Fresho Name": "Lamb: Leg Boned & Rolled 2049 Piece",
+      "Quantity.1": "",
+      "Product Code": "LLEGRKG",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Republica (MLF)",
+      "Order by Customer": "Pork Sausage mince Italian casalingo",
+      "Quantity": "",
+      " Fresho Name": "Pork Sausage Mince Italian Casalingo",
+      "Quantity.1": "",
+      "Product Code": "PSMICAS ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Warragul Country Club (MLF)",
+      "Order by Customer": "Beef Striploin Josdale Angus Black Box Buy",
+      "Quantity": "",
+      " Fresho Name": "Beef: Striploin Josdale Angus Box CTN",
+      "Quantity.1": "",
+      "Product Code": "BAMGASTR ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Cardinia Club (PRC) (MLF)",
+      "Order by Customer": "Beef Rump MB2+ Grass Fed (300g) 5 Pack",
+      "Quantity": "",
+      " Fresho Name": "Beef: Rump SR+ MSA 300g 5 Pack",
+      "Quantity.1": "",
+      "Product Code": "BRL305",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "Halal Chicken Breast Diced Hand Cut 5-10MM. Kg",
-      "Fresho Name": "Chicken: Breast Diced 5mm Kg",
-      "Product Code": "CBDICKG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Halal Diced Chicken Thigh 20mm kg",
-      "Fresho Name": "Chicken: Thigh Diced 20mm",
-      "Product Code": "CTHDI",
-      "Remarks": "with a note HALAL"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Halal Diced Lamb Leg 20mm kg",
-      "Fresho Name": "Lamb: Diced Leg 20Mm",
-      "Product Code": "LLEGDKG",
-      "Remarks": "with a note HALAL"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Chiken Breast Stir Fry Strips",
-      "Fresho Name": "Chicken: Breast Strips 8mm Kg",
-      "Product Code": "CBSTRI",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "PORK MINCE",
-      "Fresho Name": "Pork: Mince 85Cl",
-      "Product Code": "PMINCE",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Lucke's Fresh Food Market",
-      "Order by Customer": "Breast Fillet Skin off Medium",
-      "Fresho Name": "Chicken: Breast Skin Off #17 Kg",
-      "Product Code": "CBSO24",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Foot Street Bakery",
-      "Order by Customer": "Sausage Mince - Light Colour",
-      "Fresho Name": "Saus: Beef Sausage Mince Kg",
-      "Product Code": "BSAM",
-      "Remarks": "with a note light colour"
-    },
-    {
-      "Customer Name": "The Pier Cafe",
-      "Order by Customer": "10 kg chicken Maryland",
-      "Fresho Name": "Chicken: Maryland Fillet Skin On Kg",
-      "Product Code": "CMFSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "The street cafe",
-      "Order by Customer": "1 whole Piece Silverside",
-      "Fresho Name": "Beef: Silverside Corned Piece Piece Kg",
-      "Product Code": "BSILV4",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "GreenStar Catering",
-      "Order by Customer": "chicken maryland boneless skin off",
-      "Fresho Name": "Chicken: Maryland Fillet Skin Off",
-      "Product Code": "CMFSOF",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Hanoi Mee Kitchen & Bar",
-      "Order by Customer": "3 pieces pork belly 5 kgs each",
-      "Fresho Name": "Pork: Belly Boneless Kg",
-      "Product Code": "PBELLBO",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "8 kgs LAMB RIBS SQUARE CUT",
-      "Fresho Name": "Lamb - Ribs Kg",
-      "Product Code": "LRIBSQ",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "RMG GLOBAL TRADING PTY LTD",
-      "Order by Customer": "CHICKEN MDM RSPCA 20KG BP FRZ",
-      "Fresho Name": "product not found",
-      "Product Code": "CMDMFRZ",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "PFD Food Services (Devonport)",
-      "Order by Customer": "R/W Angus Beef Burger Traded 1 Cut",
-      "Fresho Name": "product not found",
-      "Product Code": "261460",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "R/W FRZ CHICKEN BREAST S/OFF AV2KX10 CTN BUTCHER",
-      "Fresho Name": "product not found",
-      "Product Code": "390775",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "The Sporting Globe - Chirnside Park",
-      "Order by Customer": "CHICKEN SCHNITZEL 260-290G SPORTING GLOBE 20",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCNPRS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Wingen It",
-      "Order by Customer": "5 kgs beef mince",
-      "Fresho Name": "Beef: Mince 85Cl Kg",
-      "Product Code": "BMIN5S",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "5 kgs chicken breast fillets skin on",
-      "Fresho Name": "Chicken: Breast Skin On RW",
-      "Product Code": "CBRSON",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "TGI Fridays - Epping",
-      "Order by Customer": "CHICKEN STRIP CRUMBED FRSH 25-35GM KG",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCTRS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "The Sporting Globe Werribee",
-      "Order by Customer": "CHICKEN SCHNITZEL 140-160G",
-      "Fresho Name": "product not found",
-      "Product Code": "CSC1501RS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "CHICKEN SCHNITZEL 260-290G",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCNPRS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Pedro Espresso",
-      "Order by Customer": "1 BOX CHICKEN SNITZELS",
-      "Fresho Name": "Schnitzel: Chicken Panko 150-170g (30) Box",
-      "Product Code": "CSPAN15",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "2 PACKETS SLICED HAM",
-      "Fresho Name": "Sgs: Ham Sliced Lago Pack (1kg)",
-      "Product Code": "SHAMSLI",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "The Sporting Globe Knox",
-      "Order by Customer": "CHICKEN SCHNITZEL 260-290G 4box",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCNPRS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "1kg CHICKEN SCHNITZEL 140-160G",
-      "Fresho Name": "product not found",
-      "Product Code": "CSC1501RS",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Tallboy and Moose",
-      "Order by Customer": "Rump 250 gm mb1 + -1 packet",
-      "Fresho Name": "Beef: Rump SR+ MSA 250g 5 Pack Pack (5 x 250g)",
-      "Product Code": "BRL255",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Plain chicken schnitzel 200-220gm",
-      "Fresho Name": "Schnitzel: Chicken Panko 200-220g (30) Box",
-      "Product Code": "CSPA200",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Angus beef pattie 140 gm-1 boxes",
-      "Fresho Name": "Burger: Beef Angus 140g (30) Box (30 x 140g)",
-      "Product Code": "BBA1403",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Bacon -1 packet",
-      "Fresho Name": "Sgs: Bacon Short Tibaldi Each (2.5Kg)",
-      "Product Code": "SBACON1",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "Sirloin rolled (for roast)-5 kg",
-      "Fresho Name": "Beef: Striploin YG Piece Kg",
-      "Product Code": "BSLWYG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "La Porchetta Rosebud",
-      "Order by Customer": "60 PIECES VEAL BACKSTRAP PLAIN CRUMB NOT PANKO (3 BOXES)",
-      "Fresho Name": "Veal: Schnitzel Plain Crumbed 220-250g (20) CTN (20 x 220-250g)",
-      "Product Code": "VSCHNCR",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Mr Sister Cafe",
-      "Order by Customer": "2kg x saus: beef thin",
-      "Fresho Name": "Saus: Beef Bbq Thin Kg",
-      "Product Code": "SAUSBBQ",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "4 x pack 250g striploin steak (5)",
-      "Fresho Name": "Beef: Striploin YG 250g 5 Pack Pack (5 x 250g)",
-      "Product Code": "BSYG255",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "Railway Club Hotel",
-      "Order by Customer": "6KG KANGAROO SAUSAGES",
-      "Fresho Name": "product not found",
-      "Product Code": "",
-      "Remarks": "We do not have code for this product - as they are sausages whitout a code , we use MSAUSAG with a note MSAUS = Kangaroo Sausages"
-    },
-    {
-      "Customer Name": "Boss Man Food",
-      "Order by Customer": "200kg chicken maryland fillet skin on 220-250g each – box and liner",
-      "Fresho Name": "Chicken: Maryland Fillet Skin On Kg",
-      "Product Code": "CMFSON",
-      "Remarks": "Note Maryland 220-250g Each Box and Liner"
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "200kg chicken Maryland 220 to 240gr",
-      "Fresho Name": "Chicken: Maryland Fillet Skin On Kg",
-      "Product Code": "CMFSON",
-      "Remarks": "Note: 220-240G"
-    },
-    {
-      "Customer Name": "Menzies Bakery",
-      "Order by Customer": "4 X 8.5 KG SAUSAGE ROLL MEAT (75%BEEF/25%LAMB)",
-      "Fresho Name": "Saus: Beef Sausage Mince Kg",
-      "Product Code": "BSAM",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "PFD Food Services - Warrnambool",
-      "Order by Customer": "R/W BEEF SAUSAGE/PORK MINCE AV2KG BUTCHER",
-      "Fresho Name": "product not found",
-      "Product Code": "393646",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "ASL Catering PTY LTD",
-      "Order by Customer": "3ctn x panko schnitzel",
-      "Fresho Name": "Schnitzel: Chicken Panko 250-280g (30) Box",
-      "Product Code": "CSPAN25",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "PFD Food Services - Bendigo",
-      "Order by Customer": "R/W FRESH PORTION YG RIB EYE BONE IN 400X5",
-      "Fresho Name": "product not found",
-      "Product Code": "301228",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "R/W FRZ CHICKEN BREAST S/OFF AV2KX10 CTN BUTCHER",
-      "Fresho Name": "product not found",
-      "Product Code": "390775",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "The Local Gembrook",
-      "Order by Customer": "20KG BEEF BBQ SAUSAGES",
-      "Fresho Name": "Saus: Beef Bbq Thin Kg",
-      "Product Code": "SAUSBBQ",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "",
-      "Order by Customer": "1 BOX EYE FILLET",
-      "Fresho Name": "Beef: Eye Fillet YG Box CTN",
-      "Product Code": "BEYEYGB, MSPEC6",
-      "Remarks": "Their product changes depending on stock on hand - at the moment it is MSPEC6, but as a default BEYEYGB"
-    },
-    {
-      "Customer Name": "Inkerman Hotel",
-      "Order by Customer": "1 box porterhouse sirloin (southern ranges)",
-      "Fresho Name": "product not found",
-      "Product Code": "BSRMB2B",
-      "Remarks": "BSRMB2B – STRIPLOIN MB2 BLUE BOX"
-    },
-    {
-      "Customer Name": "PFD Lara",
-      "Order by Customer": "Gravy beef diced 40MM",
-      "Fresho Name": "Beef: Shin Gravy Diced Kg",
-      "Product Code": "BGRAVDI",
-      "Remarks": ""
+      "Order by Customer": "Beef Cube Roll Southern Ranges MB2+ (Blue) Piece 3.1kg+",
+      "Quantity": "",
+      " Fresho Name": "Beef: Cuberoll MB2 Blue Piece Each (3.6kg+)",
+      "Quantity.1": "",
+      "Product Code": "BCSRMB2 ",
+      " Remarks": ""
     },
     {
       "Customer Name": "Kellys Motor Club Hotel (MLF)",
-      "Order by Customer": "Beef Striploin MB2 Southern Ranges (Blue) Box",
-      "Fresho Name": "product not found",
-      "Product Code": "bsrmb2b",
-      "Remarks": "this is the grass fed box not grain fed"
-    },
-    {
-      "Customer Name": "Little Mexico",
-      "Order by Customer": "2.5kg rumpsteak strips",
-      "Fresho Name": "Beef: Rump Strips Kg",
-      "Product Code": "BRUMST",
-      "Remarks": ""
+      "Order by Customer": "Beef Chuck Josdale Whole Box Buy",
+      "Quantity": "",
+      " Fresho Name": "Beef Chuck Josdale Whole Box Buy ○ Pack",
+      "Quantity.1": "",
+      "Product Code": "BCHUKJB",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "8X2KG STIRFRY MARYLAND SKIN OFF",
-      "Fresho Name": "Chicken: Maryland Strips Kg",
-      "Product Code": "CHMARST",
-      "Remarks": ""
+      "Order by Customer": "Beef Eye Fillet Coorong Black piece",
+      "Quantity": "",
+      " Fresho Name": "Beef Eye Fillet Coorong Black Piece",
+      "Quantity.1": "",
+      "Product Code": "BEYECOP",
+      " Remarks": ""
     },
     {
-      "Customer Name": "BOOSA",
-      "Order by Customer": "MSPEC10 X 3",
-      "Fresho Name": "product not found",
-      "Product Code": "Mspec10",
-      "Remarks": "Mspec10 is a special code, the descriptions change depending on the specials at the time."
+      "Customer Name": "MRC - Highways - Kitchen",
+      "Order by Customer": "Chicken Skewer Tenderloin 40g Plain (10/Pkt)",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Tenderloin Sticks Plain Pack",
+      "Quantity.1": "",
+      "Product Code": "CSTICKS ",
+      " Remarks": ""
     },
     {
-      "Customer Name": "Doveton College",
-      "Order by Customer": "6KG DICED CHICKEN THIGH",
-      "Fresho Name": "Chicken: Thigh Diced 5mm Kg",
-      "Product Code": "CDICE5",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "PFD Food Services - Horsham",
-      "Order by Customer": "R/W FRESH CHICKEN MINCE AV2K",
-      "Fresho Name": "Chicken: Thigh Mince Kg",
-      "Product Code": "CMINCKG",
-      "Remarks": ""
-    },
-    {
-      "Customer Name": "SSAM Korean BBQ Ringwood",
-      "Order by Customer": "600kg FZN chicken wing",
-      "Fresho Name": "product not found",
-      "Product Code": "CWINFRZ",
-      "Remarks": "frozen wings"
+      "Customer Name": "Notting Hill Hotel",
+      "Order by Customer": "Beef Striploin Josdale Angus Black P/C",
+      "Quantity": "20 packet",
+      " Fresho Name": "Beef Striploin Josdale Angus 150g 5 pack ○ Packet",
+      "Quantity.1": "x20",
+      "Product Code": "BSBA155 ",
+      " Remarks": ""
     },
     {
       "Customer Name": "",
-      "Order by Customer": "100kg chicken chilled",
-      "Fresho Name": "Chicken: Wings Kg",
-      "Product Code": "CWINGKG",
-      "Remarks": ""
+      "Order by Customer": "Beef Striploin Josdale Angus Black",
+      "Quantity": "",
+      " Fresho Name": "Beef Striploin Josdale Angus 150g 5 pack",
+      "Quantity.1": "",
+      "Product Code": "BSBA155",
+      " Remarks": ""
     },
     {
-      "Customer Name": "Notting Hill Hotel (MLF)",
-      "Order by Customer": "Chicken Schnitzel Brined Panko Crumb 380-420g (30/Ctn)",
-      "Fresho Name": "product not found",
-      "Product Code": "CSCB380",
-      "Remarks": ""
+      "Customer Name": "",
+      "Order by Customer": "",
+      "Quantity": "",
+      " Fresho Name": "",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "",
+      "Quantity": "",
+      " Fresho Name": "",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Golden Hills Brewery",
+      "Order by Customer": "BEEF: SHORT RIBS MB2+",
+      "Quantity": "",
+      " Fresho Name": "Beef: Ribs Chuck MB2+ Each",
+      "Quantity.1": "",
+      "Product Code": "BSHRMB2",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "SMALLGOODS: SALAMI SLICED",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Salami Sliced Mild Casa 500g Pack (500g)",
+      "Quantity.1": "",
+      "Product Code": "SSASCAS",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Noble Park Football Club",
+      "Order by Customer": "Beef: Rump SR+ MSA Red Piece",
+      "Quantity": "",
+      " Fresho Name": "Beef: Rump SR+ MSA Piece",
+      "Quantity.1": "",
+      "Product Code": "BRWMSA",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "PNECK  PORK NECK BOX",
+      "Quantity": "order 1 box",
+      " Fresho Name": "Pork: Neck Box Buy Box",
+      "Quantity.1": "",
+      "Product Code": "PNECKBB ",
+      " Remarks": ""
     },
     {
       "Customer Name": "Frankston RSL (MLF)",
-      "Order by Customer": "Sausages Gourmet Beef & Red Wine Thick",
-      "Fresho Name": "Saus: Beef & Red Wine Thick Kg",
-      "Product Code": "SAUSBAR",
-      "Remarks": ""
+      "Order by Customer": "Beef Brisket Southern Ranges MB2/4 Box Buy",
+      "Quantity": "2 carton",
+      " Fresho Name": "Beef: Brisket S/Rangers MB2+",
+      "Quantity.1": "40 kg note 2 carton",
+      "Product Code": "BBRISSR",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Veal Bones",
+      "Quantity": "20kg,",
+      " Fresho Name": "Veal: Bones ○ Kg",
+      "Quantity.1": "",
+      "Product Code": "VBONES ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Wonthaggi Club",
+      "Order by Customer": "Beef: T-Bone Club 300g 5 Pack Pack (5 x 300g)",
+      "Quantity": "",
+      " Fresho Name": "Beef: T-Bone Club 300g 5 Pack ○ Pack (5 x 300g)",
+      "Quantity.1": "",
+      "Product Code": "BTBC300",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Mission District",
+      "Order by Customer": "Beef - Ribs Short Mb2/4 Box ",
+      "Quantity": "20kg",
+      " Fresho Name": "Beef Ribs Short Ribs MB2-4 Box",
+      "Quantity.1": "",
+      "Product Code": "BSRMB2 ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "THE ORIGINAL GOURMET",
+      "Order by Customer": "Sausage Mince Gluten Free",
+      "Quantity": "260kg",
+      " Fresho Name": "Beef Sausage Mince Gluten Free",
+      "Quantity.1": "",
+      "Product Code": "BSAMGL",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Course Mince 75CL",
+      "Quantity": "",
+      " Fresho Name": "Beef Mince Coarse 75cl ",
+      "Quantity.1": "",
+      "Product Code": "BM75CO",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Zagame's House Carlton",
+      "Order by Customer": "lamb rack ",
+      "Quantity": "1 box ",
+      " Fresho Name": "Lamb: Rack 2004 Box Buy",
+      "Quantity.1": "Box",
+      "Product Code": "LRACKBB",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "porterhouse",
+      "Quantity": "1 slap",
+      " Fresho Name": "Beef: Striploin MB2 Blue Piece ○ Piece",
+      "Quantity.1": "",
+      "Product Code": "BSSRMB2 ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Club Officer",
+      "Order by Customer": "budget bacon",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Bacon Budget Sliced Lago (2.5Kg) Pack",
+      "Quantity.1": "",
+      "Product Code": "SBACONE",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Fastrac Foodservice - Preston",
+      "Order by Customer": "BEEF DICED FRESH 20MM",
+      "Quantity": "",
+      " Fresho Name": "Beef: Diced 20mm",
+      "Quantity.1": "",
+      "Product Code": "BDICE20",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "BEEF RUMP WHOLE",
+      "Quantity": "",
+      " Fresho Name": "Beef: Rump YG Piece TFF ○ Kg",
+      "Quantity.1": "",
+      "Product Code": "BRPR",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "PORK SAUSAGE MINCE FRESH",
+      "Quantity": "1 kg",
+      " Fresho Name": "Saus: Mince Irish Pork",
+      "Quantity.1": "",
+      "Product Code": "PSMIN ",
+      " Remarks": "plain pork sausage mince."
+    },
+    {
+      "Customer Name": "Mission District",
+      "Order by Customer": "DWHME Game - Duck Whole Medium 2.4kg",
+      "Quantity": "KG",
+      " Fresho Name": "can just be 1 piece and no note was needed",
+      "Quantity.1": "Each",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Three Blue Ducks",
+      "Order by Customer": "if cx orders in each but qty in system is kg",
+      "Quantity": "",
+      " Fresho Name": "just put all in kg",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "DOVETON ",
+      "Order by Customer": "CORNED BEEF CUT INTO 4 PIECES                        ",
+      "Quantity": "",
+      " Fresho Name": "Beef: Silverside Corned Piece Kg",
+      "Quantity.1": "just notes - CUT INTO 4 PIECES ",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Fastrac Foodservice - Somerville",
+      "Order by Customer": "BEEF DICED FRESH 20MM",
+      "Quantity": "BDIC20",
+      " Fresho Name": "Beef: Diced 20mm Kg",
+      "Quantity.1": "",
+      "Product Code": "BDICE20",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "BEEF BURGER BRISKET/ 180GMx30 ",
+      "Quantity": "",
+      " Fresho Name": "Burger: Beef Bris/Chuck 180g (30) Box (30 x 180g)",
+      "Quantity.1": "",
+      "Product Code": "BBBRS18",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "CHICKEN MARYLAND WHOLE",
+      "Quantity": "",
+      " Fresho Name": " Chicken: Whole Maryland Bone In",
+      "Quantity.1": "",
+      "Product Code": "CMARYW ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "PORK BELLY SKIN OFF ",
+      "Quantity": "",
+      " Fresho Name": "Pork - Belly Bone Out Rind Off",
+      "Quantity.1": "",
+      "Product Code": "PBEBOS ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Chicken Breast 180 - 220g butterflied ",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Breast B'Fly Triple 180-200g",
+      "Quantity.1": "",
+      "Product Code": "CBBU180 ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "SCHNITZEL CHICKEN 180GMx30 PANKO CRUMBED",
+      "Quantity": "1 cart",
+      " Fresho Name": "Schnitzel: Chicken Panko 150-170g (30) ",
+      "Quantity.1": "",
+      "Product Code": "CSPAN15 ",
+      " Remarks": "CSPAN15 as we do not have a 180g chicken schnitzel"
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "BEEF WHOLE BOLAR BLADE ",
+      "Quantity": "",
+      " Fresho Name": "Beef: Bolar Blade Whole",
+      "Quantity.1": "",
+      "Product Code": "BBOLGN",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "SCOTCH FILLET STEAK 150GMx5 GRASS FED",
+      "Quantity": "",
+      " Fresho Name": "Beef: Cuberoll YG 150g 10 Pack ○ Pack (10 x 150g)",
+      "Quantity.1": "",
+      "Product Code": "Bcyg1501",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Bidfood ",
+      "Order by Customer": "Chicken Bones Frozen",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Bones 10kg Box Pack",
+      "Quantity.1": "",
+      "Product Code": "CBONE4",
+      " Remarks": "note: frozen"
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Chickens No 16 Whole",
+      "Quantity": "12kg",
+      " Fresho Name": "Chicken: Whole 16 Piece",
+      "Quantity.1": "6x2kg",
+      "Product Code": "CWHOL16",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Beef Striploin Mb2",
+      "Quantity": "40kg",
+      " Fresho Name": "Beef: Striploin MB2 Blue Box Pack",
+      "Quantity.1": "2 with a note 40kg ordered",
+      "Product Code": "BSRMB2B",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Brisket/chuck Mince",
+      "Quantity": "40 KG",
+      " Fresho Name": "Beef: Mince Brisket",
+      "Quantity.1": "40 KG",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "LEWYZ QUALITY MEATZ VICTORIA",
+      "Order by Customer": "TRIM 90CL",
+      "Quantity": "",
+      " Fresho Name": "Beef - Trim 90CL",
+      "Quantity.1": "",
+      "Product Code": "BTRIM90",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Three Blue Ducks (Tullamarine)",
+      "Order by Customer": "pork hock hindquarters",
+      "Quantity": "12 each",
+      " Fresho Name": " Pork: Hocks Fresh",
+      "Quantity.1": "12 each",
+      "Product Code": "",
+      " Remarks": "note: hindquarters"
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Beef bones marrow centre cutstalks halved",
+      "Quantity": "20 each",
+      " Fresho Name": "Beef: Bones Marrow Centre Cut Stalks Halved 1kg",
+      "Quantity.1": "20kg",
+      "Product Code": "BMBOCC",
+      " Remarks": "it should be  20kg with a note to say 20 pieces."
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Beef brisket southern ranges mb2/4 box",
+      "Quantity": "20kg",
+      " Fresho Name": "Beef: Brisket MB2/4 Southern Ranges Box Pack",
+      "Quantity.1": "1 box",
+      "Product Code": "BBRISSRB ",
+      " Remarks": "with a note 20kg"
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "lamb shoulder cut in half",
+      "Quantity": "1x piece",
+      " Fresho Name": "Lamb: Shoulder Square Cut ",
+      "Quantity.1": "Each ",
+      "Product Code": "LSSQUA",
+      " Remarks": " with a note to say “ cut in half”"
+    },
+    {
+      "Customer Name": "Temptation Bakery",
+      "Order by Customer": "Pork Diced 85CL SSF 10mm / Pork Mince 85CL SSF ",
+      "Quantity": "",
+      " Fresho Name": "Pork: Diced Sow Stall Free 10mm ",
+      "Quantity.1": "",
+      "Product Code": "PDICSSF",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "HGP Free Beef Coarse Mince 85CL 10mm halal",
+      "Quantity": "",
+      " Fresho Name": "Beef: Mince 85Cl Coarse",
+      "Quantity.1": "",
+      "Product Code": "BM85CL",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Toorak Hotel BOH",
+      "Order by Customer": "Beef Eye Fillet Bonded Whole Piece",
+      "Quantity": "3 (1kg) ",
+      " Fresho Name": "Beef Eye Fillet Bonded Whole Piece",
+      "Quantity.1": "3 pieces",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Schnitzel: Chicken Panko 250-280g ",
+      "Quantity": "30 pieces",
+      " Fresho Name": "Schnitzel: Chicken Panko 250-280g (30)",
+      "Quantity.1": " 1 Pack",
+      "Product Code": "Cspan25",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Italian pork mince (no fennel)",
+      "Quantity": "PSIMIN",
+      " Fresho Name": "Pork Sausage Mince Italian",
+      "Quantity.1": "",
+      "Product Code": "PSIMIN",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Captain Baxter Kitchen",
+      "Order by Customer": "Chicken thigh mince",
+      "Quantity": "1kg per pack x 10kg",
+      " Fresho Name": "Chicken Mince Thigh",
+      "Quantity.1": "10x1kg packs",
+      "Product Code": "Product is just thesame, merge and just add notes",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "NOBLE PARK",
+      "Order by Customer": "PLOIBR",
+      "Quantity": "4kg / pack",
+      " Fresho Name": "",
+      "Quantity.1": "1 pack x 6kg",
+      "Product Code": "follow order qty",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Golden Hills Brewery",
+      "Order by Customer": "Meat Tray",
+      "Quantity": "tray",
+      " Fresho Name": "Meat Tray",
+      "Quantity.1": "",
+      "Product Code": "MTLONG1",
+      " Remarks": "follow this code for Meat Tray"
+    },
+    {
+      "Customer Name": "Food Hugs",
+      "Order by Customer": "LLEGOKG - LAMB LEG BONED & ROLLED 2049 (CTN)",
+      "Quantity": "17kg",
+      " Fresho Name": "",
+      "Quantity.1": "1",
+      "Product Code": "note: 17kg",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "New Northcote Brewhouse",
+      "Order by Customer": "pork belly x2 slabs not kg",
+      "Quantity": "",
+      " Fresho Name": "PBELLBO",
+      "Quantity.1": "choose 'Each'",
+      "Product Code": "don't enter KG if cx wants Slabs ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "FOOD HUGS",
+      "Order by Customer": "TURKEY BREAST - APRICOT & MACADAMIA APPR 3KG",
+      "Quantity": "",
+      " Fresho Name": "Turkey: Breast - Apricot & Walnut",
+      "Quantity.1": "",
+      "Product Code": "TBAWBR",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "BURGER BEEF WAGYU (160G/PC) BOX",
+      "Quantity": "",
+      " Fresho Name": "Burger: Beef Waygu 160g (30) ",
+      "Quantity.1": "",
+      "Product Code": "BBW1630",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Lucke's Fresh Food Market",
+      "Order by Customer": "Breast Fillet S/on med",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Breast Skin On #17",
+      "Quantity.1": "",
+      "Product Code": "CBRON17",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Breast Fillet S/On XL (must be size 23) ",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Breast Skin On #20 ",
+      "Quantity.1": "",
+      "Product Code": "CBRSNKG ",
+      " Remarks": "note:need to be size 23"
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "S-9 bird",
+      "Quantity": "24 birds",
+      " Fresho Name": "Chicken: Whole 10",
+      "Quantity.1": "",
+      "Product Code": "CWHOL10",
+      " Remarks": "note: size 9"
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Frames ",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Bones 10kg Box",
+      "Quantity.1": "",
+      "Product Code": "CBONE4 ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Golden Hills Brewery",
+      "Order by Customer": "BSHRMB2_2 BEEF: SHORT RIBS MB2+",
+      "Quantity": "",
+      " Fresho Name": "Beef: Ribs Chuck MB2+ Each",
+      "Quantity.1": "",
+      "Product Code": "BSHRMB2",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "7am cafe",
+      "Order by Customer": "Oyster Blade",
+      "Quantity": "",
+      " Fresho Name": "Beef: Oyster Blade (Trimmed) Kg",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": " pork shoulder",
+      "Quantity": "",
+      " Fresho Name": "Pork: Shoulder Boned Rolled, String Only ",
+      "Quantity.1": "",
+      "Product Code": "PSHBR ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Bacon Shortcut",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Bacon Short Lago Each (2.5Kg)",
+      "Quantity.1": "",
+      "Product Code": "SBACONS",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Limnos Butchers",
+      "Order by Customer": "chicken breasts 250-300gm",
+      "Quantity": "20kg",
+      " Fresho Name": "Chicken: Breast Skin On RW",
+      "Quantity.1": "",
+      "Product Code": "CBRSON",
+      " Remarks": "note: 250-300gm."
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Bacon Short Lago Each",
+      "Quantity.1": "",
+      "Product Code": "SBACONS",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Cooee Foods Pty Ltd",
+      "Order by Customer": "Chicken Wing Tips - frozen",
+      "Quantity": "",
+      " Fresho Name": "Chicken Wing Tips ",
+      "Quantity.1": "",
+      "Product Code": "CWINGTI",
+      " Remarks": "note: frozen"
+    },
+    {
+      "Customer Name": "Meat To Ewe",
+      "Order by Customer": "CHICKEN PET MINCE",
+      "Quantity": "",
+      " Fresho Name": "Misc: Pet Mince Kg",
+      "Quantity.1": "",
+      "Product Code": "PETMINC",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "7 AM CAFE",
+      "Order by Customer": "Bacon Shortcut",
+      "Quantity": "1 box",
+      " Fresho Name": "Sgs: Bacon Short Lago",
+      "Quantity.1": "Each (2.5Kg)",
+      "Product Code": "SBACONS",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Toorak Hotel BOH",
+      "Order by Customer": "Cspan25: Chicken Schnitzel Panko Crumb 250g",
+      "Quantity": "60 each",
+      " Fresho Name": "Schnitzel: Chicken Panko 250-280g (30) ○ Pack",
+      "Quantity.1": "2 packs only",
+      "Product Code": "CSPAN25",
+      " Remarks": "as in the desc. says (30)"
+    },
+    {
+      "Customer Name": "First Early Learning - HASTINGS ",
+      "Order by Customer": "BEEF:  MINCE 95%CL 5KG BULK",
+      "Quantity": "3pack",
+      " Fresho Name": "Beef Mince 95CL 5KG Bulk Pack ",
+      "Quantity.1": "15kg",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "The Local Gembrook",
+      "Order by Customer": "LAMB: LEG B/R 2049 PIECES",
+      "Quantity": "1 pack",
+      " Fresho Name": "Lamb: Leg Boned & Rolled 2049 Piece ○ Piece",
+      "Quantity.1": "1 piece",
+      "Product Code": "LLEGRKG ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Bidfood Truganina",
+      "Order by Customer": "Pork Ribs",
+      "Quantity": "400 KG",
+      " Fresho Name": "Pork: Ribs Usa",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Suckling Pig",
+      "Quantity": "9 EA",
+      " Fresho Name": "Pork: Suckling 15-18Kg",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "Chicken Drumsticks",
+      "Quantity": "",
+      " Fresho Name": "Chicken: Drumsticks Bone In",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "",
+      "Quantity": "",
+      " Fresho Name": "",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "",
+      "Quantity": "",
+      " Fresho Name": "",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Fastrac Foodservice - Preston",
+      "Order by Customer": "HAM SMOKED GYPSY",
+      "Quantity": "",
+      " Fresho Name": "Sgs: Ham Gypsy Tibaldi ",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "",
+      "Quantity": "",
+      " Fresho Name": "",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Food Hugs_Food By Us",
+      "Order by Customer": "THIN chicken sausages - gluten free",
+      "Quantity": "",
+      " Fresho Name": "Saus: Chicken & Chive Thin ",
+      "Quantity.1": "",
+      "Product Code": "SAUCOTH ",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "",
+      "Order by Customer": "",
+      "Quantity": "",
+      " Fresho Name": "",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
+    },
+    {
+      "Customer Name": "Temptation Bakery",
+      "Order by Customer": "HGP Free Beef Knuckle 90CL Diced\r\n10mm Halal",
+      "Quantity": "",
+      " Fresho Name": "Beef diced with a note for knuckles",
+      "Quantity.1": "",
+      "Product Code": "",
+      " Remarks": ""
     }
   ],
   "product_rules": [
