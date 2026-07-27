@@ -1,0 +1,8 @@
+[theme]
+# Force a consistent light appearance (was following the viewer's system theme,
+# which could render dark). Soft off-white background with lighter blue accents.
+base = "light"
+primaryColor = "#34649B"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#EEF3F9"
+textColor = "#1B3A5C"
