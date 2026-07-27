@@ -1,0 +1,2325 @@
+{
+  "supplier_name": "Henderson",
+  "description": "",
+  "created_at": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T11:40:10.350205",
+  "rules": [
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Fillet"
+    },
+    {
+      "Customer Name in Fresho": "OMA Restaurant Limited",
+      "Ordered Product": "squid 30 kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Squid - Whole",
+      "Fresho Qty": "30kg",
+      "Other Comments": "size 150-350 ALWAYS",
+      "Column 7": "",
+      "Other Rules": "Price"
+    },
+    {
+      "Customer Name in Fresho": "OMA Restaurant Limited",
+      "Ordered Product": "Kokotxas",
+      "Ordered Unit": "",
+      "Fresho Product": "Kokotxas",
+      "Fresho Qty": "",
+      "Other Comments": "also known as ‘hake chin’ or ‘hake throat’",
+      "Column 7": "",
+      "Other Rules": "Rockling"
+    },
+    {
+      "Customer Name in Fresho": "OMA Restaurant Limited",
+      "Ordered Product": "squid 30 kg",
+      "Ordered Unit": "20 or 30kgs",
+      "Fresho Product": "Squid - Small / Medium Whole - 100-500g",
+      "Fresho Qty": "20kg / 30kg",
+      "Other Comments": "ALWAYS KG not PCS",
+      "Column 7": "",
+      "Other Rules": "APC Courier"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Add on"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Best"
+    },
+    {
+      "Customer Name in Fresho": "Junsei",
+      "Ordered Product": "king prawn",
+      "Ordered Unit": "",
+      "Fresho Product": "tiger prawns",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Add on to Standing Order"
+    },
+    {
+      "Customer Name in Fresho": "Elliot's Borough Market",
+      "Ordered Product": "2 octo 3/4",
+      "Ordered Unit": "",
+      "Fresho Product": "Octopus - Frozen - Galician (3-4kg pack)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Quantity"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Fish List"
+    },
+    {
+      "Customer Name in Fresho": "Lurra",
+      "Ordered Product": "Crab",
+      "Ordered Unit": "",
+      "Fresho Product": "White crab meat",
+      "Fresho Qty": "",
+      "Other Comments": "For this cx only",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Lurra",
+      "Ordered Product": "Dog fish",
+      "Ordered Unit": "",
+      "Fresho Product": "Spurdog",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "For STANDING ORDERS, SO must be ACCEPTED FIRST before adding new products."
+    },
+    {
+      "Customer Name in Fresho": "bibi",
+      "Ordered Product": "scallops",
+      "Ordered Unit": "",
+      "Fresho Product": "Large scallops (never smalls)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Asador",
+      "Ordered Product": "fish size 500g (max 700g)",
+      "Ordered Unit": "",
+      "Fresho Product": "usually brill or turbot 500-1kg fyi",
+      "Fresho Qty": "",
+      "Other Comments": "Please update matrix for Asador. On all items ordered please add note ‘Sabor (FOR ASADOR)’",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Broadwick Soho",
+      "Ordered Product": "Crab Meat",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab Meat - White Devon (454g pack)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Tonight delivery  usually means for tomorrow's delivery"
+    },
+    {
+      "Customer Name in Fresho": "Arete Cookings",
+      "Ordered Product": "4kg Clams",
+      "Ordered Unit": "",
+      "Fresho Product": "Clams - Palourde / Carpet Shell Dorset (1kg pack)",
+      "Fresho Qty": "",
+      "Other Comments": "general rule if mentioned CLAMS unless if specified",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Products that don't need to add 'BEST' notes"
+    },
+    {
+      "Customer Name in Fresho": "Trullo Restaurant",
+      "Ordered Product": "Damage, Bruised",
+      "Ordered Unit": "",
+      "Fresho Product": "Turbot",
+      "Fresho Qty": "",
+      "Other Comments": "Turbot but it depends in the note",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Trullo Restaurant",
+      "Ordered Product": "Bruise Turbot",
+      "Ordered Unit": "",
+      "Fresho Product": "Turbot - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "note: bruised",
+      "Column 7": "",
+      "Other Rules": "scallops"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "brown shrimp"
+    },
+    {
+      "Customer Name in Fresho": "Noble Rot Lamb's Conduit",
+      "Ordered Product": "Hake Fillet",
+      "Ordered Unit": "",
+      "Fresho Product": "Hake - Fillets",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "white crab meat"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "brown crab meat"
+    },
+    {
+      "Customer Name in Fresho": "Josephine bouchon.",
+      "Ordered Product": "5 brill 1/2",
+      "Ordered Unit": "",
+      "Fresho Product": "Brill - Whole 1.5-2kg",
+      "Fresho Qty": "5kg",
+      "Other Comments": "x5 or 5pcs",
+      "Column 7": "",
+      "Other Rules": "clams"
+    },
+    {
+      "Customer Name in Fresho": "Josephine bouchon.",
+      "Ordered Product": "lobster",
+      "Ordered Unit": "",
+      "Fresho Product": "Lobster - Select - Live Native",
+      "Fresho Qty": "2kg",
+      "Other Comments": "2 pcs",
+      "Column 7": "",
+      "Other Rules": "cockles"
+    },
+    {
+      "Customer Name in Fresho": "Josephine bouchon",
+      "Ordered Product": "Brill",
+      "Ordered Unit": "1 pc",
+      "Fresho Product": "Brill",
+      "Fresho Qty": "1kg",
+      "Other Comments": "note: 1pc",
+      "Column 7": "",
+      "Other Rules": "mussels"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "Cod - large scottish"
+    },
+    {
+      "Customer Name in Fresho": "The Bull Inn Totnes",
+      "Ordered Product": "Mack's , Macks",
+      "Ordered Unit": "",
+      "Fresho Product": "Mackerel",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "live crab (Hens or cocks)"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "live lobster (nelson, select or large)"
+    },
+    {
+      "Customer Name in Fresho": "Bocca di Lupo",
+      "Ordered Product": "Dabs",
+      "Ordered Unit": "",
+      "Fresho Product": "Dab - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": "langoustines"
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "British Octopus",
+      "Ordered Unit": "",
+      "Fresho Product": "Octopus - Frozen - British",
+      "Fresho Qty": "",
+      "Other Comments": "usually, but ask first",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Prince Arthur",
+      "Ordered Product": "Langoustine",
+      "Ordered Unit": "",
+      "Fresho Product": "Langoustine - Live Medium (4kg Pack)",
+      "Fresho Qty": "",
+      "Other Comments": "Langos are always boxes. Large and XL are in 5kg boxes and Meds are in 4kg boxes",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "large galician octopus",
+      "Ordered Unit": "",
+      "Fresho Product": "Octopus - Frozen - Galician (3-4kg pack)",
+      "Fresho Qty": "",
+      "Other Comments": "large",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Three Horseshoes Batcombe",
+      "Ordered Product": "Whelks",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "2/3kg Whelks means Between 2 and 3kg (max 3kg)",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Groucho Club",
+      "Ordered Product": "Dubs",
+      "Ordered Unit": "",
+      "Fresho Product": "Dab - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Salcomb , Salcombe",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Hake Fillet",
+      "Ordered Unit": "",
+      "Fresho Product": "Hake - Fillets",
+      "Fresho Qty": "",
+      "Other Comments": "Hake - Fillets product is not in staging.",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Mylor prawn",
+      "Ordered Unit": "",
+      "Fresho Product": "Torbay prawns",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "WCM",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab Meat - White Devon (454g pack)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "BCM",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab Meat - Brown Devon (454g pack)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Fish bones",
+      "Ordered Unit": "",
+      "Fresho Product": "Fish Frames",
+      "Fresho Qty": "",
+      "Other Comments": "Prime Bones",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Gurnard",
+      "Ordered Unit": "",
+      "Fresho Product": "Gurnard Whole",
+      "Fresho Qty": "",
+      "Other Comments": "Don't use 'red gurnard'",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Large Gurnard",
+      "Ordered Unit": "",
+      "Fresho Product": "Tub Gurnard - Whole 1kg+",
+      "Fresho Qty": "",
+      "Other Comments": "Large",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "SMK",
+      "Ordered Unit": "",
+      "Fresho Product": "smoked; e.g. smoked eel",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "JD/ jd's/ j dillas",
+      "Ordered Unit": "",
+      "Fresho Product": "John Dory",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Mix Flat",
+      "Ordered Unit": "",
+      "Fresho Product": "Mixed Fish - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "note: Mix Flat",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Cornish Sole",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "also known as Megrim",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Crab Bones | Crab / Shellfish Carcasses",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "Crab - Shells / Bones (5kg pack)",
+      "Fresho Qty": "Each (5kg)",
+      "Other Comments": "1 each (5kg) = 1 box",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Red",
+      "Ordered Unit": "",
+      "Fresho Product": "Red mullet",
+      "Fresho Qty": "",
+      "Other Comments": "‘reds’ will mean red mullet 99% of the time for any customer",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Ling",
+      "Ordered Unit": "",
+      "Fresho Product": "Ling - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Skinned Wings",
+      "Ordered Unit": "",
+      "Fresho Product": "Skate - Wings (Skin Off)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Cripple lobster",
+      "Ordered Unit": "",
+      "Fresho Product": "Lobster Nelson",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Skate Cheeks",
+      "Ordered Unit": "",
+      "Fresho Product": "Ray Cheeks",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Wild bream",
+      "Ordered Unit": "",
+      "Fresho Product": "Black bream",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Couches",
+      "Ordered Unit": "",
+      "Fresho Product": "Pink bream",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Salmon Fillet",
+      "Ordered Unit": "",
+      "Fresho Product": "Salmon sides or Salmon - Sides Ikejime Loch Duart 1-2kg",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Monkey",
+      "Ordered Unit": "",
+      "Fresho Product": "Monkfish",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Cod Throats",
+      "Ordered Unit": "",
+      "Fresho Product": "Put under Misc",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Cod Heads",
+      "Ordered Unit": "",
+      "Fresho Product": "Put under Misc",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "wild trout",
+      "Ordered Unit": "",
+      "Fresho Product": "Misc",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "sea trout",
+      "Ordered Unit": "",
+      "Fresho Product": "Misc",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Scampi",
+      "Ordered Unit": "",
+      "Fresho Product": "Misc",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "crabs 1.2kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab - Cock Live (Medium) 1-1.5kg",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Red Mullet",
+      "Ordered Unit": "£1",
+      "Fresho Product": "Red Mullet",
+      "Fresho Qty": "100-250g",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "box of mediums",
+      "Ordered Unit": "",
+      "Fresho Product": "med langos",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Scottish Mussel",
+      "Ordered Unit": "",
+      "Fresho Product": "Mussels - Shetland Scottish",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Horsies",
+      "Ordered Unit": "",
+      "Fresho Product": "horse mackerel",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "6 seabass fillets 400g ea",
+      "Ordered Unit": "",
+      "Fresho Product": "3pcs filleted @400g ea fillet",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Skate Cheeks",
+      "Ordered Unit": "",
+      "Fresho Product": "Ray Cheeks",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Red Bream",
+      "Ordered Unit": "",
+      "Fresho Product": "Pink Bream",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Scallops - Queen",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "3kg",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Butts",
+      "Ordered Unit": "",
+      "Fresho Product": "Turbot",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Elliot's Hackney",
+      "Ordered Product": "octopus",
+      "Ordered Unit": "",
+      "Fresho Product": "Octopus - Frozen - British",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Elliot's Hackney",
+      "Ordered Product": "frozen octopus",
+      "Ordered Unit": "",
+      "Fresho Product": "Octopus - Frozen - British",
+      "Fresho Qty": "",
+      "Other Comments": "always use this product",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Primeur",
+      "Ordered Product": "pollack",
+      "Ordered Unit": "12kg",
+      "Fresho Product": "Pollock - Whole 5kg+",
+      "Fresho Qty": "12kg",
+      "Other Comments": "also note 12kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Primeur",
+      "Ordered Product": "Shells",
+      "Ordered Unit": "2",
+      "Fresho Product": "Crab - Shells / Bones (5kg pack)",
+      "Fresho Qty": "2",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Ray Skinned weight",
+      "Ordered Unit": "",
+      "Fresho Product": "Skate - Wings (Skin Off)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Anglothai",
+      "Ordered Product": "large trout filleted pinned",
+      "Ordered Unit": "3",
+      "Fresho Product": "Trout - Whole Chalk Stream",
+      "Fresho Qty": "3kg",
+      "Other Comments": "3 pcs large filleted and pinned",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Crosby Hall",
+      "Ordered Product": "1 lobster 700g",
+      "Ordered Unit": "",
+      "Fresho Product": "Lobster - Select - Live Native",
+      "Fresho Qty": "",
+      "Other Comments": "1pc @700g",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Sabor Restaurants Ltd",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "Tez, Filippo, Joaquin order for Sabor   counter anto",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Asador kitchen",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "Mario G and Albo order for Asador",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "On all items ordered please add note ‘Sabor (FOR ASADOR)’",
+      "Ordered Unit": "",
+      "Fresho Product": "‘Sabor (FOR ASADOR)’",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Toklas Restaurant",
+      "Ordered Product": "Dovers 300-350",
+      "Ordered Unit": "",
+      "Fresho Product": "Dover sole 200-300g",
+      "Fresho Qty": "",
+      "Other Comments": "Add product size note",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Toklas Restaurant",
+      "Ordered Product": "Wild bass",
+      "Ordered Unit": "",
+      "Fresho Product": "Sea Bass",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Ombra",
+      "Ordered Product": "£1 mackerel",
+      "Ordered Unit": "6",
+      "Fresho Product": "Mackerel - Whole - Netted",
+      "Fresho Qty": "6kg",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Darby's",
+      "Ordered Product": "2x smoked eels",
+      "Ordered Unit": "",
+      "Fresho Product": "Eel - Smoked - Whole",
+      "Fresho Qty": "2kg",
+      "Other Comments": "x2",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Darby's",
+      "Ordered Product": "12x450/550 lemon sole scaled",
+      "Ordered Unit": "",
+      "Fresho Product": "Lemon Sole - Whole 450-550g",
+      "Fresho Qty": "12kg",
+      "Other Comments": "x12 scaled",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Darby's",
+      "Ordered Product": "2x2.5/5kg polloxk scaled",
+      "Ordered Unit": "",
+      "Fresho Product": "Pollock - Whole 2.5-5kg",
+      "Fresho Qty": "2kg",
+      "Other Comments": "x2 scaled",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Victoria",
+      "Ordered Product": "25kg mussel",
+      "Ordered Unit": "",
+      "Fresho Product": "Mussels - Devon River Teign (5kg pack)",
+      "Fresho Qty": "3 x Each (5kg)",
+      "Other Comments": "15kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Victoria",
+      "Ordered Product": "20 x £1 mackerel",
+      "Ordered Unit": "",
+      "Fresho Product": "Mackerel - Whole - Netted",
+      "Fresho Qty": "20kg",
+      "Other Comments": "20pcs",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Victoria",
+      "Ordered Product": "15 hake portion",
+      "Ordered Unit": "",
+      "Fresho Product": "Hake - Portions",
+      "Fresho Qty": "15kg",
+      "Other Comments": "15pcs",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Victoria",
+      "Ordered Product": "medium squid 4kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Squid - Whole",
+      "Fresho Qty": "4kg",
+      "Other Comments": "4kg medium",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Victoria",
+      "Ordered Product": "trout",
+      "Ordered Unit": "",
+      "Fresho Product": "Trout - Whole Chalk Stream",
+      "Fresho Qty": "1kg",
+      "Other Comments": "1 Whole",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Olivomare",
+      "Ordered Product": "crab meat",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab Meat - White Devon (454g pack)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Olivomare",
+      "Ordered Product": "sardines",
+      "Ordered Unit": "",
+      "Fresho Product": "Sardines - Whole",
+      "Fresho Qty": "1kg",
+      "Other Comments": "shopping list TBC'",
+      "Column 7": "not in the fish list but still need to book and note 'shopping list TBC'",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Dove Restaurant (formerly Orasay)",
+      "Ordered Product": "scallop small",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Shucked Non Diver",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Good as gold london limited",
+      "Ordered Product": "pollock x 2.5kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Pollock - Whole 2.5-5kg",
+      "Fresho Qty": "1kg",
+      "Other Comments": "1pc x 2.5kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Good as gold london limited",
+      "Ordered Product": "Red mullet Large x 4fish",
+      "Ordered Unit": "",
+      "Fresho Product": "Red Mullet - Whole 500g+",
+      "Fresho Qty": "4kg",
+      "Other Comments": "4pcs large fish",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Dorian Restaurant London",
+      "Ordered Product": "prawn",
+      "Ordered Unit": "",
+      "Fresho Product": "Prawns - Torbay Devon Live",
+      "Fresho Qty": "",
+      "Other Comments": "has a standing order",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Leo Restaurant & Bar",
+      "Ordered Product": "scallop",
+      "Ordered Unit": "",
+      "Fresho Product": "small scallop",
+      "Fresho Qty": "40",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "OMA Restaurant Limited",
+      "Ordered Product": "squid 30 kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Squid - Whole",
+      "Fresho Qty": "30kg",
+      "Other Comments": "size 150-350 ALWAYS",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "OMA Restaurant Limited",
+      "Ordered Product": "Kokotxas",
+      "Ordered Unit": "",
+      "Fresho Product": "Kokotxas",
+      "Fresho Qty": "",
+      "Other Comments": "also known as ‘hake chin’ or ‘hake throat’",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "OMA Restaurant Limited",
+      "Ordered Product": "20 or 30kgs",
+      "Ordered Unit": "",
+      "Fresho Product": "SQUID",
+      "Fresho Qty": "20kg / 30kg",
+      "Other Comments": "ALWAYS KG not PCS",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Quality Chop House",
+      "Ordered Product": "row cod smoke",
+      "Ordered Unit": "",
+      "Fresho Product": "Roe - Cod - Smoked",
+      "Fresho Qty": "1kg",
+      "Other Comments": "1pc",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Perilla",
+      "Ordered Product": "3 large hake",
+      "Ordered Unit": "",
+      "Fresho Product": "Hake - Whole 5-6kg",
+      "Fresho Qty": "3kg",
+      "Other Comments": "3pcs large",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Perilla",
+      "Ordered Product": "3 cod",
+      "Ordered Unit": "",
+      "Fresho Product": "Cod - Large Whole - Scottish",
+      "Fresho Qty": "3kg",
+      "Other Comments": "3 fish around 7-8kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Notting Hill Fish & Fish",
+      "Ordered Product": "Langoustine",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "They have standing order every Tues & Fri. of 1 box Large and 1 box XL",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Notting Hill Fish & Fish",
+      "Ordered Product": "Lango Large",
+      "Ordered Unit": "",
+      "Fresho Product": "Langoustine Live Large (5kg Pack)",
+      "Fresho Qty": "1 each 5kg",
+      "Other Comments": "",
+      "Column 7": "STANDING ORDER TUES",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Notting Hill Fish & Fish",
+      "Ordered Product": "Lango XL",
+      "Ordered Unit": "",
+      "Fresho Product": "Langoustine Live XL (5kg Pack)",
+      "Fresho Qty": "1 each 5kg",
+      "Other Comments": "",
+      "Column 7": "STANDING ORDER TUES",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Notting Hill Fish & Fish",
+      "Ordered Product": "xl diver",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Hand Dived (XL)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Notting Hill Fish & Fish",
+      "Ordered Product": "large diver",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Hand Dived (Large)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Yellow Bittern Limited",
+      "Ordered Product": "2kg prawn",
+      "Ordered Unit": "",
+      "Fresho Product": "Prawns - Torbay Devon Live",
+      "Fresho Qty": "2kg",
+      "Other Comments": "2kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Yellow Bittern Limited",
+      "Ordered Product": "haddock around 3kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Haddock - Smoked - Whole",
+      "Fresho Qty": "3kg",
+      "Other Comments": "3kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Plimsoll London",
+      "Ordered Product": "1 pound gurnard 30",
+      "Ordered Unit": "",
+      "Fresho Product": "Gurnard - Whole",
+      "Fresho Qty": "30kg",
+      "Other Comments": "30 pcs",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Plimsoll London",
+      "Ordered Product": "mussels please",
+      "Ordered Unit": "",
+      "Fresho Product": "Mussels - Devon River Teign (5kg pack)",
+      "Fresho Qty": "1 X 5KG PACK",
+      "Other Comments": "5kg onto the scallops (ON TOP OF THE STANDING ORDER)",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Lango 40",
+      "Ordered Unit": "",
+      "Fresho Product": "Langoustine - Live Medium (4kg Pack)",
+      "Fresho Qty": "1",
+      "Other Comments": "40pcs",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Brunswick House",
+      "Ordered Product": "6kg mussels",
+      "Ordered Unit": "",
+      "Fresho Product": "Mussels - Devon River Teign (5kg pack)",
+      "Fresho Qty": "1 x Each (5kg)",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Restaurant Da Terra ltd t/a Daterra",
+      "Ordered Product": "scallop salcombe",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Hand Dived (Small)",
+      "Fresho Qty": "15 each",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Restaurant Da Terra ltd t/a Daterra",
+      "Ordered Product": "turbot",
+      "Ordered Unit": "",
+      "Fresho Product": "Turbot - Whole 4-6kg",
+      "Fresho Qty": "2kg",
+      "Other Comments": "2pcs 4kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Restaurant Da Terra ltd t/a Daterra",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "Lobster 500-700g",
+      "Fresho Qty": "",
+      "Other Comments": "unsually say \"Da Terra Grade\"",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "NIBLOW LTD t/a Gina",
+      "Ordered Product": "Salcombe",
+      "Ordered Unit": "",
+      "Fresho Product": "Small Scallops",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Temaki",
+      "Ordered Product": "lobster",
+      "Ordered Unit": "",
+      "Fresho Product": "Lobster - Select - Live Native",
+      "Fresho Qty": "4kg",
+      "Other Comments": "4 kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Saltine",
+      "Ordered Product": "20 small red",
+      "Ordered Unit": "",
+      "Fresho Product": "Red Mullet - Whole 100-250g",
+      "Fresho Qty": "20kg",
+      "Other Comments": "20 pcs",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Saltine",
+      "Ordered Product": "squid large day boat frozen",
+      "Ordered Unit": "",
+      "Fresho Product": "Squid - Whole",
+      "Fresho Qty": "1 kg",
+      "Other Comments": "‘1 x 1kg pack frozen’",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Bull in",
+      "Ordered Product": "Macks",
+      "Ordered Unit": "",
+      "Fresho Product": "Mackerel whole netted",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Evernight",
+      "Ordered Product": "salcombe Scallop",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Hand Dived (Small)",
+      "Fresho Qty": "80",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Evernight",
+      "Ordered Product": "largest cock crab",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab - Cock Live (Large) 1.5kg+",
+      "Fresho Qty": "2kg",
+      "Other Comments": "largest",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Evernight",
+      "Ordered Product": "6 bream 700-1kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Black Bream - Whole 600-800g",
+      "Fresho Qty": "6kg",
+      "Other Comments": "6pcs  700g-1kg",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "bream beamer(750g-1kg)",
+      "Ordered Unit": "",
+      "Fresho Product": "Black Bream - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "2kg brill",
+      "Ordered Unit": "",
+      "Fresho Product": "Brill - Whole 2kg+",
+      "Fresho Qty": "",
+      "Other Comments": "1pcs @2kg best",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Tollington",
+      "Ordered Product": "scallop",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Hand Dived (Small)",
+      "Fresho Qty": "75",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Arnold & Henderson",
+      "Ordered Product": "torbay sole 3/500g",
+      "Ordered Unit": "",
+      "Fresho Product": "20pcs x 300-500g",
+      "Fresho Qty": "20kg",
+      "Other Comments": "20pcs x 300-500g",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Arnold & Henderson",
+      "Ordered Product": "gurnard",
+      "Ordered Unit": "",
+      "Fresho Product": "Gurnard - Whole",
+      "Fresho Qty": "30kg",
+      "Other Comments": "30pcs  £1 biggest",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Brawn Restaurant",
+      "Ordered Product": "monkfish tail 2 x 2/4kg",
+      "Ordered Unit": "",
+      "Fresho Product": "Monkfish - Whole Tail 2-4kg",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Ibai Ltd",
+      "Ordered Product": "1 box king crab",
+      "Ordered Unit": "",
+      "Fresho Product": "King Crab Clusters - Frozen Norwegian",
+      "Fresho Qty": "1kg",
+      "Other Comments": "1 box",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Butterworth Hayes Ltd",
+      "Ordered Product": "10 dover",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "200-300 with a size note of 350-400g",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Manteca London",
+      "Ordered Product": "dover 400-500g",
+      "Ordered Unit": "",
+      "Fresho Product": "Dover Sole - Whole 200-300g",
+      "Fresho Qty": "",
+      "Other Comments": "not sure yet",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Manteca London",
+      "Ordered Product": "‘gutted & scaled'",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "‘gutted & scaled'",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Barrafina",
+      "Ordered Product": "cod",
+      "Ordered Unit": "",
+      "Fresho Product": "Cod - Large Whole - Scottish",
+      "Fresho Qty": "1kg",
+      "Other Comments": "1 whole",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Barrafina",
+      "Ordered Product": "tub scallop",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Shucked Non Diver",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "flounder",
+      "Ordered Unit": "",
+      "Fresho Product": "Flounder - Whole",
+      "Fresho Qty": "8kg",
+      "Other Comments": "8pcs",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "lango med 1 box",
+      "Ordered Unit": "",
+      "Fresho Product": "Langoustine - Live Medium (4kg Pack)",
+      "Fresho Qty": "1 each 4kg",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "squid small.medium",
+      "Ordered Unit": "",
+      "Fresho Product": "Squid - Whole",
+      "Fresho Qty": "2kg",
+      "Other Comments": "2kg small/medium",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Camille Restaurant",
+      "Ordered Product": "pollack portion",
+      "Ordered Unit": "",
+      "Fresho Product": "Miscellaneous",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "1 Box Cod Cheeks",
+      "Ordered Unit": "",
+      "Fresho Product": "Cod - Cheeks - Scottish",
+      "Fresho Qty": "3kg",
+      "Other Comments": "3kg 1 Box",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Inis",
+      "Ordered Product": "8med crab",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab - Cock Live (Medium) 1-1.5kg",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Newbriar Company t/a Pied a Terre",
+      "Ordered Product": "8kg cod 1 pc",
+      "Ordered Unit": "",
+      "Fresho Product": "Cod - Medium Whole Scottish",
+      "Fresho Qty": "8kg",
+      "Other Comments": "8kg, 1pc",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Lulu's",
+      "Ordered Product": "tub scallop",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallops - Shucked Non Diver",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Western Laundry",
+      "Ordered Product": "1kg pollock roe",
+      "Ordered Unit": "",
+      "Fresho Product": "Roe - Fresh Fish",
+      "Fresho Qty": "",
+      "Other Comments": "1kg, Pollock Roe",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "1kg smoked eel bones",
+      "Ordered Unit": "",
+      "Fresho Product": "Smoked eel",
+      "Fresho Qty": "",
+      "Other Comments": "1kg, Smoked eel note: bones",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Blue Stoops",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "Sardines - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "3kg/box",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "St. John Bread",
+      "Ordered Product": "2kg bouillabaisse mix",
+      "Ordered Unit": "",
+      "Fresho Product": "Mixed Fish - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Slurp Noodle Ltd",
+      "Ordered Product": "Smoothy",
+      "Ordered Unit": "",
+      "Fresho Product": "Smoothhound - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "1pc, Smoothy means Smoothound",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Henrietta Street Hotel Ltd T/A The Henrietta Hotel",
+      "Ordered Product": "80 Cleaned Scallops Shell",
+      "Ordered Unit": "",
+      "Fresho Product": "Scallop Shell - Cleaned",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Henrietta Street Hotel Ltd T/A The Henrietta Hotel",
+      "Ordered Product": "40 Cleaned Crab Heads",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab - Dressed Shell",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "1kg smoked eel bones",
+      "Ordered Unit": "",
+      "Fresho Product": "Smoked eel",
+      "Fresho Qty": "",
+      "Other Comments": "Smoked eel note: bones",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Pot octo | Pot caught oct",
+      "Ordered Unit": "",
+      "Fresho Product": "Octopus - Whole - British",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Royal Automobile Club Pall Mall",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "For short is known as ‘RAC’",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Island Restaurants",
+      "Ordered Product": "Crab Heads",
+      "Ordered Unit": "",
+      "Fresho Product": "Dressed Shells",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "St John Smithfield",
+      "Ordered Product": "1box",
+      "Ordered Unit": "",
+      "Fresho Product": "Mixed Fish - Whole",
+      "Fresho Qty": "5kg",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Clove Club London",
+      "Ordered Product": "9kg dayboat",
+      "Ordered Unit": "",
+      "Fresho Product": "9kg Plaice - Whole 1kg+",
+      "Fresho Qty": "",
+      "Other Comments": "‘day boat BEST around £14.90’",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "The Fishmarket",
+      "Ordered Product": "Lobster",
+      "Ordered Unit": "",
+      "Fresho Product": "Live Select",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Kitchen Table",
+      "Ordered Product": "2 Brown Crab 1.5kg+",
+      "Ordered Unit": "",
+      "Fresho Product": "Large Cock Crab 1.5kg+",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "large squid",
+      "Ordered Unit": "",
+      "Fresho Product": "Squid - Large Day Boat - 500g+",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Shellfish bones is Crab - Shells / Bones",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Picked Crab",
+      "Ordered Unit": "",
+      "Fresho Product": "Crab Meat :BCM/WCM",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "1kg Scallop Meat",
+      "Ordered Unit": "",
+      "Fresho Product": "1kg Tub Scallops",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Whole Skate",
+      "Ordered Unit": "",
+      "Fresho Product": "Ray - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Chitlings",
+      "Ordered Unit": "",
+      "Fresho Product": "Roe - Fresh Fish",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "1kg Small squid, Frozen £5",
+      "Ordered Unit": "",
+      "Fresho Product": "Squid - Frozen - Whole",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Barrafina Ltd T/A Barrafina Ltd Dean Street",
+      "Ordered Product": "ordered 2 crab meat",
+      "Ordered Unit": "",
+      "Fresho Product": "1 wcm & 1 bcm",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Lurra London",
+      "Ordered Product": "turbot",
+      "Ordered Unit": "",
+      "Fresho Product": "always turbot 1-1.5kg",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Lurra London",
+      "Ordered Product": "crab",
+      "Ordered Unit": "",
+      "Fresho Product": "always white vrab",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Cod fillet and pin",
+      "Ordered Unit": "",
+      "Fresho Product": "Cod - Scottish Fillet",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "dorset cockles",
+      "Ordered Unit": "",
+      "Fresho Product": "Cockles (1kg pack)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Red bream",
+      "Ordered Unit": "",
+      "Fresho Product": "pagrus",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Araki",
+      "Ordered Product": "XXL Langos",
+      "Ordered Unit": "",
+      "Fresho Product": "Langoustine Live XL (5kg Pack)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "skrei cod",
+      "Ordered Unit": "",
+      "Fresho Product": "whole scottish cod and put skrei cod in notes",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "Herring",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Don Txoko",
+      "Ordered Product": "add delivery",
+      "Ordered Unit": "",
+      "Fresho Product": "APC",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "Uni",
+      "Ordered Unit": "",
+      "Fresho Product": "Sea Urchin",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "",
+      "Ordered Product": "1.50£ plaice",
+      "Ordered Unit": "",
+      "Fresho Product": "Plaice - Whole 150-350g",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Morchella Dining",
+      "Ordered Product": "smoked mackerel",
+      "Ordered Unit": "",
+      "Fresho Product": "Mackerel - Smoked - Fillets",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "cod loin",
+      "Ordered Unit": "",
+      "Fresho Product": "Cod - Scottish Fillet",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "100 Extra large Orkneys",
+      "Ordered Unit": "orkneys means scallops",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "All",
+      "Ordered Product": "Skinned lemons will always be 150/200g",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "General rule - when we tell a customer ‘we’re sold on the wcm’ it means we have sold out and do not add to the order",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Also in the mornings we send messages like this which to you guys would mean ‘remove the item (mackerel in this case) from the order as we have non’",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    },
+    {
+      "Customer Name in Fresho": "Scrap prep product just from now on do any prep notes in capitals ‘FILLETED’ ‘SKINNED’",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "Other Rules": ""
+    }
+  ],
+  "product_rules": [
+    {
+      "Fresho Customer Name": "Hey Nineteen Soho Ltd",
+      "Contact Name": "Bar Below Hey 19",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Quality Chop House",
+      "Contact Name": "Quality Chop House",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Camille Restaurant Ltd",
+      "Contact Name": "Camille",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Sabor Restaurants Ltd",
+      "Contact Name": "Sabor/ Asador",
+      "Phone Number": "Joaquin, Tez, Filippo, Anto, Fin order for Sabor (the counter) Marco Scapini?"
+    },
+    {
+      "Fresho Customer Name": "Asador kitchen",
+      "Contact Name": "Sabor/ Asador",
+      "Phone Number": "Mario G and Albo order for Asador, (also Federico?)"
+    },
+    {
+      "Fresho Customer Name": "Arnold & Henderson",
+      "Contact Name": "Rochelle",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Soho Cafe Limited",
+      "Contact Name": "Moi",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "BSA Pilot Boats",
+      "Contact Name": "Brixham ship agency",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Lowrie Fish",
+      "Contact Name": "David Lowrie / Devonshire",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Sabor Restaurants Ltd",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "The Robin",
+      "Contact Name": "Robin Ale and Cider",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Athanasios Florea",
+      "Contact Name": "Artie’s sarnies",
+      "Phone Number": "Arty Florea"
+    },
+    {
+      "Fresho Customer Name": "Royal Automobile Club Pall Mall",
+      "Contact Name": "RAC",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "IGNI",
+      "Contact Name": "Humo",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Marea",
+      "Contact Name": "Mare (Hove APC",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Team B&K Ltd",
+      "Contact Name": "Elliot's Borough Market",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "The Quality Chop House",
+      "Contact Name": "QCH",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Queensberry Hotel & Olive Tree Restaurant",
+      "Contact Name": "Olive Tree (BA1)",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Corner Shop",
+      "Contact Name": "Warm Bread Roll & Co Limited t/a Corner Shop (Cafe Clement / warm bread roll)",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "When we are entering a cash sale please can we enter notes like this on each product so our team know how to label boxes",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "eg, FOR PETER @ DUKE",
+      "Contact Name": "sample",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "UPDATES",
+      "Contact Name": "Add note",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Core",
+      "Contact Name": "Scaled & Gutted",
+      "Phone Number": "scale and gut on all sea bass orders"
+    },
+    {
+      "Fresho Customer Name": "IGNI",
+      "Contact Name": "",
+      "Phone Number": "Oysters - XL - River Dart Devon"
+    },
+    {
+      "Fresho Customer Name": "IGNI",
+      "Contact Name": "",
+      "Phone Number": "BEST for all products on all orders"
+    },
+    {
+      "Fresho Customer Name": "Seahorse",
+      "Contact Name": "",
+      "Phone Number": "only send BEST"
+    },
+    {
+      "Fresho Customer Name": "Bianca",
+      "Contact Name": "",
+      "Phone Number": "always note: BEST"
+    },
+    {
+      "Fresho Customer Name": "Kiln",
+      "Contact Name": "",
+      "Phone Number": "send BEST"
+    },
+    {
+      "Fresho Customer Name": "Asador kitchen",
+      "Contact Name": "‘Sabor (FOR ASADOR)’",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Bar Brasso",
+      "Contact Name": "Bar Brasso FOR DARBYS'",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Manteca London",
+      "Contact Name": "‘SCALED & GUTTED '",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Josephine",
+      "Contact Name": "sole",
+      "Phone Number": "megrim Cornish sole 300-500g ‘SKINNED’ £13.90/kg"
+    },
+    {
+      "Fresho Customer Name": "Akoko",
+      "Contact Name": "",
+      "Phone Number": "‘Scaled & Gutted’ to all wetfish"
+    },
+    {
+      "Fresho Customer Name": "Akoko",
+      "Contact Name": "",
+      "Phone Number": "On monk ‘Skinned’ they should be writing in their order on WhatsApp too"
+    },
+    {
+      "Fresho Customer Name": "Akoko",
+      "Contact Name": "@3kg",
+      "Phone Number": "Add to matrix - Akoko for monk 2-4kg, @3kg fish is ideal size."
+    },
+    {
+      "Fresho Customer Name": "Oma",
+      "Contact Name": "Scaled & Gutted",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "The Victory",
+      "Contact Name": "TRIMMED'",
+      "Phone Number": "Add to matrix for The Victory - ‘trimmed’ on all turbot orders"
+    },
+    {
+      "Fresho Customer Name": "The Victory",
+      "Contact Name": "",
+      "Phone Number": "Also for £1 plaice ‘300g max’"
+    },
+    {
+      "Fresho Customer Name": "Brunswick House",
+      "Contact Name": "trout",
+      "Phone Number": "Brunswick - trout ‘Biggest’"
+    },
+    {
+      "Fresho Customer Name": "Poon's at Somerset House",
+      "Contact Name": "",
+      "Phone Number": "20pcs every Fri (unless amended) @£7 per portion. Ex. JD 12pcs = 12kg final qty. Price @£7"
+    },
+    {
+      "Fresho Customer Name": "Lurra London",
+      "Contact Name": "@1-1.5kg",
+      "Phone Number": "Lurra always turbot 1-1.5kg"
+    },
+    {
+      "Fresho Customer Name": "Lurra London",
+      "Contact Name": "",
+      "Phone Number": "Always wcm"
+    },
+    {
+      "Fresho Customer Name": "BRAT Restaurant Redchurch",
+      "Contact Name": "@1.2-2kg max",
+      "Phone Number": "On the matrix can we Amend notes for Brat turbot size 1.2-2kg max"
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "",
+      "Phone Number": "Dover sole always 300g+"
+    },
+    {
+      "Fresho Customer Name": "Naughty Piglets",
+      "Contact Name": "2 box 6/8 prawns",
+      "Phone Number": "2 tiger prawn"
+    },
+    {
+      "Fresho Customer Name": "Restaurant Da Terra ltd t/a Daterra",
+      "Contact Name": "@500-700g",
+      "Phone Number": "unsually say \"Da Terra Grade\" for lobsters"
+    },
+    {
+      "Fresho Customer Name": "The Waterside Inn",
+      "Contact Name": "Lobster",
+      "Phone Number": "@500g always"
+    },
+    {
+      "Fresho Customer Name": "Moxon Fish (new customer)",
+      "Contact Name": "",
+      "Phone Number": "please note (CORNWALL TRANSPORT ‘Bobbies Fish’) on each product notes\nSimilar to what you do for Asador orders"
+    },
+    {
+      "Fresho Customer Name": "The Bear Camberwell",
+      "Contact Name": "",
+      "Phone Number": "when ordering smoked cod roe. Please always note ‘under 1kg’ in notes\n1kg to big"
+    },
+    {
+      "Fresho Customer Name": "Lowrie Fish",
+      "Contact Name": "",
+      "Phone Number": "scallops ‘FOR THE DEVONSHIRE"
+    },
+    {
+      "Fresho Customer Name": "The Araki London",
+      "Contact Name": "",
+      "Phone Number": "Hen crabs"
+    },
+    {
+      "Fresho Customer Name": "Connaught F&B Ltd Helene Darroze",
+      "Contact Name": "5kg",
+      "Phone Number": "Connaught - Turbot preferred size 5kg"
+    },
+    {
+      "Fresho Customer Name": "Kitchen table",
+      "Contact Name": "2kg+ brown crab",
+      "Phone Number": "Crab - Cock"
+    },
+    {
+      "Fresho Customer Name": "Kitchen table",
+      "Contact Name": "Silver Mullet",
+      "Phone Number": "Grey Mullet"
+    },
+    {
+      "Fresho Customer Name": "Trullo",
+      "Contact Name": "trim",
+      "Phone Number": "Eel Bones - Smoked"
+    },
+    {
+      "Fresho Customer Name": "Tollington",
+      "Contact Name": "@800g",
+      "Phone Number": "General rule for Tollington - brill 500-1kg need to add notes for @800g unless stated otherwise"
+    },
+    {
+      "Fresho Customer Name": "Tollington",
+      "Contact Name": "Octopus",
+      "Phone Number": "(Always Octopus - Frozen - British)"
+    },
+    {
+      "Fresho Customer Name": "Tolliongton",
+      "Contact Name": "",
+      "Phone Number": "Small mullet"
+    },
+    {
+      "Fresho Customer Name": "Ibai Ltd",
+      "Contact Name": "12.9",
+      "Phone Number": "Octopus - Frozen Prepped 3-4kg - Looe"
+    },
+    {
+      "Fresho Customer Name": "Bocca Di Lupo",
+      "Contact Name": "(ONLY FROZEN OCTOPUS 2-3kg @£12.90)",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Morchella",
+      "Contact Name": "Lemon sole 350-450g",
+      "Phone Number": "£6.25 per unit"
+    },
+    {
+      "Fresho Customer Name": "Athanasios Florea",
+      "Contact Name": "",
+      "Phone Number": "Fix rate for smoothy / smoothound fillets for £8/kg (not £10/kg)"
+    },
+    {
+      "Fresho Customer Name": "NIBLOW LTD t/a Gina",
+      "Contact Name": "Delivery Charge",
+      "Phone Number": "add Delivery Charge 1 Each @£15"
+    },
+    {
+      "Fresho Customer Name": "The Woodstock Arms",
+      "Contact Name": "Delivery Charge",
+      "Phone Number": "add Delivery Charge 1 Each @£15"
+    },
+    {
+      "Fresho Customer Name": "Don Txoko",
+      "Contact Name": "APC Courier",
+      "Phone Number": "add delivery"
+    },
+    {
+      "Fresho Customer Name": "General rule add to matrix\nDo not invoice for KILN, SMOKING GOAT, MOUNTAIN or BRAT without a PO being on the invoice",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "1 Box Mackerel",
+      "Contact Name": "only use kg in quantity",
+      "Phone Number": "3kg box"
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "Skate wings",
+      "Phone Number": "Ray Wings - Skinned"
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "Sharing Fish",
+      "Phone Number": "Ask the team"
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "from now on do any prep notes in capitals ‘FILLETED’ ‘SKINNED’ GUTTED",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "XXL Langos as we won't have them for ages  so don't use it  just book XL langos",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Also when someone mentions a ‘person order’ or a ‘separate invoice’ they usually mean not billed to the restaurant. This needs to be added under ‘cash sale’ on Fresho with the chefs name in the additional notes and in the product notes.",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "if a customer notes ‘skin on’ or ‘not skinned’ just don’t add any notes as will just be sent whole. No prep x",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "",
+      "Phone Number": "Skinned lemons will always be 150/200g"
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "100 Extra large Orkneys",
+      "Phone Number": "orkneys means scallops"
+    },
+    {
+      "Fresho Customer Name": "",
+      "Contact Name": "Soles",
+      "Phone Number": "Gp friendly is the smallest 100/200g £1 ones"
+    },
+    {
+      "Fresho Customer Name": "Reminder please do not invoice for customers who need a PO otherwise we don’t get paid :",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "KILN",
+      "Contact Name": "Just put ‘PO needed’ in the reference box for now",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "BRAT",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "SMOKING GOAT",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "MOUNTAIN",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "CONNAUGHT",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "PENINSULA",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "CAFE CLEMENT",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "THE ARTS CLUB",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "ORRERY",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "ANGLOTHAI",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "LUSO",
+      "Contact Name": "",
+      "Phone Number": ""
+    },
+    {
+      "Fresho Customer Name": "Kioku",
+      "Contact Name": "",
+      "Phone Number": ""
+    }
+  ]
+}

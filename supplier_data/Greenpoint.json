@@ -1,0 +1,4150 @@
+{
+  "supplier_name": "Greenpoint",
+  "description": "",
+  "created_at": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T11:40:10.350205",
+  "rules": [
+    {
+      "G E N E R A L R U L E": "Sunday-Wed (4hrs) 9pm-1am\n Thursday-Friday (5hrs) 8pm-1am",
+      "Customer": "",
+      "Product Term": "squid black or squid ink",
+      "Unit": "",
+      "Fresho Product Name": "Cuttlefish Ink",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Hamachi",
+      "Unit": "",
+      "Fresho Product Name": "Hiramasa",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "don't forget to send an email on your first and last order entry",
+      "Customer": "",
+      "Product Term": "whole clam bellies",
+      "Unit": "",
+      "Fresho Product Name": "Fryer Clam",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "If a customer already has an order, please try to combine them, unless they have different PO/Order numbers",
+      "Customer": "",
+      "Product Term": "chic flour",
+      "Unit": "",
+      "Fresho Product Name": "Fis-Chic Wonder Batter",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "If an order is received Saturday evening and don't have date indicated when to deliver, enter the order and put it for Monday delivery then forward the order to Greenpoint",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "do not forget to change 'to pick' for all LIVE LOBSTERs order",
+      "Customer": "",
+      "Product Term": "seaweed",
+      "Unit": "",
+      "Fresho Product Name": "duxbury rockweed",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "# = pounds (Lbs)",
+      "Customer": "",
+      "Product Term": "Lobster #1-1.2 lbs",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster Chix",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Lb, lb or lbs is Pounds",
+      "Customer": "",
+      "Product Term": "1.5 lobster or a half lobster",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster Halves",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "PC = Pieces will go in as Each",
+      "Customer": "",
+      "Product Term": "1.25 and 1/4  lobster or a quarter lobster",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster Quarter",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Cs is a case will go in as Each unless Case is available",
+      "Customer": "",
+      "Product Term": "30 Lobsters, 1.2#",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster Quarter",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Fillets go in as Each",
+      "Customer": "",
+      "Product Term": "Duxbury gem",
+      "Unit": "",
+      "Fresho Product Name": "Oysters - East Coast",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "All oysters are sold in 100s, eg - \"2 oysters\" you would put 200 in the quantity",
+      "Customer": "",
+      "Product Term": "head on shrimp",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp U12 Head On Block",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "All oysters are east coast - if a specific oyster is given add this to the description eg 200 Shipwreck would be: Oysters - East Coast, Qty 200, Pencil in \"shipwreck\"",
+      "Customer": "",
+      "Product Term": "1cs 16/20 frozen shrimp",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp Tail Shell On 16/20 Block",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Shipwreck are oysters",
+      "Customer": "",
+      "Product Term": "deuces",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster 2s",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "RL (Red Label) are oysters",
+      "Customer": "",
+      "Product Term": "calamari cleaned",
+      "Unit": "",
+      "Fresho Product Name": "Squid - Cleaned",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "ftuna",
+      "Customer": "",
+      "Product Term": "sea bream",
+      "Unit": "",
+      "Fresho Product Name": "dorade",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "MR (Moonrise) are oysters",
+      "Customer": "",
+      "Product Term": "U12 scallops",
+      "Unit": "",
+      "Fresho Product Name": "Sea Scallops U10 Dry-Packed",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "MP (Merepoint) are oysters",
+      "Customer": "",
+      "Product Term": "jumbo shrimp",
+      "Unit": "",
+      "Fresho Product Name": "Wild Gulf Shrimp Tail Shell On IQF 10/15",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Great Guns are oysters",
+      "Customer": "",
+      "Product Term": "Small (illegal) under one lb each",
+      "Unit": "",
+      "Fresho Product Name": "Black Sea Bass Small",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "SB (Savage Blonde) are oysters",
+      "Customer": "",
+      "Product Term": "Medium: 1-1.5lbs each",
+      "Unit": "",
+      "Fresho Product Name": "Medium Black Sea Bass Whole",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "White tails are prawns",
+      "Customer": "",
+      "Product Term": "Large 1.5lbs-2lbs each",
+      "Unit": "",
+      "Fresho Product Name": "Large Black Sea Bass",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Tuna #1 is grade 1 tuna -  if someone asks for Tuna #1 it does not mean lbs they will specify weight",
+      "Customer": "",
+      "Product Term": "Jumbo 2lbs and over",
+      "Unit": "",
+      "Fresho Product Name": "Black Sea Bass Jumbo",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Tuna #2 is grade 2 tuna - if someone asks for Tuna #2 it does not mean lbs they will specify weight",
+      "Customer": "",
+      "Product Term": "Sea Scallops, medium",
+      "Unit": "",
+      "Fresho Product Name": "Sea Scallops Dry-Packed 10/20",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "S/L = Skinless - you can type the abbreviation in the notes as everyone knows what it means",
+      "Customer": "",
+      "Product Term": "dutch island selects",
+      "Unit": "",
+      "Fresho Product Name": "Oysters - East Coast",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "note: DUTCH ISLAND SELECTS"
+    },
+    {
+      "G E N E R A L R U L E": "C/S = Filleted - you can type the abbreviation in the notes as everyone knows what it means",
+      "Customer": "",
+      "Product Term": "lobster bodies",
+      "Unit": "1cs",
+      "Fresho Product Name": "Lobster Bodies",
+      "Fresho Product Quantity": "25lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "S/G = Scaled and Gutted - you can type the abbreviation in the notes as everyone knows what it means",
+      "Customer": "",
+      "Product Term": "seaweed",
+      "Unit": "1cs",
+      "Fresho Product Name": "Duxbury Rockweed",
+      "Fresho Product Quantity": "10lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "S/G Scales On = Gutted only - you can type the abbreviation in the notes as everyone knows what it means",
+      "Customer": "",
+      "Product Term": "seeweed",
+      "Unit": "1 bag",
+      "Fresho Product Name": "Duxbury Rockweed",
+      "Fresho Product Quantity": "12lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "B/F = Boned Filleted",
+      "Customer": "",
+      "Product Term": "mussel",
+      "Unit": "1 bag",
+      "Fresho Product Name": "Bang Island Mussel",
+      "Fresho Product Quantity": "10lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "10/15 = prawns - order history and pantry will help you determine which",
+      "Customer": "",
+      "Product Term": "oyster",
+      "Unit": "1 bag",
+      "Fresho Product Name": "Oysters - East Coast",
+      "Fresho Product Quantity": "100 Each",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "16/20 = prawns - order history and pantry will help you determine which",
+      "Customer": "",
+      "Product Term": "clams",
+      "Unit": "1 bag",
+      "Fresho Product Name": "Countneck Clams",
+      "Fresho Product Quantity": "100 Each",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "51/60 =  rock shrimp",
+      "Customer": "",
+      "Product Term": "octopus",
+      "Unit": "1cs",
+      "Fresho Product Name": "Octopus",
+      "Fresho Product Quantity": "30lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "10/20 = scallops\tU10 is the most common scallop",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "20/30 = scallop",
+      "Customer": "",
+      "Product Term": "Shrimp 10/15 IQF",
+      "Unit": "1 cs",
+      "Fresho Product Name": "Wild Gulf Shrimp Tail Shell On IQF 10/15",
+      "Fresho Product Quantity": "20 lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Sea Bass 400-600 = medium sea bass",
+      "Customer": "",
+      "Product Term": "Small Branz",
+      "Unit": "",
+      "Fresho Product Name": "Whole Branzino 400-600g",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "For Salmon Entries: If someone orders only 1 side, you must put the order in as fillets. Same as if they order 3 sides. You cannot keep putting in whole fish for these orders. This is only for odd number sides.  Even number is still put in as whole fish please (Even sides or whole fish = whole entry\nOdd sides or explicit net fillet request = net fillet)",
+      "Customer": "",
+      "Product Term": "Large Branz-",
+      "Unit": "",
+      "Fresho Product Name": "Branzino 600-800g",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Side means net fillet = this rule apply to odd sides in general, not just for Salmon",
+      "Customer": "",
+      "Product Term": "shrimp 21/25",
+      "Unit": "1box",
+      "Fresho Product Name": "Farm Raised Shrimp 21/25 Block Frozen",
+      "Fresho Product Quantity": "5lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Culls are imperfect lobs, typically missing a claw…sizing varies.",
+      "Customer": "",
+      "Product Term": "kanpachi",
+      "Unit": "",
+      "Fresho Product Name": "Hiramasa 2-3kg RAS",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Chx are roughly 1-1.2 lbs",
+      "Customer": "",
+      "Product Term": "Shrimp 9/12",
+      "Unit": "1 cs",
+      "Fresho Product Name": "White Shrimp U12 Head On Block",
+      "Fresho Product Quantity": "40 lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Qrtrs 1.25-1.45 lbs",
+      "Customer": "",
+      "Product Term": "lobster 3lbs",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster 3s",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Halves -1.5-1.75lb",
+      "Customer": "",
+      "Product Term": "top neck clams",
+      "Unit": "1 bag",
+      "Fresho Product Name": "Top Neck Clams",
+      "Fresho Product Quantity": "1 Each (100)",
+      "Remarks/Comments": "put 1 FOR 'Each (100)' QTY"
+    },
+    {
+      "G E N E R A L R U L E": "1.75 lbs and  up are considered selects",
+      "Customer": "",
+      "Product Term": "We do not carry cockles",
+      "Unit": "",
+      "Fresho Product Name": "Better to book it under Miscellaneous, then forward the email to sales",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "If someone orders Bag of mussels , always just put it in pounds. 10 pounds each",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "1 case of Octopus is 30 pounds",
+      "Customer": "",
+      "Product Term": "deep fish flats and lids",
+      "Unit": "",
+      "Fresho Product Name": "Fish Tub with Lid 25#",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Littleneck or Midneck Clams = it is always Countneck no need to note little neck or midneck  BAG = 100 EACH",
+      "Customer": "",
+      "Product Term": "hallow fish flats and lids",
+      "Unit": "",
+      "Fresho Product Name": "Fish Tub with Lid 10#",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "When people order 150 clams/oyster please enter 200",
+      "Customer": "",
+      "Product Term": "large fish tubs",
+      "Unit": "",
+      "Fresho Product Name": "Fish Tub with Lid 25#",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Salmon BELLY= USE salmon fillets - then add to the notes that they asked for salmon belly",
+      "Customer": "",
+      "Product Term": "Block shrimp 10/15 - 1cs",
+      "Unit": "1cs",
+      "Fresho Product Name": "White Shrimp Tail Shell On 10/15 Block",
+      "Fresho Product Quantity": "50lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "For all Lobsters generally it is Each except Culls where it is pounds like Littleneck Brooklyn",
+      "Customer": "",
+      "Product Term": "Smoked Trout Roe",
+      "Unit": "",
+      "Fresho Product Name": "-",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "We do not carry"
+    },
+    {
+      "G E N E R A L R U L E": "Shrimps bag is 2 pounds each",
+      "Customer": "",
+      "Product Term": "Sardines",
+      "Unit": "",
+      "Fresho Product Name": "-",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "we do not have access to any sardines"
+    },
+    {
+      "G E N E R A L R U L E": "if someone orders fillets by the each then it will always be whole fish filleted. If someone orders fillets by the lbs that is when it is just net fillets in the order",
+      "Customer": "",
+      "Product Term": "Sea urchin",
+      "Unit": "",
+      "Fresho Product Name": "-",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "We do not carry urchin due to poor sustainability ratings.Same with langoustines."
+    },
+    {
+      "G E N E R A L R U L E": "u10 is 10/20 Scallops",
+      "Customer": "",
+      "Product Term": "Langostines",
+      "Unit": "",
+      "Fresho Product Name": "-",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "We do not carry"
+    },
+    {
+      "G E N E R A L R U L E": "u20 is 10/20",
+      "Customer": "",
+      "Product Term": "king crab legs",
+      "Unit": "",
+      "Fresho Product Name": "-",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "We do not carry"
+    },
+    {
+      "G E N E R A L R U L E": "BE means bigeye for tuna",
+      "Customer": "Hawksmoor",
+      "Product Term": "FISH Gulf Shrimp Tail, ShellOn",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp U12 Head On Block",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "We have no roe = forward the email to sales",
+      "Customer": "Diner",
+      "Product Term": "5# shrimp (12s/15s)",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp Tail Shell On 10/15 Block",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "a bushel of mussel = 10lbs",
+      "Customer": "Buddakan",
+      "Product Term": "Skate Wings",
+      "Unit": "2lb/ea",
+      "Fresho Product Name": "Whole - Skate Wing",
+      "Fresho Product Quantity": "3each",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Fluke sizing : Medium 1-2 | Large 2-4 | Jumbo 4up",
+      "Customer": "Cervo",
+      "Product Term": "head on prawns",
+      "Unit": "1cs",
+      "Fresho Product Name": "White Shrimp U12 Head On Block",
+      "Fresho Product Quantity": "40lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Chilean sea bass (we do not carry)",
+      "Customer": "Cervo",
+      "Product Term": "frozen squid",
+      "Unit": "1cs",
+      "Fresho Product Name": "Longfin Squid Tubes and Tentacles",
+      "Fresho Product Quantity": "25 lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Accopylius  (we do not carry)",
+      "Customer": "Cervo",
+      "Product Term": "Standing order Bangs mussels",
+      "Unit": "",
+      "Fresho Product Name": "Bangs Island mussels",
+      "Fresho Product Quantity": "20lbs on Wed & 30lbs on Fri",
+      "Remarks/Comments": "customer requested: And please can we change our standing order to 2bags Bangs Island mussels for Wednesdays and 3bags for Fridays going forward."
+    },
+    {
+      "G E N E R A L R U L E": "“All day” means total amount",
+      "Customer": "Cervo",
+      "Product Term": "rock shrimp",
+      "Unit": "1cs",
+      "Fresho Product Name": "Rock Shrimp 51/60 Peeled Block Frozen",
+      "Fresho Product Quantity": "50lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "For ALL tuna orders that do not specifically say “#2 grade” or “cheap grade” please use “Tuna Loin - #1 Grade”. It does not matter if they say big eye or yellowfin",
+      "Customer": "El Pinguino",
+      "Product Term": "Fluke skin off 3 lb",
+      "Unit": "",
+      "Fresho Product Name": "Wild Fluke Fillets",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Kitten tilefish are about 2-4 and Large-Mediums are 5-7",
+      "Customer": "4747LIC",
+      "Product Term": "fresh lobster roll",
+      "Unit": "",
+      "Fresho Product Name": "Fresh Picked Lobster Meat",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "no turbot fish- (so far)",
+      "Customer": "Glasserie",
+      "Product Term": "Shrimp U14-16",
+      "Unit": "",
+      "Fresho Product Name": "Wild Gulf Shrimp Tail Shell On IQF 10/15",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Fulton",
+      "Product Term": "SHRIMP, HEAD OFF U12 FROZEN",
+      "Unit": "",
+      "Fresho Product Name": "Wild Gulf Shrimp Tail Shell On IQF 10/15",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "If a venue orders even numbers (2,4,6,8 etc) of sides/fillets then it should always be whole fish (2 sides per fish)",
+      "Customer": "Fulton",
+      "Product Term": "lobster chop",
+      "Unit": "",
+      "Fresho Product Name": "Fresh Picked Lobster Meat",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "If a venue orders odd numbers (1,3,5 etc) of sides/fillets then it should always be net fillet with the numbers of sides/fillets in the product notes;",
+      "Customer": "Bernie's",
+      "Product Term": "IQF 10-15 Wild Gulf Shrimp (Shell On) -",
+      "Unit": "1 case",
+      "Fresho Product Name": "Wild Gulf Shrimp Tail Shell On IQF 10/15",
+      "Fresho Product Quantity": "20  Each (2lbs)",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "If unsure of a product please put the closest one into the order and send an email to the sales@greenpoint email saying \"hey im unsure of [product] can you check this?”",
+      "Customer": "Bernie's",
+      "Product Term": "Ecuadorian Shrimp (peeled + deveined)",
+      "Unit": "1 case",
+      "Fresho Product Name": "White Shrimp, 13/15, Raw, Tail-on P&D, IQF, FR - Ecuador",
+      "Fresho Product Quantity": "10 lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Bernie's",
+      "Product Term": "Ecuadorian Shrimp, cleaned (Tail On)",
+      "Unit": "1 case",
+      "Fresho Product Name": "White Shrimp, 13/15, Raw, Tail-on P&D, IQF, FR - Ecuador",
+      "Fresho Product Quantity": "10 lbs",
+      "Remarks/Comments": "note: Cleaned"
+    },
+    {
+      "G E N E R A L R U L E": "SCALLOPS",
+      "Customer": "Rolo's",
+      "Product Term": "branzino",
+      "Unit": "",
+      "Fresho Product Name": "Branzino 600-800g",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "U10 are u10",
+      "Customer": "Rolo's",
+      "Product Term": "rock shrimp",
+      "Unit": "1 box",
+      "Fresho Product Name": "Rock Shrimp 51/60 Peeled Block Frozen",
+      "Fresho Product Quantity": "5lbs",
+      "Remarks/Comments": "1 box = 5lbs or just put 1 in qty Each (5lbs)"
+    },
+    {
+      "G E N E R A L R U L E": "U8 are u10",
+      "Customer": "Rolo's",
+      "Product Term": "10 each pin boned filets of char",
+      "Unit": "",
+      "Fresho Product Name": "Arctic Charr 4/6 Whole",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "NOTE: FILLETED QTY: 5"
+    },
+    {
+      "G E N E R A L R U L E": "Jubilee Market",
+      "Customer": "Gage & Tollner",
+      "Product Term": "Smallest Sea Bass",
+      "Unit": "",
+      "Fresho Product Name": "Medium Black Sea Bass Whole",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Smallest Sea Bass is the Medium size"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Gage & Tollner",
+      "Product Term": "Crab Bodies",
+      "Unit": "1 case",
+      "Fresho Product Name": "Blue Crabs Frozen Bodies for Soup",
+      "Fresho Product Quantity": "10 lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "If anyone orders striped bass please put it in as “true striped bass”. Not wild",
+      "Customer": "Wayan",
+      "Product Term": "Shrimp",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp Tail Shell On 16/20 Block",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "always block shrimp never iqf"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Wayan",
+      "Product Term": "14# cleaned lobster TCK",
+      "Unit": "",
+      "Fresho Product Name": "Fresh Picked Lobster Meat",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Fox Face",
+      "Product Term": "5# u10/20 scallops",
+      "Unit": "",
+      "Fresho Product Name": "Dayboat Maine Scallops 10/20",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Troutbeck",
+      "Product Term": "Medium Scallops",
+      "Unit": "",
+      "Fresho Product Name": "Sea Scallops Dry-Packed 10/20",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "greenpoint have an agreement they only supply them fish, not shellfish as these are supplied by someone else, So if you seem clams and oysters on their order you can just ignore them and not add them, these will be supplied by another company. Just add the fish products."
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "littlemad",
+      "Product Term": "10pc 1# lobsters",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster Chix",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Frozen Lobster Meat: All Seamores only use CKL\n                                     Everyone else just use Frozen Lobster Meat CK",
+      "Customer": "Cozy Royale",
+      "Product Term": "haddock",
+      "Unit": "",
+      "Fresho Product Name": "Wild Atlantic Pollock",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Any time they order haddock  put it in as pollock"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Rezdora",
+      "Product Term": "Amberjack",
+      "Unit": "",
+      "Fresho Product Name": "Hiramasa 3-4kg RAS",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Shuka shukette shuko - All these orders should be put in as WHOLE\n\nChar Whole\n\nNotes: CS",
+      "Customer": "Rezdora",
+      "Product Term": "Baccala 5#",
+      "Unit": "",
+      "Fresho Product Name": "Cod - Loin",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "JG Jean Georges",
+      "Product Term": "100 filets of Black Sea Bass",
+      "Unit": "100 filets",
+      "Fresho Product Name": "Black Sea Bass Jumbo",
+      "Fresho Product Quantity": "100 Each",
+      "Remarks/Comments": "qty: 100 note: 50 x C/S"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "JG Jean Georges",
+      "Product Term": "U15 scallops",
+      "Unit": "",
+      "Fresho Product Name": "Live Sea Scallops",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Don Angie",
+      "Product Term": "Peekytoe Crab",
+      "Unit": "4-pc Box 1",
+      "Fresho Product Name": "Hand Picked Jonah Crab Meat Cap'n Dan Brand",
+      "Fresho Product Quantity": "3lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Don Angie",
+      "Product Term": "Small Softshell Lobsters",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster Chix",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Don Angie",
+      "Product Term": "Coho Salmon 1# filleted",
+      "Unit": "",
+      "Fresho Product Name": "Local Coho 2-4 RAS",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Jubilee",
+      "Product Term": "16/25 p&d x12#",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp Raw Tail-off Peeled & Deveined IQF",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "note: 16/25"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Crave Fishbar East",
+      "Product Term": "Mere Pt",
+      "Unit": "4",
+      "Fresho Product Name": "Oysters - East Coast",
+      "Fresho Product Quantity": "400 Each",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Email Templates",
+      "Customer": "Arlo Williamsburg",
+      "Product Term": "Salmon 12/14 skin on filets- 1 sd",
+      "Unit": "",
+      "Fresho Product Name": "Atlantic Salmon - Net Fillet",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Recipient : sales@greenpointfish.com",
+      "Customer": "Insa",
+      "Product Term": "SCROD FILLET",
+      "Unit": "",
+      "Fresho Product Name": "Wild Pollock Fillets Large",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "CC: orderentry@fresho.com",
+      "Customer": "Insa",
+      "Product Term": "16/20 frozen shrimp",
+      "Unit": "1 case",
+      "Fresho Product Name": "White Shrimp Tail Shell On 16/20 Block",
+      "Fresho Product Quantity": "50lbs",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Start of shift:",
+      "Customer": "Oxomoco",
+      "Product Term": "steelhead trout, fillet (fillet weight not whole weight)",
+      "Unit": "",
+      "Fresho Product Name": "Steelhead Trout Fillets Hudson Valley",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Hi,",
+      "Customer": "Houseman",
+      "Product Term": "scaled blackfish filets",
+      "Unit": "",
+      "Fresho Product Name": "Wild Tautog Whole",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "note:  NET FILLET"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Babs",
+      "Product Term": "Hawaiian whole prawns",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp U12 Head On Block",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Note: HAWAIIAN"
+    },
+    {
+      "G E N E R A L R U L E": "I've started placing orders for this customer.",
+      "Customer": "Le Coucou",
+      "Product Term": "lobster coral",
+      "Unit": "",
+      "Fresho Product Name": "Frozen Lobster Roe",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Le Coucou",
+      "Product Term": "lobster shells",
+      "Unit": "30#",
+      "Fresho Product Name": "Lobster Bodies",
+      "Fresho Product Quantity": "30kg",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Thank you!",
+      "Customer": "Comodo",
+      "Product Term": "merluza",
+      "Unit": "",
+      "Fresho Product Name": "Sow Hake Wild Caught",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "St. Jardim",
+      "Product Term": "6# 16/20 shrimp pink tails, iqf",
+      "Unit": "",
+      "Fresho Product Name": "Wild Pink Shrimp 16/20",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "medium lobster",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster Quarter",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "End of shift",
+      "Customer": "PEAK",
+      "Product Term": "Montauk Red Shrimp",
+      "Unit": "",
+      "Fresho Product Name": "Montauk Royal Red Shrimp",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Hi,",
+      "Customer": "Marc Forgione",
+      "Product Term": "royal reds",
+      "Unit": "",
+      "Fresho Product Name": "Montauk Royal Red Shrimp",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "La Bonne Soupe",
+      "Product Term": "tuna",
+      "Unit": "",
+      "Fresho Product Name": "Tuna Loin - #2 Grade    Put it in as number one only",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "When this customer puts in an order for tuna it’s always #2  thanks you"
+    },
+    {
+      "G E N E R A L R U L E": "This is the last order I've entered for today.",
+      "Customer": "",
+      "Product Term": "Bass",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "The grade of Black Bass wasn't specified, never use medium. Use jumbo if unsure"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "We do not carry live blue crabs",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Thank you!",
+      "Customer": "Place de Fetes",
+      "Product Term": "9 each Stu’s/Fearless Fish Ikejime Fluke",
+      "Unit": "",
+      "Fresho Product Name": "Sushi Bled Fluke",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Don Angie",
+      "Product Term": "Orata 600-800g S/G/pbo",
+      "Unit": "",
+      "Fresho Product Name": "Dorade 600/800g",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Elea",
+      "Product Term": "middle neck clams",
+      "Unit": "",
+      "Fresho Product Name": "Countneck Clams",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Jubilee Market",
+      "Product Term": "Cooper river salmon",
+      "Unit": "Alaskan Sockeye Salmon 2-3 IVP Fillets Skin On",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "All customers that are not yet in the system should be placed under \"Greenpoint-Cash Sale\". Add notes to identify customer name or other information.",
+      "Customer": "",
+      "Product Term": "1 dozen mussels is about 1lb",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Maine Uni",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "we do not carry"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "tuna belly",
+      "Unit": "",
+      "Fresho Product Name": "Tuna - Belly",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Also please use item code tuna belly for when people order tuna belly"
+    },
+    {
+      "G E N E R A L R U L E": "When specific notes is given like “change price to 12.25”. Change the price",
+      "Customer": "Legacy Records",
+      "Product Term": "o-toro",
+      "Unit": "",
+      "Fresho Product Name": "Tuna - Belly",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Do not put ANY lobsters in with the codes NS after them. That is for our inventory purposes only.",
+      "Customer": "Hawksmoor",
+      "Product Term": "SHELLFISH Lobster - 572 LOB-3/4",
+      "Unit": "",
+      "Fresho Product Name": "Live Lobster 1.75",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "¾ are 3/4. Not halves. It’s a different grade."
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Time and Tide",
+      "Product Term": "longfin squid",
+      "Unit": "",
+      "Fresho Product Name": "Dirty Squid Fresh Caught",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Do not use the tubes and tents unless it specifically says frozen"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Polo Bar",
+      "Product Term": "5# sushi grade Yellowtail",
+      "Unit": "",
+      "Fresho Product Name": "Hiramasa 2-3kg RAS",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Yellowtail is hiramasa. It is NOT tuna"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Legacy Records",
+      "Product Term": "cherry stone clams",
+      "Unit": "",
+      "Fresho Product Name": "Top Neck Clams",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "add notes: Cherry Stone Clams"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "Bar Oliver",
+      "Product Term": "2 pc albacore tuna loin",
+      "Unit": "",
+      "Fresho Product Name": "Albacore Tuna Loins",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "HLSO means Headless Shell-On",
+      "Customer": "",
+      "Product Term": "15# Swai, Pinboned, Skin off",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Never book something as a totally different fish. If you are really confused just use MISC and put it in the notes"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "wild bayou Le batre 16/20",
+      "Unit": "",
+      "Fresho Product Name": "Wild Gulf Shrimp Tail Shell On IQF 16/20",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "PD means peeled and de-veined",
+      "Customer": "",
+      "Product Term": "manila clams",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Put it in Countneck Clams with notes"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Minced clams are not countnecks",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Fish roe or caviar",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "WE DO NOT CARRY, DO NOT ENTER - forward the email to sales"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Pink Shrimp",
+      "Unit": "",
+      "Fresho Product Name": "Wild Gulf Shrimp Tail Shell On IQF 16/20",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Closest to Pink Shrmip (Shell On, not peeled)"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Pink Shrimp",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp Raw Tail-off Peeled & Deveined IQF 16/20",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Choose this as closest to Pink Shrimp unless specified as shell on"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "Rock Shrimp 51/60 Peeled Block Frozen",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "Choose this as closest to Pink Shrimp unless specified as shell on - see history"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "Alaskan Sockeye Salmon 2-3 IVP Fillets Skin On",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "1 case = 10lbs"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Uni",
+      "Unit": "",
+      "Fresho Product Name": "Miscellaneous",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": "This is a special order. Please put it in with notes but forward this order to Greenpoint for  checking"
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "martha rose scallops",
+      "Unit": "",
+      "Fresho Product Name": "Scallops u10 and u8",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "",
+      "Customer": "",
+      "Product Term": "Soft Shell Crabs Whales",
+      "Unit": "",
+      "Fresho Product Name": "1 Tray = 3 dozen",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "All oysters name below:",
+      "Customer": "",
+      "Product Term": "5# dulac Louisiana shrimp",
+      "Unit": "",
+      "Fresho Product Name": "White Shrimp U12 Head On Block",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "PEI",
+      "Customer": "",
+      "Product Term": "The only other sea bass we carry",
+      "Unit": "",
+      "Fresho Product Name": "Branzino 600-800g",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Savage blonde",
+      "Customer": "",
+      "Product Term": "Nantucket",
+      "Unit": "",
+      "Fresho Product Name": "Bay Scallops",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Shipwreck",
+      "Customer": "",
+      "Product Term": "Lobster heads",
+      "Unit": "",
+      "Fresho Product Name": "lobster bodies",
+      "Fresho Product Quantity": "Needs to be under lobster bodies",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Red label",
+      "Customer": "",
+      "Product Term": "BLACKFISH",
+      "Unit": "Tautog",
+      "Fresho Product Name": "Tautog",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Blue label",
+      "Customer": "",
+      "Product Term": "in shell bay scallops",
+      "Unit": "",
+      "Fresho Product Name": "Live Bay Scallops",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "East cape",
+      "Customer": "",
+      "Product Term": "Akami",
+      "Unit": "blue fin tuna",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "northern belle",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "kumamoto",
+      "Fresho Product Name": "west coast oysters",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Sand dune",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "NB",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Chebooktook",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Maine",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Mere point",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "weskeag",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Johns river",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Mass",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Duxbury",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Wellfleet",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Indian cove",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Barnstable",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Greenpoint gem",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Moonrise",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Provincwtown",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "poppy bay",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "RI",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "East beach blonde",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Dutch island",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "CT",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Sherwood island",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Noank",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Mystic",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Ny",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "West robin",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Great gun",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Baby brielle",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Montauk pearl",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Nj",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Cape may salt",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Va",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "wavelengths",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    },
+    {
+      "G E N E R A L R U L E": "Birthday girls",
+      "Customer": "",
+      "Product Term": "",
+      "Unit": "",
+      "Fresho Product Name": "",
+      "Fresho Product Quantity": "",
+      "Remarks/Comments": ""
+    }
+  ],
+  "product_rules": [
+    {
+      "customer_code": "130 Club",
+      "legal_entity_name(do not edit)": "130 Club",
+      "customer_name(do not edit)": "130 Club",
+      "delivery_address(do not edit)": "463 Columbus Ave, New York, NY 10024"
+    },
+    {
+      "customer_code": "4747 LIC",
+      "legal_entity_name(do not edit)": "4747LIC",
+      "customer_name(do not edit)": "4747LIC",
+      "delivery_address(do not edit)": "47-25 Vernon Blvd, Long Island City, NY 11101"
+    },
+    {
+      "customer_code": "Ace Hotel - BK",
+      "legal_entity_name(do not edit)": "Ace Hotel Brooklyn",
+      "customer_name(do not edit)": "Ace Hotel Brooklyn",
+      "delivery_address(do not edit)": "252 Schermerhorn St, Brooklyn, NY 11213"
+    },
+    {
+      "customer_code": "Ace Pizza",
+      "legal_entity_name(do not edit)": "Aces Pizza'",
+      "customer_name(do not edit)": "Aces Pizza'",
+      "delivery_address(do not edit)": "637 Driggs Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Achilles Heel",
+      "legal_entity_name(do not edit)": "Achilles Heel",
+      "customer_name(do not edit)": "Achilles Heel",
+      "delivery_address(do not edit)": "180 West St, Brooklyn, NY 1122"
+    },
+    {
+      "customer_code": "ACRU",
+      "legal_entity_name(do not edit)": "ACRU",
+      "customer_name(do not edit)": "ACRU",
+      "delivery_address(do not edit)": "79 MacDougal Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Allora",
+      "legal_entity_name(do not edit)": "Allora",
+      "customer_name(do not edit)": "Allora",
+      "delivery_address(do not edit)": "14 Ash Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Amy Yi Culinary",
+      "legal_entity_name(do not edit)": "Amy Yi Culinary",
+      "customer_name(do not edit)": "Amy Yi Culinary",
+      "delivery_address(do not edit)": "383 Bridge Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "And Sons",
+      "legal_entity_name(do not edit)": "And Sons",
+      "customer_name(do not edit)": "And Sons",
+      "delivery_address(do not edit)": "505 Rogers Ave, Brooklyn, NY 11225"
+    },
+    {
+      "customer_code": "Arca",
+      "legal_entity_name(do not edit)": "Arca",
+      "customer_name(do not edit)": "Arca",
+      "delivery_address(do not edit)": "57 Driggs Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Archestratus Books",
+      "legal_entity_name(do not edit)": "Archestratus Books",
+      "customer_name(do not edit)": "Archestratus Books",
+      "delivery_address(do not edit)": "160-164 Huron St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "ARIARI",
+      "legal_entity_name(do not edit)": "Ariari",
+      "customer_name(do not edit)": "Ariari",
+      "delivery_address(do not edit)": "119 1st Ave., New York, NY 10003"
+    },
+    {
+      "customer_code": "Hotel Williamsburg",
+      "legal_entity_name(do not edit)": "Arlo @ The Williamsburg Hotel",
+      "customer_name(do not edit)": "Arlo @ The Williamsburg Hotel",
+      "delivery_address(do not edit)": "96 Wythe Ave, Brooklyn, NY, 11249"
+    },
+    {
+      "customer_code": "Ashbox",
+      "legal_entity_name(do not edit)": "Ashbox",
+      "customer_name(do not edit)": "Ashbox",
+      "delivery_address(do not edit)": "1154 Manhattan Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Aska",
+      "legal_entity_name(do not edit)": "Aska",
+      "customer_name(do not edit)": "Aska",
+      "delivery_address(do not edit)": "47 S. 5th St, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Astoria Seafood",
+      "legal_entity_name(do not edit)": "Astoria Seafood",
+      "customer_name(do not edit)": "Astoria Seafood",
+      "delivery_address(do not edit)": "3710 33rd St, Astoria, NY 11101"
+    },
+    {
+      "customer_code": "LEX",
+      "legal_entity_name(do not edit)": "At The Hugh",
+      "customer_name(do not edit)": "At The Hugh",
+      "delivery_address(do not edit)": "Greenpoint Fish @ The Hugh 601 Lexington Ave New York, NY 10022"
+    },
+    {
+      "customer_code": "Atomix",
+      "legal_entity_name(do not edit)": "Atomix",
+      "customer_name(do not edit)": "Atomix",
+      "delivery_address(do not edit)": "104 East 30th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Avoca",
+      "legal_entity_name(do not edit)": "Avoca",
+      "customer_name(do not edit)": "Avoca",
+      "delivery_address(do not edit)": "1678 1st Ave, New York, NY 10128"
+    },
+    {
+      "customer_code": "Baba Cool",
+      "legal_entity_name(do not edit)": "Baba cool",
+      "customer_name(do not edit)": "Baba cool",
+      "delivery_address(do not edit)": "47 Withers Street, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Baba Cool - Lafayette",
+      "legal_entity_name(do not edit)": "Baba Cool - Lafayette",
+      "customer_name(do not edit)": "Baba Cool - Lafayette",
+      "delivery_address(do not edit)": "33 Lafayette Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "BABS",
+      "legal_entity_name(do not edit)": "Babs New York",
+      "customer_name(do not edit)": "Babs New York",
+      "delivery_address(do not edit)": "72 MacDougal St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Bacan",
+      "legal_entity_name(do not edit)": "Bacan",
+      "customer_name(do not edit)": "Bacan",
+      "delivery_address(do not edit)": "79 Grand St, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Bad Luck Bar",
+      "legal_entity_name(do not edit)": "Bad Luck Bar",
+      "customer_name(do not edit)": "Bad Luck Bar",
+      "delivery_address(do not edit)": "492 Nostrand Ave, Brooklyn, NY 11216"
+    },
+    {
+      "customer_code": "Bad Roman",
+      "legal_entity_name(do not edit)": "Bad Roman",
+      "customer_name(do not edit)": "Bad Roman",
+      "delivery_address(do not edit)": "Bad Roman, 10 Columbus Circle, 3rd Floor New York, NY 10019"
+    },
+    {
+      "customer_code": "Balaboosta",
+      "legal_entity_name(do not edit)": "Balaboosta",
+      "customer_name(do not edit)": "Balaboosta",
+      "delivery_address(do not edit)": "611 Hudson St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Bar Lab",
+      "legal_entity_name(do not edit)": "Bar Lab at Moxy Williamsburg",
+      "customer_name(do not edit)": "Bar Lab at Moxy Williamsburg",
+      "delivery_address(do not edit)": "353 Bedford Ave, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Bar Lunatico",
+      "legal_entity_name(do not edit)": "Bar Lunatico",
+      "customer_name(do not edit)": "Bar Lunatico",
+      "delivery_address(do not edit)": "486 Halsey St, Brooklyn, NY 11233"
+    },
+    {
+      "customer_code": "Bar Madonna",
+      "legal_entity_name(do not edit)": "Bar Madonna",
+      "customer_name(do not edit)": "Bar Madonna",
+      "delivery_address(do not edit)": "378 Metropolitan Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Bar Meridian",
+      "legal_entity_name(do not edit)": "Bar Meridian",
+      "customer_name(do not edit)": "Bar Meridian",
+      "delivery_address(do not edit)": "406 Prospect Pl, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Bar Pasquale",
+      "legal_entity_name(do not edit)": "Bar Pasquale",
+      "customer_name(do not edit)": "Bar Pasquale",
+      "delivery_address(do not edit)": "98 Kenmare St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Be Bep Kitchen",
+      "legal_entity_name(do not edit)": "Be Bep Kitchen",
+      "customer_name(do not edit)": "Be Bep Kitchen",
+      "delivery_address(do not edit)": "234 Starr Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Benjamin at Champions",
+      "legal_entity_name(do not edit)": "Benjamin @ Champions",
+      "customer_name(do not edit)": "Benjamin @ Champions",
+      "delivery_address(do not edit)": "tbc"
+    },
+    {
+      "customer_code": "Benjamin Prime",
+      "legal_entity_name(do not edit)": "Benjamin Prime",
+      "customer_name(do not edit)": "Benjamin Prime",
+      "delivery_address(do not edit)": "23 E 40th St, New York, NY 10017"
+    },
+    {
+      "customer_code": "Benjamin Steak",
+      "legal_entity_name(do not edit)": "Benjamin Steakhouse",
+      "customer_name(do not edit)": "Benjamin Steakhouse",
+      "delivery_address(do not edit)": "52 E 41st St, New York, NY 10017"
+    },
+    {
+      "customer_code": "Benjamin White Plains",
+      "legal_entity_name(do not edit)": "Benjamin White Plains",
+      "customer_name(do not edit)": "Benjamin White Plains",
+      "delivery_address(do not edit)": "Bring to Benjamin Prime"
+    },
+    {
+      "customer_code": "Bernies",
+      "legal_entity_name(do not edit)": "Bernieâ€™s",
+      "customer_name(do not edit)": "Bernieâ€™s",
+      "delivery_address(do not edit)": "334 Driggs Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Bond 45",
+      "legal_entity_name(do not edit)": "Bond 45 NY",
+      "customer_name(do not edit)": "Bond 45 NY",
+      "delivery_address(do not edit)": "221 W 46th St, New York, NY 10036"
+    },
+    {
+      "customer_code": "Bowery Meat Co",
+      "legal_entity_name(do not edit)": "Bowery Meat Co",
+      "customer_name(do not edit)": "Bowery Meat Co",
+      "delivery_address(do not edit)": "201 Park Ave S, New York, NY 10003"
+    },
+    {
+      "customer_code": "Box House Hotel",
+      "legal_entity_name(do not edit)": "Box House Hotel",
+      "customer_name(do not edit)": "Box House Hotel",
+      "delivery_address(do not edit)": "77 Box Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Brass NY",
+      "legal_entity_name(do not edit)": "Brass NY",
+      "customer_name(do not edit)": "Brass NY",
+      "delivery_address(do not edit)": "7 East 27th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Brasserie 57",
+      "legal_entity_name(do not edit)": "Brasserie 57",
+      "customer_name(do not edit)": "Brasserie 57",
+      "delivery_address(do not edit)": "120 West 57th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Bridges",
+      "legal_entity_name(do not edit)": "Bridges",
+      "customer_name(do not edit)": "Bridges",
+      "delivery_address(do not edit)": "9 Chatham Square, New York, NY, USA"
+    },
+    {
+      "customer_code": "Bridgeview",
+      "legal_entity_name(do not edit)": "Bridgeview",
+      "customer_name(do not edit)": "Bridgeview",
+      "delivery_address(do not edit)": "89 South St, Pier 17, 4th Floor Catering, NY 10038"
+    },
+    {
+      "customer_code": "Broken Land",
+      "legal_entity_name(do not edit)": "Broken Land",
+      "customer_name(do not edit)": "Broken Land",
+      "delivery_address(do not edit)": "105 Franklin Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Brooklyn Oyster Party",
+      "legal_entity_name(do not edit)": "Brooklyn Oyster Party",
+      "customer_name(do not edit)": "Brooklyn Oyster Party",
+      "delivery_address(do not edit)": "111 Spring St, Kingston, NY, USA"
+    },
+    {
+      "customer_code": "Brunettis'",
+      "legal_entity_name(do not edit)": "Brunetti Pizza West Village",
+      "customer_name(do not edit)": "Brunetti Pizza West Village",
+      "delivery_address(do not edit)": "626 Hudson St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Bryce Shuman",
+      "legal_entity_name(do not edit)": "Bryce Shuman",
+      "customer_name(do not edit)": "Bryce Shuman",
+      "delivery_address(do not edit)": "14 Ash Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Buddakan",
+      "legal_entity_name(do not edit)": "Buddakan",
+      "customer_name(do not edit)": "Buddakan",
+      "delivery_address(do not edit)": "75 9th Avenue, New York, NY 10011"
+    },
+    {
+      "customer_code": "Butlers Flat'",
+      "legal_entity_name(do not edit)": "Butlers Flat'",
+      "customer_name(do not edit)": "Butlers Flat'",
+      "delivery_address(do not edit)": "86 Orchard Beach Blvd, Port Washington, NY 11050"
+    },
+    {
+      "customer_code": "Cafe Altro (C)",
+      "legal_entity_name(do not edit)": "Cafe Altro Paradiso",
+      "customer_name(do not edit)": "Cafe Altro (C)",
+      "delivery_address(do not edit)": "234 Spring St, New York, NY"
+    },
+    {
+      "customer_code": "Cafe Carmellini",
+      "legal_entity_name(do not edit)": "Cafe Carmellini",
+      "customer_name(do not edit)": "Cafe Carmellini",
+      "delivery_address(do not edit)": "250 Fifth Ave, NY, NY 10001 - Service Entrance on 28th St"
+    },
+    {
+      "customer_code": "Cafe DAlsace'",
+      "legal_entity_name(do not edit)": "Cafe dAlsace'",
+      "customer_name(do not edit)": "Cafe dAlsace'",
+      "delivery_address(do not edit)": "1703 2nd Ave, (between 88th and 89th street) New York NY10128"
+    },
+    {
+      "customer_code": "Cafe Fiorello",
+      "legal_entity_name(do not edit)": "Cafe Fiorello",
+      "customer_name(do not edit)": "Cafe Fiorello",
+      "delivery_address(do not edit)": "1900 Broadway, New York, NY 10023"
+    },
+    {
+      "customer_code": "Henri",
+      "legal_entity_name(do not edit)": "Cafe Henri",
+      "customer_name(do not edit)": "Cafe Henri",
+      "delivery_address(do not edit)": "10-10 50th Ave, Long Island City, NY 11101"
+    },
+    {
+      "customer_code": "Cafe Kestrel",
+      "legal_entity_name(do not edit)": "Cafe Kestrel",
+      "customer_name(do not edit)": "Cafe Kestrel",
+      "delivery_address(do not edit)": "293 Van Brunt Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Cafe Mado",
+      "legal_entity_name(do not edit)": "Cafe Mado",
+      "customer_name(do not edit)": "Cafe Mado",
+      "delivery_address(do not edit)": "791 Washington Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Cafe Plein Air",
+      "legal_entity_name(do not edit)": "Cafe Plein Air",
+      "customer_name(do not edit)": "Cafe Plein Air",
+      "delivery_address(do not edit)": "Plein Air, 6838 Forest Ave, Ridgewood, NY 11385"
+    },
+    {
+      "customer_code": "Casa Enrique",
+      "legal_entity_name(do not edit)": "Casa Enrique",
+      "customer_name(do not edit)": "Casa Enrique",
+      "delivery_address(do not edit)": "5-48 49th Ave, Long Island City, NY 11101"
+    },
+    {
+      "customer_code": "Casa Ora",
+      "legal_entity_name(do not edit)": "Casa Ora",
+      "customer_name(do not edit)": "Casa Ora",
+      "delivery_address(do not edit)": "148 Meserole Street, Brooklyn, NY 11206"
+    },
+    {
+      "customer_code": "Casetta",
+      "legal_entity_name(do not edit)": "Casetta",
+      "customer_name(do not edit)": "Casetta",
+      "delivery_address(do not edit)": "61 Hester St, New York, NY 6102"
+    },
+    {
+      "customer_code": "Casino",
+      "legal_entity_name(do not edit)": "Casino",
+      "customer_name(do not edit)": "Casino",
+      "delivery_address(do not edit)": "171 East Broadway, New York, NY 10002"
+    },
+    {
+      "customer_code": "Cecilia",
+      "legal_entity_name(do not edit)": "Cecilia",
+      "customer_name(do not edit)": "Cecilia",
+      "delivery_address(do not edit)": "97 St Marks Pl, New York, NY, USA"
+    },
+    {
+      "customer_code": "Cecily",
+      "legal_entity_name(do not edit)": "Cecily",
+      "customer_name(do not edit)": "Cecily",
+      "delivery_address(do not edit)": "80 Franklin Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Celestine",
+      "legal_entity_name(do not edit)": "Celestine",
+      "customer_name(do not edit)": "Celestine",
+      "delivery_address(do not edit)": "1 John St, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Cellar 36",
+      "legal_entity_name(do not edit)": "Cellar 36",
+      "customer_name(do not edit)": "Cellar 36",
+      "delivery_address(do not edit)": "36 Market St, New York, NY 10002"
+    },
+    {
+      "customer_code": "Cervos",
+      "legal_entity_name(do not edit)": "Cervos'",
+      "customer_name(do not edit)": "Cervos'",
+      "delivery_address(do not edit)": "43 Canal St, New York, NY 10002"
+    },
+    {
+      "customer_code": "Charlie Bird",
+      "legal_entity_name(do not edit)": "Charlie Bird",
+      "customer_name(do not edit)": "Charlie Bird",
+      "delivery_address(do not edit)": "5 King St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Chez Ma Tante",
+      "legal_entity_name(do not edit)": "Chez Ma Tante",
+      "customer_name(do not edit)": "Chez Ma Tante",
+      "delivery_address(do not edit)": "90 Calyer St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Chez Nick",
+      "legal_entity_name(do not edit)": "Chez Nick",
+      "customer_name(do not edit)": "Chez Nick",
+      "delivery_address(do not edit)": "1737 York Ave, New York, NY 10128"
+    },
+    {
+      "customer_code": "Chip & Tina",
+      "legal_entity_name(do not edit)": "Chip & Tina",
+      "customer_name(do not edit)": "Chip & Tina",
+      "delivery_address(do not edit)": "239 W Broadway New York, NY 10013"
+    },
+    {
+      "customer_code": "Claud",
+      "legal_entity_name(do not edit)": "Claud",
+      "customer_name(do not edit)": "Claud",
+      "delivery_address(do not edit)": "90 E 10th St, New York, NY 10003"
+    },
+    {
+      "customer_code": "Coconut Rice",
+      "legal_entity_name(do not edit)": "Coconut Rice",
+      "customer_name(do not edit)": "Coconut Rice",
+      "delivery_address(do not edit)": "10 Columbus Circle, New York, NY, USA"
+    },
+    {
+      "customer_code": "Colonia Verde",
+      "legal_entity_name(do not edit)": "Colonia Verde",
+      "customer_name(do not edit)": "Colonia Verde",
+      "delivery_address(do not edit)": "219 Dekalb Ave, Brooklyn, NY 11205"
+    },
+    {
+      "customer_code": "Colonie",
+      "legal_entity_name(do not edit)": "Colonie",
+      "customer_name(do not edit)": "Colonie",
+      "delivery_address(do not edit)": "127 Atlantic Ave, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Comodo",
+      "legal_entity_name(do not edit)": "Comodo",
+      "customer_name(do not edit)": "Comodo",
+      "delivery_address(do not edit)": "23 Lexington Ave, New York, NY 10010"
+    },
+    {
+      "customer_code": "Contra",
+      "legal_entity_name(do not edit)": "Contra",
+      "customer_name(do not edit)": "Contra",
+      "delivery_address(do not edit)": "138 Orchard St, New York, NY 10002"
+    },
+    {
+      "customer_code": "Cookshop",
+      "legal_entity_name(do not edit)": "Cookshop",
+      "customer_name(do not edit)": "Cookshop",
+      "delivery_address(do not edit)": "156 10th Ave, New York, NY 10011"
+    },
+    {
+      "customer_code": "COQODAQ",
+      "legal_entity_name(do not edit)": "COQODAQ",
+      "customer_name(do not edit)": "COQODAQ",
+      "delivery_address(do not edit)": "12 East 22nd Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Corner Store",
+      "legal_entity_name(do not edit)": "Corner Store",
+      "customer_name(do not edit)": "Corner Store",
+      "delivery_address(do not edit)": "475 West Broadway, New York, NY, USA"
+    },
+    {
+      "customer_code": "Cosme",
+      "legal_entity_name(do not edit)": "Cosme",
+      "customer_name(do not edit)": "Cosme",
+      "delivery_address(do not edit)": "35 E 21st St, New York, NY 10010"
+    },
+    {
+      "customer_code": "cosmico",
+      "legal_entity_name(do not edit)": "Cosmico",
+      "customer_name(do not edit)": "Cosmico",
+      "delivery_address(do not edit)": "43 W 27th St, New York, NY 10001"
+    },
+    {
+      "customer_code": "Cote",
+      "legal_entity_name(do not edit)": "Cote",
+      "customer_name(do not edit)": "Cote",
+      "delivery_address(do not edit)": "16 W 22nd St, New York, NY 10010"
+    },
+    {
+      "customer_code": "Cozy Royale",
+      "legal_entity_name(do not edit)": "Cozy Royale",
+      "customer_name(do not edit)": "Cozy Royale",
+      "delivery_address(do not edit)": "434 Humboldt St, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Craft",
+      "legal_entity_name(do not edit)": "Craft",
+      "customer_name(do not edit)": "Craft",
+      "delivery_address(do not edit)": "43 East 19th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Crave East",
+      "legal_entity_name(do not edit)": "Crave Fishbar East",
+      "customer_name(do not edit)": "Crave Fishbar East",
+      "delivery_address(do not edit)": "945 2nd Ave, New York, NY 10022"
+    },
+    {
+      "customer_code": "Crave Upper East",
+      "legal_entity_name(do not edit)": "Crave Fishbar Upper East",
+      "customer_name(do not edit)": "Crave Fishbar Upper East",
+      "delivery_address(do not edit)": "1462 2nd Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Crave West",
+      "legal_entity_name(do not edit)": "Crave Fishbar West",
+      "customer_name(do not edit)": "Crave Fishbar West",
+      "delivery_address(do not edit)": "428 Amsterdam Ave, New York, NY 10024"
+    },
+    {
+      "customer_code": "Danny Newburg",
+      "legal_entity_name(do not edit)": "Danny Newburg",
+      "customer_name(do not edit)": "Danny Newburg",
+      "delivery_address(do not edit)": "Joint Venture C/O Danny Newburg"
+    },
+    {
+      "customer_code": "Dante",
+      "legal_entity_name(do not edit)": "Dante West Village",
+      "customer_name(do not edit)": "Dante West Village",
+      "delivery_address(do not edit)": "551 Hudson St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Dawa",
+      "legal_entity_name(do not edit)": "Dawa",
+      "customer_name(do not edit)": "Dawa",
+      "delivery_address(do not edit)": "51-18 Skillman Ave, Woodside, NY, USA"
+    },
+    {
+      "customer_code": "DDOBAR",
+      "legal_entity_name(do not edit)": "DDOBAR",
+      "customer_name(do not edit)": "DDOBAR",
+      "delivery_address(do not edit)": "601 W 26th St, New York, NY 10001"
+    },
+    {
+      "customer_code": "Dellas'",
+      "legal_entity_name(do not edit)": "Dellas'",
+      "customer_name(do not edit)": "Dellas'",
+      "delivery_address(do not edit)": "66 West Broadway, New York, NY, USA"
+    },
+    {
+      "customer_code": "364",
+      "legal_entity_name(do not edit)": "Demo 2 (FS)",
+      "customer_name(do not edit)": "Demo 2 (FS)",
+      "delivery_address(do not edit)": "Flat 21, Oval Mansions, London, SE11 5SQ"
+    },
+    {
+      "customer_code": "Di an Di",
+      "legal_entity_name(do not edit)": "Di An Di",
+      "customer_name(do not edit)": "Di An Di",
+      "delivery_address(do not edit)": "68 Greenpoint Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Diamond Lil",
+      "legal_entity_name(do not edit)": "Diamond Lil",
+      "customer_name(do not edit)": "Diamond Lil",
+      "delivery_address(do not edit)": "179 Nassau Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Diner, Williamsburg",
+      "legal_entity_name(do not edit)": "Diner Williamsburg",
+      "customer_name(do not edit)": "Diner Williamsburg",
+      "delivery_address(do not edit)": "85 Broadway Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Docks'",
+      "legal_entity_name(do not edit)": "Docks",
+      "customer_name(do not edit)": "Docks",
+      "delivery_address(do not edit)": "711 3rd Ave NY, NY NB btw 40 & 41"
+    },
+    {
+      "customer_code": "Don Angie",
+      "legal_entity_name(do not edit)": "Don Angie",
+      "customer_name(do not edit)": "Don Angie",
+      "delivery_address(do not edit)": "103 Greenwich Ave, New York, NY 10014"
+    },
+    {
+      "customer_code": "Donna",
+      "legal_entity_name(do not edit)": "Donna",
+      "customer_name(do not edit)": "Donna",
+      "delivery_address(do not edit)": "7 Cornelia Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Dreamspace",
+      "legal_entity_name(do not edit)": "Dream Space",
+      "customer_name(do not edit)": "Dream Space",
+      "delivery_address(do not edit)": "269 Stanhope St, Brooklyn, NY 11237"
+    },
+    {
+      "customer_code": "Drift In",
+      "legal_entity_name(do not edit)": "Drift In",
+      "customer_name(do not edit)": "Drift In",
+      "delivery_address(do not edit)": "389 West St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Eel Bar",
+      "legal_entity_name(do not edit)": "Eel Bar",
+      "customer_name(do not edit)": "Eel Bar",
+      "delivery_address(do not edit)": "252 Broome Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Egg Shop",
+      "legal_entity_name(do not edit)": "Egg Shop",
+      "customer_name(do not edit)": "Egg Shop",
+      "delivery_address(do not edit)": "138 N 8th St, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "El Pinguino",
+      "legal_entity_name(do not edit)": "El Pinguino",
+      "customer_name(do not edit)": "El Pinguino",
+      "delivery_address(do not edit)": "25 Greenpoint Ave Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Elea",
+      "legal_entity_name(do not edit)": "Elea",
+      "customer_name(do not edit)": "Elea",
+      "delivery_address(do not edit)": "217 West 85th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Empellon - Midtown",
+      "legal_entity_name(do not edit)": "Empellon Midtown",
+      "customer_name(do not edit)": "Empellon Midtown",
+      "delivery_address(do not edit)": "510 Madison Ave, New York, NY Corner of 53rd St, NY 10022"
+    },
+    {
+      "customer_code": "Epistrophy",
+      "legal_entity_name(do not edit)": "Epistrophy",
+      "customer_name(do not edit)": "Epistrophy",
+      "delivery_address(do not edit)": "200 Mott Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Ernestos'",
+      "legal_entity_name(do not edit)": "Ernestos'",
+      "customer_name(do not edit)": "Ernestos'",
+      "delivery_address(do not edit)": "259 East Broadway, New York, NY 10002"
+    },
+    {
+      "customer_code": "Estela (C)",
+      "legal_entity_name(do not edit)": "Estela",
+      "customer_name(do not edit)": "Estela",
+      "delivery_address(do not edit)": "47 East Houston New York, NY 10012"
+    },
+    {
+      "customer_code": "Eti",
+      "legal_entity_name(do not edit)": "Eti",
+      "customer_name(do not edit)": "Eti",
+      "delivery_address(do not edit)": "128 Clinton Ave, Brooklyn, NY"
+    },
+    {
+      "customer_code": "Etrusca",
+      "legal_entity_name(do not edit)": "Etrusca",
+      "customer_name(do not edit)": "Etrusca",
+      "delivery_address(do not edit)": "53 Stone St, New York, NY 10004"
+    },
+    {
+      "customer_code": "Fausto",
+      "legal_entity_name(do not edit)": "Fausto",
+      "customer_name(do not edit)": "Fausto",
+      "delivery_address(do not edit)": "348 Flatbush Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Fig & Pig",
+      "legal_entity_name(do not edit)": "Fig & Pig",
+      "customer_name(do not edit)": "Fig & Pig",
+      "delivery_address(do not edit)": "4728 Route 209, Accord, NY 12404"
+    },
+    {
+      "customer_code": "Figure Eight",
+      "legal_entity_name(do not edit)": "Figure Eight",
+      "customer_name(do not edit)": "Figure Eight",
+      "delivery_address(do not edit)": "18 Cornelia St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Fini Williamsburg",
+      "legal_entity_name(do not edit)": "Fini Williamsburg",
+      "customer_name(do not edit)": "Fini Williamsburg",
+      "delivery_address(do not edit)": "305 Bedford Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Fishlove",
+      "legal_entity_name(do not edit)": "Fishlove",
+      "customer_name(do not edit)": "Fishlove",
+      "delivery_address(do not edit)": "Nassua Avenue, Greenpoint"
+    },
+    {
+      "customer_code": "5 Leaves",
+      "legal_entity_name(do not edit)": "Five Leaves",
+      "customer_name(do not edit)": "Five Leaves",
+      "delivery_address(do not edit)": "18 Bedford Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Fletcher & Lu",
+      "legal_entity_name(do not edit)": "Fletcher & Lu",
+      "customer_name(do not edit)": "Fletcher & Lu",
+      "delivery_address(do not edit)": "582 broadway kingston new york 12401"
+    },
+    {
+      "customer_code": "Flex Up",
+      "legal_entity_name(do not edit)": "Flex Mussels Uptown",
+      "customer_name(do not edit)": "Flex Up",
+      "delivery_address(do not edit)": "1431 3rd Ave, New York, NY"
+    },
+    {
+      "customer_code": "Flora and Fauna",
+      "legal_entity_name(do not edit)": "Flora and Fauna",
+      "customer_name(do not edit)": "Flora and Fauna",
+      "delivery_address(do not edit)": "179 West Broadway, New York, NY, USA"
+    },
+    {
+      "customer_code": "Food Education Fund",
+      "legal_entity_name(do not edit)": "Food Education Fund",
+      "customer_name(do not edit)": "Food Education Fund",
+      "delivery_address(do not edit)": "525 West 50th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Fork In The Woods",
+      "legal_entity_name(do not edit)": "Fork In The Woods",
+      "customer_name(do not edit)": "Fork In The Woods",
+      "delivery_address(do not edit)": "304 West 92nd St., Apt. 2M New York, NY 10025"
+    },
+    {
+      "customer_code": "Foul Witch",
+      "legal_entity_name(do not edit)": "Foul Witch",
+      "customer_name(do not edit)": "Foul Witch",
+      "delivery_address(do not edit)": "15 Avenue A, New York, NY 10009"
+    },
+    {
+      "customer_code": "Foxface Provisions",
+      "legal_entity_name(do not edit)": "Fox Face Natural",
+      "customer_name(do not edit)": "Fox Face Natural",
+      "delivery_address(do not edit)": "189 Avenue A, New York, NY 10009"
+    },
+    {
+      "customer_code": "Fresh Direct",
+      "legal_entity_name(do not edit)": "Fresh Direct",
+      "customer_name(do not edit)": "Fresh Direct",
+      "delivery_address(do not edit)": "2 St Anns Ave, The Bronx, NY 10454'"
+    },
+    {
+      "customer_code": "Fulgrances",
+      "legal_entity_name(do not edit)": "Fulgrances",
+      "customer_name(do not edit)": "Fulgrances",
+      "delivery_address(do not edit)": "132 Franklin Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Gage & Tollner",
+      "legal_entity_name(do not edit)": "Gage & Tollner",
+      "customer_name(do not edit)": "Gage & Tollner",
+      "delivery_address(do not edit)": "372 Fulton St, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Gair",
+      "legal_entity_name(do not edit)": "Gair",
+      "customer_name(do not edit)": "Gair",
+      "delivery_address(do not edit)": "41 Washington St, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Gaskins",
+      "legal_entity_name(do not edit)": "Gaskins",
+      "customer_name(do not edit)": "Gaskins",
+      "delivery_address(do not edit)": "2 Church Ave, Germantown, NY 12526"
+    },
+    {
+      "customer_code": "Gavin",
+      "legal_entity_name(do not edit)": "Gavin McLaughlin",
+      "customer_name(do not edit)": "Gavin McLaughlin",
+      "delivery_address(do not edit)": "Gavin McLaughlin Events 2006, 2nd Avenue New York, NY 10065"
+    },
+    {
+      "customer_code": "GEM",
+      "legal_entity_name(do not edit)": "Gem",
+      "customer_name(do not edit)": "Gem",
+      "delivery_address(do not edit)": "116 Forsyth St, New York, NY 10002"
+    },
+    {
+      "customer_code": "Nassau",
+      "legal_entity_name(do not edit)": "GFLC Market LLC Nassau",
+      "customer_name(do not edit)": "GFLC Market LLC Nassau",
+      "delivery_address(do not edit)": "114 Nassau Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Gjelina",
+      "legal_entity_name(do not edit)": "Gjelina",
+      "customer_name(do not edit)": "Gjelina",
+      "delivery_address(do not edit)": "45 Bond Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Glasserie",
+      "legal_entity_name(do not edit)": "Glasserie",
+      "customer_name(do not edit)": "Glasserie",
+      "delivery_address(do not edit)": "95 Commercial St, Brooklyn, NY 1122"
+    },
+    {
+      "customer_code": "Golda",
+      "legal_entity_name(do not edit)": "Golda",
+      "customer_name(do not edit)": "Golda",
+      "delivery_address(do not edit)": "504 Franklin Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Good Thanks",
+      "legal_entity_name(do not edit)": "Good Thanks",
+      "customer_name(do not edit)": "Good Thanks",
+      "delivery_address(do not edit)": "374 Graham Ave Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Threes - GBSC",
+      "legal_entity_name(do not edit)": "Gotham Burger Social Club at Threes",
+      "customer_name(do not edit)": "Gotham Burger Social Club at Threes",
+      "delivery_address(do not edit)": "113 Franklin Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Gran Electrica",
+      "legal_entity_name(do not edit)": "Gran Electrica",
+      "customer_name(do not edit)": "Gran Electrica",
+      "delivery_address(do not edit)": "5 Front Street Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Grand Army Bar",
+      "legal_entity_name(do not edit)": "Grand Army Bar",
+      "customer_name(do not edit)": "Grand Army Bar",
+      "delivery_address(do not edit)": "336 State St, Brooklyn, NY 11217"
+    },
+    {
+      "customer_code": "Grand Banks",
+      "legal_entity_name(do not edit)": "Grand Banks",
+      "customer_name(do not edit)": "Grand Banks",
+      "delivery_address(do not edit)": "Pier 25 Hudson River, Park New York, NY 10013"
+    },
+    {
+      "customer_code": "Grand Brasserie",
+      "legal_entity_name(do not edit)": "Grand Brasserie",
+      "customer_name(do not edit)": "Grand Brasserie",
+      "delivery_address(do not edit)": "89 East 42nd Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Grand Cook NYC",
+      "legal_entity_name(do not edit)": "Grand Cook NYC",
+      "customer_name(do not edit)": "Grand Cook NYC",
+      "delivery_address(do not edit)": "1040 Metropolitan Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Greats Of Craft",
+      "legal_entity_name(do not edit)": "Greats of Craft",
+      "customer_name(do not edit)": "Greats of Craft",
+      "delivery_address(do not edit)": "10-15 43rd Avenue, Long Island City, NY, USA"
+    },
+    {
+      "customer_code": "Greene Grape",
+      "legal_entity_name(do not edit)": "Greene Grape",
+      "customer_name(do not edit)": "Greene Grape",
+      "delivery_address(do not edit)": "767 Fulton St, Brooklyn, NY 11217"
+    },
+    {
+      "customer_code": "Greene Grape",
+      "legal_entity_name(do not edit)": "Greene Grape - Kitchen",
+      "customer_name(do not edit)": "Greene Grape - Kitchen",
+      "delivery_address(do not edit)": "767 Fulton St, Brooklyn, NY 11217"
+    },
+    {
+      "customer_code": "Greene Grape",
+      "legal_entity_name(do not edit)": "Greene Grape - Retail",
+      "customer_name(do not edit)": "Greene Grape - Retail",
+      "delivery_address(do not edit)": "767 Fulton St, Brooklyn, NY 11217"
+    },
+    {
+      "customer_code": "Cash Sale",
+      "legal_entity_name(do not edit)": "Greenpoint - Cash Sale",
+      "customer_name(do not edit)": "Greenpoint - Cash Sale",
+      "delivery_address(do not edit)": "TBC"
+    },
+    {
+      "customer_code": "363",
+      "legal_entity_name(do not edit)": "Greenpoint Demo 1",
+      "customer_name(do not edit)": "Greenpoint Demo 1",
+      "delivery_address(do not edit)": "1 greenpoint lane"
+    },
+    {
+      "customer_code": "DEMO2",
+      "legal_entity_name(do not edit)": "Greenpoint Demo 2",
+      "customer_name(do not edit)": "Greenpoint Demo 2",
+      "delivery_address(do not edit)": "Greenpoint Lane 2"
+    },
+    {
+      "customer_code": "474",
+      "legal_entity_name(do not edit)": "Greenpoint fish",
+      "customer_name(do not edit)": "Greenpoint fish",
+      "delivery_address(do not edit)": "14 Ash Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Guss Chophouse'",
+      "legal_entity_name(do not edit)": "Guss Chop House'",
+      "customer_name(do not edit)": "Guss Chop House'",
+      "delivery_address(do not edit)": "215 Union St, Brooklyn, NY 11231"
+    },
+    {
+      "customer_code": "Hana Makgeolli",
+      "legal_entity_name(do not edit)": "Hana Makgeolli Brewery & Tasting Room",
+      "customer_name(do not edit)": "Hana Makgeolli Brewery & Tasting Room",
+      "delivery_address(do not edit)": "201 Dupont St, Brooklyn, NY 1122"
+    },
+    {
+      "customer_code": "Harts'",
+      "legal_entity_name(do not edit)": "Harts'",
+      "customer_name(do not edit)": "Harts'",
+      "delivery_address(do not edit)": "506 Franklin Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Hawksmoor",
+      "legal_entity_name(do not edit)": "Hawksmoor",
+      "customer_name(do not edit)": "Hawksmoor",
+      "delivery_address(do not edit)": "109 East 22nd St, at Park Ave South New York, NY 10010"
+    },
+    {
+      "customer_code": "Hellbender",
+      "legal_entity_name(do not edit)": "Hellbender Nighttime Cafe",
+      "customer_name(do not edit)": "Hellbender Nighttime Cafe",
+      "delivery_address(do not edit)": "68-22 Forest Ave, Ridgewood, NY, USA"
+    },
+    {
+      "customer_code": "Carmen",
+      "legal_entity_name(do not edit)": "Her Names Was Carmen",
+      "customer_name(do not edit)": "Her Name was Carmen",
+      "delivery_address(do not edit)": "527 Broome St, New York"
+    },
+    {
+      "customer_code": "Hero Culinary",
+      "legal_entity_name(do not edit)": "Hero Culinary Consulting",
+      "customer_name(do not edit)": "Hero Culinary",
+      "delivery_address(do not edit)": "114 Nassau Avenue, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "High Tide",
+      "legal_entity_name(do not edit)": "High Tide",
+      "customer_name(do not edit)": "High Tide",
+      "delivery_address(do not edit)": "1 Water St, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Hoexters",
+      "legal_entity_name(do not edit)": "Hoexters",
+      "customer_name(do not edit)": "Hoexters",
+      "delivery_address(do not edit)": "174 East 82nd Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Holywater",
+      "legal_entity_name(do not edit)": "Holywater",
+      "customer_name(do not edit)": "Holywater",
+      "delivery_address(do not edit)": "112 Reade St, New York, NY 10013"
+    },
+    {
+      "customer_code": "Homegrown",
+      "legal_entity_name(do not edit)": "Homegrown",
+      "customer_name(do not edit)": "Homegrown",
+      "delivery_address(do not edit)": "c/o Sean Patrick Gallagher, 21 S 5th St, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Honeys'",
+      "legal_entity_name(do not edit)": "Honeys'",
+      "customer_name(do not edit)": "Honeys'",
+      "delivery_address(do not edit)": "93 Scott Ave, Brooklyn, NY 11237"
+    },
+    {
+      "customer_code": "Horns and Drums",
+      "legal_entity_name(do not edit)": "Horns and Drums",
+      "customer_name(do not edit)": "Horns and Drums",
+      "delivery_address(do not edit)": "144 Union St, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Hoseki",
+      "legal_entity_name(do not edit)": "Hoseki",
+      "customer_name(do not edit)": "Hoseki",
+      "delivery_address(do not edit)": "135 West 30th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Hotel Delmano",
+      "legal_entity_name(do not edit)": "Hotel Delmano",
+      "customer_name(do not edit)": "Hotel Delmano",
+      "delivery_address(do not edit)": "82 Berry St, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Houseman",
+      "legal_entity_name(do not edit)": "Houseman",
+      "customer_name(do not edit)": "Houseman",
+      "delivery_address(do not edit)": "508 Greenwich St New York, NY 10013 (SB Between Spring & Canal 1971)"
+    },
+    {
+      "customer_code": "Huda",
+      "legal_entity_name(do not edit)": "Huda",
+      "customer_name(do not edit)": "Huda",
+      "delivery_address(do not edit)": "312 Leonard St, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Il Buco",
+      "legal_entity_name(do not edit)": "Il Buco",
+      "customer_name(do not edit)": "Il Buco",
+      "delivery_address(do not edit)": "53 Great Jones St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Il Fiorista",
+      "legal_entity_name(do not edit)": "Il Fiorista",
+      "customer_name(do not edit)": "Il Fiorista",
+      "delivery_address(do not edit)": "17 W 26th St, New York, NY 10010"
+    },
+    {
+      "customer_code": "Il Monello",
+      "legal_entity_name(do not edit)": "Il Monello",
+      "customer_name(do not edit)": "Il Monello",
+      "delivery_address(do not edit)": "337 E 49th St, New York, NY 10017"
+    },
+    {
+      "customer_code": "ILIS",
+      "legal_entity_name(do not edit)": "ILIS",
+      "customer_name(do not edit)": "ILIS",
+      "delivery_address(do not edit)": "150 Green St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Insa",
+      "legal_entity_name(do not edit)": "Insa",
+      "customer_name(do not edit)": "Insa",
+      "delivery_address(do not edit)": "328 Douglass St, Brooklyn, NY 11217"
+    },
+    {
+      "customer_code": "Isabelles Osteria'",
+      "legal_entity_name(do not edit)": "Isabelles Osteria'",
+      "customer_name(do not edit)": "Isabelles Osteria'",
+      "delivery_address(do not edit)": "245 Park Ave, South New York, NY 10003"
+    },
+    {
+      "customer_code": "Island Oyster",
+      "legal_entity_name(do not edit)": "Island Oyster",
+      "customer_name(do not edit)": "Island Oyster",
+      "delivery_address(do not edit)": "146 Carder Road, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "J&E Small Goods",
+      "legal_entity_name(do not edit)": "J&E Small Goods",
+      "customer_name(do not edit)": "J&E Small Goods",
+      "delivery_address(do not edit)": "Goldens Bridge, NY"
+    },
+    {
+      "customer_code": "Jack Jones",
+      "legal_entity_name(do not edit)": "Jack Jones Astoria",
+      "customer_name(do not edit)": "Jack Jones Astoria",
+      "delivery_address(do not edit)": "38-01 Ditmars Blvd, Astoria, NY 11105"
+    },
+    {
+      "customer_code": "Jacs on Bond'",
+      "legal_entity_name(do not edit)": "Jacs on Bond'",
+      "customer_name(do not edit)": "Jacs on Bond'",
+      "delivery_address(do not edit)": "26 Bond St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Jane Restaurant",
+      "legal_entity_name(do not edit)": "Jane",
+      "customer_name(do not edit)": "Jane",
+      "delivery_address(do not edit)": "100 West Houston Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Jay Wolman",
+      "legal_entity_name(do not edit)": "Jay Wolman",
+      "customer_name(do not edit)": "Jay Wolman",
+      "delivery_address(do not edit)": "Jay Wolman d/b/a Small Trades, 90 Berry St, Ste 2R Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "JGR",
+      "legal_entity_name(do not edit)": "Jean Georges",
+      "customer_name(do not edit)": "Jean Georges",
+      "delivery_address(do not edit)": "Trump Intl Hotel, 1 Central Park West, New York, NY 10023"
+    },
+    {
+      "customer_code": "Jeans'",
+      "legal_entity_name(do not edit)": "Jeans'",
+      "customer_name(do not edit)": "Jeans'",
+      "delivery_address(do not edit)": "415 Lafayette Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "JG CPS",
+      "legal_entity_name(do not edit)": "JG CPS",
+      "customer_name(do not edit)": "JG CPS",
+      "delivery_address(do not edit)": "220 Central Park South, New York, NY"
+    },
+    {
+      "customer_code": "Joo Ok",
+      "legal_entity_name(do not edit)": "Joo Ok",
+      "customer_name(do not edit)": "Joo Ok",
+      "delivery_address(do not edit)": "22 West 32nd Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Joomak Banjum",
+      "legal_entity_name(do not edit)": "Joomak Banjum",
+      "customer_name(do not edit)": "Joomak Banjum",
+      "delivery_address(do not edit)": "312 5th Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Jubilee Market",
+      "legal_entity_name(do not edit)": "Jubilee Market",
+      "customer_name(do not edit)": "Jubilee Market",
+      "delivery_address(do not edit)": "145 West St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "June",
+      "legal_entity_name(do not edit)": "June",
+      "customer_name(do not edit)": "June",
+      "delivery_address(do not edit)": "231 Court Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Juneshine",
+      "legal_entity_name(do not edit)": "JuneShine New York",
+      "customer_name(do not edit)": "JuneShine New York",
+      "delivery_address(do not edit)": "98 Berry St, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Jupiter",
+      "legal_entity_name(do not edit)": "Jupiter",
+      "customer_name(do not edit)": "Jupiter",
+      "delivery_address(do not edit)": "Jupiter Rock Center, 620 5th Ave, New York, NY 10020"
+    },
+    {
+      "customer_code": "Kabin",
+      "legal_entity_name(do not edit)": "Kabin",
+      "customer_name(do not edit)": "Kabin",
+      "delivery_address(do not edit)": "300 Spring Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Keens",
+      "legal_entity_name(do not edit)": "Keens'",
+      "customer_name(do not edit)": "Keens'",
+      "delivery_address(do not edit)": "72 West 36th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Khe Yo",
+      "legal_entity_name(do not edit)": "Khe Yo",
+      "customer_name(do not edit)": "Khe Yo",
+      "delivery_address(do not edit)": "157 Duane St, NY, NY 10013"
+    },
+    {
+      "customer_code": "Kim Jennings",
+      "legal_entity_name(do not edit)": "Kim Jennings",
+      "customer_name(do not edit)": "Kim Jennings",
+      "delivery_address(do not edit)": "12 Ash St Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "King",
+      "legal_entity_name(do not edit)": "King",
+      "customer_name(do not edit)": "King",
+      "delivery_address(do not edit)": "18 King Street, New York, NY 10014"
+    },
+    {
+      "customer_code": "King Mother",
+      "legal_entity_name(do not edit)": "King Mother",
+      "customer_name(do not edit)": "King Mother",
+      "delivery_address(do not edit)": "1205 Cortelyou Rd, Brooklyn, NY 11218"
+    },
+    {
+      "customer_code": "Kuntshucker",
+      "legal_entity_name(do not edit)": "Kuntshucker",
+      "customer_name(do not edit)": "Kuntshucker",
+      "delivery_address(do not edit)": "21 Greenpoint, Greenpoint Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "La Bonne Soupe",
+      "legal_entity_name(do not edit)": "La Bonne Soupe",
+      "customer_name(do not edit)": "La Bonne Soupe",
+      "delivery_address(do not edit)": "48 West 55th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "La Rubia",
+      "legal_entity_name(do not edit)": "La Rubia",
+      "customer_name(do not edit)": "La Rubia",
+      "delivery_address(do not edit)": "11 Howard St, New York, NY 10013"
+    },
+    {
+      "customer_code": "LAdresse NoMad",
+      "legal_entity_name(do not edit)": "Lâ€™Adresse NoMad",
+      "customer_name(do not edit)": "Lâ€™Adresse NoMad",
+      "delivery_address(do not edit)": "1184 Broadway, New York, NY, USA"
+    },
+    {
+      "customer_code": "Ladresse American Bistro",
+      "legal_entity_name(do not edit)": "Ladresse American Bistro'",
+      "customer_name(do not edit)": "Ladresse American Bistro'",
+      "delivery_address(do not edit)": "1065 6th Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Lamonte",
+      "legal_entity_name(do not edit)": "Lamonte",
+      "customer_name(do not edit)": "Lamonte",
+      "delivery_address(do not edit)": "557 Driggs Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "LaRina",
+      "legal_entity_name(do not edit)": "LaRina",
+      "customer_name(do not edit)": "LaRina",
+      "delivery_address(do not edit)": "387 Myrtle Ave, Brooklyn, NY 11205"
+    },
+    {
+      "customer_code": "LaTropiKitchen",
+      "legal_entity_name(do not edit)": "LaTropiKitchen",
+      "customer_name(do not edit)": "LaTropiKitchen",
+      "delivery_address(do not edit)": "159 St Nicholas Ave, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Lawn Club",
+      "legal_entity_name(do not edit)": "Lawn Club",
+      "customer_name(do not edit)": "Lawn Club",
+      "delivery_address(do not edit)": "141 Beekman Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Layla",
+      "legal_entity_name(do not edit)": "Layla",
+      "customer_name(do not edit)": "Layla",
+      "delivery_address(do not edit)": "352 Bedford Ave, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Le Bernadin",
+      "legal_entity_name(do not edit)": "Le Bernardin",
+      "customer_name(do not edit)": "Le Bernardin",
+      "delivery_address(do not edit)": "155 W 51st St, New York, NY 10019"
+    },
+    {
+      "customer_code": "Le Coucou",
+      "legal_entity_name(do not edit)": "Le Coucou",
+      "customer_name(do not edit)": "Le Coucou",
+      "delivery_address(do not edit)": "138 Lafayette St, New York, NY 10013"
+    },
+    {
+      "customer_code": "Le Fanfare",
+      "legal_entity_name(do not edit)": "Le Fanfare",
+      "customer_name(do not edit)": "Le Fanfare",
+      "delivery_address(do not edit)": "1103 Manhattan Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Le Jardinier",
+      "legal_entity_name(do not edit)": "Le Jardinier",
+      "customer_name(do not edit)": "Le Jardinier",
+      "delivery_address(do not edit)": "610 Lexington Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Legacy Records",
+      "legal_entity_name(do not edit)": "Legacy Records",
+      "customer_name(do not edit)": "Legacy Records",
+      "delivery_address(do not edit)": "517 W 38th St, New York, NY 10018"
+    },
+    {
+      "customer_code": "Leland",
+      "legal_entity_name(do not edit)": "Leland Eating and Drinking House",
+      "customer_name(do not edit)": "Leland Eating and Drinking House",
+      "delivery_address(do not edit)": "755 Dean Street, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Leo BK",
+      "legal_entity_name(do not edit)": "Leo Brooklyn",
+      "customer_name(do not edit)": "Leo Brooklyn",
+      "delivery_address(do not edit)": "123 Havemeyer St, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Leroys",
+      "legal_entity_name(do not edit)": "Leroyâ€™s",
+      "customer_name(do not edit)": "Leroyâ€™s",
+      "delivery_address(do not edit)": "195 Franklin St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Light House",
+      "legal_entity_name(do not edit)": "Lighthouse",
+      "customer_name(do not edit)": "Lighthouse",
+      "delivery_address(do not edit)": "145 Borinquen Pl, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Lilia",
+      "legal_entity_name(do not edit)": "Lilia",
+      "customer_name(do not edit)": "Lilia",
+      "delivery_address(do not edit)": "567 Union Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Lincoln Market",
+      "legal_entity_name(do not edit)": "Lincoln Market",
+      "customer_name(do not edit)": "Lincoln Market",
+      "delivery_address(do not edit)": "1133 Manhattan Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Little Urban Foods",
+      "legal_entity_name(do not edit)": "Little Urban Foods",
+      "customer_name(do not edit)": "Little Urban Foods",
+      "delivery_address(do not edit)": "1737 York Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Little Mad",
+      "legal_entity_name(do not edit)": "LittleMad",
+      "customer_name(do not edit)": "LittleMad",
+      "delivery_address(do not edit)": "110 Madison Ave, New York, NY 10016"
+    },
+    {
+      "customer_code": "Littleneck",
+      "legal_entity_name(do not edit)": "Littleneck",
+      "customer_name(do not edit)": "Littleneck",
+      "delivery_address(do not edit)": "288 3rd Ave, Brooklyn, NY 11215"
+    },
+    {
+      "customer_code": "Lobster Joint (c)",
+      "legal_entity_name(do not edit)": "Lobster Joint",
+      "customer_name(do not edit)": "Lobster Joint",
+      "delivery_address(do not edit)": "1073 Manhattan Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Local 130 (C)",
+      "legal_entity_name(do not edit)": "Local 130",
+      "customer_name(do not edit)": "Local 130",
+      "delivery_address(do not edit)": "Local 130 Sfd 300 Emory St, Unit 411 Asbury Park, NJ 07712"
+    },
+    {
+      "customer_code": "Lori Jayne",
+      "legal_entity_name(do not edit)": "Lori Jayne",
+      "customer_name(do not edit)": "Lori Jayne",
+      "delivery_address(do not edit)": "140 Wilson Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Love You Like NYC",
+      "legal_entity_name(do not edit)": "Love You Like NYC",
+      "customer_name(do not edit)": "Love You Like NYC",
+      "delivery_address(do not edit)": "2006 2nd Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Lovebirds",
+      "legal_entity_name(do not edit)": "Lovebirds",
+      "customer_name(do not edit)": "Lovebirds",
+      "delivery_address(do not edit)": "211 Nassau Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Luckys Steakhouse",
+      "legal_entity_name(do not edit)": "Luckys Steakhouse",
+      "customer_name(do not edit)": "Luckys Steakhouse",
+      "delivery_address(do not edit)": "244 Lafayette Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Madelines",
+      "legal_entity_name(do not edit)": "Madelines",
+      "customer_name(do not edit)": "Madelines",
+      "delivery_address(do not edit)": "113 Franklin Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Madre",
+      "legal_entity_name(do not edit)": "Madre",
+      "customer_name(do not edit)": "Madre",
+      "delivery_address(do not edit)": "214 Franklin St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Maiella",
+      "legal_entity_name(do not edit)": "Maiella",
+      "customer_name(do not edit)": "Maiella",
+      "delivery_address(do not edit)": "4610 Center Blvd, Queens, NY 11109"
+    },
+    {
+      "customer_code": "Maison Premeire",
+      "legal_entity_name(do not edit)": "Maison Premiere",
+      "customer_name(do not edit)": "Maison Premiere",
+      "delivery_address(do not edit)": "298 Bedford Ave, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Malibu Farms",
+      "legal_entity_name(do not edit)": "Malibu Farm",
+      "customer_name(do not edit)": "Malibu Farm",
+      "delivery_address(do not edit)": "Pier 17, Ground Fl 89 South St, New York, NY 10038"
+    },
+    {
+      "customer_code": "Malli",
+      "legal_entity_name(do not edit)": "Malli",
+      "customer_name(do not edit)": "Malli",
+      "delivery_address(do not edit)": "C/O Elizabeth Heitner, Winonas, 676 Flushing Ave, Brooklyn, NY 11206'"
+    },
+    {
+      "customer_code": "Mam",
+      "legal_entity_name(do not edit)": "Mam",
+      "customer_name(do not edit)": "Mam",
+      "delivery_address(do not edit)": "70 Forsyth St, New York, NY 10002"
+    },
+    {
+      "customer_code": "Manhatta",
+      "legal_entity_name(do not edit)": "Manhatta",
+      "customer_name(do not edit)": "Manhatta",
+      "delivery_address(do not edit)": "28 Liberty St 60th floor, New York, NY 10005"
+    },
+    {
+      "customer_code": "Manuela",
+      "legal_entity_name(do not edit)": "Manuela",
+      "customer_name(do not edit)": "Manuela",
+      "delivery_address(do not edit)": "130 Prince Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Maple",
+      "legal_entity_name(do not edit)": "Maple",
+      "customer_name(do not edit)": "Maple",
+      "delivery_address(do not edit)": "190 Green St APt 601, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Maracuja",
+      "legal_entity_name(do not edit)": "Maracuja",
+      "customer_name(do not edit)": "Maracuja",
+      "delivery_address(do not edit)": "279 Grand St, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Marc Forgione",
+      "legal_entity_name(do not edit)": "Marc Forgione",
+      "customer_name(do not edit)": "Marc Forgione",
+      "delivery_address(do not edit)": "30 Hudson Street, NYC, NY, USA"
+    },
+    {
+      "customer_code": "Marea",
+      "legal_entity_name(do not edit)": "Marea",
+      "customer_name(do not edit)": "Marea",
+      "delivery_address(do not edit)": "240 Central Park South, New York, NY, USA"
+    },
+    {
+      "customer_code": "Margot",
+      "legal_entity_name(do not edit)": "Margot",
+      "customer_name(do not edit)": "Margot",
+      "delivery_address(do not edit)": "69 Lafayette Ave, Brooklyn, NY 11217"
+    },
+    {
+      "customer_code": "Market Price",
+      "legal_entity_name(do not edit)": "Market Price LLC",
+      "customer_name(do not edit)": "Market Price LLC",
+      "delivery_address(do not edit)": "42 Maspeth Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Market Table",
+      "legal_entity_name(do not edit)": "Market Table",
+      "customer_name(do not edit)": "Market Table",
+      "delivery_address(do not edit)": "54 Carmine St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Marlow",
+      "legal_entity_name(do not edit)": "Marlow & Sons",
+      "customer_name(do not edit)": "Marlow & Sons",
+      "delivery_address(do not edit)": "81 Broadway, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Marlow Catering",
+      "legal_entity_name(do not edit)": "Marlow Catering",
+      "customer_name(do not edit)": "Marlow Catering",
+      "delivery_address(do not edit)": "301 Columbia Street, Brooklyn, NY 11231"
+    },
+    {
+      "customer_code": "Marys Fish Camp'",
+      "legal_entity_name(do not edit)": "Marys Fish Camp'",
+      "customer_name(do not edit)": "Marys Fish Camp'",
+      "delivery_address(do not edit)": "64 Charles Street, New York, NY 10014"
+    },
+    {
+      "customer_code": "Massara",
+      "legal_entity_name(do not edit)": "Massara",
+      "customer_name(do not edit)": "Massara",
+      "delivery_address(do not edit)": "913 Broadway, New York, NY, USA"
+    },
+    {
+      "customer_code": "Maxines",
+      "legal_entity_name(do not edit)": "Maxineâ€™s",
+      "customer_name(do not edit)": "Maxineâ€™s",
+      "delivery_address(do not edit)": "431 Pulaski Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "May Day Seafood",
+      "legal_entity_name(do not edit)": "May Day Seafood",
+      "customer_name(do not edit)": "May Day Seafood",
+      "delivery_address(do not edit)": "TBC"
+    },
+    {
+      "customer_code": "Meat Hook Gowanus",
+      "legal_entity_name(do not edit)": "Meat Hook Burger Shop",
+      "customer_name(do not edit)": "Meat Hook Burger Shop",
+      "delivery_address(do not edit)": "333 Douglas Street, Brooklyn, NY 11217 (inside three brewing)"
+    },
+    {
+      "customer_code": "Mermaid Garden",
+      "legal_entity_name(do not edit)": "Mermaids Garden'",
+      "customer_name(do not edit)": "Mermaids Garden'",
+      "delivery_address(do not edit)": "644 Vanderbilt Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Michael Patlazhan",
+      "legal_entity_name(do not edit)": "Michael Patlazhan",
+      "customer_name(do not edit)": "Michael Patlazhan",
+      "delivery_address(do not edit)": "Collection"
+    },
+    {
+      "customer_code": "Michaels'",
+      "legal_entity_name(do not edit)": "Michaels'",
+      "customer_name(do not edit)": "Michaels'",
+      "delivery_address(do not edit)": "24 W 55th St, New York, NY 10019"
+    },
+    {
+      "customer_code": "Midden Hospitality",
+      "legal_entity_name(do not edit)": "Midden Hospitality LLC.",
+      "customer_name(do not edit)": "Midden Hospitality",
+      "delivery_address(do not edit)": "102 Franklin Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Midnight Theatre",
+      "legal_entity_name(do not edit)": "Midnight Theatre",
+      "customer_name(do not edit)": "Midnight Theatre",
+      "delivery_address(do not edit)": "75 Manhattan West Plaza, New York, NY 10001"
+    },
+    {
+      "customer_code": "Migliore Enterprise",
+      "legal_entity_name(do not edit)": "Migliore Enterprise LLC",
+      "customer_name(do not edit)": "Migliore Enterprise LLC",
+      "delivery_address(do not edit)": "4128 37th Street, Long Island City, NY, USA"
+    },
+    {
+      "customer_code": "Milk & Roses",
+      "legal_entity_name(do not edit)": "Milk & Roses",
+      "customer_name(do not edit)": "Milk & Roses",
+      "delivery_address(do not edit)": "35 Box St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "MiMis",
+      "legal_entity_name(do not edit)": "MIMI",
+      "customer_name(do not edit)": "MIMI",
+      "delivery_address(do not edit)": "185 Sullivan St, New York, NY 6464"
+    },
+    {
+      "customer_code": "Mina Stone",
+      "legal_entity_name(do not edit)": "Mina Stone",
+      "customer_name(do not edit)": "Mina Stone",
+      "delivery_address(do not edit)": "243 Lexington Ave #2, Brooklyn, NY 11216, USA"
+    },
+    {
+      "customer_code": "Mischa",
+      "legal_entity_name(do not edit)": "Mischa",
+      "customer_name(do not edit)": "Mischa",
+      "delivery_address(do not edit)": "601 Lexington Ave, New York, NY 10022"
+    },
+    {
+      "customer_code": "Misi",
+      "legal_entity_name(do not edit)": "Misi",
+      "customer_name(do not edit)": "Misi",
+      "delivery_address(do not edit)": "329 Kent Ave, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "MISI Pasta",
+      "legal_entity_name(do not edit)": "Misi Pasta",
+      "customer_name(do not edit)": "Misi Pasta",
+      "delivery_address(do not edit)": "329 Kent Ave, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "MM Kitchen Studios",
+      "legal_entity_name(do not edit)": "MM Kitchen Studios",
+      "customer_name(do not edit)": "MM Kitchen Studios",
+      "delivery_address(do not edit)": "179 West Broadway, New York, NY, USA"
+    },
+    {
+      "customer_code": "PS1",
+      "legal_entity_name(do not edit)": "MoMA PS1",
+      "customer_name(do not edit)": "MoMA PS1",
+      "delivery_address(do not edit)": "Staff Entrance 46-01 21st St Long Island City, NY 11101"
+    },
+    {
+      "customer_code": "MCC",
+      "legal_entity_name(do not edit)": "Montauk Catch Club",
+      "customer_name(do not edit)": "Montauk Catch Club",
+      "delivery_address(do not edit)": "C/O Parker"
+    },
+    {
+      "customer_code": "Monterey",
+      "legal_entity_name(do not edit)": "Monterey",
+      "customer_name(do not edit)": "Monterey",
+      "delivery_address(do not edit)": "37 E 50th St, New York, NY 10022"
+    },
+    {
+      "customer_code": "Moody Tongue",
+      "legal_entity_name(do not edit)": "Moody Tongue",
+      "customer_name(do not edit)": "Moody Tongue",
+      "delivery_address(do not edit)": "150 West 10th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Motel Morris",
+      "legal_entity_name(do not edit)": "Motel Morris",
+      "customer_name(do not edit)": "Motel Morris",
+      "delivery_address(do not edit)": "132 7th Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "My Friend Fernando",
+      "legal_entity_name(do not edit)": "My Friend Fernando",
+      "customer_name(do not edit)": "My Friend Fernando",
+      "delivery_address(do not edit)": "1120 Roxanne Ave, Hayward, CA, USA"
+    },
+    {
+      "customer_code": "Mos Original'",
+      "legal_entity_name(do not edit)": "Names",
+      "customer_name(do not edit)": "Names",
+      "delivery_address(do not edit)": "Names, 453-455 Rogers Ave Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Nizuc",
+      "legal_entity_name(do not edit)": "Nizuc",
+      "customer_name(do not edit)": "Nizuc",
+      "delivery_address(do not edit)": "485 10th Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "514",
+      "legal_entity_name(do not edit)": "Nizuc",
+      "customer_name(do not edit)": "Nizuc",
+      "delivery_address(do not edit)": "485 10th Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Noble BK",
+      "legal_entity_name(do not edit)": "1118 Lorimer Cafe LLC d/b/a The Noble",
+      "customer_name(do not edit)": "Noble BK",
+      "delivery_address(do not edit)": "148 Noble St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Nobody",
+      "legal_entity_name(do not edit)": "Nobody Told Me",
+      "customer_name(do not edit)": "Nobody Told Me",
+      "delivery_address(do not edit)": "951 Amsterdam Ave, New York, NY 10025"
+    },
+    {
+      "customer_code": "Nobody Told Me - DUMBO",
+      "legal_entity_name(do not edit)": "Nobody Told Me - DUMBO",
+      "customer_name(do not edit)": "Nobody Told Me - DUMBO",
+      "delivery_address(do not edit)": "188 Front Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Nobu 57",
+      "legal_entity_name(do not edit)": "Nobu 57",
+      "customer_name(do not edit)": "Nobu 57",
+      "delivery_address(do not edit)": "40 W 57th Street, New York, NY 10019"
+    },
+    {
+      "customer_code": "Nobu 195",
+      "legal_entity_name(do not edit)": "Nobu Downtown",
+      "customer_name(do not edit)": "Nobu Downtown",
+      "delivery_address(do not edit)": "195 Broadway, New York, NY 10007"
+    },
+    {
+      "customer_code": "Norberto",
+      "legal_entity_name(do not edit)": "Norberto",
+      "customer_name(do not edit)": "Norberto",
+      "delivery_address(do not edit)": "860 Atlantic Ave Apartment 1"
+    },
+    {
+      "customer_code": "Nudibranch",
+      "legal_entity_name(do not edit)": "Nudibranch",
+      "customer_name(do not edit)": "Nudibranch",
+      "delivery_address(do not edit)": "125 1st Ave., New York, NY 1000"
+    },
+    {
+      "customer_code": "Nura",
+      "legal_entity_name(do not edit)": "Nura",
+      "customer_name(do not edit)": "Nura",
+      "delivery_address(do not edit)": "46 Norman Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Oceana",
+      "legal_entity_name(do not edit)": "Oceana",
+      "customer_name(do not edit)": "Oceana",
+      "delivery_address(do not edit)": "120 W 49th St, New York, NY 10020"
+    },
+    {
+      "customer_code": "Okonomi",
+      "legal_entity_name(do not edit)": "Okonomi",
+      "customer_name(do not edit)": "Okonomi",
+      "delivery_address(do not edit)": "290 Graham Ave, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Olmsted",
+      "legal_entity_name(do not edit)": "Olmsted",
+      "customer_name(do not edit)": "Olmsted",
+      "delivery_address(do not edit)": "659 Vanderbilt Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Oma Grassa",
+      "legal_entity_name(do not edit)": "Oma Grassa",
+      "customer_name(do not edit)": "Oma Grassa",
+      "delivery_address(do not edit)": "753 Fulton St, Brooklyn, NY 1121"
+    },
+    {
+      "customer_code": "On the 7",
+      "legal_entity_name(do not edit)": "On the 7",
+      "customer_name(do not edit)": "On the 7",
+      "delivery_address(do not edit)": "50-04 Vernon Boulevard, Long Island City, NY, USA"
+    },
+    {
+      "customer_code": "One Fifth",
+      "legal_entity_name(do not edit)": "One Fifth",
+      "customer_name(do not edit)": "One Fifth",
+      "delivery_address(do not edit)": "1 5th Ave, New York, NY 10003"
+    },
+    {
+      "customer_code": "Ops",
+      "legal_entity_name(do not edit)": "Ops",
+      "customer_name(do not edit)": "Ops",
+      "delivery_address(do not edit)": "346 Himrod Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "OSTUDIO",
+      "legal_entity_name(do not edit)": "OSTUDIO",
+      "customer_name(do not edit)": "OSTUDIO",
+      "delivery_address(do not edit)": "366 Stockton Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Otway",
+      "legal_entity_name(do not edit)": "Otway",
+      "customer_name(do not edit)": "Otway",
+      "delivery_address(do not edit)": "930 Fulton St, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Oxalis",
+      "legal_entity_name(do not edit)": "Oxalis Brooklyn",
+      "customer_name(do not edit)": "Oxalis Brooklyn",
+      "delivery_address(do not edit)": "791 Washington Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Oxomoco",
+      "legal_entity_name(do not edit)": "Oxomoco",
+      "customer_name(do not edit)": "Oxomoco",
+      "delivery_address(do not edit)": "128 Greenpoint Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Oysters XO",
+      "legal_entity_name(do not edit)": "Oysters XO",
+      "customer_name(do not edit)": "Oysters XO",
+      "delivery_address(do not edit)": "312 11th Ave at 30th St"
+    },
+    {
+      "customer_code": "PJ Clarkes'",
+      "legal_entity_name(do not edit)": "P.J. Clarkes 55th'",
+      "customer_name(do not edit)": "P.J. Clarkes 55th'",
+      "delivery_address(do not edit)": "915 3rd Ave, New York, NY 10022"
+    },
+    {
+      "customer_code": "PJ Lincoln",
+      "legal_entity_name(do not edit)": "P.J. Clarkes Lincoln Square'",
+      "customer_name(do not edit)": "P.J. Clarkes Lincoln Square'",
+      "delivery_address(do not edit)": "44 W 63rd St., New York, NY 10023"
+    },
+    {
+      "customer_code": "PJ Hudson",
+      "legal_entity_name(do not edit)": "P.J. Clarkes On The Hudson'",
+      "customer_name(do not edit)": "P.J. Clarkes On The Hudson'",
+      "delivery_address(do not edit)": "250 Vesey St, New York, NY 10281"
+    },
+    {
+      "customer_code": "Pan Pan Vino Vino",
+      "legal_entity_name(do not edit)": "Pan Pan Vino Vino",
+      "customer_name(do not edit)": "Pan Pan Vino Vino",
+      "delivery_address(do not edit)": "120 Norman Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Park Slope Ale House",
+      "legal_entity_name(do not edit)": "Park Slope Ale House",
+      "customer_name(do not edit)": "Park Slope Ale House",
+      "delivery_address(do not edit)": "356 6th Ave, Brooklyn, NY 11215"
+    },
+    {
+      "customer_code": "Pasquale Jones",
+      "legal_entity_name(do not edit)": "Pasquale Jones",
+      "customer_name(do not edit)": "Pasquale Jones",
+      "delivery_address(do not edit)": "187 Mulberry St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Pastis",
+      "legal_entity_name(do not edit)": "Pastis",
+      "customer_name(do not edit)": "Pastis",
+      "delivery_address(do not edit)": "52 Gansevoort St, New York, NY 10014"
+    },
+    {
+      "customer_code": "PDA Slice",
+      "legal_entity_name(do not edit)": "PDA Slice Shop",
+      "customer_name(do not edit)": "PDA Slice Shop",
+      "delivery_address(do not edit)": "601 Lexington Ave, New York, NY 10022"
+    },
+    {
+      "customer_code": "Peak",
+      "legal_entity_name(do not edit)": "Peak Restaurant and Bar",
+      "customer_name(do not edit)": "Peak Restaurant and Bar",
+      "delivery_address(do not edit)": "20 Hudson Yards 500 W 33rd St, New York, NY 10001"
+    },
+    {
+      "customer_code": "Pearl Alley",
+      "legal_entity_name(do not edit)": "Pearl Alley",
+      "customer_name(do not edit)": "Pearl Alley",
+      "delivery_address(do not edit)": "89 South St, New York, NY 10038"
+    },
+    {
+      "customer_code": "Peasant",
+      "legal_entity_name(do not edit)": "Peasant",
+      "customer_name(do not edit)": "Peasant",
+      "delivery_address(do not edit)": "194 Elizabeth St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Pebble Bar",
+      "legal_entity_name(do not edit)": "Pebble Bar",
+      "customer_name(do not edit)": "Pebble Bar",
+      "delivery_address(do not edit)": "1240 Ave of the Americas, New York, NY 10020 1004"
+    },
+    {
+      "customer_code": "Penny",
+      "legal_entity_name(do not edit)": "Penny",
+      "customer_name(do not edit)": "Penny",
+      "delivery_address(do not edit)": "90 East 10th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Perry Street",
+      "legal_entity_name(do not edit)": "Perry Street",
+      "customer_name(do not edit)": "Perry Street",
+      "delivery_address(do not edit)": "176 Perry St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Yaki",
+      "legal_entity_name(do not edit)": "Petite Patate",
+      "customer_name(do not edit)": "Petite Patate",
+      "delivery_address(do not edit)": "626 Vanderbilt Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Pheasant",
+      "legal_entity_name(do not edit)": "Pheasant",
+      "customer_name(do not edit)": "Pheasant",
+      "delivery_address(do not edit)": "445 Graham Ave, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Pilot",
+      "legal_entity_name(do not edit)": "Pilot",
+      "customer_name(do not edit)": "Pilot",
+      "delivery_address(do not edit)": "Pier 6 Brooklyn Bridge Park, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Pinch Catering",
+      "legal_entity_name(do not edit)": "Pinch Food Design",
+      "customer_name(do not edit)": "Pinch Food Design",
+      "delivery_address(do not edit)": "545 W 27th St, New York, NY 10001"
+    },
+    {
+      "customer_code": "PDF",
+      "legal_entity_name(do not edit)": "Place de Fetes",
+      "customer_name(do not edit)": "Place de Fetes",
+      "delivery_address(do not edit)": "212 Greene Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Point Seven",
+      "legal_entity_name(do not edit)": "Point Seven",
+      "customer_name(do not edit)": "Point Seven",
+      "delivery_address(do not edit)": "200 Park Ave, NY, NY - Actual restaurant is on Vanderbilt btwn 43 and 44"
+    },
+    {
+      "customer_code": "Polo Bar",
+      "legal_entity_name(do not edit)": "Polo Bar",
+      "customer_name(do not edit)": "Polo Bar",
+      "delivery_address(do not edit)": "1 East 55th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Popina",
+      "legal_entity_name(do not edit)": "Popina Brooklyn",
+      "customer_name(do not edit)": "Popina Brooklyn",
+      "delivery_address(do not edit)": "127 Columbia St, Brooklyn, NY 1123"
+    },
+    {
+      "customer_code": "Poppys Catering'",
+      "legal_entity_name(do not edit)": "Poppys Catering'",
+      "customer_name(do not edit)": "Poppys Catering'",
+      "delivery_address(do not edit)": "189 Columbia St, Brooklyn, NY 11231"
+    },
+    {
+      "customer_code": "Press Club Grill",
+      "legal_entity_name(do not edit)": "Press Club Grill",
+      "customer_name(do not edit)": "Press Club Grill",
+      "delivery_address(do not edit)": "54 West 33rd St NY, NY 10001"
+    },
+    {
+      "customer_code": "Prima",
+      "legal_entity_name(do not edit)": "Prima Brooklyn",
+      "customer_name(do not edit)": "Prima Brooklyn",
+      "delivery_address(do not edit)": "147 Greene Ave, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "PrimeMet Steakhouse",
+      "legal_entity_name(do not edit)": "PrimeMet Steakhouse",
+      "customer_name(do not edit)": "PrimeMet Steakhouse",
+      "delivery_address(do not edit)": "133-36 37th Avenue, Flushing, NY, USA"
+    },
+    {
+      "customer_code": "Principe",
+      "legal_entity_name(do not edit)": "Principe",
+      "customer_name(do not edit)": "Principe",
+      "delivery_address(do not edit)": "450 West Broadway, New York, NY 10012"
+    },
+    {
+      "customer_code": "Print",
+      "legal_entity_name(do not edit)": "Print",
+      "customer_name(do not edit)": "Print",
+      "delivery_address(do not edit)": "653 11th Ave, Ground Level, New York, NY 10036"
+    },
+    {
+      "customer_code": "Quality Bistro",
+      "legal_entity_name(do not edit)": "Quality Bistro",
+      "customer_name(do not edit)": "Quality Bistro",
+      "delivery_address(do not edit)": "120 W 55th St, New York, NY 10019"
+    },
+    {
+      "customer_code": "Quality Italian",
+      "legal_entity_name(do not edit)": "Quality Italian",
+      "customer_name(do not edit)": "Quality Italian",
+      "delivery_address(do not edit)": "57 W 57th St, New York, NY 10019"
+    },
+    {
+      "customer_code": "Quality Meats",
+      "legal_entity_name(do not edit)": "Quality Meats",
+      "customer_name(do not edit)": "Quality Meats",
+      "delivery_address(do not edit)": "57 W 58th St, New York, NY 10019"
+    },
+    {
+      "customer_code": "Quique",
+      "legal_entity_name(do not edit)": "Quique",
+      "customer_name(do not edit)": "Quique",
+      "delivery_address(do not edit)": "27 Bedford Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Radio Star",
+      "legal_entity_name(do not edit)": "Radio Star",
+      "customer_name(do not edit)": "Radio Star",
+      "delivery_address(do not edit)": "Glasserie"
+    },
+    {
+      "customer_code": "Raouls'",
+      "legal_entity_name(do not edit)": "Raouls'",
+      "customer_name(do not edit)": "Raouls'",
+      "delivery_address(do not edit)": "180 Prince St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Red Oyster",
+      "legal_entity_name(do not edit)": "Red Oyster",
+      "customer_name(do not edit)": "Red Oyster",
+      "delivery_address(do not edit)": "228, East 45th Street, Suite 9E New York NY 10017"
+    },
+    {
+      "customer_code": "Red Eye",
+      "legal_entity_name(do not edit)": "Redeye Grill",
+      "customer_name(do not edit)": "Redeye Grill",
+      "delivery_address(do not edit)": "890 7th Ave New York, NY 10019"
+    },
+    {
+      "customer_code": "Regalis IP",
+      "legal_entity_name(do not edit)": "Regalis Foods",
+      "customer_name(do not edit)": "Regalis Foods",
+      "delivery_address(do not edit)": "45-48 37th St, Long Island City, NY 11101"
+    },
+    {
+      "customer_code": "Regarding Oysters",
+      "legal_entity_name(do not edit)": "Regarding Oysters",
+      "customer_name(do not edit)": "Regarding Oysters",
+      "delivery_address(do not edit)": "C/O Georgette Moger, 118 E 37th St; #4 New York, NY 10016"
+    },
+    {
+      "customer_code": "Resident",
+      "legal_entity_name(do not edit)": "Resident",
+      "customer_name(do not edit)": "Resident",
+      "delivery_address(do not edit)": "34 Vanderbilt Ave, Brooklyn, NY 11205"
+    },
+    {
+      "customer_code": "Restaurant Daniel",
+      "legal_entity_name(do not edit)": "Restaurant Daniel",
+      "customer_name(do not edit)": "Restaurant Daniel",
+      "delivery_address(do not edit)": "60 East 65th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Revelie Luncheonette",
+      "legal_entity_name(do not edit)": "Revelie Luncheonette",
+      "customer_name(do not edit)": "Revelie Luncheonette",
+      "delivery_address(do not edit)": "179 Prince Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Rezdora",
+      "legal_entity_name(do not edit)": "Rezdora",
+      "customer_name(do not edit)": "Rezdora",
+      "delivery_address(do not edit)": "27 E 20th Street, New York, NY 10003"
+    },
+    {
+      "customer_code": "Righteous (C)",
+      "legal_entity_name(do not edit)": "Righteous Foods",
+      "customer_name(do not edit)": "Righteous Foods",
+      "delivery_address(do not edit)": "19 N Oxford St, Brooklyn, NY 11205"
+    },
+    {
+      "customer_code": "Robertas - Domino",
+      "legal_entity_name(do not edit)": "Robertas Domino'",
+      "customer_name(do not edit)": "Robertas Domino'",
+      "delivery_address(do not edit)": "6 Grand St, Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Robertas",
+      "legal_entity_name(do not edit)": "Robertas'",
+      "customer_name(do not edit)": "Robertas'",
+      "delivery_address(do not edit)": "261 Moore St, Brooklyn, NY 11238"
+    },
+    {
+      "customer_code": "Roccos'",
+      "legal_entity_name(do not edit)": "Roccos'",
+      "customer_name(do not edit)": "Roccos'",
+      "delivery_address(do not edit)": "72 Madison Ave, New York, NY 10016"
+    },
+    {
+      "customer_code": "Rolos'",
+      "legal_entity_name(do not edit)": "Rolos'",
+      "customer_name(do not edit)": "Rolos'",
+      "delivery_address(do not edit)": "853 Onderdonk Ave, Ridgewood, NY 11385"
+    },
+    {
+      "customer_code": "Romans'",
+      "legal_entity_name(do not edit)": "Romans'",
+      "customer_name(do not edit)": "Romans'",
+      "delivery_address(do not edit)": "243 Dekalb Ave, Brooklyn, NY 11205"
+    },
+    {
+      "customer_code": "Rosella",
+      "legal_entity_name(do not edit)": "Rosella",
+      "customer_name(do not edit)": "Rosella",
+      "delivery_address(do not edit)": "137 Avenue A, New York, NY 10009"
+    },
+    {
+      "customer_code": "Rosies'",
+      "legal_entity_name(do not edit)": "Rosies'",
+      "customer_name(do not edit)": "Rosies'",
+      "delivery_address(do not edit)": "29 E 2nd St, New York, NY 10003"
+    },
+    {
+      "customer_code": "SAGA",
+      "legal_entity_name(do not edit)": "Saga",
+      "customer_name(do not edit)": "Saga",
+      "delivery_address(do not edit)": "70 Pine St 63rd Floor, New York, NY 10005"
+    },
+    {
+      "customer_code": "Sailor",
+      "legal_entity_name(do not edit)": "Sailor",
+      "customer_name(do not edit)": "Sailor",
+      "delivery_address(do not edit)": "228 Dekalb Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Salesforce",
+      "legal_entity_name(do not edit)": "Salesforce",
+      "customer_name(do not edit)": "Salesforce",
+      "delivery_address(do not edit)": "1095 Avenue of the Americas, 6th Ave, New York, NY 10036"
+    },
+    {
+      "customer_code": "Salivars",
+      "legal_entity_name(do not edit)": "Salivars",
+      "customer_name(do not edit)": "Salivars",
+      "delivery_address(do not edit)": "470 West Lake Drive, Montauk, NY, USA"
+    },
+    {
+      "customer_code": "Salts Cure'",
+      "legal_entity_name(do not edit)": "Salts Cure'",
+      "customer_name(do not edit)": "Salts Cure'",
+      "delivery_address(do not edit)": "368 Court St, Brooklyn, NY 11231"
+    },
+    {
+      "customer_code": "Sami & Susu",
+      "legal_entity_name(do not edit)": "Sami & Susu",
+      "customer_name(do not edit)": "Sami & Susu",
+      "delivery_address(do not edit)": "190 Orchard St, New York, NY 10002"
+    },
+    {
+      "customer_code": "San Sabino",
+      "legal_entity_name(do not edit)": "San Sabino",
+      "customer_name(do not edit)": "San Sabino",
+      "delivery_address(do not edit)": "113 Greenwich Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Sarabeths - Park Ave",
+      "legal_entity_name(do not edit)": "Sarabeths - Park Avenue'",
+      "customer_name(do not edit)": "Sarabeths - Park Avenue'",
+      "delivery_address(do not edit)": "381 Park Ave S, New York, NY 10016"
+    },
+    {
+      "customer_code": "Sarabeths - Tribeca",
+      "legal_entity_name(do not edit)": "Sarabeths - Tribeca",
+      "customer_name(do not edit)": "Sarabeths - Tribeca",
+      "delivery_address(do not edit)": "339 Greenwich St, New York, NY 10013"
+    },
+    {
+      "customer_code": "Sarabeths - UWS",
+      "legal_entity_name(do not edit)": "Sarabeths - UWS",
+      "customer_name(do not edit)": "Sarabeths - UWS",
+      "delivery_address(do not edit)": "423 Amsterdam Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Sarabeths - CP",
+      "legal_entity_name(do not edit)": "Sarabeths Central Park'",
+      "customer_name(do not edit)": "Sarabeths Central Park'",
+      "delivery_address(do not edit)": "40 West 59th Street Condominium"
+    },
+    {
+      "customer_code": "Seafire Grill",
+      "legal_entity_name(do not edit)": "Seafire Grill",
+      "customer_name(do not edit)": "Seafire Grill",
+      "delivery_address(do not edit)": "158 E 48th St, New York, NY 10017"
+    },
+    {
+      "customer_code": "DUMBO- SEAMORES",
+      "legal_entity_name(do not edit)": "Seamoreâ€™s Dumbo",
+      "customer_name(do not edit)": "Seamoreâ€™s Dumbo",
+      "delivery_address(do not edit)": "66 Water Street, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Chelsea- SEAMORES",
+      "legal_entity_name(do not edit)": "Seamores Chelsea'",
+      "customer_name(do not edit)": "Seamores Chelsea'",
+      "delivery_address(do not edit)": "161 8th Ave, New York, NY 10011"
+    },
+    {
+      "customer_code": "Darien - SEAMORES",
+      "legal_entity_name(do not edit)": "Seamores Darien'",
+      "customer_name(do not edit)": "Seamores Darien'",
+      "delivery_address(do not edit)": "110 Heights Rd, Darien, CT 06820"
+    },
+    {
+      "customer_code": "Up Top- SEAMORES",
+      "legal_entity_name(do not edit)": "Seamores Up Top'",
+      "customer_name(do not edit)": "Seamores Up Top'",
+      "delivery_address(do not edit)": "152 W 52nd St, New York, NY 10019"
+    },
+    {
+      "customer_code": "Upper East- SEAMORES",
+      "legal_entity_name(do not edit)": "Seamores Upper East Side'",
+      "customer_name(do not edit)": "Seamores Upper East Side'",
+      "delivery_address(do not edit)": "1278 3rd Ave, New York, NY 10021"
+    },
+    {
+      "customer_code": "Vesey- SEAMORES",
+      "legal_entity_name(do not edit)": "Seamores Vesey'",
+      "customer_name(do not edit)": "Seamores Vesey'",
+      "delivery_address(do not edit)": "250 Vesey St, Ste 102, New York, NY 10128"
+    },
+    {
+      "customer_code": "Seawolf Bushwick",
+      "legal_entity_name(do not edit)": "Seawolf Bushwick",
+      "customer_name(do not edit)": "Seawolf Bushwick",
+      "delivery_address(do not edit)": "19 Wyckoff Ave, Brooklyn, NY 11237"
+    },
+    {
+      "customer_code": "Sea Wolf - WB",
+      "legal_entity_name(do not edit)": "Seawolf Williamsburg",
+      "customer_name(do not edit)": "Seawolf Williamsburg",
+      "delivery_address(do not edit)": "420 Kent Ave Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Second City New York",
+      "legal_entity_name(do not edit)": "Second City New York",
+      "customer_name(do not edit)": "Second City New York",
+      "delivery_address(do not edit)": "64 North 9th Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Sereneco",
+      "legal_entity_name(do not edit)": "Sereneco",
+      "customer_name(do not edit)": "Sereneco",
+      "delivery_address(do not edit)": "113 Franklin St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Shuka",
+      "legal_entity_name(do not edit)": "Shuka",
+      "customer_name(do not edit)": "Shuka",
+      "delivery_address(do not edit)": "38 MacDougal St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Shukette",
+      "legal_entity_name(do not edit)": "Shukette",
+      "customer_name(do not edit)": "Shukette",
+      "delivery_address(do not edit)": "230 9th Ave, New York, NY 10001"
+    },
+    {
+      "customer_code": "Situs Inversus",
+      "legal_entity_name(do not edit)": "Situs Inversus",
+      "customer_name(do not edit)": "Situs Inversus",
+      "delivery_address(do not edit)": "Oma Grassa, 753 Fulton Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Smith & Woll",
+      "legal_entity_name(do not edit)": "Smith & Wollensky",
+      "customer_name(do not edit)": "Smith & Wollensky",
+      "delivery_address(do not edit)": "797 3rd Ave, New York, NY 10022"
+    },
+    {
+      "customer_code": "Smoochys Kitchen",
+      "legal_entity_name(do not edit)": "Smoochys Kitchen'",
+      "customer_name(do not edit)": "Smoochys Kitchen'",
+      "delivery_address(do not edit)": "782 Nostrand Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Square Fare",
+      "legal_entity_name(do not edit)": "Square Fare",
+      "customer_name(do not edit)": "Square Fare",
+      "delivery_address(do not edit)": "232 3rd St, Brooklyn, NY 11215"
+    },
+    {
+      "customer_code": "St. Anselm",
+      "legal_entity_name(do not edit)": "St. Anselm",
+      "customer_name(do not edit)": "St. Anselm",
+      "delivery_address(do not edit)": "355 Metropolitan Ave, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "St. Jardim",
+      "legal_entity_name(do not edit)": "St. Jardim",
+      "customer_name(do not edit)": "St. Jardim",
+      "delivery_address(do not edit)": "183 W 10th St New York, NY 10014"
+    },
+    {
+      "customer_code": "Standard East Village",
+      "legal_entity_name(do not edit)": "Standard East Village",
+      "customer_name(do not edit)": "Standard East Village",
+      "delivery_address(do not edit)": "25 Cooper Square, New York, NY, USA"
+    },
+    {
+      "customer_code": "Standard Hotel",
+      "legal_entity_name(do not edit)": "Standard Hotel",
+      "customer_name(do not edit)": "Standard Hotel",
+      "delivery_address(do not edit)": "848 Washington St, New York, NY 10014"
+    },
+    {
+      "customer_code": "STE Events",
+      "legal_entity_name(do not edit)": "STE Events",
+      "customer_name(do not edit)": "STE Events",
+      "delivery_address(do not edit)": "159 Lorimer Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Stowaway",
+      "legal_entity_name(do not edit)": "Stowaway",
+      "customer_name(do not edit)": "Stowaway",
+      "delivery_address(do not edit)": "159 Greenpoint Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Strangeways",
+      "legal_entity_name(do not edit)": "Strangeways Brooklyn",
+      "customer_name(do not edit)": "Strangeways Brooklyn",
+      "delivery_address(do not edit)": "302 Metropolitan Ave, Brooklyn, NY 11211"
+    },
+    {
+      "customer_code": "Sugar Studios",
+      "legal_entity_name(do not edit)": "Sugar Studios",
+      "customer_name(do not edit)": "Sugar Studios",
+      "delivery_address(do not edit)": "38 Waverly Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Suprema Provisions",
+      "legal_entity_name(do not edit)": "Suprema Provisions",
+      "customer_name(do not edit)": "Suprema Provisions",
+      "delivery_address(do not edit)": "305 Bleecker St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Suzume",
+      "legal_entity_name(do not edit)": "Best Restaurant Inc.",
+      "customer_name(do not edit)": "Suzume",
+      "delivery_address(do not edit)": "545 Lorimer Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Sweetbriar",
+      "legal_entity_name(do not edit)": "Sweetbriar",
+      "customer_name(do not edit)": "Sweetbriar",
+      "delivery_address(do not edit)": "127 E 27th St, New York, NY 10016"
+    },
+    {
+      "customer_code": "Sweetleaf - Ctr Blvd",
+      "legal_entity_name(do not edit)": "Sweetleaf - Center Blvd",
+      "customer_name(do not edit)": "Sweetleaf - Center Blvd",
+      "delivery_address(do not edit)": "4615 Center Blvd, Long Island City, NY 11109"
+    },
+    {
+      "customer_code": "Table BK",
+      "legal_entity_name(do not edit)": "Table BK",
+      "customer_name(do not edit)": "Table BK",
+      "delivery_address(do not edit)": "Myrtle &, Kent Ave, Brooklyn, NY 11205"
+    },
+    {
+      "customer_code": "Tabu",
+      "legal_entity_name(do not edit)": "Tabu",
+      "customer_name(do not edit)": "Tabu",
+      "delivery_address(do not edit)": "10 Hope Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Tacovision",
+      "legal_entity_name(do not edit)": "TacoVision",
+      "customer_name(do not edit)": "TacoVision",
+      "delivery_address(do not edit)": "244 E 53rd St, New York, NY 10022"
+    },
+    {
+      "customer_code": "Teranga",
+      "legal_entity_name(do not edit)": "Teranga",
+      "customer_name(do not edit)": "Teranga",
+      "delivery_address(do not edit)": "601 Lexington Ave, New York, NY 10022"
+    },
+    {
+      "customer_code": "447",
+      "legal_entity_name(do not edit)": "THE 130 CLUB",
+      "customer_name(do not edit)": "THE 130 CLUB",
+      "delivery_address(do not edit)": "130 County Rd, Tenafly, NJ, USA"
+    },
+    {
+      "customer_code": "The Alderman",
+      "legal_entity_name(do not edit)": "The Alderman",
+      "customer_name(do not edit)": "The Alderman",
+      "delivery_address(do not edit)": "154 W 48th St, New York, NY 10036, USA"
+    },
+    {
+      "customer_code": "The Clam (C)",
+      "legal_entity_name(do not edit)": "The Clam",
+      "customer_name(do not edit)": "The Clam",
+      "delivery_address(do not edit)": "420 Hudson St, New York, NY 10014"
+    },
+    {
+      "customer_code": "The Dutch",
+      "legal_entity_name(do not edit)": "The Dutch",
+      "customer_name(do not edit)": "The Dutch",
+      "delivery_address(do not edit)": "131 Sullivan St, New York, NY 10012"
+    },
+    {
+      "customer_code": "The Fly",
+      "legal_entity_name(do not edit)": "The Fly",
+      "customer_name(do not edit)": "The Fly",
+      "delivery_address(do not edit)": "549 Classon Ave"
+    },
+    {
+      "customer_code": "The Fulton",
+      "legal_entity_name(do not edit)": "The Fulton",
+      "customer_name(do not edit)": "The Fulton",
+      "delivery_address(do not edit)": "89 South St, New York, NY 10038"
+    },
+    {
+      "customer_code": "SIP Acquisitions",
+      "legal_entity_name(do not edit)": "The Manner",
+      "customer_name(do not edit)": "The Manner",
+      "delivery_address(do not edit)": "58 Thompson St, New York, NY, USA"
+    },
+    {
+      "customer_code": "Mark Hotel",
+      "legal_entity_name(do not edit)": "The Mark Hotel",
+      "customer_name(do not edit)": "The Mark Hotel",
+      "delivery_address(do not edit)": "25 E77th St, New York, NY 10075"
+    },
+    {
+      "customer_code": "The Mary Lane",
+      "legal_entity_name(do not edit)": "The Mary Lane",
+      "customer_name(do not edit)": "The Mary Lane",
+      "delivery_address(do not edit)": "99 Bank Street, New York, NY 10014"
+    },
+    {
+      "customer_code": "The Modern",
+      "legal_entity_name(do not edit)": "The Modern",
+      "customer_name(do not edit)": "The Modern",
+      "delivery_address(do not edit)": "9 W 53rd St, New York, NY 10019, USA"
+    },
+    {
+      "customer_code": "The Mouth",
+      "legal_entity_name(do not edit)": "The Mouth",
+      "customer_name(do not edit)": "The Mouth",
+      "delivery_address(do not edit)": "20 Marcy Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "431",
+      "legal_entity_name(do not edit)": "The Noble",
+      "customer_name(do not edit)": "The Noble",
+      "delivery_address(do not edit)": "148 Noble Street, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Osprey",
+      "legal_entity_name(do not edit)": "The Osprey",
+      "customer_name(do not edit)": "The Osprey",
+      "delivery_address(do not edit)": "1 Hotel Brooklyn Br 60 Furman St, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Shakespeare",
+      "legal_entity_name(do not edit)": "The Shakespeare",
+      "customer_name(do not edit)": "The Shakespeare",
+      "delivery_address(do not edit)": "24 E 39th St, New York, NY 10016"
+    },
+    {
+      "customer_code": "Turks'",
+      "legal_entity_name(do not edit)": "The Turks Inn'",
+      "customer_name(do not edit)": "The Turks Inn'",
+      "delivery_address(do not edit)": "234 Starr St, Brooklyn, NY 11237"
+    },
+    {
+      "customer_code": "500",
+      "legal_entity_name(do not edit)": "The Wandering Shuckers Co.",
+      "customer_name(do not edit)": "The Wandering Shuckers Co.",
+      "delivery_address(do not edit)": "3902 44th Street, Long Island City, NY, USA"
+    },
+    {
+      "customer_code": "The Well",
+      "legal_entity_name(do not edit)": "The Well",
+      "customer_name(do not edit)": "The Well",
+      "delivery_address(do not edit)": "71 5th Ave, New York, NY 10003"
+    },
+    {
+      "customer_code": "Wooly",
+      "legal_entity_name(do not edit)": "The Wooly",
+      "customer_name(do not edit)": "The Wooly",
+      "delivery_address(do not edit)": "390 Broome St, New York, NY"
+    },
+    {
+      "customer_code": "Worlds Oysters",
+      "legal_entity_name(do not edit)": "The Worlds Your Oyster'",
+      "customer_name(do not edit)": "The Worlds Your Oyster'",
+      "delivery_address(do not edit)": "C/O Aaron Waldman"
+    },
+    {
+      "customer_code": "Theodora",
+      "legal_entity_name(do not edit)": "Theodora",
+      "customer_name(do not edit)": "Theodora",
+      "delivery_address(do not edit)": "7 Greene Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Threes - GFLC",
+      "legal_entity_name(do not edit)": "Threes Brewing Greenpoint Bar & Beer Shop",
+      "customer_name(do not edit)": "Threes Brewing Greenpoint Bar & Beer Shop",
+      "delivery_address(do not edit)": "Greenpoint Fish @ Threes Brewing, 113 Franklin St, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Thursday Boots",
+      "legal_entity_name(do not edit)": "Thursday Boots",
+      "customer_name(do not edit)": "Thursday Boots",
+      "delivery_address(do not edit)": "Thursday Boots, 254 Elizabeth St"
+    },
+    {
+      "customer_code": "Time and Tide",
+      "legal_entity_name(do not edit)": "Time and Tide",
+      "customer_name(do not edit)": "Time and Tide",
+      "delivery_address(do not edit)": "360 Park Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Tin Building",
+      "legal_entity_name(do not edit)": "Tin Building",
+      "customer_name(do not edit)": "Tin Building",
+      "delivery_address(do not edit)": "96 South Street, New York, NY 10038"
+    },
+    {
+      "customer_code": "Tin Building",
+      "legal_entity_name(do not edit)": "Tin Building",
+      "customer_name(do not edit)": "Tin Building - CM Bakery",
+      "delivery_address(do not edit)": "96 South St, New York, NY 10038"
+    },
+    {
+      "customer_code": "Tin Building",
+      "legal_entity_name(do not edit)": "Tin Building - Dining",
+      "customer_name(do not edit)": "Tin Building - Dining",
+      "delivery_address(do not edit)": "96 South Street, New York, NY 10038"
+    },
+    {
+      "customer_code": "Tin Building",
+      "legal_entity_name(do not edit)": "Tin Building - Retail",
+      "customer_name(do not edit)": "Tin Building - Retail",
+      "delivery_address(do not edit)": "96 South Street, New York, NY 10038"
+    },
+    {
+      "customer_code": "Luksus",
+      "legal_entity_name(do not edit)": "Torst",
+      "customer_name(do not edit)": "Torst",
+      "delivery_address(do not edit)": "Torst, 615 Manhattan Ave, Brooklyn, NY 11222"
+    },
+    {
+      "customer_code": "Trattoria",
+      "legal_entity_name(do not edit)": "Trattoria DellArte'",
+      "customer_name(do not edit)": "Trattoria DellArte'",
+      "delivery_address(do not edit)": "900 7th Ave, New York, NY 10106"
+    },
+    {
+      "customer_code": "Troutbeck",
+      "legal_entity_name(do not edit)": "Troutbeck",
+      "customer_name(do not edit)": "Troutbeck",
+      "delivery_address(do not edit)": "515 Leedsville Rd, Amenia, NY 12501"
+    },
+    {
+      "customer_code": "Tuscany",
+      "legal_entity_name(do not edit)": "Tuscany Steakhouse",
+      "customer_name(do not edit)": "Tuscany Steakhouse",
+      "delivery_address(do not edit)": "117 W 58th St, New York, NY 10019"
+    },
+    {
+      "customer_code": "USC",
+      "legal_entity_name(do not edit)": "Union Square Cafe",
+      "customer_name(do not edit)": "Union Square Cafe",
+      "delivery_address(do not edit)": "101 East 19th Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Upland",
+      "legal_entity_name(do not edit)": "Upland",
+      "customer_name(do not edit)": "Upland",
+      "delivery_address(do not edit)": "345 Park Ave, S New York, NY 1001"
+    },
+    {
+      "customer_code": "Vesuvio Commissary",
+      "legal_entity_name(do not edit)": "Vesuvio Commissary",
+      "customer_name(do not edit)": "Vesuvio Commissary",
+      "delivery_address(do not edit)": "824 10th Avenue, New York, NY, USA"
+    },
+    {
+      "customer_code": "Vics'",
+      "legal_entity_name(do not edit)": "Vics New York'",
+      "customer_name(do not edit)": "Vics New York'",
+      "delivery_address(do not edit)": "31 Great Jones St, New York, NY 10012"
+    },
+    {
+      "customer_code": "Villanelle",
+      "legal_entity_name(do not edit)": "Villanelle",
+      "customer_name(do not edit)": "Villanelle",
+      "delivery_address(do not edit)": "15 E 12th St, New York, NY 10003"
+    },
+    {
+      "customer_code": "Vinegar Hill",
+      "legal_entity_name(do not edit)": "Vinegar Hill",
+      "customer_name(do not edit)": "Vinegar Hill",
+      "delivery_address(do not edit)": "72 Hudson Ave, Brooklyn, NY 11201"
+    },
+    {
+      "customer_code": "Wayan",
+      "legal_entity_name(do not edit)": "Wayan",
+      "customer_name(do not edit)": "Wayan",
+      "delivery_address(do not edit)": "20 Spring St, New York, NY 10012"
+    },
+    {
+      "customer_code": "WenWen",
+      "legal_entity_name(do not edit)": "WenWen",
+      "customer_name(do not edit)": "WenWen",
+      "delivery_address(do not edit)": "1025 Manhattan Ave, Brooklyn, NY11222"
+    },
+    {
+      "customer_code": "While We Were Young",
+      "legal_entity_name(do not edit)": "While We Were Young",
+      "customer_name(do not edit)": "While We Were Young",
+      "delivery_address(do not edit)": "183 W 10th St, New York, NY 10014"
+    },
+    {
+      "customer_code": "Wild Air",
+      "legal_entity_name(do not edit)": "Wild Air",
+      "customer_name(do not edit)": "Wild Air",
+      "delivery_address(do not edit)": "142 Orchard St, New York, NY 2288"
+    },
+    {
+      "customer_code": "Winner",
+      "legal_entity_name(do not edit)": "Winner",
+      "customer_name(do not edit)": "Winner",
+      "delivery_address(do not edit)": "367 7th Ave, Brooklyn, NY 11215, USA"
+    },
+    {
+      "customer_code": "Winner on Fifth",
+      "legal_entity_name(do not edit)": "Winner on 5th (Butcher)",
+      "customer_name(do not edit)": "Winner on 5th (Butcher)",
+      "delivery_address(do not edit)": "192 5th Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Winner on Franklin",
+      "legal_entity_name(do not edit)": "Winner on Franklin",
+      "customer_name(do not edit)": "Winner on Franklin",
+      "delivery_address(do not edit)": "747 Franklin Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Winonas'",
+      "legal_entity_name(do not edit)": "Winonas'",
+      "customer_name(do not edit)": "Winonas'",
+      "delivery_address(do not edit)": "676 Flushing Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "With Others",
+      "legal_entity_name(do not edit)": "With Others",
+      "customer_name(do not edit)": "With Others",
+      "delivery_address(do not edit)": "340 Bedford Avenue, Brooklyn, NY, USA"
+    },
+    {
+      "customer_code": "Wythe Hotel",
+      "legal_entity_name(do not edit)": "Wythe Hotel",
+      "customer_name(do not edit)": "Wythe Hotel",
+      "delivery_address(do not edit)": "80 Wythe Ave Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Wythe Hotel",
+      "legal_entity_name(do not edit)": "Wythe Hotel - Blondeau",
+      "customer_name(do not edit)": "Wythe Hotel - Blondeau",
+      "delivery_address(do not edit)": "80 Wythe Ave Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Wythe Hotel",
+      "legal_entity_name(do not edit)": "Wythe Hotel - Events",
+      "customer_name(do not edit)": "Wythe Hotel - Events",
+      "delivery_address(do not edit)": "80 Wythe Ave Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Wythe Hotel",
+      "legal_entity_name(do not edit)": "Wythe Hotel - Le Croc",
+      "customer_name(do not edit)": "Wythe Hotel - Le Croc",
+      "delivery_address(do not edit)": "80 Wythe Ave Brooklyn, NY 11249"
+    },
+    {
+      "customer_code": "Yardy",
+      "legal_entity_name(do not edit)": "Yardy",
+      "customer_name(do not edit)": "Yardy",
+      "delivery_address(do not edit)": "Yardy at Nimbus, 196 Stanton St, New York 10002"
+    },
+    {
+      "customer_code": "Zero Bond",
+      "legal_entity_name(do not edit)": "Zero Bond",
+      "customer_name(do not edit)": "Zero Bond",
+      "delivery_address(do not edit)": "Zero Bond, Bond Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "540",
+      "legal_entity_name(do not edit)": "Zimmis'",
+      "customer_name(do not edit)": "Zimmis'",
+      "delivery_address(do not edit)": "72 Bedford Street, New York, NY, USA"
+    },
+    {
+      "customer_code": "Zou Zou",
+      "legal_entity_name(do not edit)": "Zou Zou",
+      "customer_name(do not edit)": "Zou Zou",
+      "delivery_address(do not edit)": "Zou Zou, 435 W 31st St New York, NY"
+    }
+  ]
+}

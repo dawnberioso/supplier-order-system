@@ -1,0 +1,147 @@
+{
+  "supplier_name": "Diamond",
+  "description": "",
+  "created_at": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T11:40:10.350205",
+  "rules": [
+    {
+      "Customer": "Al Jenan Butchery Greenvalley",
+      "Customer Product Name": "fores",
+      "Fresho Product Name": "Lamb Forequarter"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "boneless fores",
+      "Fresho Product Name": "Lamb - Forequarter Boneless"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "racks",
+      "Fresho Product Name": "Lamb - Rack"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "lamb shanks",
+      "Fresho Product Name": "Lamb - Shanks (Retail)"
+    },
+    {
+      "Customer": "Cash Sale | Frankies milperra",
+      "Customer Product Name": "",
+      "Fresho Product Name": "Lamb - Leg"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "Lamb shoulder",
+      "Fresho Product Name": "Miscellaneous*"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "Lamb backstrap",
+      "Fresho Product Name": "Lamb - Backstrap Denuded"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "Lamb Shoulder Boneless",
+      "Fresho Product Name": "Lamb - Shoulder Bone Out"
+    },
+    {
+      "Customer": "Cash Sale | Frankies terrey hills",
+      "Customer Product Name": "Lamb backstrap",
+      "Fresho Product Name": "Lamb - Backstrap Denuded"
+    },
+    {
+      "Customer": "Fresh World Market Auburn",
+      "Customer Product Name": "leg",
+      "Fresho Product Name": "Lamb - Leg Short"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "lives",
+      "Fresho Product Name": "Lamb - Liver"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "fors",
+      "Fresho Product Name": "Lamb Forequarter"
+    },
+    {
+      "Customer": "Cash Sale | Mourad and sons",
+      "Customer Product Name": "lamb shoulders",
+      "Fresho Product Name": "Lamb - Shoulder Bone In"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "midlion",
+      "Fresho Product Name": "Miscellaneous*"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "lamb fillets",
+      "Fresho Product Name": "Miscellaneous*"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "back strap",
+      "Fresho Product Name": "Lamb - Backstrap Denuded"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "Shank",
+      "Fresho Product Name": "Lamb - Shanks (Retail)"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "chump on bone",
+      "Fresho Product Name": "Lamb - Chump Bone In"
+    },
+    {
+      "Customer": "L&W Meat",
+      "Customer Product Name": "Sq breast on",
+      "Fresho Product Name": "Miscellaneous*"
+    },
+    {
+      "Customer": "Al Aseel Food Services Pty Ltd",
+      "Customer Product Name": "Lamb Shoulder Boneless",
+      "Fresho Product Name": "Lamb - Forequarter Boneless"
+    },
+    {
+      "Customer": "",
+      "Customer Product Name": "Shank",
+      "Fresho Product Name": "Lamb - Shanks (Retail)"
+    }
+  ],
+  "product_rules": [
+    {
+      "Fresho Customer Name": "Al Jenan Butchery Greenvalley",
+      "Customer Name": "Green valley"
+    },
+    {
+      "Fresho Customer Name": "Meyer Food Co Kings Park",
+      "Customer Name": "Meyer Food Co."
+    },
+    {
+      "Fresho Customer Name": "Cash Sale (Diamond Food Service)",
+      "Customer Name": "Angry BBQ Haymarket"
+    },
+    {
+      "Fresho Customer Name": "Cash Sale (Diamond Food Service)",
+      "Customer Name": "Australian Meat Emporium"
+    },
+    {
+      "Fresho Customer Name": "L&W Meat",
+      "Customer Name": "L&W Eastwood"
+    },
+    {
+      "Fresho Customer Name": "Trent Keys Smallgoods",
+      "Customer Name": "Trent"
+    },
+    {
+      "Fresho Customer Name": "M&G Chatswood",
+      "Customer Name": "M&G Butchery"
+    },
+    {
+      "Fresho Customer Name": "Micks Meats",
+      "Customer Name": "Micks"
+    }
+  ]
+}

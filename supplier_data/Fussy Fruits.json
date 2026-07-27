@@ -1,0 +1,524 @@
+{
+  "supplier_name": "Fussy Fruits",
+  "description": "",
+  "created_at": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T11:40:10.350205",
+  "rules": [
+    {
+      "Customer": "The Rustic Olive",
+      "Ordered Product": "Red chatz",
+      "Ordered Unit": "",
+      "Fresho Product": "Potatoes - Chats Red",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Rocket",
+      "Ordered Unit": "1",
+      "Fresho Product": "Lettuce - Rocket",
+      "Fresho Qty": "1box",
+      "Other Comments": "1 Rocket = 1Box",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "WHITE GRAPEFRUIT"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Cos",
+      "Ordered Unit": "1",
+      "Fresho Product": "Lettuce - Baby Cos (Twin Pack)",
+      "Fresho Qty": "1 each",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "PINK/RED GRAPEFRUIT"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Avocados",
+      "Ordered Unit": "",
+      "Fresho Product": "Avocados - Hass (Best Value)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "WOMBOK"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Spinach",
+      "Ordered Unit": "1",
+      "Fresho Product": "Spinach - Baby",
+      "Fresho Qty": "",
+      "Other Comments": "1 Spinach = 1Box",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "DAIKON"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Kipfler",
+      "Ordered Unit": "10kg",
+      "Fresho Product": "Potatoes - Kipfler Brushed",
+      "Fresho Qty": "1 box",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "radicchio",
+      "Ordered Unit": "2 pkts",
+      "Fresho Product": "Lettuce - Radicchio",
+      "Fresho Qty": "each",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "rose",
+      "Ordered Unit": "",
+      "Fresho Product": "Rosemary",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "cucumbers",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "Cucumber - Continental",
+      "Fresho Qty": "Bag (15)",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "dried rose petals",
+      "Ordered Unit": "1",
+      "Fresho Product": "Dried Rose Buds - Petite",
+      "Fresho Qty": "1 packet",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "The Yiros Shop \n\n\napplied in all location",
+      "Ordered Product": "Capsicum (Market)",
+      "Ordered Unit": "1kg",
+      "Fresho Product": "Capsicums - Red",
+      "Fresho Qty": "default",
+      "Other Comments": "please use red capsicum as default.",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "TELEGRAPH CUCUMBER"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "",
+      "Ordered Unit": "2kg",
+      "Fresho Product": "Capsicums - Green, Capsicums - Red",
+      "Fresho Qty": "1kg each",
+      "Other Comments": "please give 1kg red capsicum 1kg green capsicum.",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "CONTINENTAL PARSLEY"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "",
+      "Ordered Unit": "3kg",
+      "Fresho Product": "Capsicums - Green, Capsicums - Red",
+      "Fresho Qty": "1.5kg each",
+      "Other Comments": "1.5kg of each colour (red & green) is fine.",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Radish",
+      "Ordered Unit": "Punnet (0.25 Kg)",
+      "Fresho Product": "Radish - Red",
+      "Fresho Qty": "Bag",
+      "Other Comments": "1 Bag = 1 Punnet(0.25 Kg)",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Tomatoes",
+      "Ordered Unit": "10 Kg",
+      "Fresho Product": "Tomatoes - Gourmet",
+      "Fresho Qty": "Box (10kg)",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "BROCCOLINI"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Cucumbers",
+      "Ordered Unit": "5 Kg",
+      "Fresho Product": "Cucumber - Continental",
+      "Fresho Qty": "Bag (15)",
+      "Other Comments": "5kg = 1 Bag(15)",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "PAPAYA"
+    },
+    {
+      "Customer": "Riverside Cafe and Bar",
+      "Ordered Product": "Mushroom",
+      "Ordered Unit": "2 box",
+      "Fresho Product": "Mushrooms - Button (2nd's)",
+      "Fresho Qty": "2 box",
+      "Other Comments": "FAVORITES - always mushroom 2nds.",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "Duchess pears"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Mesclun mix",
+      "Ordered Unit": "3 box",
+      "Fresho Product": "Salad Mix - Mesculin",
+      "Fresho Qty": "box",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "Radish"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Cage free",
+      "Ordered Unit": "1 box",
+      "Fresho Product": "Eggs - Cage Free 700G",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "Cabbages Green"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Heriloom tomatoes",
+      "Ordered Unit": "1 tray",
+      "Fresho Product": "Tomatoes - Cherry Medley Heirloom",
+      "Fresho Qty": "tray",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "rocket"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Cherry tomatoes",
+      "Ordered Unit": "1 tray",
+      "Fresho Product": "Tomatoes - Cherry",
+      "Fresho Qty": "1 tray = 15 punnet",
+      "Other Comments": "Tomatoes - Cherry tray is 15 punnets",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Soul Origin - Brisbane Airport",
+      "Ordered Product": "mesclun",
+      "Ordered Unit": "box",
+      "Fresho Product": "Salad Mix - Mesculin",
+      "Fresho Qty": "Box",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "Tuscan Cabbage"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "cherry tomato loose",
+      "Ordered Unit": "tray",
+      "Fresho Product": "Tomatoes - Cherry (Loose)",
+      "Fresho Qty": "Box",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "Curly Parsley"
+    },
+    {
+      "Customer": "Mangal Char Grill",
+      "Ordered Product": "mixed salad",
+      "Ordered Unit": "",
+      "Fresho Product": "Salad Mix - Mesculin",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "apple green"
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "red capsicum",
+      "Ordered Unit": "1",
+      "Fresho Product": "Capsicums - Red",
+      "Fresho Qty": "1 box",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "shallots",
+      "Ordered Unit": "12 each",
+      "Fresho Product": "Shallots / Spring Onion Bunch",
+      "Fresho Qty": "12 bunch",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Maree's Cafe",
+      "Ordered Product": "mushy",
+      "Ordered Unit": "",
+      "Fresho Product": "Mushrooms - Button (Medium)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": "flat cup mushroom"
+    },
+    {
+      "Customer": "Fins N Fries",
+      "Ordered Product": "medium lemons",
+      "Ordered Unit": "",
+      "Fresho Product": "Lemons",
+      "Fresho Qty": "",
+      "Other Comments": "note: medium",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "twin cos - (note riverea cos)",
+      "Ordered Unit": "6 bags",
+      "Fresho Product": "Lettuce - Baby Cos (Twin Pack)",
+      "Fresho Qty": "6 bags = 6 each.",
+      "Other Comments": "notes: give riviera brand",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Queensland Cruising Yacht Club Inc.",
+      "Ordered Product": "Oranges",
+      "Ordered Unit": "",
+      "Fresho Product": "Oranges Premium",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "micro herbs",
+      "Ordered Unit": "",
+      "Fresho Product": "Micro Mixed Herbs (Potted)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Rainbow Carrots",
+      "Ordered Unit": "1bag",
+      "Fresho Product": "Carrots - Baby Mix",
+      "Fresho Qty": "1 Packet (1Kg",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "The Prawn Shack",
+      "Ordered Product": "Oranges",
+      "Ordered Unit": "",
+      "Fresho Product": "Oranges Premium",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Point lookout bowls club",
+      "Ordered Product": "Small chat potato",
+      "Ordered Unit": "1 bag",
+      "Fresho Product": "Potatoes - Chat White",
+      "Fresho Qty": "Bag",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Fishes at Point",
+      "Ordered Product": "Green Dryslaw",
+      "Ordered Unit": "x 2",
+      "Fresho Product": "Dryslaw Green",
+      "Fresho Qty": "2 x Bag (2.5kg)",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Santorini Restaurant Bar",
+      "Ordered Product": "Tomatoes",
+      "Ordered Unit": "1box",
+      "Fresho Product": "Tomatoes - Roma",
+      "Fresho Qty": "Box",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Boardroom Cafe Catering Co.",
+      "Ordered Product": "Tomatoes",
+      "Ordered Unit": "",
+      "Fresho Product": "Tomatoes - Gourmet",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Randhawa Indian Cuisine - Waterford Shop 14",
+      "Ordered Product": "Red chillies",
+      "Ordered Unit": "",
+      "Fresho Product": "Chillies - Long Red (A-Grade)",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Decoration flowers",
+      "Ordered Unit": "1",
+      "Fresho Product": "Flowers Edible",
+      "Fresho Qty": "1 punnet",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Broken Hearts               applied in all location",
+      "Ordered Product": "Lettuce",
+      "Ordered Unit": "4",
+      "Fresho Product": "Lettuce - Iceberg",
+      "Fresho Qty": "4 Box",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "",
+      "Ordered Product": "Tomato",
+      "Ordered Unit": "1",
+      "Fresho Product": "Tomatoes - Gourmet",
+      "Fresho Qty": "1 Box (10kg)",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Arbour Restaurant & Bar",
+      "Ordered Product": "Strawberries",
+      "Ordered Unit": "5 punnets",
+      "Fresho Product": "Strawberries - Premium",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    },
+    {
+      "Customer": "Big Boss Pizzas - Moorooka",
+      "Ordered Product": "onions",
+      "Ordered Unit": "1 bag",
+      "Fresho Product": "Onions - Brown",
+      "Fresho Qty": "",
+      "Other Comments": "",
+      "Column 7": "",
+      "GENERAL PRODUCT RULES": ""
+    }
+  ],
+  "product_rules": [
+    {
+      "Customer Name": "MIDAS MEDITERRANEAN",
+      "Fresho Customer Name": "DO NOT INPUT  - these are buying orders.",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Rustic Olive",
+      "Fresho Customer Name": "The Rustic Olive",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Soul Airport",
+      "Fresho Customer Name": "Soul Origin - Brisbane Airport",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Mi casa underwood",
+      "Fresho Customer Name": "Mi Casa Le Cafe - Underwood",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Broken hearts",
+      "Fresho Customer Name": "Broken Hearts Burger Club - Miami",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Ahmets",
+      "Fresho Customer Name": "Ahmet's Restaurant - Southbank",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Broken hearts",
+      "Fresho Customer Name": "Broken Hearts Burger Club - Victoria Point",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Memet",
+      "Fresho Customer Name": "Mehmet's Kebab",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Big boss Rochedale",
+      "Fresho Customer Name": "Big Boss Pizzas & Manoush",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Stradbroke Golf Club",
+      "Fresho Customer Name": "North Stradbroke Island Golf Club",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "Micasa Underwood",
+      "Fresho Customer Name": "Mi Casa Le Cafe - Underwood",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": ""
+    },
+    {
+      "Customer Name": "",
+      "Fresho Customer Name": "Hello Please",
+      "Contact Name": "liam Lisle <liamlisle1996@gmail.com>",
+      "Phone Number": "",
+      "Email": ""
+    }
+  ]
+}

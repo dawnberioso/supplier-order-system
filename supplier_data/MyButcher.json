@@ -1,0 +1,2082 @@
+{
+  "supplier_name": "MyButcher",
+  "description": "",
+  "created_at": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T11:40:10.350205",
+  "rules": [
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Beef Rump P/cut (5x300g VP)",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Rump Rostbiff Portion Cut YP *frozen* 'OBE Organic",
+      "Fresho Qty": "Pkt (5 x 300g)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Beef Stir Fry Strips (2kg VP)",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Stir Fry Strips Frozen",
+      "Fresho Qty": "CTN (4 x 2kg)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Sausages BBQ Thick (2.5kg tray pack)",
+      "Ordered Unit": "",
+      "Fresho Product": "Sausages - BBQ Thick Frozen",
+      "Fresho Qty": "CTN (2 X 2.5kg)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Sausages Pork Thick Old English (2.5kg tray pack)",
+      "Ordered Unit": "",
+      "Fresho Product": "Sausages - Pork Old English Thick Frozen",
+      "Fresho Qty": "CTN (2 X 2.5kg)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Sausages Chicken Chipotle (2.5kg tray pack)",
+      "Ordered Unit": "",
+      "Fresho Product": "Sausages - Chicken Chipotle Frozen",
+      "Fresho Qty": "CTN (2 X 2.5kg)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Chicken Breast skin off t/loin on (weight range 240-280g)",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Breast Skin Off (Frozen) 240-280g",
+      "Fresho Qty": "CTN (4 x 2kg)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Lamb Shank Hind Quarter heel *OFF* (5 x 450g bag approx)",
+      "Ordered Unit": "",
+      "Fresho Product": "Lamb - Shank Hindquarter Heel Off R/W Frozen",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Chicken - Maryland Fillet (Boneless) Skin On Frozen",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Maryland Fillet Boneless Skin Off Frozen",
+      "Fresho Qty": "CTN (4 x 2kg)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
+      "Ordered Product": "Beef - Porterhouse Whole YP 1/2 Cut Grain Fed 'Teys'",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Porterhouse Whole YP 1/2 Cut Frozen 'Teys'",
+      "Fresho Qty": "CTN (5-6kg)",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "OIC",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Osso Bucco Frozen",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Vegas Poultry",
+      "Ordered Product": "French roulades",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Roulade - Apricot + Macadamia Filling with French Onion / Apricot Sprinkle (250-275g)",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Caffe Acqua Mt Barker Pty Ltd",
+      "Ordered Product": "Beef - Scotch Fillet (Whole) pr Teys grain fed smaller diamater",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Scotch Fillet Whole YP/PR",
+      "Fresho Qty": "",
+      "Other Comments": "Note: Teys Grain Fed Smaller Diamater"
+    },
+    {
+      "Customer": "Caffe Acqua Mt Barker Pty Ltd",
+      "Ordered Product": "Beef - Scotch Fillet (Whole) Riverine Classic no large cube please",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Scotch Fillet (Whole) Grain Fed MSA 'Riverine Classic'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "STRIPLOIN WAGYU KERWEE MBS7+ KG",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Miscellaneous",
+      "Fresho Qty": "",
+      "Other Comments": "Note: STRIPLOIN WAGYU KERWEE MBS7+ KG"
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "DUCK LEGS SKIN ON RANDOM WEIGHT FROZEN",
+      "Ordered Unit": "",
+      "Fresho Product": "Duck - Leg Frozen (260-300g) Large",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "CHICKEN LEG FILLET BONELESS SKIN ON KG - CHICKEN\nLEG FILLET BONELESS SKIN ON KG",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Maryland Fillet (Boneless) Skin On",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF TENDERLOIN YG 100GM PORTION CUT KG \n- BEEF TENDERLOIN YG 100GM PORTION CUT KG",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Tenderloin Portion Cut",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF FILLET WHOLE MURRAY PURE",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Miscellaneous",
+      "Fresho Qty": "",
+      "Other Comments": "Note: BEEF FILLET WHOLE MURRAY PURE"
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF PORTERHOUSE TENDERISED YG 150G PC",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - porterhouse portion cut tenderised (uncrumbed schnitzel) Loukoumi",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF RUMP ROSTBIFF WHOLE WAGYU MB9+ SIGNATURE \nSERIES MAYURA STATION KG",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Rump Rostbiff Whole Wagyu MB9+ Signature Series 'Mayura Station'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF MARROW RODS FROZEN SPLIT 15CM LONG KG",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Bone Marrow Rods Frozen",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF T-BONE 400GM PORTION CUT MSA RIVERINE PREMIUM",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - T-Bone Portion Cut MSA 'Riverine Premium'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "SAUSAGE BREAKFAST ITALIAN THICK",
+      "Ordered Unit": "",
+      "Fresho Product": "Sausages - Italian Thick",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF SLIDER PATTIES WAGYU 80G MAYURA STATION",
+      "Ordered Unit": "",
+      "Fresho Product": "Burger - Beef Wagyu Slider 'Mayura Station'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - sirloin bone in dry aged 30 days New York cut portion cut '36 Degrees South'",
+      "Fresho Qty": "",
+      "Other Comments": "code is on special at the moment.  If you just type in 58.4 the product will show up"
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF RUMP ROSTBIFF WHOLE WAGYU MB9+ SIGNATURE SERIES MAYURA STATION",
+      "Ordered Unit": "",
+      "Fresho Product": "",
+      "Fresho Qty": "",
+      "Other Comments": "N/A do not add if not available in the marketplace"
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "CHICKEN BREAST SKIN ON",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Breast Fillet Medium (200 - 250g) 'Loukoumi'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Sky City Orders",
+      "Ordered Product": "BEEF SCOTCH FILLET 300GM PORTION CUT MSA GRAIN FED",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Scotch Fillet Portion Cut MSA MB2+ 'Riverine Premium'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Kilkenny - Romeo's Foodland - email from Sharon Durbridge",
+      "Ordered Product": "beef course crumb schnitzel",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef Schnitzel - Topside Coarse Crumb Random Weight",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Kilkenny - Romeo's Foodland - email from Sharon Durbridge",
+      "Ordered Product": "chick parmy schnitzel",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Schnitzel - Breast Parmy Crumb",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Kilkenny - Romeo's Foodland - email from Sharon Durbridge",
+      "Ordered Product": "chicken course crumb schnitzel",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Schnitzel - Breast Coarse Crumb Random Weight",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Kilkenny - Romeo's Foodland - email from Sharon Durbridge",
+      "Ordered Product": "plain beef schnitzels 300grams",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef Schnitzel - Topside Coarse Crumb Random Weight",
+      "Fresho Qty": "",
+      "Other Comments": "Note: 6 plain 300grams"
+    },
+    {
+      "Customer": "Kilkenny - Romeo's Foodland - email from Sharon Durbridge",
+      "Ordered Product": "plain chicken schnitzels 250 grams",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Schnitzel - Breast Coarse Crumb Random Weight",
+      "Fresho Qty": "",
+      "Other Comments": "Note: 6 plain 250 grams"
+    },
+    {
+      "Customer": "Galipo Food Company",
+      "Ordered Product": "Chicken FRESH Schnitzel Butterflied 300gm Coarse Crumb Random Weight (approx 6Kg) My Butcher",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Belly Whole Bone Out Rind On 'Loukoumi'",
+      "Fresho Qty": "Kg",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Galipo Food Company",
+      "Ordered Product": "Chicken FRESH 9 Cut #12 Chicken Random Weight (CTN of 12)",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Whole #12 9-Cut",
+      "Fresho Qty": "Kg",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Stanley Bridge Hotel",
+      "Ordered Product": "Duck - legs random weight (2nd grade)",
+      "Ordered Unit": "",
+      "Fresho Product": "Duck - Leg Frozen (260-300g) Large",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Old Reynella Foodland - Romeos",
+      "Ordered Product": "Sage & Onion Chicken Schnitzel",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Schnitzel - Breast Herb Crumb Random Weight",
+      "Fresho Qty": "",
+      "Other Comments": "1 usually means 1 ctn"
+    },
+    {
+      "Customer": "Adelaide Convention Centre",
+      "Ordered Product": "Burgers Chuck Brisket 80g SLIDER",
+      "Ordered Unit": "",
+      "Fresho Product": "Burger - beef Chuck / Brisket Slider",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Chicken breast tenders skin off",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Tenderloin",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Chicken diced 2cm",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Breast Diced (2.5x2.5cm)",
+      "Fresho Qty": "",
+      "Other Comments": "note: 2cm"
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Chicken marylands",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Maryland Skin On Bone In",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Porterhouse",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Porterhouse Full Cut Grain Fed",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Rump (Roast)",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Rump Rostbiff Whole YP 'OBE Organic'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Beef Mince",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Mince 85CL",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Beef Diced 2cm",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Diced 2cm",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Crumbed Lamb Cutlets - Garlic & Rosemary",
+      "Ordered Unit": "",
+      "Fresho Product": "Lamb Cutlets - Frenched Portion Cut Herb Crumb",
+      "Fresho Qty": "",
+      "Other Comments": "note: Garlic & Rosemary"
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Lamb diced 2cm",
+      "Ordered Unit": "",
+      "Fresho Product": "Lamb Shoulder Diced 2cm",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Lamb Shank forequarter",
+      "Ordered Unit": "",
+      "Fresho Product": "Lamb Shanks Frozen",
+      "Fresho Qty": "",
+      "Other Comments": "note: forequarter shanks"
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Sausage Pork & Fennel Extra Thick",
+      "Ordered Unit": "",
+      "Fresho Product": "Sausages - Pork Old English with Fennel Thick",
+      "Fresho Qty": "",
+      "Other Comments": "note: Extra Thick"
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Pork Leg boned & Rolled (Roast)",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Leg Whole Bone Out Rolled Frozen",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Pork Cutlet king henry rind on",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Cutlets King Henry Rind On (Portion Cut)",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Bacon Rindless",
+      "Ordered Unit": "",
+      "Fresho Product": "Bacon - Middle Rasher Rindless 'KR Castlemaine'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Pork Belly Full",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Belly Whole Bone Out Rind On 'Loukoumi'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Chicken Schnitzel breast trimmed",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Schnitzel - Breast Trimmed Coarse Crumb L/P",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Chicken whole size 17",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Whole Size #17",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Chicken Thigh Fillets skinless",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Thigh Fillet - Skin Off",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Beef Cheeks",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Cheeks",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Uncooked Pork Ribs",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Riblets Forequarter Frozen",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Birdsville Hotel",
+      "Ordered Product": "Small Breakfast Sausage / Chiploatas",
+      "Ordered Unit": "",
+      "Fresho Product": "Sausages - Pork Chipolata Old English",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Brompton hotel",
+      "Ordered Product": "",
+      "Ordered Unit": "",
+      "Fresho Product": "Duck - Liver Frozen 'Luv A Duck'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Bresaola Harndorf",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Bresaola Topside Smoked (Sliced) 'Hahndorf Gourmet'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Whole Chicken Free Range",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Whole Size #17",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Chicken Kebabs - Honey Soy thigh meat",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Kebab Full Honey Soy",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Harndorf Blackforrest Ham Sliced",
+      "Ordered Unit": "",
+      "Fresho Product": "Ham - Black Forest Sliced 'Hahndorf Gourmet'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Leg of ham Pendles",
+      "Ordered Unit": "",
+      "Fresho Product": "Ham - Leg Half Bone In 'Pendle Ham (O’Briens)'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Beef Chuck (Not so lean a cut please)",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Chuck Whole",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Scotch Fillet on special",
+      "Ordered Unit": "",
+      "Fresho Product": "Special - Beef Scotch Fillet 100 Day Grain Fed Whole 'Market Buy'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Pork Forequarter Boneless Skinless",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Shoulder Bone Out Rind Off",
+      "Fresho Qty": "",
+      "Other Comments": "note: Skinless"
+    },
+    {
+      "Customer": "KI Complete",
+      "Ordered Product": "Pork shoulder boneless skinless  fatty please",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Shoulder Bone Out Rind Off",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Cash Sales (9 Afternoon Pickup) - Kerryn Jenner - Pick up",
+      "Ordered Product": "Corned Silverside",
+      "Ordered Unit": "",
+      "Fresho Product": "Special beef - silverside corned whole half cut",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Cash Sales (9 Afternoon Pickup) - Kerryn Jenner - Pick up",
+      "Ordered Product": "Lamb Shoulder",
+      "Ordered Unit": "",
+      "Fresho Product": "Special lamb - shoulder square cut bone in",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Cash Sales (9 Afternoon Pickup) - Kerryn Jenner - Pick up",
+      "Ordered Product": "Beef Mince",
+      "Ordered Unit": "",
+      "Fresho Product": "Special Beef - Mince 85cl",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Cash Sales (3 Morning Pickup) - Kylie Jones",
+      "Ordered Product": "whole porterhouse",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Porterhouse Whole Grain Fed",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Cash Sales (3 Morning Pickup) - Kylie Jones",
+      "Ordered Product": "Pork Loin Ribs",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork Ribs - USA Frozen",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Local Boy ADL (VM)",
+      "Ordered Product": "Minute Steak",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Topside Sandwich Steak Tenderized 'Loukoumi'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Local Boy ADL (VM)",
+      "Ordered Product": "CHICK THIGH",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Thigh Fillet - Skin Off",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Local Boy ADL (VM)",
+      "Ordered Product": "SATOS SKEWER",
+      "Ordered Unit": "",
+      "Fresho Product": "Miscellaneous",
+      "Fresho Qty": "",
+      "Other Comments": "Note: 30 SATOS SKEWERS"
+    },
+    {
+      "Customer": "Local Boy ADL (VM)",
+      "Ordered Product": "BEEF MINCE",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Mince 85CL",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Local Boy ADL (VM)",
+      "Ordered Product": "HAM",
+      "Ordered Unit": "",
+      "Fresho Product": "Ham - Black Forest Sliced 'Hahndorf Gourmet'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Local Boy ADL (VM)",
+      "Ordered Product": "MORTADELLA",
+      "Ordered Unit": "",
+      "Fresho Product": "Pork - Miscellaneous",
+      "Fresho Qty": "",
+      "Other Comments": "Note: 1KG MORTADELLA"
+    },
+    {
+      "Customer": "Kent Town Hotel",
+      "Ordered Product": "Chicken Schnitzel Tenderized",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Breast Butterflied Tenderised",
+      "Fresho Qty": "",
+      "Other Comments": "note: uncrumbed (if said)"
+    },
+    {
+      "Customer": "Kent Town Hotel",
+      "Ordered Product": "bur patt",
+      "Ordered Unit": "",
+      "Fresho Product": "Burger - Beef Minced Steak Large",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Kent Town Hotel",
+      "Ordered Product": "meatball",
+      "Ordered Unit": "",
+      "Fresho Product": "Meatballs - Beef Wagyu 'Mayura Station'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Kent Town Hotel",
+      "Ordered Product": "Teenderloin MSA",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Tenderloin Whole MSA '36 Degrees South'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "PHOS Camden",
+      "Ordered Product": "Diced Chicken",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Breast Diced (2.5x2.5cm)",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "PHOS Camden",
+      "Ordered Product": "Chicken yiros",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Gyros / Yiros",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "PHOS Camden",
+      "Ordered Product": "Beef patties",
+      "Ordered Unit": "",
+      "Fresho Product": "Burger - Beef Mybutcher Standard",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "PHOS Camden",
+      "Ordered Product": "Meat Tray",
+      "Ordered Unit": "",
+      "Fresho Product": "Mixed - Meat Tray $50",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "PHOS Camden",
+      "Ordered Product": "Chicken Breast",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Breast Skin Off",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Mint on Moseley",
+      "Ordered Product": "Beef Skewers Smokey BBQ half",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Kebab Half Plain",
+      "Fresho Qty": "",
+      "Other Comments": "note: Smokey BBQ"
+    },
+    {
+      "Customer": "Mint on Moseley",
+      "Ordered Product": "Chicken Skewer - Thai lemon - half",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Kebab Half Plain",
+      "Fresho Qty": "",
+      "Other Comments": "note: Thai Lemon"
+    },
+    {
+      "Customer": "Mint on Moseley",
+      "Ordered Product": "beef skewers - satay - half",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Kebab Half Plain",
+      "Fresho Qty": "",
+      "Other Comments": "note: Satay"
+    },
+    {
+      "Customer": "Mint on Moseley",
+      "Ordered Product": "Lamb skewers - Thai lemon - half",
+      "Ordered Unit": "",
+      "Fresho Product": "Lamb - Kebab Half Plain",
+      "Fresho Qty": "",
+      "Other Comments": "note: Thai Lemon"
+    },
+    {
+      "Customer": "Mint on Moseley",
+      "Ordered Product": "Lamb skewers - Lemon oregano - half",
+      "Ordered Unit": "",
+      "Fresho Product": "Lamb - Kebab Half Plain",
+      "Fresho Qty": "",
+      "Other Comments": "note: Lemon Oregano"
+    },
+    {
+      "Customer": "Mint on Moseley",
+      "Ordered Product": "Chicken Skewer - satay chicken - half",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Kebab Half Malay Satay",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Mint on Moseley",
+      "Ordered Product": "Lamb & Rosemary Meatballs",
+      "Ordered Unit": "",
+      "Fresho Product": "Lamb - Miscellaneous",
+      "Fresho Qty": "",
+      "Other Comments": "note: Lamb & Rosemary Meatballs"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "rump steak",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Rump Rostbiff Portion Cut YP 'OBE Organic'",
+      "Fresho Qty": "",
+      "Other Comments": "note: steak"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "Org Scotch Fillet",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Scotch Fillet Whole YP 'OBE Organic'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "Org Beef Roast",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Girello Roast",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "Org Beef topside roast",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Bolar Blade Whole YP 'OBE Organic'",
+      "Fresho Qty": "",
+      "Other Comments": "note : topside"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "bolar org roast",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Bolar Blade Whole YP 'OBE Organic'",
+      "Fresho Qty": "",
+      "Other Comments": "note: roast"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "Org Bones",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Neck Bones Cut Frozen",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "Chicken snags",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken Sausage AOM",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "organic sliced rump steak",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Rump Rostbiff Portion Cut YP 'OBE Organic'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "organic beef snags",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef Sausage AOM",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "chicken mince from greenslades",
+      "Ordered Unit": "",
+      "Fresho Product": "Chicken - Mince",
+      "Fresho Qty": "",
+      "Other Comments": "note: coming from Greenslade"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "casserole beef",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Diced 2cm",
+      "Fresho Qty": "",
+      "Other Comments": "note: casserole beef"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "chicken snags from greensleds meat",
+      "Ordered Unit": "",
+      "Fresho Product": "Sausages - Chicken Free Range Greenslades Thick",
+      "Fresho Qty": "",
+      "Other Comments": "note: organic sausages coming from Greenslade meat"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "organic sliced rib eye with bone",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - OP Rib Eye Whole 'Murray Valley'",
+      "Fresho Qty": "",
+      "Other Comments": ""
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "Eye fillet",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Tenderloin Whole YP 'OBE Organic'",
+      "Fresho Qty": "",
+      "Other Comments": "Eye fillet is also called tenderloin for future reference"
+    },
+    {
+      "Customer": "Affordable organics",
+      "Ordered Product": "ORGANIC BEEF SAUSAGES our recipe (BEEF< LEEK< GARLIC< SALT< PEPPER)",
+      "Ordered Unit": "",
+      "Fresho Product": "Beef - Misc",
+      "Fresho Qty": "",
+      "Other Comments": "note: ORGANIC BEEF SAUSAGES our recipe (BEEF< LEEK< GARLIC< SALT< PEPPER)"
+    }
+  ],
+  "product_rules": [
+    {
+      "Customer Name": "Glenelg South Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "413404502",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Glenelg South Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "449963061",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Old Reynella Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "883221433",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Old Reynella Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "420445995",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Old Reynella Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "883221434",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Old Reynella Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "883237700",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Old Reynella Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "415857251",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Mitcham Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "409677254",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Greenslade Chickens",
+      "Contact Name": "",
+      "Phone Number": "417824688",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Taylor & Holmes Fine Food Catering",
+      "Contact Name": "",
+      "Phone Number": "412343453",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "McLaren Vale Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "883237700",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "McLaren Vale Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "420445995",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "The Beer Girls",
+      "Contact Name": "",
+      "Phone Number": "438867063",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Morphettville Junction",
+      "Contact Name": "",
+      "Phone Number": "415812622",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Adelaide Sailing Club",
+      "Contact Name": "",
+      "Phone Number": "408833332",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Greenslade Chickens",
+      "Contact Name": "",
+      "Phone Number": "888472223",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Warradale Hotel Pty Ltd",
+      "Contact Name": "",
+      "Phone Number": "882961019",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Foodland - Salisbury East (Romeo's)",
+      "Contact Name": "",
+      "Phone Number": "881826904",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "PHOS Camden",
+      "Contact Name": "",
+      "Phone Number": "417836162",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Barossa Weintal Hotel",
+      "Contact Name": "",
+      "Phone Number": "414415844",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Emma Reeves Catering",
+      "Contact Name": "",
+      "Phone Number": "410342166",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Kent Town Hotel",
+      "Contact Name": "",
+      "Phone Number": "419299336",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Kent Town Hotel",
+      "Contact Name": "",
+      "Phone Number": "483220367",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "BURGERTEC Munno",
+      "Contact Name": "",
+      "Phone Number": "411939397",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Prince Edward Hotel",
+      "Contact Name": "",
+      "Phone Number": "438095723",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Bakery On O'Connell",
+      "Contact Name": "",
+      "Phone Number": "402242728",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Northern Tavern",
+      "Contact Name": "",
+      "Phone Number": "407502004",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Lambert Estate Vineyards",
+      "Contact Name": "",
+      "Phone Number": "420868279",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Mooringe Munchies",
+      "Contact Name": "",
+      "Phone Number": "415681867",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Cha & Dumplings",
+      "Contact Name": "",
+      "Phone Number": "433347769",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Oar",
+      "Contact Name": "",
+      "Phone Number": "488281133",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Castle Tavern",
+      "Contact Name": "",
+      "Phone Number": "432996144",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Southern Suburbs Rugby Union F/C",
+      "Contact Name": "",
+      "Phone Number": "439870977",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Burgertec Torrensville",
+      "Contact Name": "",
+      "Phone Number": "450363414",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Gourmet Breakfast Cafe",
+      "Contact Name": "",
+      "Phone Number": "499560318",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Local Boy ADL",
+      "Contact Name": "",
+      "Phone Number": "450363414",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Barossa Fresh",
+      "Contact Name": "",
+      "Phone Number": "431168535",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Grand North",
+      "Contact Name": "",
+      "Phone Number": "437237776",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Foodland - Salisbury East (Romeo's)",
+      "Contact Name": "",
+      "Phone Number": "882582767",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Sam I Am Cafe",
+      "Contact Name": "",
+      "Phone Number": "421937680",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Heidilicious Catering",
+      "Contact Name": "",
+      "Phone Number": "412850044",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Greenwith Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "882897400",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Sazon Espresso",
+      "Contact Name": "",
+      "Phone Number": "402328094",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Hahndorf Fruit & Vegetable Market",
+      "Contact Name": "",
+      "Phone Number": "883887139",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Croydon Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "420445995",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Montezumas North Adelaide",
+      "Contact Name": "",
+      "Phone Number": "401438701",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Cumberland Arms Hotel",
+      "Contact Name": "",
+      "Phone Number": "478785691",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Foodland Kilkenny",
+      "Contact Name": "",
+      "Phone Number": "881124904",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "JK Asian Grocery & Butcher",
+      "Contact Name": "",
+      "Phone Number": "422807192",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Government House South Australia",
+      "Contact Name": "",
+      "Phone Number": "404761030",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Wendy Greig - wendy-phil@bigpond.com",
+      "Contact Name": "",
+      "Phone Number": "418418464",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "1802 Oyster Bar & Bistro",
+      "Contact Name": "",
+      "Phone Number": "404270694",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Woodville Hotel",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Bakery On O'Connell",
+      "Contact Name": "",
+      "Phone Number": "402242728",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Erindale Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "881149202",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Meez On Plus Catering",
+      "Contact Name": "",
+      "Phone Number": "438577509",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "First Drop Wines Pty Ltd",
+      "Contact Name": "",
+      "Phone Number": "458264644",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Community Lot 14",
+      "Contact Name": "",
+      "Phone Number": "435604142",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Gallery On Waymouth",
+      "Contact Name": "",
+      "Phone Number": "882118820",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Crème Catering",
+      "Contact Name": "",
+      "Phone Number": "431515430",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Foodmont Pty. Ltd.",
+      "Contact Name": "",
+      "Phone Number": "883596159",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Milk and Honey Cafe",
+      "Contact Name": "",
+      "Phone Number": "405098844",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "River Torrens Cafe",
+      "Contact Name": "",
+      "Phone Number": "404808443",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "One Little Sister",
+      "Contact Name": "",
+      "Phone Number": "419480733",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Saints Foodland - Chapley",
+      "Contact Name": "",
+      "Phone Number": "426172843",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Saints Foodland - Chapley",
+      "Contact Name": "",
+      "Phone Number": "882838900",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Bandit Pizza and Wine",
+      "Contact Name": "",
+      "Phone Number": "406273576",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Tasty Bakehouse",
+      "Contact Name": "",
+      "Phone Number": "413568671",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SAILMASTER",
+      "Contact Name": "",
+      "Phone Number": "401004415",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Woodcroft Chargrill Chicken & Seafood",
+      "Contact Name": "",
+      "Phone Number": "883250004",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "",
+      "Contact Name": "",
+      "Phone Number": "457337598",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Cadney Park RH",
+      "Contact Name": "",
+      "Phone Number": "424983335",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Athelstone Foodland - Romeos",
+      "Contact Name": "",
+      "Phone Number": "403956337",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Le Bon Coffee House & Bar",
+      "Contact Name": "",
+      "Phone Number": "481052327",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Lowes Meat Co",
+      "Contact Name": "",
+      "Phone Number": "460942640",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "South Australian Hotel",
+      "Contact Name": "",
+      "Phone Number": "431384291",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Six Twelve Brewing",
+      "Contact Name": "",
+      "Phone Number": "404236331",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Strathmore Hotel Cafe",
+      "Contact Name": "",
+      "Phone Number": "415892673 | 414781997",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Two Greek Boys Glenelg North",
+      "Contact Name": "",
+      "Phone Number": "882942255",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Monarto Safari Resort",
+      "Contact Name": "",
+      "Phone Number": "467060538",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Burnside Rugby Club",
+      "Contact Name": "",
+      "Phone Number": "417825944",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Lot 100",
+      "Contact Name": "",
+      "Phone Number": "408516809",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Richard Kemp - Ascot Park Primary School",
+      "Contact Name": "Cash Sales (9 Afternoon Pickup)",
+      "Phone Number": "410395488",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "DESERT CITY - SILVER CITY DRILLING CAMP 226",
+      "Contact Name": "SCD 24",
+      "Phone Number": "",
+      "Email": "camp.scd40@desertcity.com.au",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Skycity The Kitchen",
+      "Contact Name": "ADSEANBAR The Kitchen Bar IA211",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity ITL Kitchen",
+      "Contact Name": "ADITLKIT ITL Restaurant Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Pitstop Main Kitchen",
+      "Contact Name": "ADMKPITST Pitstop Main Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Skycity Opal Kitchen",
+      "Contact Name": "ADOPALKIT Opal Room Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity Madame Hanoi",
+      "Contact Name": "ADMHANKIT Madame Hanoi Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity Guardsman",
+      "Contact Name": "ADGUARDKIT The Guardsman Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Skycity The Kitchen",
+      "Contact Name": "ADSEANKIT Sean's Kitchen",
+      "Phone Number": "Skycity The Kitchen",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity Central Cafe Kitchen",
+      "Contact Name": "ADCENTKIT Central Cafe Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Skycity Hotel In Room Dining",
+      "Contact Name": "ADHOTELIRD Adelaide Hotel In Room Dining",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity District",
+      "Contact Name": "ADDISTKIT The District Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity Lucky Noodle",
+      "Contact Name": "ADLUCKYKIT Lucky Noodle Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity Conference & Events",
+      "Contact Name": "C&E KITCHEN",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity Sol Kitchen",
+      "Contact Name": "ADSOLKIT Sol Kitchen",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Sky City Adelaide",
+      "Contact Name": "SkyCity Logistics Main Store",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "AGSA Eats",
+      "Contact Name": "Palmer Hospitality Group (Art Gallery)",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Highway Inn Hotel (Kitchen)",
+      "Contact Name": "Palmer Hospitality Group (The Highway)",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "OICS SLR 121",
+      "Contact Name": "Vintage Camp / OICS Camp 121",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "ALH Beach Hotel",
+      "Contact Name": "ALH Beach Hotel (SA)",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Crowne Plaza Adelaide",
+      "Contact Name": "IHG CP Adelaide Food, Crowne Plaza Adelaide, 27 Frome Street, , Adelaide, 5000",
+      "Phone Number": "",
+      "Email": "Has standing order for Chicken Thigh Fillets - Free Range Skin On Hormone Free 'Greenslades' - no need to enter, just change the PO number each week",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "InterContinental Adelaide",
+      "Contact Name": "IC Adelaide Riverside Food, InterContinental Adelaide, North Terrace, , Adelaide, 5000",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "InterContinental Adelaide",
+      "Contact Name": "IC Adelaide Banquet Food, InterContinental Adelaide, North Terrace",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Crowne Plaza Mawson Lakes",
+      "Contact Name": "CP Mawson Lakes Food, Crowne Plaza Mawson Lakes, 1-3/Lot 603 Metro Parade, , Mawson Lakes, 5095",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "AGSA Eats",
+      "Contact Name": "ArtGallery North terrace",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "OICS BHP M60",
+      "Contact Name": "BHPMCamp",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Cash Sales (3 Morning Pickup)",
+      "Contact Name": "Cash Sale Thursday Morning Pick up",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Desert City",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "DESERT CITY - SILVER CITY DRILLING CAMP 226",
+      "Contact Name": "Silver City Drilling camp 226 in Innaminka SA",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "OICS BHP M60",
+      "Contact Name": "OIC BH MCamp",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Desert City - SLB Overflow Camp",
+      "Contact Name": "Overflow Camp",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "DESERT CITY - SILVER CITY DRILLING CAMP 226",
+      "Contact Name": "Desert City SCD Beach Camp",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Desert City - SCD Camp 40",
+      "Contact Name": "SCD 40",
+      "Phone Number": "Wed del.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Desert City - Fregon APY Lands",
+      "Contact Name": "",
+      "Phone Number": "Wed",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Heathgate Camp",
+      "Contact Name": "Heath gate Mobilisation",
+      "Phone Number": "note in External Ref: Health Gate Camp",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "PFD Food Services - Darwin Account",
+      "Contact Name": "",
+      "Phone Number": "Tues - dispatch by next Tues",
+      "Email": "No longer in service, \ndo not process",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "PFD Food Services - Darwin Account",
+      "Contact Name": "",
+      "Phone Number": "Monday - dispatch by Friday within the week.\nWednesday - dispatch by Tuesday next week.\nThursday - dispatch by Tuesday next week\nFriday - dispatch by Friday next week.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Dessert City:\n- SAMPLE: 974 / 967 / 971 / Desert City Condor / Desert City - Palm Valley / Desert City - Mereenie",
+      "Contact Name": "note in External Ref: Mereenie/Palm Valley, etc.",
+      "Phone Number": "MONDAY",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "DESERT CITY - ENSIGN 971",
+      "Contact Name": "Fortnightly orders departs each Tuesday all freight needed by 9am",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "OICS ORDERS:\n- OICS BHP M60, OICS BHP Arcoona Station & OICS SLR 188 & 183",
+      "Contact Name": "note in External ref: BHP Arcoona Station",
+      "Phone Number": "dispatch Wednesday",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Galipo Food Company",
+      "Contact Name": "",
+      "Phone Number": "orders are always picked up on the same day \norders sent Thursday PM are delivered Friday morning and orders entered Friday AM are delivered the following Monday.\nCustomer name must be highlighted and put in the notes (in yellow) so the customer can read it.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "InterContinental Adelaide",
+      "Contact Name": "note in Ext Ref the P.O - customer's name ex. IHG2263708XK64 - InterContinental",
+      "Phone Number": "dispatch in the following day.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "All ALH Group",
+      "Contact Name": "note in Ex Ref the P.O - customer's name ex. 3920238 - Esplanade Hotel",
+      "Phone Number": "dispatch in the following day.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Adelaide Convention Centre",
+      "Contact Name": "",
+      "Phone Number": "They follow the dispatched date based on pdf's attachment",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Affordable organics",
+      "Contact Name": "",
+      "Phone Number": "dispatch in the following day.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Innamincka Hotel Holdings",
+      "Contact Name": "Innamincka Hotel",
+      "Phone Number": "please always put them in for the MONDAY regardless of the delivery date.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Mint on Moseley",
+      "Contact Name": "",
+      "Phone Number": "follow the dispatch date requested in the email.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "SkyCity City's Orders",
+      "Contact Name": "note in Ext Ref the P.O - customer's name ex. 8820199526 - Sol Kitchen",
+      "Phone Number": "dispatch date based on the attachment.",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "KI Complete",
+      "Contact Name": "Note in Ext Ref the P.O - venue name ex. 8820199526 - KI",
+      "Phone Number": "dispatch in the following day or as per request date.",
+      "Email": "add venue to both addn'l notes and external referece",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Birdsville Bakery Order | Birdsville Hotel",
+      "Contact Name": "",
+      "Phone Number": "Monday",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Sky City Adelaide",
+      "Contact Name": "",
+      "Phone Number": "If no venue name stated in pdf then use this account",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "ALWAYS REMEMBER TO CHECK IN THE PANTRY LIST FOR SPECIAL PROMO PRODUCTS DUE TO HOLIDAY SEASONS - use this one instead",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Barunga Village Inc",
+      "Contact Name": "Tues and Thurs Delivery\nEnter Friday orders on Thursday",
+      "Phone Number": "- If 2 order requests for the same delivery date, \nadd the other PO to the same order. \n- Do not separate Checkout unless stated not to add on.\n- Note the address if different from pdf\n- Updated pantry list from Frozen to Fresh",
+      "Email": "Forward Email w/ Fresho PO no.",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "DCW Willochra",
+      "Contact Name": "Tues and Thurs Delivery\nEnter Friday orders on Thursday",
+      "Phone Number": "Updated pantry list from Frozen to Fresh",
+      "Email": "Forward Email w/ Fresho PO no.",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Moonta Health and Aged Care",
+      "Contact Name": "",
+      "Phone Number": "Updated pantry list from Frozen to Fresh",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Desert City - Savanah 188 Camp",
+      "Contact Name": "Savanna 188 Food Order",
+      "Phone Number": "Wed delivery next week.",
+      "Email": "Ex Ref: Savanah 188 Camp",
+      "Other Comments": "Forward Email w/ Fresho PO no.",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Desert City - Savanah 183 Camp",
+      "Contact Name": "savanna 183",
+      "Phone Number": "Wed delivery next week.",
+      "Email": "Ex Ref: Savanah 183 Camp",
+      "Other Comments": "Forward Email w/ Fresho PO no.",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Desert City - Savanah 184 Camp",
+      "Contact Name": "Savanna 184 food order",
+      "Phone Number": "Wed delivery next week.",
+      "Email": "Ex Ref: Savanah 184 Camp",
+      "Other Comments": "Forward Email w/ Fresho PO no.",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Adelaide Oval Sma",
+      "Contact Name": "Add Venue/ Location to Ext Ref; Sample : 10087169 - Function Kitchen South",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Watervale Hotel",
+      "Contact Name": "enter for Tuesdays and Thursdays only",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Hi Girls - When Birdsville and Innaminka put in orders please always put them in for the MONDAY regardless of the delivery date.  These orders are large and need to be taken to production a day or two earlier.  Thank you.",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Forward Order Email w/ Fresho PO no. to Sally:",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Barunga Village Inc",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "DCW Willochra",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "All Venue of Desert City",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    },
+    {
+      "Customer Name": "Double Tree By Hilton Alice Springs",
+      "Contact Name": "",
+      "Phone Number": "",
+      "Email": "",
+      "Other Comments": "",
+      "Deliveries": ""
+    }
+  ]
+}
