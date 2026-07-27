@@ -960,8 +960,11 @@ else:
 
         # Extra sections come from the imported workbook sheets (read-only), shown
         # beside Customer Rules / Product Rules. Index is lightweight; row data loads
-        # only when a section is opened.
-        _extra_index = _dh.get_extra_sheets_index(selected_supplier)
+        # only when a section is opened. Read the main file via the always-present
+        # _get_file so this keeps working even if a cached DataHandler predates the
+        # dedicated extra-sheet methods.
+        _main_data, _ = _dh._get_file(f"{selected_supplier}.json")
+        _extra_index = (_main_data or {}).get("extra_sheets", [])
         _extra_names = [e.get("name", "") for e in _extra_index if e.get("name")]
 
         rules_view = st.radio(
@@ -1310,10 +1313,15 @@ else:
             else:
                 st.caption(f"{_entry.get('rows', 0):,} rows · read-only (imported from the workbook)")
                 with st.spinner("Loading sheet…"):
-                    _sheet = _dh.get_extra_sheet(_entry.get("files", []))
-                _rows = _sheet.get("rows", [])
+                    _cols, _rows = [], []
+                    for _rel in _entry.get("files", []):
+                        _part, _ = _dh._get_file(_rel)
+                        if _part:
+                            if not _cols:
+                                _cols = _part.get("columns", [])
+                            _rows.extend(_part.get("rows", []))
                 if _rows:
-                    _cols = _sheet.get("columns") or list(_rows[0].keys())
+                    _cols = _cols or list(_rows[0].keys())
                     _xdf = pd.DataFrame(_rows)
                     for c in _cols:
                         if c not in _xdf.columns:
