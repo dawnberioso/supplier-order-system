@@ -2,7 +2,7 @@
   "supplier_name": "Fruitique",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T13:42:18.853984",
   "rules": [
     {
       "Customer Name": "The London Hotel Balmain",
@@ -2219,6 +2219,64 @@
       "Contact Name": "Paritosh Nagarkoti",
       "Phone Number": "",
       "Email": "paritoshthapa98@gmail.com"
+    }
+  ],
+  "extra_sheets": [
+    {
+      "name": "Fruitique WS Overview and Rules",
+      "slug": "Fruitique WS Overview and Rules",
+      "rows": 23,
+      "files": [
+        "extra/Fruitique/Fruitique WS Overview and Rules.json"
+      ]
+    },
+    {
+      "name": "Joe",
+      "slug": "Joe",
+      "rows": 159,
+      "files": [
+        "extra/Fruitique/Joe.json"
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "slug": "Miscellaneous",
+      "rows": 64,
+      "files": [
+        "extra/Fruitique/Miscellaneous.json"
+      ]
+    },
+    {
+      "name": "Guide",
+      "slug": "Guide",
+      "rows": 56,
+      "files": [
+        "extra/Fruitique/Guide.json"
+      ]
+    },
+    {
+      "name": "FORMAT",
+      "slug": "FORMAT",
+      "rows": 127,
+      "files": [
+        "extra/Fruitique/FORMAT.json"
+      ]
+    },
+    {
+      "name": "Live Tracking",
+      "slug": "Live Tracking",
+      "rows": 219,
+      "files": [
+        "extra/Fruitique/Live Tracking.json"
+      ]
+    },
+    {
+      "name": "Supplier Specific Time Tracking",
+      "slug": "Supplier Specific Time Tracking",
+      "rows": 1528,
+      "files": [
+        "extra/Fruitique/Supplier Specific Time Tracking.json"
+      ]
     }
   ]
 }

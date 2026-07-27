@@ -2,7 +2,7 @@
   "supplier_name": "Bodiam Meat",
   "description": "",
   "created_at": "2026-06-15T23:59:32.268501",
-  "last_updated": "2026-07-27T11:56:57.508351",
+  "last_updated": "2026-07-27T13:42:18.853984",
   "rules": [
     {
       "Customer Names": "Di Lietos Coffee Lounge Eastbourne",
@@ -7118,6 +7118,100 @@
       "NAME": "",
       "PHONE": "1273295880",
       "EMAIL": ""
+    }
+  ],
+  "extra_sheets": [
+    {
+      "name": "CUSTOMER LIST v2",
+      "slug": "CUSTOMER LIST v2",
+      "rows": 420,
+      "files": [
+        "extra/Bodiam Meat/CUSTOMER LIST v2.json"
+      ]
+    },
+    {
+      "name": "Customer Names List",
+      "slug": "Customer Names List",
+      "rows": 176,
+      "files": [
+        "extra/Bodiam Meat/Customer Names List.json"
+      ]
+    },
+    {
+      "name": "Tracking 2025- 26",
+      "slug": "Tracking 2025- 26",
+      "rows": 13864,
+      "files": [
+        "extra/Bodiam Meat/Tracking 2025- 26.part1.json",
+        "extra/Bodiam Meat/Tracking 2025- 26.part2.json",
+        "extra/Bodiam Meat/Tracking 2025- 26.part3.json",
+        "extra/Bodiam Meat/Tracking 2025- 26.part4.json",
+        "extra/Bodiam Meat/Tracking 2025- 26.part5.json"
+      ]
+    },
+    {
+      "name": "Renilyn ",
+      "slug": "Renilyn",
+      "rows": 489,
+      "files": [
+        "extra/Bodiam Meat/Renilyn.json"
+      ]
+    },
+    {
+      "name": "ELLENKRISTACARIZA",
+      "slug": "ELLENKRISTACARIZA",
+      "rows": 559,
+      "files": [
+        "extra/Bodiam Meat/ELLENKRISTACARIZA.json"
+      ]
+    },
+    {
+      "name": "TRAINING CHELSEY",
+      "slug": "TRAINING CHELSEY",
+      "rows": 440,
+      "files": [
+        "extra/Bodiam Meat/TRAINING CHELSEY.json"
+      ]
+    },
+    {
+      "name": "Trixy Training",
+      "slug": "Trixy Training",
+      "rows": 155,
+      "files": [
+        "extra/Bodiam Meat/Trixy Training.json"
+      ]
+    },
+    {
+      "name": "Jade",
+      "slug": "Jade",
+      "rows": 87,
+      "files": [
+        "extra/Bodiam Meat/Jade.json"
+      ]
+    },
+    {
+      "name": "Ellen Training",
+      "slug": "Ellen Training",
+      "rows": 48,
+      "files": [
+        "extra/Bodiam Meat/Ellen Training.json"
+      ]
+    },
+    {
+      "name": "Mildred",
+      "slug": "Mildred",
+      "rows": 105,
+      "files": [
+        "extra/Bodiam Meat/Mildred.json"
+      ]
+    },
+    {
+      "name": "HOLIDAY BUSINESS HOURS",
+      "slug": "HOLIDAY BUSINESS HOURS",
+      "rows": 28,
+      "files": [
+        "extra/Bodiam Meat/HOLIDAY BUSINESS HOURS.json"
+      ]
     }
   ]
 }

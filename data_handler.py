@@ -328,6 +328,33 @@ class DataHandler:
         return self._modify(f"{supplier_name}.json", _m,
                             f"Update product rules columns for {supplier_name}")
 
+    # ---------- extra workbook sheets (read-only reference/log data) ----------
+
+    def get_extra_sheets_index(self, supplier_name):
+        """Lightweight list of imported workbook sheets for this supplier.
+
+        Each entry: {"name", "slug", "rows", "files": [relative paths]}.
+        Row data lives in the per-sheet files, loaded only when opened."""
+        data, _ = self._get_file(f"{supplier_name}.json")
+        if data is None:
+            return []
+        return data.get("extra_sheets", [])
+
+    def get_extra_sheet(self, files):
+        """Read a single extra sheet's rows from its (possibly chunked) part
+        files, concatenating parts. Returns {"columns": [...], "rows": [...]}."""
+        if not files:
+            return {"columns": [], "rows": []}
+        columns, rows = [], []
+        for rel in files:
+            part, _ = self._get_file(rel)
+            if part is None:
+                continue
+            if not columns:
+                columns = part.get("columns", [])
+            rows.extend(part.get("rows", []))
+        return {"columns": columns, "rows": rows}
+
     # ---------- supplier details (Time Shift, POC, etc.) ----------
 
     DETAIL_KEYS = ["time_shift_aut", "time_shift_ukt", "information", "poc", "team_ph"]

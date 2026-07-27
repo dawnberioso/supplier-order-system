@@ -2,7 +2,7 @@
   "supplier_name": "Tassie",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T13:42:18.853984",
   "rules": [
     {
       "Customer Name": "Porgie & Mr Jones",
@@ -2336,6 +2336,146 @@
       "Quantity (1)": "",
       "Product Code": "",
       "Remarks": ""
+    }
+  ],
+  "extra_sheets": [
+    {
+      "name": "Supplier Specific Time Tracking",
+      "slug": "Supplier Specific Time Tracking",
+      "rows": 372,
+      "files": [
+        "extra/Tassie/Supplier Specific Time Tracking.json"
+      ]
+    },
+    {
+      "name": "Guide",
+      "slug": "Guide",
+      "rows": 22,
+      "files": [
+        "extra/Tassie/Guide.json"
+      ]
+    },
+    {
+      "name": "Customer Name",
+      "slug": "Customer Name",
+      "rows": 22,
+      "files": [
+        "extra/Tassie/Customer Name.json"
+      ]
+    },
+    {
+      "name": "Training Tracking",
+      "slug": "Training Tracking",
+      "rows": 3165,
+      "files": [
+        "extra/Tassie/Training Tracking.part1.json",
+        "extra/Tassie/Training Tracking.part2.json"
+      ]
+    },
+    {
+      "name": "Vanessa Training",
+      "slug": "Vanessa Training",
+      "rows": 1004,
+      "files": [
+        "extra/Tassie/Vanessa Training.json"
+      ]
+    },
+    {
+      "name": "RJ TrainingLive",
+      "slug": "RJ TrainingLive",
+      "rows": 956,
+      "files": [
+        "extra/Tassie/RJ TrainingLive.json"
+      ]
+    },
+    {
+      "name": "Arzies Training",
+      "slug": "Arzies Training",
+      "rows": 929,
+      "files": [
+        "extra/Tassie/Arzies Training.json"
+      ]
+    },
+    {
+      "name": "Question",
+      "slug": "Question",
+      "rows": 523,
+      "files": [
+        "extra/Tassie/Question.json"
+      ]
+    },
+    {
+      "name": "Supplier Feedback",
+      "slug": "Supplier Feedback",
+      "rows": 71,
+      "files": [
+        "extra/Tassie/Supplier Feedback.json"
+      ]
+    },
+    {
+      "name": "Live Tracking",
+      "slug": "Live Tracking",
+      "rows": 9745,
+      "files": [
+        "extra/Tassie/Live Tracking.part1.json",
+        "extra/Tassie/Live Tracking.part2.json"
+      ]
+    },
+    {
+      "name": "JADE",
+      "slug": "JADE",
+      "rows": 4,
+      "files": [
+        "extra/Tassie/JADE.json"
+      ]
+    },
+    {
+      "name": "Rhea Training",
+      "slug": "Rhea Training",
+      "rows": 690,
+      "files": [
+        "extra/Tassie/Rhea Training.json"
+      ]
+    },
+    {
+      "name": "Nisa Training",
+      "slug": "Nisa Training",
+      "rows": 50,
+      "files": [
+        "extra/Tassie/Nisa Training.json"
+      ]
+    },
+    {
+      "name": "Ellen Training",
+      "slug": "Ellen Training",
+      "rows": 153,
+      "files": [
+        "extra/Tassie/Ellen Training.json"
+      ]
+    },
+    {
+      "name": "Eden Training",
+      "slug": "Eden Training",
+      "rows": 252,
+      "files": [
+        "extra/Tassie/Eden Training.json"
+      ]
+    },
+    {
+      "name": "Anelie Training",
+      "slug": "Anelie Training",
+      "rows": 220,
+      "files": [
+        "extra/Tassie/Anelie Training.json"
+      ]
+    },
+    {
+      "name": "Ros Ros Training",
+      "slug": "Ros Ros Training",
+      "rows": 32,
+      "files": [
+        "extra/Tassie/Ros Ros Training.json"
+      ]
     }
   ]
 }

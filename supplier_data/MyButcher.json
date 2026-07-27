@@ -2,7 +2,7 @@
   "supplier_name": "MyButcher",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T13:42:18.853984",
   "rules": [
     {
       "Customer": "Desert City Ensign / Mereenie & Palm Valley / Oics Camp Orders",
@@ -2077,6 +2077,97 @@
       "Email": "",
       "Other Comments": "",
       "Deliveries": ""
+    }
+  ],
+  "extra_sheets": [
+    {
+      "name": "Supplier Specific Time Tracking",
+      "slug": "Supplier Specific Time Tracking",
+      "rows": 1208,
+      "files": [
+        "extra/MyButcher/Supplier Specific Time Tracking.json"
+      ]
+    },
+    {
+      "name": "Live Tracking",
+      "slug": "Live Tracking",
+      "rows": 8700,
+      "files": [
+        "extra/MyButcher/Live Tracking.part1.json",
+        "extra/MyButcher/Live Tracking.part2.json"
+      ]
+    },
+    {
+      "name": "JADE",
+      "slug": "JADE",
+      "rows": 28,
+      "files": [
+        "extra/MyButcher/JADE.json"
+      ]
+    },
+    {
+      "name": "JG Training",
+      "slug": "JG Training",
+      "rows": 48,
+      "files": [
+        "extra/MyButcher/JG Training.json"
+      ]
+    },
+    {
+      "name": "Rhea Training",
+      "slug": "Rhea Training",
+      "rows": 897,
+      "files": [
+        "extra/MyButcher/Rhea Training.json"
+      ]
+    },
+    {
+      "name": "Vanessa Training",
+      "slug": "Vanessa Training",
+      "rows": 139,
+      "files": [
+        "extra/MyButcher/Vanessa Training.json"
+      ]
+    },
+    {
+      "name": "Sheila Training",
+      "slug": "Sheila Training",
+      "rows": 209,
+      "files": [
+        "extra/MyButcher/Sheila Training.json"
+      ]
+    },
+    {
+      "name": "Marie Training",
+      "slug": "Marie Training",
+      "rows": 47,
+      "files": [
+        "extra/MyButcher/Marie Training.json"
+      ]
+    },
+    {
+      "name": "Anelie Training",
+      "slug": "Anelie Training",
+      "rows": 2,
+      "files": [
+        "extra/MyButcher/Anelie Training.json"
+      ]
+    },
+    {
+      "name": "Supplier Feedback",
+      "slug": "Supplier Feedback",
+      "rows": 2,
+      "files": [
+        "extra/MyButcher/Supplier Feedback.json"
+      ]
+    },
+    {
+      "name": "ellen",
+      "slug": "ellen",
+      "rows": 3,
+      "files": [
+        "extra/MyButcher/ellen.json"
+      ]
     }
   ]
 }

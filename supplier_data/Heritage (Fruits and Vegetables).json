@@ -2,7 +2,7 @@
   "supplier_name": "Heritage (Fruits and Vegetables)",
   "description": "",
   "created_at": "2026-06-17T22:22:25.660070",
-  "last_updated": "2026-07-27T11:56:57.508351",
+  "last_updated": "2026-07-27T13:42:18.853984",
   "rules": [
     {
       "Customer Name in Fresho": "MARKETMAN ORDERS",
@@ -4891,6 +4891,123 @@
       "Phone Number": "",
       "Email": "",
       "Remarks": ""
+    }
+  ],
+  "extra_sheets": [
+    {
+      "name": "Shift ",
+      "slug": "Shift",
+      "rows": 24,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Shift.json"
+      ]
+    },
+    {
+      "name": "Tracking LIVE",
+      "slug": "Tracking LIVE",
+      "rows": 17031,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part1.json",
+        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part2.json",
+        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part3.json",
+        "extra/Heritage (Fruits and Vegetables)/Tracking LIVE.part4.json"
+      ]
+    },
+    {
+      "name": "QTY",
+      "slug": "QTY",
+      "rows": 22,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/QTY.json"
+      ]
+    },
+    {
+      "name": "REPORT NOTES",
+      "slug": "REPORT NOTES",
+      "rows": 48,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/REPORT NOTES.json"
+      ]
+    },
+    {
+      "name": "Buying List ",
+      "slug": "Buying List",
+      "rows": 29,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Buying List.json"
+      ]
+    },
+    {
+      "name": "NOTES",
+      "slug": "NOTES",
+      "rows": 70,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/NOTES.json"
+      ]
+    },
+    {
+      "name": "Trixy Notes",
+      "slug": "Trixy Notes",
+      "rows": 46,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Trixy Notes.json"
+      ]
+    },
+    {
+      "name": "luziel",
+      "slug": "luziel",
+      "rows": 75,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/luziel.json"
+      ]
+    },
+    {
+      "name": "Ellen",
+      "slug": "Ellen",
+      "rows": 213,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Ellen.json"
+      ]
+    },
+    {
+      "name": "Renilyn",
+      "slug": "Renilyn",
+      "rows": 159,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Renilyn.json"
+      ]
+    },
+    {
+      "name": "Trixy",
+      "slug": "Trixy",
+      "rows": 63,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Trixy.json"
+      ]
+    },
+    {
+      "name": "Krista",
+      "slug": "Krista",
+      "rows": 70,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Krista.json"
+      ]
+    },
+    {
+      "name": "Report",
+      "slug": "Report",
+      "rows": 321,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/Report.json"
+      ]
+    },
+    {
+      "name": "EFOODS CUSTOMER",
+      "slug": "EFOODS CUSTOMER",
+      "rows": 34,
+      "files": [
+        "extra/Heritage (Fruits and Vegetables)/EFOODS CUSTOMER.json"
+      ]
     }
   ]
 }

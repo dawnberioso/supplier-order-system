@@ -948,19 +948,25 @@ if not selected_supplier:
 else:
     # Create tabs
     tab1, tab_fav, tab5 = st.tabs([
-        "Supplier Rules",
+        "Supplier Internal Notes",
         "Favorites",
         "Supplier Information"
     ])
 
-    # Tab 1: Supplier Rules (Customer Rules / Product Rules)
+    # Tab 1: Supplier Internal Notes (Customer Rules / Product Rules / imported sheets)
     with tab1:
         _dh = st.session_state.data_handler
-        st.markdown(f"<h3>Supplier Rules - {selected_supplier}</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3>Supplier Internal Notes - {selected_supplier}</h3>", unsafe_allow_html=True)
+
+        # Extra sections come from the imported workbook sheets (read-only), shown
+        # beside Customer Rules / Product Rules. Index is lightweight; row data loads
+        # only when a section is opened.
+        _extra_index = _dh.get_extra_sheets_index(selected_supplier)
+        _extra_names = [e.get("name", "") for e in _extra_index if e.get("name")]
 
         rules_view = st.radio(
-            "Choose a rules set:",
-            ["Customer Rules", "Product Rules"],
+            "Choose a section:",
+            ["Customer Rules", "Product Rules"] + _extra_names,
             horizontal=True, key="rules_view_choice", label_visibility="collapsed")
 
         cust_labels = {
@@ -1145,7 +1151,7 @@ else:
                 st.caption("Rename, add, or delete any column. (Deleting 'customer' or 'ordered_product' "
                            "just means the search boxes stop filtering on it.)")
 
-        else:
+        elif rules_view == "Product Rules":
             st.markdown("<h4>Product Rules</h4>", unsafe_allow_html=True)
             st.caption("Product-level defaults (no customer): the Fresho product/quantity to use for each ordered product.")
             product_rules = _dh.get_product_rules(selected_supplier)
@@ -1294,6 +1300,32 @@ else:
                             st.warning("Select a column to delete first.")
                 st.caption("Rename, add, or delete any column. (Deleting 'ordered_product' "
                            "just means the search box stops filtering on it.)")
+
+        else:
+            # An imported workbook sheet — read-only reference/log data.
+            _entry = next((e for e in _extra_index if e.get("name") == rules_view), None)
+            st.markdown(f"<h4>{rules_view}</h4>", unsafe_allow_html=True)
+            if _entry is None:
+                st.info("This section could not be found.")
+            else:
+                st.caption(f"{_entry.get('rows', 0):,} rows · read-only (imported from the workbook)")
+                with st.spinner("Loading sheet…"):
+                    _sheet = _dh.get_extra_sheet(_entry.get("files", []))
+                _rows = _sheet.get("rows", [])
+                if _rows:
+                    _cols = _sheet.get("columns") or list(_rows[0].keys())
+                    _xdf = pd.DataFrame(_rows)
+                    for c in _cols:
+                        if c not in _xdf.columns:
+                            _xdf[c] = ""
+                    _xdf = _xdf[_cols]
+                    st.dataframe(_xdf, use_container_width=True, height=800)
+                    st.download_button(
+                        "Export CSV", data=_xdf.to_csv(index=False),
+                        file_name=f"{selected_supplier}_{_entry.get('slug','sheet')}_{datetime.now().strftime('%Y%m%d')}.csv",
+                        mime="text/csv", key="extra_export")
+                else:
+                    st.info("This sheet has no data.")
 
     # Favorites tab: most-ordered products, organized per customer
     with tab_fav:

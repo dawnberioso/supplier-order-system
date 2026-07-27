@@ -2,7 +2,7 @@
   "supplier_name": "MCB",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T11:40:10.350205",
+  "last_updated": "2026-07-27T13:42:18.853984",
   "rules": [
     {
       "Customer": "",
@@ -10706,6 +10706,64 @@
       "NAME": "Zorba Bar and Grill Lewes",
       "PHONE": "",
       "EMAIL": "hello@zorbamezegrill.com"
+    }
+  ],
+  "extra_sheets": [
+    {
+      "name": "Training ",
+      "slug": "Training",
+      "rows": 797,
+      "files": [
+        "extra/MCB/Training.json"
+      ]
+    },
+    {
+      "name": "Customers",
+      "slug": "Customers",
+      "rows": 277,
+      "files": [
+        "extra/MCB/Customers.json"
+      ]
+    },
+    {
+      "name": "Guide",
+      "slug": "Guide",
+      "rows": 76,
+      "files": [
+        "extra/MCB/Guide.json"
+      ]
+    },
+    {
+      "name": "Questions for supplier",
+      "slug": "Questions for supplier",
+      "rows": 5,
+      "files": [
+        "extra/MCB/Questions for supplier.json"
+      ]
+    },
+    {
+      "name": "Nisa",
+      "slug": "Nisa",
+      "rows": 199,
+      "files": [
+        "extra/MCB/Nisa.json"
+      ]
+    },
+    {
+      "name": "Eden",
+      "slug": "Eden",
+      "rows": 226,
+      "files": [
+        "extra/MCB/Eden.json"
+      ]
+    },
+    {
+      "name": "Jade",
+      "slug": "Jade",
+      "rows": 20,
+      "files": [
+        "extra/MCB/Jade.json"
+      ]
     }
   ]
 }

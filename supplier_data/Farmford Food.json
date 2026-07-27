@@ -2,7 +2,7 @@
   "supplier_name": "Farmford Food",
   "description": "",
   "created_at": "2026-06-16T00:09:44.416572",
-  "last_updated": "2026-07-27T11:56:57.508351",
+  "last_updated": "2026-07-27T13:42:18.853984",
   "rules": [
     {
       "NO SUPPLY: IGNORE": "",
@@ -105907,6 +105907,84 @@
       "Phone Number": "",
       "Email": "",
       "Notes": "Moon Chelsea Limited"
+    }
+  ],
+  "extra_sheets": [
+    {
+      "name": "Luziel",
+      "slug": "Luziel",
+      "rows": 147,
+      "files": [
+        "extra/Farmford Food/Luziel.json"
+      ]
+    },
+    {
+      "name": "Vanessa training",
+      "slug": "Vanessa training",
+      "rows": 84,
+      "files": [
+        "extra/Farmford Food/Vanessa training.json"
+      ]
+    },
+    {
+      "name": "Customer Guide",
+      "slug": "Customer Guide",
+      "rows": 9,
+      "files": [
+        "extra/Farmford Food/Customer Guide.json"
+      ]
+    },
+    {
+      "name": "Product Guide",
+      "slug": "Product Guide",
+      "rows": 13,
+      "files": [
+        "extra/Farmford Food/Product Guide.json"
+      ]
+    },
+    {
+      "name": "Trixy Notes",
+      "slug": "Trixy Notes",
+      "rows": 97,
+      "files": [
+        "extra/Farmford Food/Trixy Notes.json"
+      ]
+    },
+    {
+      "name": "Tracking",
+      "slug": "Tracking",
+      "rows": 24097,
+      "files": [
+        "extra/Farmford Food/Tracking.part1.json",
+        "extra/Farmford Food/Tracking.part2.json",
+        "extra/Farmford Food/Tracking.part3.json",
+        "extra/Farmford Food/Tracking.part4.json",
+        "extra/Farmford Food/Tracking.part5.json"
+      ]
+    },
+    {
+      "name": "prep",
+      "slug": "prep",
+      "rows": 58,
+      "files": [
+        "extra/Farmford Food/prep.json"
+      ]
+    },
+    {
+      "name": "Report",
+      "slug": "Report",
+      "rows": 25,
+      "files": [
+        "extra/Farmford Food/Report.json"
+      ]
+    },
+    {
+      "name": "Sheet13",
+      "slug": "Sheet13",
+      "rows": 48,
+      "files": [
+        "extra/Farmford Food/Sheet13.json"
+      ]
     }
   ]
 }
