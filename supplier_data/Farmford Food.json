@@ -2,7 +2,7 @@
   "supplier_name": "Farmford Food",
   "description": "",
   "created_at": "2026-06-16T00:09:44.416572",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "NO SUPPLY: IGNORE": "",
@@ -105911,35 +105911,11 @@
   ],
   "extra_sheets": [
     {
-      "name": "Luziel",
-      "slug": "Luziel",
-      "rows": 147,
-      "files": [
-        "extra/Farmford Food/Luziel.json"
-      ]
-    },
-    {
-      "name": "Vanessa training",
-      "slug": "Vanessa training",
-      "rows": 84,
-      "files": [
-        "extra/Farmford Food/Vanessa training.json"
-      ]
-    },
-    {
       "name": "Customer Guide",
       "slug": "Customer Guide",
       "rows": 9,
       "files": [
         "extra/Farmford Food/Customer Guide.json"
-      ]
-    },
-    {
-      "name": "Product Guide",
-      "slug": "Product Guide",
-      "rows": 13,
-      "files": [
-        "extra/Farmford Food/Product Guide.json"
       ]
     },
     {

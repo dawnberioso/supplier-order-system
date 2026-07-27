@@ -2,7 +2,7 @@
   "supplier_name": "Gamekeepers",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "Customer Name in Fresho": "JJJ Bros Pty Ltd",
@@ -3584,30 +3584,6 @@
   ],
   "extra_sheets": [
     {
-      "name": "Sheet1",
-      "slug": "Sheet1",
-      "rows": 4,
-      "files": [
-        "extra/Gamekeepers/Sheet1.json"
-      ]
-    },
-    {
-      "name": "Sheila|Training",
-      "slug": "Sheila Training",
-      "rows": 582,
-      "files": [
-        "extra/Gamekeepers/Sheila Training.json"
-      ]
-    },
-    {
-      "name": "Arzies Training",
-      "slug": "Arzies Training",
-      "rows": 11,
-      "files": [
-        "extra/Gamekeepers/Arzies Training.json"
-      ]
-    },
-    {
       "name": " Overview and Rules",
       "slug": "Overview and Rules",
       "rows": 28,
@@ -3647,78 +3623,6 @@
       "rows": 3,
       "files": [
         "extra/Gamekeepers/Errors.json"
-      ]
-    },
-    {
-      "name": "Tri Cx delivery (Rules no Longe",
-      "slug": "Tri Cx delivery (Rules no Longe",
-      "rows": 292,
-      "files": [
-        "extra/Gamekeepers/Tri Cx delivery (Rules no Longe.json"
-      ]
-    },
-    {
-      "name": "JADE",
-      "slug": "JADE",
-      "rows": 8,
-      "files": [
-        "extra/Gamekeepers/JADE.json"
-      ]
-    },
-    {
-      "name": "Vanessa training",
-      "slug": "Vanessa training",
-      "rows": 315,
-      "files": [
-        "extra/Gamekeepers/Vanessa training.json"
-      ]
-    },
-    {
-      "name": "Ron Training",
-      "slug": "Ron Training",
-      "rows": 267,
-      "files": [
-        "extra/Gamekeepers/Ron Training.json"
-      ]
-    },
-    {
-      "name": "Jane Training",
-      "slug": "Jane Training",
-      "rows": 253,
-      "files": [
-        "extra/Gamekeepers/Jane Training.json"
-      ]
-    },
-    {
-      "name": "Ellen Training",
-      "slug": "Ellen Training",
-      "rows": 77,
-      "files": [
-        "extra/Gamekeepers/Ellen Training.json"
-      ]
-    },
-    {
-      "name": "Rhea Training",
-      "slug": "Rhea Training",
-      "rows": 242,
-      "files": [
-        "extra/Gamekeepers/Rhea Training.json"
-      ]
-    },
-    {
-      "name": "Supplier Specific Time Tracking",
-      "slug": "Supplier Specific Time Tracking",
-      "rows": 394,
-      "files": [
-        "extra/Gamekeepers/Supplier Specific Time Tracking.json"
-      ]
-    },
-    {
-      "name": "Training Tracking",
-      "slug": "Training Tracking",
-      "rows": 926,
-      "files": [
-        "extra/Gamekeepers/Training Tracking.json"
       ]
     }
   ]

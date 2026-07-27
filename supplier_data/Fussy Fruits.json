@@ -2,7 +2,7 @@
   "supplier_name": "Fussy Fruits",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "Customer": "The Rustic Olive",
@@ -523,43 +523,11 @@
   ],
   "extra_sheets": [
     {
-      "name": "Training",
-      "slug": "Training",
-      "rows": 279,
-      "files": [
-        "extra/Fussy Fruits/Training.json"
-      ]
-    },
-    {
-      "name": "Training (Vannesa)",
-      "slug": "Training (Vannesa)",
-      "rows": 210,
-      "files": [
-        "extra/Fussy Fruits/Training (Vannesa).json"
-      ]
-    },
-    {
       "name": "Tracking",
       "slug": "Tracking",
       "rows": 4420,
       "files": [
         "extra/Fussy Fruits/Tracking.json"
-      ]
-    },
-    {
-      "name": "Renilyn Training",
-      "slug": "Renilyn Training",
-      "rows": 92,
-      "files": [
-        "extra/Fussy Fruits/Renilyn Training.json"
-      ]
-    },
-    {
-      "name": "Marie Training",
-      "slug": "Marie Training",
-      "rows": 12,
-      "files": [
-        "extra/Fussy Fruits/Marie Training.json"
       ]
     }
   ]

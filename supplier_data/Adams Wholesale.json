@@ -2,7 +2,7 @@
   "supplier_name": "Adams Wholesale",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "G E N E R A L     R U L E": "Shift Times: Sunday to Friday 4.30pm - 12.30am UK",
@@ -17529,54 +17529,6 @@
   ],
   "extra_sheets": [
     {
-      "name": "No. of working hours",
-      "slug": "No. of working hours",
-      "rows": 1316,
-      "files": [
-        "extra/Adams Wholesale/No. of working hours.json"
-      ]
-    },
-    {
-      "name": "Daily Output",
-      "slug": "Daily Output",
-      "rows": 5,
-      "files": [
-        "extra/Adams Wholesale/Daily Output.json"
-      ]
-    },
-    {
-      "name": "No. of Emails (OLD)",
-      "slug": "No. of Emails (OLD)",
-      "rows": 642,
-      "files": [
-        "extra/Adams Wholesale/No. of Emails (OLD).json"
-      ]
-    },
-    {
-      "name": "Updated Cx name",
-      "slug": "Updated Cx name",
-      "rows": 419,
-      "files": [
-        "extra/Adams Wholesale/Updated Cx name.json"
-      ]
-    },
-    {
-      "name": "ELLEN",
-      "slug": "ELLEN",
-      "rows": 197,
-      "files": [
-        "extra/Adams Wholesale/ELLEN.json"
-      ]
-    },
-    {
-      "name": "Sheet16",
-      "slug": "Sheet16",
-      "rows": 71,
-      "files": [
-        "extra/Adams Wholesale/Sheet16.json"
-      ]
-    },
-    {
       "name": "Email Tracker",
       "slug": "Email Tracker",
       "rows": 1240,
@@ -17626,127 +17578,6 @@
         "extra/Adams Wholesale/Orders Tracker 2025 - 2026.part11.json",
         "extra/Adams Wholesale/Orders Tracker 2025 - 2026.part12.json",
         "extra/Adams Wholesale/Orders Tracker 2025 - 2026.part13.json"
-      ]
-    },
-    {
-      "name": "Training Trixy",
-      "slug": "Training Trixy",
-      "rows": 416,
-      "files": [
-        "extra/Adams Wholesale/Training Trixy.json"
-      ]
-    },
-    {
-      "name": "Training Tracking 2025",
-      "slug": "Training Tracking 2025",
-      "rows": 2202,
-      "files": [
-        "extra/Adams Wholesale/Training Tracking 2025.json"
-      ]
-    },
-    {
-      "name": "Renilyn",
-      "slug": "Renilyn",
-      "rows": 938,
-      "files": [
-        "extra/Adams Wholesale/Renilyn.part1.json",
-        "extra/Adams Wholesale/Renilyn.part2.json"
-      ]
-    },
-    {
-      "name": "Jade ",
-      "slug": "Jade",
-      "rows": 55,
-      "files": [
-        "extra/Adams Wholesale/Jade.json"
-      ]
-    },
-    {
-      "name": "Rhea Training",
-      "slug": "Rhea Training",
-      "rows": 1004,
-      "files": [
-        "extra/Adams Wholesale/Rhea Training.json"
-      ]
-    },
-    {
-      "name": "HOLIDAY 2025-26 BUSINESS HOURS",
-      "slug": "HOLIDAY 2025-26 BUSINESS HOURS",
-      "rows": 20,
-      "files": [
-        "extra/Adams Wholesale/HOLIDAY 2025-26 BUSINESS HOURS.json"
-      ]
-    },
-    {
-      "name": "TEMP TRACKING SHEET",
-      "slug": "TEMP TRACKING SHEET",
-      "rows": 285,
-      "files": [
-        "extra/Adams Wholesale/TEMP TRACKING SHEET.json"
-      ]
-    },
-    {
-      "name": "Copy of Customers",
-      "slug": "Copy of Customers",
-      "rows": 489,
-      "files": [
-        "extra/Adams Wholesale/Copy of Customers.json"
-      ]
-    },
-    {
-      "name": "rekki customer",
-      "slug": "rekki customer",
-      "rows": 51,
-      "files": [
-        "extra/Adams Wholesale/rekki customer.json"
-      ]
-    },
-    {
-      "name": "Entered",
-      "slug": "Entered",
-      "rows": 176,
-      "files": [
-        "extra/Adams Wholesale/Entered.json"
-      ]
-    },
-    {
-      "name": "Feedback Training",
-      "slug": "Feedback Training",
-      "rows": 54,
-      "files": [
-        "extra/Adams Wholesale/Feedback Training.json"
-      ]
-    },
-    {
-      "name": "confusing vm",
-      "slug": "confusing vm",
-      "rows": 24,
-      "files": [
-        "extra/Adams Wholesale/confusing vm.json"
-      ]
-    },
-    {
-      "name": "GUIDE1.0",
-      "slug": "GUIDE1.0",
-      "rows": 28,
-      "files": [
-        "extra/Adams Wholesale/GUIDE1.0.json"
-      ]
-    },
-    {
-      "name": "Copy of HOLIDAY 2024-2025",
-      "slug": "Copy of HOLIDAY 2024-2025",
-      "rows": 22,
-      "files": [
-        "extra/Adams Wholesale/Copy of HOLIDAY 2024-2025.json"
-      ]
-    },
-    {
-      "name": "Copy of Schedule 2025",
-      "slug": "Copy of Schedule 2025",
-      "rows": 27,
-      "files": [
-        "extra/Adams Wholesale/Copy of Schedule 2025.json"
       ]
     }
   ]

@@ -2,7 +2,7 @@
   "supplier_name": "Dales Chef's  Choice",
   "description": "",
   "created_at": "2026-06-17T16:03:34.336105",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "Company": "",
@@ -17671,70 +17671,6 @@
       "files": [
         "extra/Dales Chef s Choice/LIVE TRACKING.part1.json",
         "extra/Dales Chef s Choice/LIVE TRACKING.part2.json"
-      ]
-    },
-    {
-      "name": "Rose",
-      "slug": "Rose",
-      "rows": 2723,
-      "files": [
-        "extra/Dales Chef s Choice/Rose.json"
-      ]
-    },
-    {
-      "name": "Mildred1",
-      "slug": "Mildred1",
-      "rows": 23,
-      "files": [
-        "extra/Dales Chef s Choice/Mildred1.json"
-      ]
-    },
-    {
-      "name": "Eden",
-      "slug": "Eden",
-      "rows": 16,
-      "files": [
-        "extra/Dales Chef s Choice/Eden.json"
-      ]
-    },
-    {
-      "name": "Vanessa",
-      "slug": "Vanessa",
-      "rows": 70,
-      "files": [
-        "extra/Dales Chef s Choice/Vanessa.json"
-      ]
-    },
-    {
-      "name": "Mildred",
-      "slug": "Mildred",
-      "rows": 115,
-      "files": [
-        "extra/Dales Chef s Choice/Mildred.json"
-      ]
-    },
-    {
-      "name": "Renilyn Training",
-      "slug": "Renilyn Training",
-      "rows": 106,
-      "files": [
-        "extra/Dales Chef s Choice/Renilyn Training.json"
-      ]
-    },
-    {
-      "name": "RJ",
-      "slug": "RJ",
-      "rows": 432,
-      "files": [
-        "extra/Dales Chef s Choice/RJ.json"
-      ]
-    },
-    {
-      "name": "Nisa",
-      "slug": "Nisa",
-      "rows": 221,
-      "files": [
-        "extra/Dales Chef s Choice/Nisa.json"
       ]
     }
   ]

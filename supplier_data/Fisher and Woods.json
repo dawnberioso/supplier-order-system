@@ -2,7 +2,7 @@
   "supplier_name": "Fisher & Woods",
   "description": "Imported from internal customer-product-rule sheet",
   "created_at": "2024-01-15T10:30:00",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "Customer": "",
@@ -13599,14 +13599,6 @@
       ]
     },
     {
-      "name": "To Take Notes",
-      "slug": "To Take Notes",
-      "rows": 14,
-      "files": [
-        "extra/Fisher and Woods/To Take Notes.json"
-      ]
-    },
-    {
       "name": "2025",
       "slug": "2025",
       "rows": 13276,
@@ -13631,72 +13623,6 @@
       "rows": 62,
       "files": [
         "extra/Fisher and Woods/Rhea.json"
-      ]
-    },
-    {
-      "name": "JG",
-      "slug": "JG",
-      "rows": 8,
-      "files": [
-        "extra/Fisher and Woods/JG.json"
-      ]
-    },
-    {
-      "name": "Dawn",
-      "slug": "Dawn",
-      "rows": 323,
-      "files": [
-        "extra/Fisher and Woods/Dawn.json"
-      ]
-    },
-    {
-      "name": "Krista",
-      "slug": "Krista",
-      "rows": 56,
-      "files": [
-        "extra/Fisher and Woods/Krista.json"
-      ]
-    },
-    {
-      "name": "Mildred",
-      "slug": "Mildred",
-      "rows": 336,
-      "files": [
-        "extra/Fisher and Woods/Mildred.json"
-      ]
-    },
-    {
-      "name": "Trixy",
-      "slug": "Trixy",
-      "rows": 73,
-      "files": [
-        "extra/Fisher and Woods/Trixy.json"
-      ]
-    },
-    {
-      "name": "Luziel",
-      "slug": "Luziel",
-      "rows": 135,
-      "files": [
-        "extra/Fisher and Woods/Luziel.json"
-      ]
-    },
-    {
-      "name": "Chelsey",
-      "slug": "Chelsey",
-      "rows": 46,
-      "files": [
-        "extra/Fisher and Woods/Chelsey.json"
-      ]
-    },
-    {
-      "name": "Tracker Updated Numbers",
-      "slug": "Tracker Updated Numbers",
-      "rows": 11272,
-      "files": [
-        "extra/Fisher and Woods/Tracker Updated Numbers.part1.json",
-        "extra/Fisher and Woods/Tracker Updated Numbers.part2.json",
-        "extra/Fisher and Woods/Tracker Updated Numbers.part3.json"
       ]
     }
   ]

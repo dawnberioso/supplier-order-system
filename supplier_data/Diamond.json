@@ -2,7 +2,7 @@
   "supplier_name": "Diamond",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "Customer": "Al Jenan Butchery Greenvalley",
@@ -171,14 +171,6 @@
       ]
     },
     {
-      "name": "Jade",
-      "slug": "Jade",
-      "rows": 14,
-      "files": [
-        "extra/Diamond/Jade.json"
-      ]
-    },
-    {
       "name": "Luziel",
       "slug": "Luziel",
       "rows": 32,
@@ -200,22 +192,6 @@
       "rows": 64,
       "files": [
         "extra/Diamond/Marie.json"
-      ]
-    },
-    {
-      "name": "Sheet4",
-      "slug": "Sheet4",
-      "rows": 13,
-      "files": [
-        "extra/Diamond/Sheet4.json"
-      ]
-    },
-    {
-      "name": "Questions",
-      "slug": "Questions",
-      "rows": 5,
-      "files": [
-        "extra/Diamond/Questions.json"
       ]
     }
   ]

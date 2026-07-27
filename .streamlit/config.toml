@@ -1,7 +1,7 @@
 [theme]
-# Light base with a teal-forward accent (soft teal-tinted panels).
+# Light base with a royal-blue accent (soft blue-tinted panels).
 base = "light"
-primaryColor = "#1F9AA1"
+primaryColor = "#4169E1"
 backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#E7F4F5"
-textColor = "#123E42"
+secondaryBackgroundColor = "#EBEFFC"
+textColor = "#1E2A63"

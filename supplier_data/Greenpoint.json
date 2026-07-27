@@ -2,7 +2,7 @@
   "supplier_name": "Greenpoint",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "G E N E R A L R U L E": "Sunday-Wed (4hrs) 9pm-1am\n Thursday-Friday (5hrs) 8pm-1am",
@@ -4165,14 +4165,6 @@
       ]
     },
     {
-      "name": "july 19",
-      "slug": "july 19",
-      "rows": 131,
-      "files": [
-        "extra/Greenpoint/july 19.json"
-      ]
-    },
-    {
       "name": "order per customer",
       "slug": "order per customer",
       "rows": 1047,
@@ -4210,30 +4202,6 @@
       "rows": 269,
       "files": [
         "extra/Greenpoint/LIVE TRACKING.json"
-      ]
-    },
-    {
-      "name": "EDEN <3",
-      "slug": "EDEN 3",
-      "rows": 33,
-      "files": [
-        "extra/Greenpoint/EDEN 3.json"
-      ]
-    },
-    {
-      "name": "Sheila ",
-      "slug": "Sheila",
-      "rows": 199,
-      "files": [
-        "extra/Greenpoint/Sheila.json"
-      ]
-    },
-    {
-      "name": "Nisa",
-      "slug": "Nisa",
-      "rows": 62,
-      "files": [
-        "extra/Greenpoint/Nisa.json"
       ]
     }
   ]

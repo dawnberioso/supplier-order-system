@@ -24,13 +24,13 @@ if 'current_supplier' not in st.session_state:
 st.markdown("""
     <style>
     :root {
-        --deep-navy: #178E95;     /* lightened blue (gradient start) */
-        --light-blue: #43C3CB;    /* lighter blue (gradient end) */
-        --accent-teal: #2AA7AE;
+        --deep-navy: #2E52D6;     /* lightened blue (gradient start) */
+        --light-blue: #6187F2;    /* lighter blue (gradient end) */
+        --accent-teal: #4169E1;
         --success-green: #2E7D32;
         --warning-amber: #F59E0B;
         --btn-text: #FFFFFF;      /* white text on blue */
-        --head-text: #0F7A81;
+        --head-text: #2848B8;
     }
 
     * {
@@ -163,7 +163,7 @@ st.markdown("""
     /* Headings: medium purple gradient that stays readable on
        light, dark, and system themes (the pastel fill is only on buttons) */
     h1, h2, h3, h4, h5, h6 {
-        background: linear-gradient(135deg, #178E95, #43C3CB) !important;
+        background: linear-gradient(135deg, #2E52D6, #6187F2) !important;
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
         background-clip: text !important;
@@ -175,12 +175,12 @@ st.markdown("""
     /* Sidebar: slightly deeper purple so it reads as a distinct panel */
     [data-testid="stSidebarContent"] .stButton > button,
     [data-testid="stSidebarContent"] .stButton > button[kind="secondary"] {
-        background: linear-gradient(135deg, #1F9AA1, #43C3CB) !important;
+        background: linear-gradient(135deg, #3B60E0, #6187F2) !important;
         color: #FFFFFF !important;
     }
     [data-testid="stSidebarContent"] .stButton > button:hover,
     [data-testid="stSidebarContent"] .stButton > button[kind="secondary"]:hover {
-        background: linear-gradient(135deg, #43C3CB, #1F9AA1) !important;
+        background: linear-gradient(135deg, #6187F2, #3B60E0) !important;
         box-shadow: 0 8px 20px rgba(27, 58, 92, 0.4) !important;
         transform: translateY(-3px) scale(1.02) !important;
     }
@@ -514,7 +514,7 @@ if st.session_state.get('show_shift_coverage'):
             background: transparent !important;
             background-image: none !important;
             background-color: transparent !important;
-            color: #178E95 !important;
+            color: #2E52D6 !important;
             border: 1px solid rgba(27, 58, 92, 0.30) !important;
             box-shadow: none !important;
             font-weight: 700 !important;
@@ -522,7 +522,7 @@ if st.session_state.get('show_shift_coverage'):
         div[class*="st-key-sc_emp_"] button::before { display: none !important; }
         div[class*="st-key-sc_emp_"] button p,
         div[class*="st-key-sc_emp_"] button span,
-        div[class*="st-key-sc_emp_"] button div { color: #178E95 !important; }
+        div[class*="st-key-sc_emp_"] button div { color: #2E52D6 !important; }
         div[class*="st-key-sc_emp_"] button:hover,
         div[class*="st-key-sc_emp_"] button[data-testid]:hover {
             background: transparent !important;
@@ -1572,7 +1572,7 @@ _status_text = "Auto-saving" if _connected else "Not saving (check GitHub secret
 st.markdown("---")
 st.markdown(f"""
     <div style='text-align: center; color: #8b95a7; font-size: 0.8em; padding: 1rem 1.5rem;'>
-    <p style='font-weight: 700; background: linear-gradient(135deg, #178E95, #43C3CB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Supplier Order Entry System v2.0</p>
+    <p style='font-weight: 700; background: linear-gradient(135deg, #2E52D6, #6187F2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Supplier Order Entry System v2.0</p>
     <p><span style='color: {_status_color}; font-weight: 700;'>{_status_text}</span> &nbsp;·&nbsp; Built with Streamlit</p>
     </div>
     """, unsafe_allow_html=True)

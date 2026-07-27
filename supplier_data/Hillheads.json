@@ -2,7 +2,7 @@
   "supplier_name": "Hillheads",
   "description": "",
   "created_at": "2026-07-27T11:40:10.350205",
-  "last_updated": "2026-07-27T13:42:18.853984",
+  "last_updated": "2026-07-27T14:11:37.658144",
   "rules": [
     {
       "TERMS": "cas / bag / sack",
@@ -1794,22 +1794,6 @@
   ],
   "extra_sheets": [
     {
-      "name": "To Nisa",
-      "slug": "To Nisa",
-      "rows": 26,
-      "files": [
-        "extra/Hillheads/To Nisa.json"
-      ]
-    },
-    {
-      "name": "Eden",
-      "slug": "Eden",
-      "rows": 16,
-      "files": [
-        "extra/Hillheads/Eden.json"
-      ]
-    },
-    {
       "name": "Customer Notes",
       "slug": "Customer Notes",
       "rows": 140,
@@ -1824,30 +1808,6 @@
       "files": [
         "extra/Hillheads/LIVE TRACKING.part1.json",
         "extra/Hillheads/LIVE TRACKING.part2.json"
-      ]
-    },
-    {
-      "name": "Training",
-      "slug": "Training",
-      "rows": 11,
-      "files": [
-        "extra/Hillheads/Training.json"
-      ]
-    },
-    {
-      "name": "Training 2.0",
-      "slug": "Training 2.0",
-      "rows": 302,
-      "files": [
-        "extra/Hillheads/Training 2.0.json"
-      ]
-    },
-    {
-      "name": "Jade",
-      "slug": "Jade",
-      "rows": 325,
-      "files": [
-        "extra/Hillheads/Jade.json"
       ]
     }
   ]
